@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "react-router-dom": "^7.1.3"
   }
 }
