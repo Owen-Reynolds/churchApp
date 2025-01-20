@@ -1,0 +1,91 @@
+.mainSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.mainTitle{
+    display: flex;
+}
+
+.mainTitle h1{
+    font-size: 12vw;
+    color: #333;
+    margin: 0;
+}
+
+.mainButton{
+    margin-top: 1%;
+}
+
+.mainButton-Button{
+    width: 15vw;
+    height: 4vw;
+    font-size: 2vw;
+    background-color: white;
+    cursor: pointer;
+}
+
+.mainButton-Button:hover{
+    background-color: #333;
+    color: white;
+}
+
+.infoSection{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.meetingTime{
+}
+
+.meetingTime h3{
+    font-size: 4vw;
+    margin: 5%;
+}
+
+.meetingTime h5{
+    font-size: 3vw;
+    margin: 5%;
+}
+
+.meetingTime h6{
+    font-size: 2vw;
+    margin: 5%;
+}
+
+.meetingTime p{
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.meetingTime-button{
+    margin-top: 10%;
+    background-color: #333;
+    border: white 2px solid;
+    color: white;
+    width: 15vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.meetingTime-button:hover{
+    background-color: white;
+    color: #333;
+}
+
+.meetingPlace img{
+    width: 40vw;
+    height: auto;
+}
+
+.meetingPlace h5{
+    font-size: 2vw;
+    margin: 5%;
+}
