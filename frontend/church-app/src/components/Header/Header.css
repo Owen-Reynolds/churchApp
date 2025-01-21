@@ -16,10 +16,34 @@ header ul li {
     list-style-type: none;
 }
 
+
 header ul li a{
     text-decoration: none;
-    color: black;
+    color: #333;
     font-size: 2vw;
+    position: relative;
+}
+
+header ul li a:hover{
+    color: black;
+}
+
+header ul li a::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: black;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+header ul li a:hover::after{
+    width: 100%;
+    left: 0;
 }
 
 .logoHeader{

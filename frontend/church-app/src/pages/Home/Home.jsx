@@ -55,6 +55,10 @@ export default function Home() {
                 <h5>8751 Mentor Ave, Mentor, OH 44060</h5>  
             </motion.div>
         </div>
+        <div className="aboutSection">
+            <h2>About Vitality</h2>
+            <hr className="aboutLine"/>
+        </div>
     </>
     );
 }

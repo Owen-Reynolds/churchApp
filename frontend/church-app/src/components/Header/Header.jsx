@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import crossImage from '../../assets/outline-cross-png-3.png';
 
@@ -10,7 +11,13 @@ export default function Header() {
     <>
     <header>
         <div className="logoHeader">
-            <Link to='/'><img src={crossImage} alt="" /></Link>
+            <Link to='/'>
+            <motion.img 
+            whileHover={{ scale: 1.1}}
+            whileTap={{ scale: 0.9 }}
+            src={crossImage} alt="" 
+            />
+            </Link>
         </div>
         <ul>
             <li><Link to='/AboutUs'>About Us</Link></li>
