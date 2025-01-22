@@ -1,12 +1,12 @@
-import express from "express";
+const http = require('http');
 
-const app = express();
-const PORT = 3000;
-
-app.get("/", (req, res) => {
-  res.send("Hello World from Express!");
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
 });
 
-app.listen(PORT, () => {
-    console.log(`Express server running at http://localhost:${PORT}`);
+server.listen(3000, ()=>{
+  console.log("Server is running on http://localhost:3000");
 });
+
