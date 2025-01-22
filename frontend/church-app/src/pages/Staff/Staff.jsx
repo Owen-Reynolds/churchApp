@@ -1,3 +1,4 @@
+import "./staff.css";
 
 export default function AboutUs() {
     return(
