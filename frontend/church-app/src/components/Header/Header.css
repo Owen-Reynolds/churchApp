@@ -9,7 +9,7 @@ header{
 header ul{
     display: flex;
     justify-content: center;
-    gap: 8vw;
+    gap: 6vw;
 }
 
 header ul li {
@@ -47,7 +47,7 @@ header ul li a:hover::after{
 }
 
 .logoHeader{
-    
+
 }
 
 .logoHeader img{
