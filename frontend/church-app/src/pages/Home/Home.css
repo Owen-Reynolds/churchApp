@@ -7,6 +7,7 @@
 
 .mainTitle{
     display: flex;
+    align-items: center;
 }
 
 .mainTitle h1{
