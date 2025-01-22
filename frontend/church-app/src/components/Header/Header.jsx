@@ -4,7 +4,7 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-import crossImage from '../../assets/outline-cross-png-3.png';
+import crossImage from '../../assets/vitalityLogo.jpg';
 
 export default function Header() {
     return(
@@ -22,6 +22,7 @@ export default function Header() {
         <ul>
             <li><Link to='/AboutUs'>About Us</Link></li>
             <li><Link to='/SundayMornings'>Sunday Mornings</Link></li>
+            <li><Link to='/Staff'>Staff</Link></li>
             <li><Link to='/TrailLife'>Trail Life</Link></li>
             <li><Link to='/Connect'>Connect</Link></li>
             <li><Link to='/Give'>Give</Link></li>
