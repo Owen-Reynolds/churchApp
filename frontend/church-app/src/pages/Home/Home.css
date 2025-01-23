@@ -3,7 +3,42 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 5%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
+
+/*Slideshow*/
+.slideshow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: slideshow 15s infinite;
+}
+
+@keyframes slideshow {
+    0% { background-image: 
+        url('../../assets/homePageAssets/SancImage1.jpeg'); 
+    }
+    33% { background-image: 
+        url('../../assets/homePageAssets/SancImage2.jpeg'); 
+    }
+    66% { background-image: 
+        url('../../assets/homePageAssets/SancImage3.jpeg'); 
+    }
+    100% { background-image: 
+        url('../../assets/homePageAssets/SancImage1.jpeg'); 
+    }
+}
+
+.slideshow{
+    background-size: cover;
+    background-position: center;
+}
+
 
 .mainTitle{
     display: flex;
@@ -12,12 +47,13 @@
 
 .mainTitle h1{
     font-size: 12vw;
-    color: #333;
+    color: white;
     margin: 0;
 }
 
 .mainButton{
     margin-top: 1%;
+    margin-bottom: 5%;
 }
 
 .mainButton-Button{

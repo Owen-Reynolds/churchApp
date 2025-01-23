@@ -1,5 +1,7 @@
 import './Home.css';
 
+import slideImage1 from '../../assets/homePageAssets/SancImage1.jpeg';
+
 import churchImage from '../../assets/vitalityChurchImage.jpg';
 
 import {motion} from 'framer-motion';
@@ -9,6 +11,7 @@ export default function Home() {
     <>
     
         <div className="mainSection">
+            <div className="slideshow"></div>
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1}}
