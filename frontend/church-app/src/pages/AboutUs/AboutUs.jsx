@@ -1,10 +1,16 @@
 import "./aboutus.css"
+import waterfall from '../../assets/waterfall.mp4';
 
+const Main =()=>{
+    return (
+        <div className = 'main'>
+            <video src ={waterfall} autoPlay loop muted/>
+        </div>
+    )
+}
 export default function AboutUs() {
     return(
     <>
-    <video autoplay muted loop id="myVideo">
-  <source src="waterfall.mp4" type="video/mp4"></source></video>
     <div className="mainContent">
         <h1>Mission Statement</h1>
         <h2>Love God/Love People</h2>
