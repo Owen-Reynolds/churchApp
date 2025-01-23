@@ -1,0 +1,30 @@
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 60%;
+    border-style: ridge;
+}
+.mainContent p{
+    text-align: center;
+    font-size: 1.5vw;
+}
+.mainContent h1{
+    font-size: 3vw;
+    text-decoration-line: underline;
+}
+.mainContent h2{
+    font-size: 2.2vw;
+    color: #1929c7;
+}
