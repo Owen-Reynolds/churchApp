@@ -1,7 +1,6 @@
 import './Home.css';
 
 import churchImage from '../../assets/vitalityChurchImage.jpg';
-import video from '../../assets/vitalityChurchVideo.mp4';
 
 import {motion} from 'framer-motion';
 

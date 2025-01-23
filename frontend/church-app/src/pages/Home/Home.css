@@ -29,7 +29,7 @@
 }
 
 .mainButton-Button:hover{
-    background-color: #333;
+    background-color: #1929C7;
     color: white;
 }
 
@@ -78,7 +78,7 @@
 
 .meetingTime-button:hover{
     background-color: white;
-    color: #333;
+    color: #1929C7;
 }
 
 .meetingPlace img{

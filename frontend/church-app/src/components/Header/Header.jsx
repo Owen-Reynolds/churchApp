@@ -28,7 +28,7 @@ export default function Header() {
             <li><Link to='/Give'>Give</Link></li>
         </ul>
     </header>
-    <hr />
+    <hr className="hr" />
     </>
     );
 }

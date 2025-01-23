@@ -35,7 +35,7 @@ header ul li a::after{
     display: block;
     height: 2px;
     left: 50%;
-    background: black;
+    background: #1929C7;
     position: absolute;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
