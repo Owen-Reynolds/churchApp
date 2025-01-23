@@ -1,18 +1,20 @@
 import './Home.css';
 
 import churchImage from '../../assets/vitalityChurchImage.jpg';
+import video from '../../assets/vitalityChurchVideo.mp4';
 
 import {motion} from 'framer-motion';
 
 export default function Home() {
     return(
     <>
+    
         <div className="mainSection">
             <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1}}
             transition={{duration: 2}}
-             className="mainTitle">
+            className="mainTitle">
                 <h1>Vitality<br />Church</h1>
             </motion.div>
             <div className="mainButton">

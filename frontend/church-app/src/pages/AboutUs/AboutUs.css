@@ -1,0 +1,28 @@
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 60%;
+    border-style: ridge;
+}
+.mainContent p{
+    text-align: center;
+    font-size: 1.5vw;
+}
+.mainContent h1{
+    font-size: 3vw;
+    text-decoration-line: underline;
+}
+.mainContent h2{
+    font-size: 2.2vw;
+    color: #1929c7;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
