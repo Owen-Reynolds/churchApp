@@ -1,10 +1,8 @@
 import './Home.css';
 
-import slideImage1 from '../../assets/homePageAssets/SancImage1.jpeg';
-
 import churchImage from '../../assets/vitalityChurchImage.jpg';
-
 import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
+import jesusSign from '../../assets/homePageAssets/jesusSign.jpg';
 
 import {motion} from 'framer-motion';
 
@@ -89,7 +87,20 @@ export default function Home() {
         </div>
         <div className="aboutSection">
             <h2>About Vitality</h2>
-            <hr className="aboutLine"/>
+            <div className="aboutSection-info">
+                <p>Not all of us have grown up with a true understanding of God. At a certain point in our lives,
+                questions about God start to surface. Each day, the question about God gets louder within us, and we 
+                want to discover the truth about why we are here. It is this truth that will set us free (John 8:32).
+                Vitality Church is a community of people coming together to know and serve God. We are dedicated to sharing 
+                the vital truth of God's love, as it is expressed in John 3:16. God loves you so deeply that He gave you 
+                Jesus Christ, not to condemn you, but to give you eternal life!
+                </p>
+            </div>
+            <div className="imageHolder">
+                <img src={jesusSign} alt="" />
+                <img src={jesusSign} alt="" />
+                <img src={jesusSign} alt="" />
+            </div>
         </div>
     </>
     );

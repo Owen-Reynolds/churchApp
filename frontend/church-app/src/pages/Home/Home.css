@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .mainSection{
     display: flex;
     flex-direction: column;
@@ -76,12 +80,13 @@
 }
 
 .infoSection{
-    background-color:#333333;
+    background-color:#666666;
     color: white;
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding-top: 5%;
+    margin-top: 5%;
 }
 
 .meetingTime{
@@ -109,9 +114,10 @@
 
 .meetingTime-button{
     margin-top: 10%;
-    background-color: #333;
+    background-color: white;
     border: white 2px solid;
-    color: white;
+    border-radius: 5px;
+    color: black;
     width: 15vw;
     height: 4vw;
     font-size: 1.5vw;
@@ -132,43 +138,56 @@
     font-size: 2vw;
     margin: 5%;
 }
+
 .sermonSection{
-    background-color:#1929C7;
+    background-color:lightcoral;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    
+    margin-top: 5%;
 }
+
+.sermon{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
 .sermonSection h2{
     color:white;
     font-size: 5vw;
     text-align: center;
 }
+
 .sermonSection h3{
     color:white;
     font-size: 2vw;
     text-align: center;
 }
 .sermonSection img{
-    padding-top: 10%;
+    padding-top: 5%;
     padding-left: 25%;
     align-items: left;
     display: flex;
     width: 20vw;
     height: 5vw;
 }
+
 .sermonSection iframe{
     display: flex;  
     width: 45vw;
     height: 25vw;
     padding-bottom: 10%;
+    margin-top: 5%;
 }
+
 .sermonSection-button{
     margin-top: 10%;
-    background-color: #1929C7;
+    background-color: white;
     border: white 2px solid;
-    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: lightcoral;
     width: 15vw;
     height: 4vw;
     font-size: 2vw;
@@ -178,4 +197,39 @@
 .sermonSection-button:hover{
     background-color: #ffffff;
     color: #1929C7;
+}
+
+.aboutSection{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #8eacff;
+    margin-top: 5%;
+}
+
+.aboutSection h2{
+    font-size: 5vw;
+    color: white;
+    margin: 0;
+    margin-top: 3%;
+}
+
+.aboutSection-info{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 2vw;
+    color: white;
+}
+
+.imageHolder{
+    display: flex;
+    justify-content: space-ar;
+
+}
+
+.imageHolder img{
+    width: 20%;
 }
