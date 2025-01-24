@@ -1,16 +1,12 @@
 import "./aboutus.css"
 import waterfall from '../../assets/waterfall.mp4';
 
-const Main =()=>{
-    return (
-        <div className = 'main'>
-            <video src ={waterfall} autoPlay loop muted/>
-        </div>
-    )
-}
 export default function AboutUs() {
     return(
     <>
+    <div className="parentContainer">
+     <div className = 'main'>
+            <video src ={waterfall} autoPlay loop muted/>
     <div className="mainContent">
         <h1>Mission Statement</h1>
         <h2>Love God/Love People</h2>
@@ -104,6 +100,8 @@ export default function AboutUs() {
         <p>Jesus Christ will physically and visibly return to earth for the second time to establish His Kingdom. This will occur at a date undisclosed by the Scriptures 
             (Matthew 24:30,  26:63-64; Acts 1:9-11; 1 Thessalonians 4:15-17; 2 Thessalonians 1:7-8; Revelation 1:7).</p>
             </div>
+        </div>
+    </div>
     </>
     );
 }

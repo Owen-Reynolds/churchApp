@@ -4,6 +4,8 @@ import slideImage1 from '../../assets/homePageAssets/SancImage1.jpeg';
 
 import churchImage from '../../assets/vitalityChurchImage.jpg';
 
+import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
+
 import {motion} from 'framer-motion';
 
 export default function Home() {
@@ -57,6 +59,32 @@ export default function Home() {
             className="meetingPlace">
                 <img src={churchImage} alt="" />
                 <h5>8751 Mentor Ave, Mentor, OH 44060</h5>  
+            </motion.div>
+        </div>
+        <div className="sermonSection">
+            <motion.div
+            initial={{ x: '500px'}}
+            whileInView={{ x: 0}}
+            transition={{duration: 1.5}}
+            className="sermon">
+            <h2>Sunday Sermons</h2>
+            <h3>Visit our YouTube channel to watch all of our sermons!</h3>
+            <motion.button 
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.9}}
+                    transition={{duration: 1.5}}
+                    className="sermonSection-button">Visit Site
+            </motion.button>
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
+            transition={{duration: 1.5}}
+            className="sermonVideo">
+            <img src={YoutubeImage} alt="" />
+            <iframe src="https://www.youtube.com/embed/bYagof6_xOE?si=ISytgpvsEIAYOvTI" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </motion.div>
         </div>
         <div className="aboutSection">
