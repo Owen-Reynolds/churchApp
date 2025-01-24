@@ -49,6 +49,9 @@
     font-size: 12vw;
     color: white;
     margin: 0;
+    font-family:"Bona Nova SC";
+    margin-top: 5%;
+    line-height: 1;
 }
 
 .mainButton{
