@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5%;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -63,22 +62,27 @@
     width: 15vw;
     height: 4vw;
     font-size: 2vw;
+    font-family: "Bona Nova SC";
     background-color: white;
     cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 .mainButton-Button:hover{
     background-color: #1929C7;
+    border: 2px solid white;
     color: white;
 }
 
 .infoSection{
-    background-color: #333;
+    background-color:#333333;
     color: white;
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding-top: 5%;
+    margin-top: 5%;
 }
 
 .meetingTime{

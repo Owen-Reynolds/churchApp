@@ -20,14 +20,14 @@ export default function Home() {
                 <h1>Vitality<br />Church</h1>
             </motion.div>
             <div className="mainButton">
-                <a href="/AboutUs">
+                <a onClick="scrollMainButton()">
                     <motion.button 
                     initial={{y: '200px'}}
                     animate={{y: 0}}
                     transition={{duration: 1.5}}
                     whileHover={{ scale: 1.1}}
                     whileTap={{ scale: 0.9 }}
-                    className="mainButton-Button">Learn More
+                    className="mainButton-Button">New Here?
                     </motion.button>
                 </a>
             </div>
