@@ -4,6 +4,7 @@ import churchImage from '../../assets/vitalityChurchImage.jpg';
 import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
 import cross from '../../assets/homePageAssets/cross.png';
 import heartrate from '../../assets/homePageAssets/heartrate.png';
+import jesusSign from '../../assets/homePageAssets/jesusSign.jpg';
 
 import {motion} from 'framer-motion';
 
@@ -96,18 +97,17 @@ export default function Home() {
             initial={{ opacity: 0}}
             whileInView={{ opacity: 1}}
             transition={{duration: 1.5}}>
-            <h2>About Vitality</h2>
                 <p>Vitality Church is a Bible teaching church. We are people coming together in community (church)
                     to know and serve God. We are focused to care and to speak the Truth of God’s love as His love is 
                     professed in John 3:16. That, God so loves you so deeply that He gave you Jesus Christ, not to condemn you but to 
                     give you eternal life! Love God - Love People
                 </p>
-            </motion.div>
-            <div className="imageHolder">
-                <img src={jesusSign} alt="" />
-                <img src={jesusSign} alt="" />
-                <img src={jesusSign} alt="" />
+                <div className="imageHolder">
+                <img src={cross} alt="" />
+                <img src={heartrate} alt="" />
+                <img src={cross} alt="" />
             </div>
+            </motion.div>
          </div>
          
         <div className="trailSection">
