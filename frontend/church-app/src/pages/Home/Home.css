@@ -207,6 +207,7 @@ body{
     width: 100%;
     background-color: #8eacff;
     margin-top: 5%;
+    padding-bottom: 5%;
 }
 
 .aboutSection h2{
@@ -227,12 +228,9 @@ body{
 .imageHolder{
     display: flex;
     justify-content: space-ar;
-    justify-content: center;
 
 }
 
 .imageHolder img{
-    display: flex;
-    justify-content: center;
     width: 20%;
 }
