@@ -105,11 +105,12 @@ export default function Home() {
                 </p>
             </motion.div>
             <div className="imageHolder">
-                <img src={cross} alt="" />
-                <img src={heartrate} alt="" />
-                <img src={cross} alt="" />
+                <img src={jesusSign} alt="" />
+                <img src={jesusSign} alt="" />
+                <img src={jesusSign} alt="" />
             </div>
-        </div>
+         </div>
+
         <div className="trailSection">
             <h2>Trail Life and AHG</h2>
             <div className="trailInfo">
