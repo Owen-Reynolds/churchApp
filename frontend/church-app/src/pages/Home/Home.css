@@ -254,3 +254,50 @@ body{
     background-color: #ffffff;
     color: #1929C7;
 }
+
+
+.trailSection{
+    background-color:rgb(109, 151, 73);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 5%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+.trailSection h2{
+    font-size: 4vw;
+    color:white;
+    padding-left: 5%;
+    text-align: center;
+}
+.trailSection p{
+    font-size:2vw;
+    color: white;
+    padding-left: 5%;
+    text-align: center;
+}
+.trailSection img{
+    align-items: center;
+    display: flex;
+    width: 40vw;
+    height: 30vw;
+    padding-right: 5%;
+}
+.trailSection button{
+    background-color: rgb(109, 151, 73);
+    border: white 2px solid;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 15vw;
+    height: 4vw;
+    font-size: 2vw;
+    cursor: pointer;
+    align-items: center;
+}
+
+.trailSection button:hover{
+    background-color: #ffffff;
+    color: rgb(109, 151, 73);
+}
