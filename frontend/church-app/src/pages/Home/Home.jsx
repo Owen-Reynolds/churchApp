@@ -1,4 +1,5 @@
 import './Home.css';
+import './Mobile.css';
 
 import churchImage from '../../assets/vitalityChurchImage.jpg';
 import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
@@ -103,10 +104,13 @@ export default function Home() {
                     give you eternal life! Love God - Love People
                 </p>
                 <div className="imageHolder">
-                <img src={cross} alt="" />
-                <img src={heartrate} alt="" />
-                <img src={cross} alt="" />
-            </div>
+                    <img src={cross} alt="" />
+                    <motion.button
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.9}}
+                    transition={{duration: 1.5}}>Learn More</motion.button>
+                    <img src={cross} alt="" />
+                </div>
             </motion.div>
          </div>
          
