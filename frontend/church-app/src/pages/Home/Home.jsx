@@ -97,7 +97,6 @@ export default function Home() {
             whileInView={{ opacity: 1}}
             transition={{duration: 1.5}}>
             <h2>About Vitality</h2>
-            <div className="aboutSection-info">
                 <p>Vitality Church is a Bible teaching church. We are people coming together in community (church)
                     to know and serve God. We are focused to care and to speak the Truth of God’s love as His love is 
                     professed in John 3:16. That, God so loves you so deeply that He gave you Jesus Christ, not to condemn you but to 
