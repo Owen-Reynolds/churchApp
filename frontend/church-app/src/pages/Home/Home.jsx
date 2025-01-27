@@ -110,20 +110,16 @@ export default function Home() {
             </div>
          </div>
          
-
         <div className="trailSection">
             <h2>Trail Life and AHG</h2>
             <div className="trailInfo">
-                
+
             </div>
             <div className="pictureStack">
                 <img src="" alt="" />
                 <img src="" alt="" />
                 <img src="" alt="" />
             </div>
-        </div>
-        <div className>
-
         </div>
     </>
     );
