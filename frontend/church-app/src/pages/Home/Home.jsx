@@ -110,6 +110,7 @@ export default function Home() {
                 <img src={jesusSign} alt="" />
             </div>
          </div>
+         
 
         <div className="trailSection">
             <h2>Trail Life and AHG</h2>
