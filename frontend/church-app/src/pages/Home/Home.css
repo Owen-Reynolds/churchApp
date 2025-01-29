@@ -156,6 +156,7 @@ body{
     color:white;
     font-size: 5vw;
     text-align: center;
+    font-family: "Bona Nova SC";
 }
 
 .sermonSection h3{
@@ -213,6 +214,7 @@ body{
 .aboutSection h2{
     font-size: 5vw;
     color: white;
+    font-family: "Bona Nova SC";
     margin: 0;
     margin-top: 3%;
 }
@@ -265,12 +267,15 @@ body{
     margin-top: 5%;
     padding-bottom: 5%;
 }
+
 .trailSection h2{
     font-size: 4vw;
     color:white;
     padding-left: 5%;
     text-align: center;
+    font-family: "Bona Nova SC";
 }
+
 .trailSection p{
     font-size:2vw;
     color: white;
