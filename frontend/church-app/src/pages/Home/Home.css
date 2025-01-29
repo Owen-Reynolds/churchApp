@@ -66,7 +66,6 @@ body{
     width: 15vw;
     height: 4vw;
     font-size: 2vw;
-    font-family: "Bona Nova SC";
     background-color: white;
     cursor: pointer;
     border: 2px solid white;
@@ -87,9 +86,6 @@ body{
     text-align: center;
     padding-top: 5%;
     margin-top: 5%;
-}
-
-.meetingTime{
 }
 
 .meetingTime h3{
@@ -118,7 +114,7 @@ body{
     background-color: white;
     border: white 2px solid;
     border-radius: 5px;
-    color: black;
+    color: #666666;
     width: 15vw;
     height: 4vw;
     font-size: 1.5vw;
@@ -126,8 +122,9 @@ body{
 }
 
 .meetingTime-button:hover{
-    background-color: white;
-    color: #1929C7;
+    background-color: #666666;
+    border: 2px solid white;
+    color: white;
 }
 
 .meetingPlace img{
@@ -197,8 +194,9 @@ body{
 }
 
 .sermonSection-button:hover{
-    background-color: #ffffff;
-    color: #1929C7;
+    background-color: lightcoral;
+    border: 2px solid white;
+    color: white;
 }
 
 .aboutSection{
@@ -251,8 +249,9 @@ body{
 }
 
 .aboutSection-info button:hover{
-    background-color: #ffffff;
-    color: #1929C7;
+    background-color: #8eacff;
+    border: 2px solid white;
+    color: white;
 }
 
 
@@ -288,10 +287,10 @@ body{
 
 
 .trailSection button{
-    background-color: rgb(109, 151, 73);
+    background-color: white;
     border: white 2px solid;
     border-radius: 5px;
-    color: #ffffff;
+    color: #6D9749;
     width: 15vw;
     height: 4vw;
     font-size: 2vw;
@@ -300,6 +299,7 @@ body{
 }
 
 .trailSection button:hover{
-    background-color: #ffffff;
-    color: rgb(109, 151, 73);
+    background-color: #6D9749;
+    border: 2px solid white;
+    color: white;
 }
