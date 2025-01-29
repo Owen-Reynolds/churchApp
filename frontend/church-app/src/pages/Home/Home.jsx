@@ -1,11 +1,13 @@
 import './Home.css';
-import './Mobile.css';
 
 import churchImage from '../../assets/vitalityChurchImage.jpg';
 import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
 import cross from '../../assets/homePageAssets/cross.png';
 import heartrate from '../../assets/homePageAssets/heartrate.png';
 import jesusSign from '../../assets/homePageAssets/jesusSign.jpg';
+import woods from '../../assets/homePageAssets/woods.jpg';
+import trailLife from '../../assets/homePageAssets/trailLife.png';
+import vitalityLogo from '../../assets/homePageAssets/vitalityLogo.png';
 
 import {motion} from 'framer-motion';
 
@@ -104,26 +106,38 @@ export default function Home() {
                     give you eternal life! Love God - Love People
                 </p>
                 <div className="imageHolder">
-                    <img src={cross} alt="" />
-                    <motion.button
+                <img src={cross} alt="" />
+                <motion.button
                     whileHover={{scale: 1.1}}
                     whileTap={{scale: 0.9}}
                     transition={{duration: 1.5}}>Learn More</motion.button>
-                    <img src={cross} alt="" />
-                </div>
+                <img src={cross} alt="" />
+            </div>
             </motion.div>
          </div>
          
         <div className="trailSection">
-            <h2>Trail Life and AHG</h2>
             <div className="trailInfo">
-
+            <img src={vitalityLogo} alt = "" />
+           <h2> Trail Life</h2>
+           <img src={trailLife} alt = "" />
+            <p>Trail Life USA is a Christian Outdoor Adventure, Character, and Leadership Program for boys and young men. Operating from Troops that are chartered through churches in 48 states, the K-12 program centers on outdoor 
+                experiences that build a young man’s skills and allow him to grow on a personal level and as a role model and leader for his peers.  Living the Trail Life is a journey established on timeless values derived from the Bible.
+            </p>
+            <motion.button
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.9}}
+                    transition={{duration: 1.5}}>Learn More
+            </motion.button> 
             </div>
+            <img src={woods} alt="" />
+            </div>
+
+
             <div className="pictureStack">
                 <img src="" alt="" />
                 <img src="" alt="" />
                 <img src="" alt="" />
-            </div>
         </div>
     </>
     );
