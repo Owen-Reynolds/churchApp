@@ -22,4 +22,4 @@ special equipment needed”)
 No special equipment needed
 J. Body of the Abstract (250 words or fewer)
 
-The purpose of this project is to create a well designed, creative, and dynamic webpage for Vitality Church of Mentor, Ohio. Within this project we will use React JS alongside Node JS to create a professional full stack application. This will enhance our frontend design skills and knowledge, as well as introduce us to the knowledge needed to create a well structured backend. We will also work with our client, Vitality Church, step-by-step to ensure they are compleley satisfied with our work.
+The purpose of this project is to create a well designed, creative, and dynamic webpage for Vitality Church of Mentor, Ohio. Within this project we will introduce new technologies such as React JS and Node JS to create a professional full stack application. We will also utilize prior technologies like HTML, CSS, and JavaScript to enhance our frontend design skills and knowledge. Finally, we will also work with our client, Vitality Church, step-by-step to ensure they are compleley satisfied with our work.
