@@ -33,13 +33,15 @@ video {
 }
 .mainContent p{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
 }
 .mainContent h1{
-    font-size: 3vw;
-    text-decoration-line: underline;
+    font-size: 4vw;
+    font-family:"Bona Nova SC";
 }
 .mainContent h2{
-    font-size: 2.2vw;
+    font-size: 2.5vw;
     color: #1929c7;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: 0.07em;
 }
