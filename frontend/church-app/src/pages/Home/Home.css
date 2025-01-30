@@ -263,15 +263,16 @@ body{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 3%;
     margin-top: 5%;
     padding-bottom: 5%;
+    padding-right: 5%;
 }
+
 
 .trailSection h2{
     font-size: 4vw;
     color:white;
-    padding-left: 5%;
     text-align: center;
     font-family: "Bona Nova SC";
 }
@@ -281,15 +282,19 @@ body{
     color: white;
     padding-left: 5%;
     text-align: center;
-}
-.trailSection img{
-    align-items: center;
-    display: flex;
-    width: 40vw;
-    height: 30vw;
-    padding-right: 5%;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .05em;
 }
 
+.trailSection img{
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    height: 35vw;
+    margin-top: 10%;
+    margin-right: 5%;
+
+}
 
 .trailSection button{
     background-color: white;

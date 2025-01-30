@@ -7,7 +7,9 @@ import heartrate from '../../assets/homePageAssets/heartrate.png';
 import jesusSign from '../../assets/homePageAssets/jesusSign.jpg';
 import woods from '../../assets/homePageAssets/woods.jpg';
 import trailLife from '../../assets/homePageAssets/trailLife.png';
-import vitalityLogo from '../../assets/homePageAssets/vitalityLogo.png';
+import vitalityLogo from '../../assets/homePageAssets/vitalitylogowhite.png';
+import tL1 from '../../assets/homePageAssets/trailLife1.jpg';
+
 
 import {motion} from 'framer-motion';
 
@@ -118,9 +120,11 @@ export default function Home() {
          
         <div className="trailSection">
             <div className="trailInfo">
-            <img src={vitalityLogo} alt = "" />
-           <h2> Trail Life</h2>
-           <img src={trailLife} alt = "" />
+            <motion.div 
+            initial={{ x: '-500px'}}
+            whileInView={{ x: 0}}
+            transition={{duration: 1.5}}>
+            <h2>Trail Life</h2>
             <p>Trail Life USA is a Christian Outdoor Adventure, Character, and Leadership Program for boys and young men. Operating from Troops that are chartered through churches in 48 states, the K-12 program centers on outdoor 
                 experiences that build a young man’s skills and allow him to grow on a personal level and as a role model and leader for his peers.  Living the Trail Life is a journey established on timeless values derived from the Bible.
             </p>
@@ -129,15 +133,14 @@ export default function Home() {
                     whileTap={{scale: 0.9}}
                     transition={{duration: 1.5}}>Learn More
             </motion.button> 
+            </motion.div>
             </div>
-            <img src={woods} alt="" />
-            </div>
-
-
-            <div className="pictureStack">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+            <motion.div 
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
+            transition={{duration: 1.5}}>
+            <img src={tL1} alt="" />
+             </motion.div>
         </div>
     </>
     );

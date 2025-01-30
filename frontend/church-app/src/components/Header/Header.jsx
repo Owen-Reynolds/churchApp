@@ -4,7 +4,7 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-import crossImage from '../../assets/vitalityLogo.jpg';
+import crossImage from '../../assets/vitalitylogoblue.png';
 
 export default function Header() {
     return(

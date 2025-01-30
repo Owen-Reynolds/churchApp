@@ -9,6 +9,8 @@ header{
     top: 0;
     background-color: white;
     z-index: 100;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .065em;
 }
 
 header ul{
