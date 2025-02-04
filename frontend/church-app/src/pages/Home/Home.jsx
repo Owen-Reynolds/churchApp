@@ -9,6 +9,7 @@ import woods from '../../assets/homePageAssets/woods.jpg';
 import trailLife from '../../assets/homePageAssets/trailLife.png';
 import vitalityLogo from '../../assets/homePageAssets/vitalitylogowhite.png';
 import tL1 from '../../assets/homePageAssets/trailLife1.jpg';
+import churchImage2 from '../../assets/homePageAssets/outside2.jpg';
 
 
 import {motion} from 'framer-motion';
@@ -62,8 +63,8 @@ export default function Home() {
             whileInView={{ opacity: 1}}
             transition={{duration: 1.5}}
             className="meetingPlace">
-                <img src={churchImage} alt="" />
-                <h5>8751 Mentor Ave, Mentor, OH 44060</h5>  
+                <img src={churchImage2} alt="" />
+                <h5>5783 Heisley Road, Mentor, OH 44060</h5>  
             </motion.div>
         </div>
         <div className="sermonSection">

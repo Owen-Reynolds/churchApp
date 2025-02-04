@@ -8,7 +8,7 @@ export default function AboutUs() {
      <div className = 'main'>
             <video src ={waterfall} autoPlay loop muted/>
     <div className="mainContent">
-        <h1>✞ Mission Statemen ✞</h1>
+        <h1>✞ Mission Statement ✞</h1>
         <h2>Love God/Love People</h2>
         <h1>✞ Our Mission ✞</h1>
         <h2>Believe Love</h2>
