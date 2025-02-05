@@ -8,6 +8,7 @@ import trailLife from '../../assets/homePageAssets/trailLife.png';
 import vitalityLogo from '../../assets/homePageAssets/vitalitylogowhite.png';
 import tL1 from '../../assets/homePageAssets/trailLife1.jpg';
 import churchImage2 from '../../assets/homePageAssets/outside2.jpg';
+import AHG from '../../assets/homePageAssets/AHG.jpg';
 
 
 import {motion} from 'framer-motion';
@@ -141,6 +142,32 @@ export default function Home() {
             <img src={tL1} alt="" />
              </motion.div>
         </div>
+        <div className="ahgSection">
+            <motion.div
+            initial={{ x: '500px'}}
+            whileInView={{ x: 0}}
+            transition={{duration: 1.5}}
+            className="ahgInfo">
+            <h2>American Heritage Girls</h2>
+            <p>“Building women of integrity through service to God, family, community and country,” American Heritage Girls is the premier national 
+                character development organization for young women that embraces Christian values and encourages family involvement. All biological girls of any 
+                color, creed, race, national origin and socioeconomic status who agree to live according to the standards of the 
+                AHG Oath and the AHG Creed are invited to be members of American Heritage Girls.</p>
+            <motion.button 
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.9}}
+                    transition={{duration: 1.5}}
+                    className="ahg-button">Learn More
+            </motion.button>
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
+            transition={{duration: 1.5}}
+            className="ahgImage">
+            <img src={AHG} alt="" />
+            </motion.div>
+            </div>
     </>
     );
 }

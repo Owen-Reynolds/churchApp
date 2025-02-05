@@ -67,8 +67,9 @@ body{
     height: 4vw;
     font-size: 2vw;
     background-color: white;
+    color: #1929C7;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 5px;
 }
 
@@ -292,7 +293,7 @@ body{
     width: 30vw;
     height: 35vw;
     margin-top: 10%;
-    margin-right: 5%;
+    padding-right: 5%;
 
 }
 
@@ -310,6 +311,65 @@ body{
 
 .trailSection button:hover{
     background-color: #6D9749;
+    border: 2px solid white;
+    color: white;
+}
+
+.ahgSection{
+    background-color:rgb(158, 128, 240);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    padding-right: 5%;
+}
+
+
+.ahgSection h2{
+    color:white;
+    font-size: 5vw;
+    text-align: center;
+    font-family:"Bona Nova SC" ;
+    margin-left: 5%;
+
+}
+
+.ahgSection p{
+    color:white;
+    font-size: 2vw;
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .05em;
+}
+
+.ahgImage{
+    display: flex;  
+    width: 30vw;
+    height: 35vw;
+    padding-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ahg-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: white;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: rgb(158, 128, 240);
+    width: 15vw;
+    height: 4vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.ahg-button:hover{
+    background-color: rgb(158, 128, 240);
     border: 2px solid white;
     color: white;
 }
