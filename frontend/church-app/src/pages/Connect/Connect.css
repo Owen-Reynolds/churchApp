@@ -1,12 +1,35 @@
 .connectContent{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #e0dddd;
+    position: relative;
+    z-index: 1;
+}
+
+.connectContent::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/connectAssets/heartrate.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 0.2; /* Adjust opacity as needed */
+    z-index: -1; /* Ensure the background image is behind the content */
+}
+
+.connectText{
+    
 }
 
 .connectTitle h1{
     font-family: "Bona Nova SC";
-    font-size: 4vw;
+    font-size: 5.5vw;
+    margin:0;
 }
 
 .connectTitle h1 b{

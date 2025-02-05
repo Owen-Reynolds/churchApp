@@ -3,8 +3,6 @@ import './Home.css';
 import churchImage from '../../assets/vitalityChurchImage.jpg';
 import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
 import cross from '../../assets/homePageAssets/cross.png';
-import heartrate from '../../assets/homePageAssets/heartrate.png';
-import jesusSign from '../../assets/homePageAssets/jesusSign.jpg';
 import woods from '../../assets/homePageAssets/woods.jpg';
 import trailLife from '../../assets/homePageAssets/trailLife.png';
 import vitalityLogo from '../../assets/homePageAssets/vitalitylogowhite.png';
