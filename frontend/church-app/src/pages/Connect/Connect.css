@@ -28,12 +28,24 @@
 
 .connectTitle h1{
     font-family: "Bona Nova SC";
-    font-size: 5.5vw;
+    font-size: 6.5vw;
     margin:0;
+    
+}
+
+.connectText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
 }
 
 .connectTitle h1 b{
     color: #1929C7;
+}
+
+.connectLogo img{
+    width: 10vw;
 }
 
 .connectForm{
@@ -66,7 +78,7 @@ form label{
 
 .nameBox input{
     width: 50%;
-    height: 7vh;
+    height: 8vh;
     box-sizing: border-box;
 }
 
@@ -78,7 +90,7 @@ form label{
 
 .messageBox textarea{
     width: 100%;
-    height: 8vh;
+    height: 15vh;
     resize: none;
     box-sizing: border-box;
 }

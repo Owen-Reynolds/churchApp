@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+app.use(express.static(path.join(__dirname, '../frontend/church-app/src')));
+
+
 app.get('/', (req, res) => {
   res.status(200);
   res.send("Hello World 2");

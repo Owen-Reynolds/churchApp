@@ -2,6 +2,8 @@ import './Connect.css';
 
 import { motion } from 'framer-motion';
 
+import logo from '../../assets/vitalitylogoblue.png';
+
 export default function Connect() {
     return(
     <>
@@ -9,6 +11,9 @@ export default function Connect() {
             <div className="connectText">
                 <div className="connectTitle">
                     <h1>Connect With <b>US.</b></h1>
+                </div>  
+                <div className="connectLogo">
+                    <img src={logo} alt="" />
                 </div>
             </div>
             <div className="connectForm">
