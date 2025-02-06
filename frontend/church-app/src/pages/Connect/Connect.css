@@ -78,13 +78,13 @@ form label{
 
 .nameBox input{
     width: 50%;
-    height: 8vh;
+    height: 5vh;
     box-sizing: border-box;
 }
 
 .emailBox input{
     width: 100%;
-    height: 8vh;
+    height: 5vh;
     box-sizing: border-box;
 }
 
