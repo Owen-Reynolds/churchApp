@@ -9,13 +9,13 @@ let users = [];
 
 //Post request to create a new user
 app.post("/api/users", (req, res) => {
-  const {firstName, lastName, email} = req.body;
+  const {firstName, lastName, email, textarea} = req.body;
 
   if(!firstName || !lastName || !email) {
     return res.status(400).json({message: "Missing info is required"});
   }
 
-  const newUser = {id : users.length + 1, name: firstName + " " + lastName, email: email};
+  const newUser = {id : users.length + 1, name: firstName + " " + lastName, email: email, textarea: textarea};
   users.push(newUser);
 
     res.status(201).json(newUser);
