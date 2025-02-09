@@ -11,12 +11,13 @@ export default function Connect() {
     const [lastname, setLastName] = useState("");
     const [email, setEmail] = useState(""); 
     const [textarea, setTextArea] = useState("");
+    const [checkBox, setCheckBox] = useState(false);
     const [message, setMessage] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!firstname || !lastname || !email) {
-            setMessage("All fields are required");
+            setMessage("Missing fields are required");
             return;
         }
 
@@ -25,12 +26,14 @@ export default function Connect() {
                 firstName: firstname,
                 lastName: lastname,
                 email: email,
-                textarea: textarea
+                textarea: textarea,
+                checkBox: checkBox
             });
             setFirstName("");
             setLastName("");
             setEmail("");
             setTextArea("");
+            setCheckBox(false);
             setMessage("Data submitted successfully");
         } catch (error) {
             setMessage("Error submitting data");
@@ -88,7 +91,10 @@ export default function Connect() {
                             ></textarea>
                         </div>
                         <div className="checkBox">
-                            <input type="checkbox" />
+                            <input type="checkbox" 
+                            id="checkBox" 
+                            checked={checkBox} 
+                            onChange={(e) => setCheckBox(e.target.checked)}/>
                             <label htmlFor="">I would like to enroll in the Vitality Church Email List.</label>
                         </div>
                         <motion.button
