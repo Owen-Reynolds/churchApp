@@ -1,0 +1,75 @@
+.titleSection{
+    display: flex;
+    align-items: center;
+}
+
+.titleSection img{
+    width: 80%;
+    height: 50vh;
+}
+
+.titleSectionContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vh;
+}
+
+.titleSection h1{
+    font-family: "Bona Nova SC", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+.cardSection{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1%;
+    box-shadow: 0 4px 8px grey, /* Horizontal and vertical offset, blur radius, and color */
+                0 6px 20px grey; /* Additional shadow for a more pronounced effect */
+    transition: all 0.3s ease;
+}
+
+.card img{
+    width: 20vw;
+    height: 30vh;
+}
+
+.card h2{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.toggleBox{
+    margin: 0;
+    padding: 0;
+}
+
+.toggleBox p {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.cardContent {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cardContent.show {
+    max-height: 500px; /* Adjust based on content */
+    opacity: 1;
+}
