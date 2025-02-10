@@ -1,9 +1,17 @@
 import "./staff.css";
+import heartrate from '../../assets/heartRateVid.mp4';
+
 
 export default function AboutUs() {
     return(
     <>
-        <h1>Staff Page</h1>
+    <body>
+    <div className="header">
+         <video src ={heartrate} autoPlay loop muted/>
+        <h1>Meet the Team.</h1>
+    </div>
+    </body>
     </>
     );
+    
 }
