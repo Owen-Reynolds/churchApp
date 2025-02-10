@@ -1,28 +1,67 @@
 .titleSection{
     display: flex;
-    align-items: center;
-}
-
-.titleSection img{
-    width: 80%;
-    height: 50vh;
-}
-
-.titleSectionContent{
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 20vh;
+    align-items: center;
+    background-color: #001122;
+    color: white;
+    font-family: "Bona Nova SC", sans-serif;
+    padding-bottom: 5%;
 }
 
 .titleSection h1{
-    font-family: "Bona Nova SC", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     letter-spacing: 2px;
-    margin-bottom: 0;
+    font-size: 10vw;
+    margin: 0;
+    padding-top: 5%;
 }
+
+.downArrow{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.welcomeContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/sundayMorningAssets/stacked-peaks-haikei.svg");
+    padding-bottom: 8%;
+    padding-top: 1%;
+}
+
+.welcomeSection img{
+    width: 5vw;
+}
+
+.welcomeContent h2{
+    font-family: "Bona Nova SC", sans-serif;
+    font-size: 5vw;
+    margin: 0;
+    color: white;
+}
+
+.welcomeWords{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    color: white;
+}
+
+.welcomeWords h2{
+    font-size: 5vw;
+}
+
 .cardSection{
     display: flex;
     justify-content: space-around;
+    background-color: #1929C7;
+    padding-bottom: 5%;
 }
 
 .card{
@@ -37,6 +76,7 @@
     box-shadow: 0 4px 8px grey, /* Horizontal and vertical offset, blur radius, and color */
                 0 6px 20px grey; /* Additional shadow for a more pronounced effect */
     transition: all 0.3s ease;
+    background-color: white;
 }
 
 .card img{
@@ -73,3 +113,4 @@
     max-height: 500px; /* Adjust based on content */
     opacity: 1;
 }
+
