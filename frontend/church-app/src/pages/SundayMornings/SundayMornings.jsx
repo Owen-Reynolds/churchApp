@@ -8,6 +8,7 @@ import biblepicture from '../../assets/sundayMorningAssets/biblepicture.jpg';
 import learnPhoto from '../../assets/sundayMorningAssets/learnPhoto.jpg';
 import coffeePhoto from '../../assets/sundayMorningAssets/coffeePhoto.jpg';
 import clockPhoto from '../../assets/sundayMorningAssets/clockPhoto.jpg';
+import video from '../../assets/vitalityChurchVideo.mp4';
 
 export default function SundayMornings() {
     const [expandedCard, setExpandedCard] = useState(null);
@@ -19,6 +20,7 @@ export default function SundayMornings() {
                     <div>We Gladly</div>
                     <div>Welcome You</div>
                 </h1>
+                <p>Service at 10:00am, Every Sunday</p>
                 <p>Learn more below</p>
                 <i className="downArrow"></i>
             </div>
@@ -92,6 +94,19 @@ export default function SundayMornings() {
                     isExpanded={expandedCard === 4}
                     onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
                 />
+            </div>
+            <div className="familySection">
+                <div className="familyContent">
+                    <h2>We Are More Then Just A Church...</h2>
+                    <h3>We are a Family</h3>
+                    <img src="" alt="" />
+                </div>
+                <div className="familyMedia">
+                    <video width="320" height="540" autoPlay muted loop>
+                        <source  src={video} type="video/mp4"/>
+                        Your browser does not support the video.
+                    </video>
+                </div>
             </div>
         </>
     );

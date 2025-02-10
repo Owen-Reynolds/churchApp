@@ -139,7 +139,7 @@ body{
 }
 
 .sermonSection{
-    background-color:lightcoral;
+    background-color:#f08080;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;

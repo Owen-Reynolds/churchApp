@@ -18,6 +18,10 @@
     padding-top: 5%;
 }
 
+.titleSection p {
+    margin-top: 0.5%;
+}
+
 .downArrow{
     border: solid white;
     border-width: 0 3px 3px 0;
@@ -114,3 +118,22 @@
     opacity: 1;
 }
 
+.familySection{
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../../assets/sundayMorningAssets/stacked-peaks-haikei-1.svg");
+    font-family: "Bona Nova SC", sans-serif;
+    height: 100vh;
+}
+
+.familyContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.familyMedia{
+
+}
