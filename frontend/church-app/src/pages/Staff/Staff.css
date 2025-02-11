@@ -1,0 +1,34 @@
+.staffHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vw;
+    position: relative;
+    margin:0;
+}
+.heartvid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+.staffHeader h1{
+    font-family:"Bona Nova SC";
+    color: rgb(255, 255, 255);
+    font-size: 10vw;
+    z-index: 1;
+}
+.mainStaffContent{
+    background-image: url('../../assets/staffBottomImg.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100vh;
+}
+

@@ -66,10 +66,10 @@ body{
     width: 15vw;
     height: 4vw;
     font-size: 2vw;
-    font-family: "Bona Nova SC";
     background-color: white;
+    color: #1929C7;
     cursor: pointer;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     border-radius: 5px;
 }
 
@@ -85,11 +85,6 @@ body{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding-top: 5%;
-    margin-top: 5%;
-}
-
-.meetingTime{
 }
 
 .meetingTime h3{
@@ -118,7 +113,7 @@ body{
     background-color: white;
     border: white 2px solid;
     border-radius: 5px;
-    color: black;
+    color: #666666;
     width: 15vw;
     height: 4vw;
     font-size: 1.5vw;
@@ -126,8 +121,9 @@ body{
 }
 
 .meetingTime-button:hover{
-    background-color: white;
-    color: #1929C7;
+    background-color: #666666;
+    border: 2px solid white;
+    color: white;
 }
 
 .meetingPlace img{
@@ -140,13 +136,36 @@ body{
     margin: 5%;
 }
 
+.wave{
+    display: flex;
+    background-image: url("../../assets/homePageAssets/stacked-waves-haikei.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+
+.One{
+    background-image: url("../../assets/homePageAssets/stacked-waves-haikei (2).svg");
+}
+
+.Two{
+    background-image: url("../../assets/homePageAssets/stacked-waves-haikei.svg");
+    
+}
+
+.Three{
+    background-image: url("../../assets/homePageAssets/stacked-waves-haikei (1).svg");
+}
+
 .sermonSection{
-    background-color:lightcoral;
+    background-color:#f08080;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5%;
 }
 
 .sermon{
@@ -159,6 +178,7 @@ body{
     color:white;
     font-size: 5vw;
     text-align: center;
+    font-family: "Bona Nova SC";
 }
 
 .sermonSection h3{
@@ -197,8 +217,9 @@ body{
 }
 
 .sermonSection-button:hover{
-    background-color: #ffffff;
-    color: #1929C7;
+    background-color: lightcoral;
+    border: 2px solid white;
+    color: white;
 }
 
 .aboutSection{
@@ -208,13 +229,12 @@ body{
     align-items: center;
     width: 100%;
     background-color: #8eacff;
-    margin-top: 5%;
-
 }
 
 .aboutSection h2{
     font-size: 5vw;
     color: white;
+    font-family: "Bona Nova SC";
     margin: 0;
     margin-top: 3%;
 }
@@ -251,8 +271,9 @@ body{
 }
 
 .aboutSection-info button:hover{
-    background-color: #ffffff;
-    color: #1929C7;
+    background-color: #8eacff;
+    border: 2px solid white;
+    color: white;
 }
 
 
@@ -262,34 +283,44 @@ body{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 3%;
     margin-top: 5%;
     padding-bottom: 5%;
+    padding-right: 5%;
 }
+
+
 .trailSection h2{
     font-size: 4vw;
     color:white;
-    padding-left: 5%;
     text-align: center;
+    font-family: "Bona Nova SC";
 }
+
 .trailSection p{
     font-size:2vw;
     color: white;
     padding-left: 5%;
     text-align: center;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .05em;
 }
+
 .trailSection img{
-    align-items: center;
     display: flex;
-    width: 40vw;
-    height: 30vw;
+    align-items: center;
+    width: 30vw;
+    height: 35vw;
+    margin-top: 10%;
     padding-right: 5%;
+
 }
+
 .trailSection button{
-    background-color: rgb(109, 151, 73);
+    background-color: white;
     border: white 2px solid;
     border-radius: 5px;
-    color: #ffffff;
+    color: #6D9749;
     width: 15vw;
     height: 4vw;
     font-size: 2vw;
@@ -298,6 +329,66 @@ body{
 }
 
 .trailSection button:hover{
-    background-color: #ffffff;
-    color: rgb(109, 151, 73);
+    background-color: #6D9749;
+    border: 2px solid white;
+    color: white;
+}
+
+.ahgSection{
+    background-color:rgb(158, 128, 240);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    padding-right: 5%;
+}
+
+
+.ahgSection h2{
+    color:white;
+    font-size: 5vw;
+    text-align: center;
+    font-family:"Bona Nova SC" ;
+    margin-left: 5%;
+
+}
+
+.ahgSection p{
+    color:white;
+    font-size: 2vw;
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .05em;
+}
+
+.ahgImage{
+    display: flex;  
+    width: 30vw;
+    height: 35vw;
+    padding-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ahg-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: white;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: rgb(158, 128, 240);
+    width: 15vw;
+    height: 4vw;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.ahg-button:hover{
+    background-color: rgb(158, 128, 240);
+    border: 2px solid white;
+    color: white;
 }

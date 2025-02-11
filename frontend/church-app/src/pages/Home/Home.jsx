@@ -3,9 +3,13 @@ import './Home.css';
 import churchImage from '../../assets/vitalityChurchImage.jpg';
 import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
 import cross from '../../assets/homePageAssets/cross.png';
-import heartrate from '../../assets/homePageAssets/heartrate.png';
-import jesusSign from '../../assets/homePageAssets/jesusSign.jpg';
 import woods from '../../assets/homePageAssets/woods.jpg';
+import trailLife from '../../assets/homePageAssets/trailLife.png';
+import vitalityLogo from '../../assets/homePageAssets/vitalitylogowhite.png';
+import tL1 from '../../assets/homePageAssets/trailLife1.jpg';
+import churchImage2 from '../../assets/homePageAssets/outside2.jpg';
+import AHG from '../../assets/homePageAssets/AHG.jpg';
+
 
 import {motion} from 'framer-motion';
 
@@ -35,6 +39,7 @@ export default function Home() {
                 </a>
             </div>
         </div>
+        <div className="wave One"></div>
         <div className="infoSection">
             <motion.div 
             initial={{ x: '-500px'}}
@@ -58,10 +63,11 @@ export default function Home() {
             whileInView={{ opacity: 1}}
             transition={{duration: 1.5}}
             className="meetingPlace">
-                <img src={churchImage} alt="" />
-                <h5>8751 Mentor Ave, Mentor, OH 44060</h5>  
+                <img src={churchImage2} alt="" />
+                <h5>5783 Heisley Road, Mentor, OH 44060</h5>  
             </motion.div>
         </div>
+        <div className="wave Two"></div>
         <div className="sermonSection">
             <motion.div
             initial={{ x: '500px'}}
@@ -88,6 +94,7 @@ export default function Home() {
             gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </motion.div>
         </div>
+        <div className="wave Three"></div>
         <div className="aboutSection">
             <motion.h2
             initial={{ opacity: 0}}
@@ -116,6 +123,10 @@ export default function Home() {
          
         <div className="trailSection">
             <div className="trailInfo">
+            <motion.div 
+            initial={{ x: '-500px'}}
+            whileInView={{ x: 0}}
+            transition={{duration: 1.5}}>
             <h2>Trail Life</h2>
             <p>Trail Life USA is a Christian Outdoor Adventure, Character, and Leadership Program for boys and young men. Operating from Troops that are chartered through churches in 48 states, the K-12 program centers on outdoor 
                 experiences that build a young man’s skills and allow him to grow on a personal level and as a role model and leader for his peers.  Living the Trail Life is a journey established on timeless values derived from the Bible.
@@ -125,16 +136,41 @@ export default function Home() {
                     whileTap={{scale: 0.9}}
                     transition={{duration: 1.5}}>Learn More
             </motion.button> 
+            </motion.div>
             </div>
-            <img src={woods} alt="" />
-            </div>
-
-
-            <div className="pictureStack">
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+            <motion.div 
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
+            transition={{duration: 1.5}}>
+            <img src={tL1} alt="" />
+             </motion.div>
         </div>
+        <div className="ahgSection">
+            <motion.div
+            initial={{ x: '500px'}}
+            whileInView={{ x: 0}}
+            transition={{duration: 1.5}}
+            className="ahgInfo">
+            <h2>American Heritage Girls</h2>
+            <p>“Building women of integrity through service to God, family, community and country,” American Heritage Girls is the premier national 
+                character development organization for young women that embraces Christian values and encourages family involvement. All biological girls of any 
+                color, creed, race, national origin and socioeconomic status who agree to live according to the standards of the 
+                AHG Oath and the AHG Creed are invited to be members of American Heritage Girls.</p>
+            <motion.button 
+                    whileHover={{scale: 1.1}}
+                    whileTap={{scale: 0.9}}
+                    transition={{duration: 1.5}}
+                    className="ahg-button">Learn More
+            </motion.button>
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
+            transition={{duration: 1.5}}
+            className="ahgImage">
+            <img src={AHG} alt="" />
+            </motion.div>
+            </div>
     </>
     );
 }

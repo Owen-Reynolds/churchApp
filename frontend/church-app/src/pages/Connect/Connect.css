@@ -1,0 +1,135 @@
+.connectContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e0dddd;
+    position: relative;
+    z-index: 1;
+}
+
+.connectContent::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/connectAssets/heartrate.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 0.2; /* Adjust opacity as needed */
+    z-index: -1; /* Ensure the background image is behind the content */
+}
+
+.connectText{
+    
+}
+
+.connectTitle h1{
+    font-family: "Bona Nova SC";
+    font-size: 6.5vw;
+    margin:0;
+    
+}
+
+.connectText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.connectTitle h1 b{
+    color: #1929C7;
+}
+
+.connectLogo img{
+    width: 10vw;
+}
+
+.connectForm{
+    display: flex;
+    flex-direction:column;
+    padding: 3%;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #e0dddd;
+    margin: auto;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 1%;
+    box-shadow: 0 4px 8px grey, /* Horizontal and vertical offset, blur radius, and color */
+                0 6px 20px grey; /* Additional shadow for a more pronounced effect */
+}
+
+form label{
+    margin-top:3%;
+    font-family: "Bona Nova SC";
+}
+
+.nameBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.nameBox input{
+    width: 50%;
+    height: 5vh;
+    box-sizing: border-box;
+}
+
+.emailBox input{
+    width: 100%;
+    height: 5vh;
+    box-sizing: border-box;
+}
+
+.messageBox textarea{
+    width: 100%;
+    height: 15vh;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.checkBox{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.checkBox input{
+    margin: 0;
+    margin-right: 1%;
+}
+
+.checkBox label{
+    margin: 0;
+    font-size: .82vw;
+}
+
+button{
+    margin-top: 3%;
+    background-color: #1929C7;
+    color: white;
+    height: 7vh;
+    width: 30%;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-family: "Bona Nova SC";
+    font-size: 1.5vw;
+}
+
+button:hover{
+    background-color: white;
+    color: #1929C7;
+    border: solid 1px #1929C7;
+}

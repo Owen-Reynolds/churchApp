@@ -8,9 +8,9 @@ export default function AboutUs() {
      <div className = 'main'>
             <video src ={waterfall} autoPlay loop muted/>
     <div className="mainContent">
-        <h1>Mission Statement</h1>
+        <h1>✞ Mission Statement ✞</h1>
         <h2>Love God/Love People</h2>
-        <h1>Our Mission</h1>
+        <h1>✞ Our Mission ✞</h1>
         <h2>Believe Love</h2>
         <p>  Growing in knowledge of the Lord Jesus Christ by reading and understanding that His truth equips and empowers believers in their 
             faith through believing that God loves them and they come to love God.</p>
@@ -20,7 +20,7 @@ export default function AboutUs() {
         <h2>Share Love</h2>
         <p>The joy of our salvation and the love of God through Jesus Christ is shared in the community, nation and world. 
              Jesus commands us to "Go into the world and preach the gospel (Good News) to all creation." (Mark 16:15)</p>
-        <h1>Our Story</h1>
+        <h1>✞ Our Story ✞</h1>
         <p>Not all of us have grown up with a true understanding of God. At a certain point in our lives, questions about God start to surface. Each day, the question about God gets louder within us, 
             and we want to discover the truth about why we are here. It is this truth that will set us free (John 8:32).<br></br><br></br>
  Vitality Church is a community of people coming together to know and serve God. We are dedicated to sharing the vital
@@ -28,7 +28,7 @@ export default function AboutUs() {
  Vitality Church is a place for people to come together to serve a real God. It is a community of repentant believers 
  where you can gather and be given the space to grow into a greater purpose through the fundamental commands of Jesus to Love God and Love People.<br></br><br></br>
  Vitality Church is a journey to find answers to the questions you have. If you are ready to answer that still, small voice within you, Jesus has provided a way through Vitality Church. We hope to see you soon!</p>
-        <h1>Statement of Faith</h1>
+        <h1>✞ Statement of Faith ✞</h1>
         <h2>Holy Bible</h2>
         <p>The Holy Bible, and only the Bible, is the authoritative Word of God. It alone is the final authority in determining all doctrinal truths. In its original writing, it is inspired, infallible and inerrant
              (2Timothy 3:16; 2 Peter 1:20-21; Proverbs 30:5; Romans 16:25-26).</p>

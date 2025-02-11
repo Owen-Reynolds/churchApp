@@ -1,0 +1,139 @@
+.titleSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001122;
+    color: white;
+    font-family: "Bona Nova SC", sans-serif;
+    padding-bottom: 5%;
+}
+
+.titleSection h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: 10vw;
+    margin: 0;
+    padding-top: 5%;
+}
+
+.titleSection p {
+    margin-top: 0.5%;
+}
+
+.downArrow{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+}
+
+.welcomeContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/sundayMorningAssets/stacked-peaks-haikei.svg");
+    padding-bottom: 8%;
+    padding-top: 1%;
+}
+
+.welcomeSection img{
+    width: 5vw;
+}
+
+.welcomeContent h2{
+    font-family: "Bona Nova SC", sans-serif;
+    font-size: 5vw;
+    margin: 0;
+    color: white;
+}
+
+.welcomeWords{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    color: white;
+}
+
+.welcomeWords h2{
+    font-size: 5vw;
+}
+
+.cardSection{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1929C7;
+    padding-bottom: 5%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1%;
+    box-shadow: 0 4px 8px grey, /* Horizontal and vertical offset, blur radius, and color */
+                0 6px 20px grey; /* Additional shadow for a more pronounced effect */
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.card img{
+    width: 20vw;
+    height: 30vh;
+}
+
+.card h2{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.toggleBox{
+    margin: 0;
+    padding: 0;
+}
+
+.toggleBox p {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.cardContent {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.cardContent.show {
+    max-height: 500px; /* Adjust based on content */
+    opacity: 1;
+}
+
+.familySection{
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../../assets/sundayMorningAssets/stacked-peaks-haikei-1.svg");
+    font-family: "Bona Nova SC", sans-serif;
+    height: 100vh;
+}
+
+.familyContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    color: white;
+}
+
+.familyMedia{
+
+}
