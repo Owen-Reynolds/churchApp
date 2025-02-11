@@ -14,10 +14,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../assets/connectAssets/heartrate.png');
+    background-image: url('../../assets/connectAssets/image2vector.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     opacity: 0.2; /* Adjust opacity as needed */
     z-index: -1; /* Ensure the background image is behind the content */
 }

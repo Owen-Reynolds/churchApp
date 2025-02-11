@@ -16,17 +16,16 @@ export default function SundayMornings() {
         <>
             <div className="titleSection">
                 <h1>
-                    <div>We Gladly</div>
-                    <div>Welcome You</div>
+                    <div>Sunday Service</div>
+                    <div>10:00AM</div>
                 </h1>
-                <p>Service at 10:00am, Every Sunday</p>
                 <p>Learn more below</p>
                 <i className="downArrow"></i>
             </div>
             <div className="welcomeSection">
                 <div className="welcomeContent">
                     <motion.h2
-                    initial={{opacity: 0, y: -300}}
+                    initial={{opacity: 0, y: -200}}
                     whileInView={{opacity: 1, y: 0}}
                     transition={{duration: 2.0}}    
                     >We Want You To Feel</motion.h2>    
