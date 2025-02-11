@@ -11,6 +11,7 @@ let users = [];
 
 require('dotenv').config();
 app.use('/api/users', require('./routes/users'));
+
 /*
 //Post request to create a new user
 app.post("/api/users", (req, res) => {
