@@ -85,8 +85,6 @@ body{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding-top: 5%;
-    margin-top: 5%;
 }
 
 .meetingTime h3{
@@ -138,13 +136,36 @@ body{
     margin: 5%;
 }
 
+.wave{
+    display: flex;
+    background-image: url("../../assets/homePageAssets/stacked-waves-haikei.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+}
+
+.One{
+    background-image: url("../../assets/homePageAssets/stacked-waves-haikei (2).svg");
+}
+
+.Two{
+    background-image: url("../../assets/homePageAssets/stacked-waves-haikei.svg");
+    
+}
+
+.Three{
+    background-image: url("../../assets/homePageAssets/stacked-waves-haikei (1).svg");
+}
+
 .sermonSection{
     background-color:#f08080;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5%;
 }
 
 .sermon{
@@ -208,8 +229,6 @@ body{
     align-items: center;
     width: 100%;
     background-color: #8eacff;
-    margin-top: 5%;
-
 }
 
 .aboutSection h2{

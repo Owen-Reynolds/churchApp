@@ -39,6 +39,7 @@ export default function Home() {
                 </a>
             </div>
         </div>
+        <div className="wave One"></div>
         <div className="infoSection">
             <motion.div 
             initial={{ x: '-500px'}}
@@ -66,6 +67,7 @@ export default function Home() {
                 <h5>5783 Heisley Road, Mentor, OH 44060</h5>  
             </motion.div>
         </div>
+        <div className="wave Two"></div>
         <div className="sermonSection">
             <motion.div
             initial={{ x: '500px'}}
@@ -92,6 +94,7 @@ export default function Home() {
             gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </motion.div>
         </div>
+        <div className="wave Three"></div>
         <div className="aboutSection">
             <motion.h2
             initial={{ opacity: 0}}
