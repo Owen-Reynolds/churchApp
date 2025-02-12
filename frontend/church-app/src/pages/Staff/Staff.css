@@ -54,39 +54,8 @@
     box-shadow: 0 4px 8px grey, 
                 0 6px 20px grey; 
     transition: all 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: relative;
-    overflow: visible; /* Allows the glow to be visible outside */
-    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
 }
-
-.card::after, .card::before {
-    content: "";
-    position: absolute;
-    inset: -15px; /* Moves the glow outside the card */
-    width: calc(100% + 30px);
-    height: calc(100% + 30px);
-    background-image: conic-gradient(from 0deg, #006aff, transparent);
-    transform: rotate(0deg);
-    z-index: -2; /* Moves glow behind the card */
-    border-radius: 15px;
-    animation: spin 3s linear infinite;
-}
-
-.card::before {
-    filter: blur(2rem);
-    opacity: 0.8;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .card img {
     width: 13vw;
     height: 30vh;

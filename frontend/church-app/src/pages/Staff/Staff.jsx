@@ -45,7 +45,7 @@ export default function AboutUs() {
                         title="Dorothy Harvey"
                         description="Secretary"
                         isExpanded={expandedCard === 3}
-                        onClick={() => setExpandedCard(expandedCard === 3 ? null : 3)}
+                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
                        
                     />
                      
