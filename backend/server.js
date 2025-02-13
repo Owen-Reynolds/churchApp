@@ -1,16 +1,41 @@
 const express = require('express');
-const cors = require('cors');
+const mysql = require("mysql2");
+require("dotenv").config();
+
 const app = express();
-
-
-
-app.use(cors());
 app.use(express.json());
 
-let users = [];
+//MySQL connection
+const db = mysql.createConnection({
+  host: process.env.DB_HOST || "localhost",
+  user: process.env.DB_USER || "root",
+  password: process.env.DB_PASSWORD || "",
+  database: process.env.DB_NAME || "VitalityChurch",
+  port: process.env.DB_PORT || 3307,
+});
 
-require('dotenv').config();
-app.use('/api/users', require('./routes/users'));
+//Connect to MySQL
+db.connect((err) =>{
+  if(err){
+    console.error("Error connecting to MySQL: ", err);
+    return;
+  }
+  console.log("Connected to MySQL database");
+});
+
+//Sample Route
+app.get("/users", (req, res) => {
+  db.query("SELECT * FROM users", (err, results) => {
+    if(err) return res.status(500).json({error: err.message});
+    res.json(results);
+  });
+});
+
+//Start Server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+
+
 
 /*
 //Post request to create a new user

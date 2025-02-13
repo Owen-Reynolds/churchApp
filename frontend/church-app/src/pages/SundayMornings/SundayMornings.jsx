@@ -17,7 +17,7 @@ export default function SundayMornings() {
             <div className="titleSection">
                 <h1>
                     <div>Sunday Service</div>
-                    <div>10:00AM</div>
+                    <div>10:00am</div>
                 </h1>
                 <p>Learn more below</p>
                 <i className="downArrow"></i>
