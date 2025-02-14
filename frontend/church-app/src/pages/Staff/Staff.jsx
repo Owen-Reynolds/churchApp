@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import './Staff.css';
-import heartrate from '../../assets/heartRateVid.mp4';
-import pastorDave from '../../assets/pastorDave.jpg';
-import bobAnderson from '../../assets/bobAnderson.jpg';
-import dottieHarvey from '../../assets/dottieHarvey.jpg';
+import heartrate from '../../assets/staffAssets/heartRateVid.mp4';
+import pastorDave from '../../assets/staffAssets/pastorDave.jpg';
+import bobAnderson from '../../assets/staffAssets/bobAnderson.jpg';
+import dorothyHarvey from '../../assets/staffAssets/dorothyHarvey.jpg';
+import timMcNamee from '../../assets/staffAssets/timMcNamee.jpg';
+import rondaKern from '../../assets/staffAssets/rondaKern.jpg';
+import scottMiller from '../../assets/staffAssets/scottMiller.jpg';
 
 export default function AboutUs() {
     const [expandedCard, setExpandedCard] = useState(null);
@@ -18,32 +21,64 @@ export default function AboutUs() {
                 <div className="cards">
                     <Card
                         image={pastorDave}
-                        title="David Kern"
-                        description="Lead Pastor"
+                        title="Pastor"
+                        description="David Kern"
                         isExpanded={expandedCard === 1}
                         onClick={() => setExpandedCard(expandedCard === 1 ? null : 1)}
                         
                     />
                     <Card
-                        image={bobAnderson}
-                        title="Bob Anderson"
-                        description="Treasurer"
+                        image={pastorDave}
+                        title="Associate Pastor"
+                        description="Dusty Keeney"
                         isExpanded={expandedCard === 2}
                         onClick={() => setExpandedCard(expandedCard === 2 ? null : 2)}
                         
                     />
                     <Card
-                        image={dottieHarvey}
-                        title="Dorothy Harvey"
-                        description="Secretary"
+                        image={bobAnderson}
+                        title="Facility Director"
+                        description="Bob Anderson"
                         isExpanded={expandedCard === 3}
                         onClick={() => setExpandedCard(expandedCard === 3 ? null : 3)}
                         
                     />
                     <Card
-                        image={dottieHarvey}
-                        title="Dorothy Harvey"
-                        description="Secretary"
+                        image={dorothyHarvey}
+                        title="Director of Missions"
+                        description="Cindy Keeney"
+                        isExpanded={expandedCard === 3}
+                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
+                       
+                    />
+                    <Card
+                        image={dorothyHarvey}
+                        title="Office Administartor"
+                        description="Dorothy Harvey"
+                        isExpanded={expandedCard === 3}
+                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
+                       
+                    />
+                    <Card
+                        image={rondaKern}
+                        title="Youth Director"
+                        description="Ronda Kern"
+                        isExpanded={expandedCard === 3}
+                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
+                       
+                    />
+                    <Card
+                        image={timMcNamee}
+                        title="Outreach Director"
+                        description="Tim McNamee"
+                        isExpanded={expandedCard === 3}
+                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
+                       
+                    />
+                    <Card
+                        image={scottMiller}
+                        title="Discipleship Director"
+                        description="Scott Miller"
                         isExpanded={expandedCard === 3}
                         onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
                        

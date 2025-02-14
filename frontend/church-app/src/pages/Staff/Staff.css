@@ -51,16 +51,17 @@
     border-radius: 5px;
     cursor: pointer;
     margin: 3%;
-    box-shadow: 0 4px 8px grey, 
-                0 6px 20px grey; 
+    box-shadow: 0 4px 8px #1929C7, 
+                0 6px 20px #1929C7; 
     transition: all 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
 }
 .card img {
     width: 13vw;
     height: 30vh;
     z-index: 2;
     position: relative;
+    border-radius: 5px;
 }
 
 
