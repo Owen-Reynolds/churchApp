@@ -19,10 +19,10 @@ export default function Connect() {
         if (!firstname || !lastname || !email) {
             setMessage("Missing fields are required");
             return;
-        }
+        } 
 
         try {
-            const response = await axios.post("http://localhost:3000/api/users", {
+            const response = await axios.post("http://localhost:3000/submit", {
                 firstName: firstname,
                 lastName: lastname,
                 email: email,

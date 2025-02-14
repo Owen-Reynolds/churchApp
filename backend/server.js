@@ -1,8 +1,16 @@
 const express = require('express');
 const mysql = require("mysql2");
+const cors = require("cors");
+const bodyParser = require("body-parser");
 require("dotenv").config();
 
 const app = express();
+app.use(cors({
+  origin: "http://localhost:5173", // Allow requests from frontend
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type"]
+}));
+
 app.use(express.json());
 
 //MySQL connection
@@ -28,6 +36,20 @@ app.get("/users", (req, res) => {
   db.query("SELECT * FROM users", (err, results) => {
     if(err) return res.status(500).json({error: err.message});
     res.json(results);
+  });
+});
+
+
+app.post("/submit", (req, res) => {
+  const { firstName, lastName, email, checkBox } = req.body;
+  const sql = "INSERT INTO users (firstName, lastName, email, checkBox) VALUES (?, ?, ?, ?)";
+
+  db.query(sql, [firstName, lastName, email, checkBox], (err, result) => {
+    if(err){
+      console.log("Error inserting data: ", err);
+    } else {
+      console.log("Data inserted successfully: ", result);
+    }
   });
 });
 
