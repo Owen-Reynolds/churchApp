@@ -23,8 +23,18 @@
     font-size: 10vw;
     z-index: 1;
 }
+.staffWave{
+    background-image: url('../../assets/staffAssets/staffWave.svg');
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height:50vh;
+}
 .mainStaffContent {
-    background-image: url('../../assets/staffAssets/backgroundStaff.svg');
+    background-color: rgb(255, 255, 255);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -38,23 +48,22 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 5%;
-    padding-top: 5%;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
     width: 15vw; 
     margin-bottom: 2%;
-    border: solid 1px black;
     border-radius: 5px;
     cursor: pointer;
     margin: 3%;
-    box-shadow: 0 4px 8px #ffffff, 
-                0 6px 20px #ffffff; 
+    box-shadow: 0 4px 8px #484849, 
+                0 6px 20px #2e2e2e; 
     transition: all 0.3s ease;
-    background-color: rgba(0, 0, 0, 0.707);
+    background-color: rgb(162, 162, 162);
     color:rgb(255, 255, 255)
 }
 .card img {
@@ -63,8 +72,6 @@
     z-index: 2;
     position: relative;
     border-radius: 5px;
-    box-shadow: 0 4px 10px #2406eb; 
-    
 }
 
 

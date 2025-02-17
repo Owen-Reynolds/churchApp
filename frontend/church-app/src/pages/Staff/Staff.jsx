@@ -17,6 +17,7 @@ export default function AboutUs() {
                 <video className="heartvid" src={heartrate} autoPlay loop muted />
                 <h1>Meet the Team.</h1>
             </div>
+            <div className = "staffWave"></div>
             <div className="mainStaffContent">
                 <div className="cards">
                     <Card
@@ -47,7 +48,7 @@ export default function AboutUs() {
                         image={dorothyHarvey}
                         title="Director of Missions"
                         description="Cindy Keeney"
-                        isExpanded={expandedCard === 3}
+                        isExpanded={expandedCard === 4}
                         onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
                        
                     />
@@ -55,32 +56,32 @@ export default function AboutUs() {
                         image={dorothyHarvey}
                         title="Office Administartor"
                         description="Dorothy Harvey"
-                        isExpanded={expandedCard === 3}
-                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
+                        isExpanded={expandedCard === 5}
+                        onClick={() => setExpandedCard(expandedCard === 5 ? null : 5)}
                        
                     />
                     <Card
                         image={rondaKern}
                         title="Youth Director"
                         description="Ronda Kern"
-                        isExpanded={expandedCard === 3}
-                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
+                        isExpanded={expandedCard === 6}
+                        onClick={() => setExpandedCard(expandedCard === 6 ? null : 6)}
                        
                     />
                     <Card
                         image={timMcNamee}
                         title="Outreach Director"
                         description="Tim McNamee"
-                        isExpanded={expandedCard === 3}
-                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
+                        isExpanded={expandedCard === 7}
+                        onClick={() => setExpandedCard(expandedCard === 7 ? null : 7)}
                        
                     />
                     <Card
                         image={scottMiller}
                         title="Discipleship Director"
                         description="Scott Miller"
-                        isExpanded={expandedCard === 3}
-                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
+                        isExpanded={expandedCard === 8}
+                        onClick={() => setExpandedCard(expandedCard === 8 ? null : 8)}
                        
                     />
                      
