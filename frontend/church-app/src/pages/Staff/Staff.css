@@ -39,15 +39,14 @@
     background-position: center; 
     background-repeat: no-repeat; 
     width: 100%;
-  
     justify-content: flex-start; 
-    padding-top: 5%;
 }
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .card {
@@ -72,6 +71,7 @@
     z-index: 2;
     position: relative;
     border-radius: 5px;
+    padding-top: 5%;
 }
 
 
