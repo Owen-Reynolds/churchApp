@@ -68,7 +68,7 @@
     
 }
 
-.card{
+.sundayCard{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,15 +82,15 @@
     transition: all 0.3s ease;
     background-color: white;
     height: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
-.card img{
+.sundayCard img{
     width: 20vw;
     height: 30vh;
 }
 
-.card h2{
+.sundayCard h2{
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 2px;
     margin-bottom: 0;

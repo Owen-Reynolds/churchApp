@@ -114,7 +114,7 @@ function Card({ image, title, description, isExpanded, onClick }) {
     return (
         <motion.div
             whileHover={{ scale: 1.05 }}
-            className="card"
+            className="sundayCard"
             onClick={onClick}
             >
             <img src={image} alt="Bible Photo" />
