@@ -34,19 +34,27 @@
     height:50vh;
 }
 .mainStaffContent {
-    background-color: rgb(255, 255, 255);
+    background-color:white;
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     width: 100%;
     justify-content: flex-start; 
 }
+.mainStaffContent p{
+    font-family: "Bebas Neue", serif;
+    font-size: 2.2vw;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    line-height: 2em;
+}
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 5%;
-    padding-top: 5%;
+    padding-top: 0;
 }
 
 .card {
@@ -54,31 +62,47 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 15vw; 
+    width: 20vw; 
     margin-bottom: 2%;
     border-radius: 5px;
     cursor: pointer;
-    margin: 3%;
-    box-shadow: 0 4px 8px #484849, 
-                0 6px 20px #2e2e2e; 
+    margin: 5%; 
     transition: all 0.3s ease;
-    background-color: rgb(162, 162, 162);
-    color:rgb(255, 255, 255)
+    background-color: rgb(173, 173, 173);
+    color:rgb(0, 0, 0)
+}
+.logoCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 20vw; 
+    margin-bottom: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5%; 
+    transition: all 0.3s ease;
+    padding-top:2%;
+    background-color: rgb(173, 173, 173);
+    color:rgb(0, 0, 0)
 }
 .card img {
-    width: 13vw;
-    height: 30vh;
+    width: 15vw;
+    height: 32vh;
     z-index: 2;
     position: relative;
     border-radius: 5px;
-    padding-top: 5%;
+    padding-top: 7%;
 }
-
 
 .card h2{
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 2px;
     margin-bottom: 0;
+}
+.card p{
+    font-family: "Bebas Neue", serif;
+    font-size: 1.1vw;
 }
 
 .toggleBox{

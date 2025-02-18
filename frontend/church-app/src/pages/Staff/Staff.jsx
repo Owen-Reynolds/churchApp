@@ -7,6 +7,7 @@ import dorothyHarvey from '../../assets/staffAssets/dorothyHarvey.jpg';
 import timMcNamee from '../../assets/staffAssets/timMcNamee.jpg';
 import rondaKern from '../../assets/staffAssets/rondaKern.jpg';
 import scottMiller from '../../assets/staffAssets/scottMiller.jpg';
+import vitalityLogo from '../../assets/staffAssets/vitalitylogowhite.png';
 
 export default function AboutUs() {
     const [expandedCard, setExpandedCard] = useState(null);
@@ -25,7 +26,6 @@ export default function AboutUs() {
                         title="Pastor"
                         description="David Kern"
                         isExpanded={expandedCard === 1}
-                        onClick={() => setExpandedCard(expandedCard === 1 ? null : 1)}
                         
                     />
                     <Card
@@ -52,9 +52,16 @@ export default function AboutUs() {
                         onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
                        
                     />
+                    <div className = "logoCard">
+                     <Card
+                        image={vitalityLogo}
+                        isExpanded={expandedCard === 4}
+                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
+                    />
+                    </div>
                     <Card
                         image={dorothyHarvey}
-                        title="Office Administartor"
+                        title="Office Administrator"
                         description="Dorothy Harvey"
                         isExpanded={expandedCard === 5}
                         onClick={() => setExpandedCard(expandedCard === 5 ? null : 5)}
@@ -98,11 +105,8 @@ function Card({ image, title, description, isExpanded, onClick,}) {
         <div className="card" onClick={onClick}>
             <img src={image} alt={title} />
             <h2>{title}</h2>
-            <div className="toggleBox">
-                <p>{isExpanded ? "-" : "+"}</p>
-            </div>
+            <p>{description}</p>
             <div className={`cardContent ${isExpanded ? 'show' : ''}`}>
-                <p>{description}</p>
             </div>
         </div>
         </>
