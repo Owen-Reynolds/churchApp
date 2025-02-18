@@ -1,5 +1,6 @@
 import './Home.css';
 
+import mainImage from '../../assets/homePageAssets/thumbnail_IMG_6616.jpg';
 import churchImage from '../../assets/vitalityChurchImage.jpg';
 import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
 import cross from '../../assets/homePageAssets/cross.png';
@@ -9,6 +10,7 @@ import vitalityLogo from '../../assets/homePageAssets/vitalitylogowhite.png';
 import tL1 from '../../assets/homePageAssets/trailLife1.jpg';
 import churchImage2 from '../../assets/homePageAssets/outside2.jpg';
 import AHG from '../../assets/homePageAssets/AHG.jpg';
+
 
 
 import {motion} from 'framer-motion';
@@ -39,7 +41,27 @@ export default function Home() {
                 </a>
             </div>
         </div>
-        <div className="wave One"></div>
+        <div className="newInfoSection">
+            <div className="newInfoSectionInfo">
+                <h2>Love God - Love People</h2>
+                <br />
+                <p>Vitality Church is a Bible teaching church. We are people coming together in community (church)
+                    to know and serve God. We are focused to care and to speak the Truth of God’s love as His love is 
+                    professed in John 3:16. That, God so loves you so deeply that He gave you Jesus Christ, not to condemn you but to 
+                    give you eternal life!
+                </p>
+                <br />
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error 
+                    delectus nulla aperiam maxime ipsa, sunt possimus iste. Nihil voluptate 
+                    reprehenderit laudantium quia deserunt, assumenda ipsum praesentium ut 
+                    obcaecati repudiandae.
+                </p>
+                <button className="newInfoSectionButton">About Us</button>
+            </div>
+            <div className="newInfoSectionImg">
+                <img src={mainImage} alt="" />
+            </div>
+        </div>
         <div className="infoSection">
             <motion.div 
             initial={{ x: '-500px'}}
@@ -67,7 +89,6 @@ export default function Home() {
                 <h5>5783 Heisley Road, Mentor, OH 44060</h5>  
             </motion.div>
         </div>
-        <div className="wave Two"></div>
         <div className="sermonSection">
             <motion.div
             initial={{ x: '500px'}}
@@ -94,7 +115,6 @@ export default function Home() {
             gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </motion.div>
         </div>
-        <div className="wave Three"></div>
         <div className="aboutSection">
             <motion.h2
             initial={{ opacity: 0}}

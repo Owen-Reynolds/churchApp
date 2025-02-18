@@ -42,7 +42,6 @@ body{
     background-position: center;
 }
 
-
 .mainTitle{
     display: flex;
     align-items: center;
@@ -79,8 +78,46 @@ body{
     color: white;
 }
 
+.newInfoSection{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    width: 90%;
+}
+
+.newInfoSectionInfo{
+    width: 80%;
+}
+
+.newInfoSectionInfo h2{
+    font-size: 3vw;
+    font-family: "Bona Nova SC";
+    margin: 0;
+    
+}
+
+.newInfoSectionInfo p{
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.newInfoSectionImg{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.newInfoSectionImg img{
+    border: solid 2px #1929C7;
+    padding: 1%;
+}
+
+.newInfoSectionButton{
+
+}
 .infoSection{
-    background-color:#666666;
+    background-color:black;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -134,30 +171,6 @@ body{
 .meetingPlace h5{
     font-size: 2vw;
     margin: 5%;
-}
-
-.wave{
-    display: flex;
-    background-image: url("../../assets/homePageAssets/stacked-waves-haikei.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-    margin: 0;
-    padding: 0;
-}
-
-.One{
-    background-image: url("../../assets/homePageAssets/stacked-waves-haikei (3).svg");
-}
-
-.Two{
-    background-image: url("../../assets/homePageAssets/stacked-waves-haikei.svg");
-    
-}
-
-.Three{
-    background-image: url("../../assets/homePageAssets/stacked-waves-haikei (1).svg");
 }
 
 .sermonSection{
