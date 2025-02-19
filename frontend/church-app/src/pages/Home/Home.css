@@ -94,7 +94,9 @@ body{
     font-size: 3vw;
     font-family: "Bona Nova SC";
     margin: 0;
-    
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+    text-decoration-thickness: 2px;
 }
 
 .newInfoSectionInfo p{
@@ -114,8 +116,117 @@ body{
 }
 
 .newInfoSectionButton{
-
+    width: 15vw;
+    height: 4vw;
+    font-size: 2vw;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 2px solid #1929C7;
+    border-radius: 5px;
 }
+
+.newInfoSectionButton:hover{
+    background-color: #1929C7;
+    border: 2px solid white;
+    color: white;
+}
+
+.newSundaySectionWrap{
+    width: 100%;
+    background-color: black;
+}
+
+.newSundaySection{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    align-items: center;
+    width: 90%;
+    color: white;
+}
+
+.newSundaySectionInfo{
+    width: 80%;
+    text-align: center;
+}
+
+.newSundaySectionInfo h2{
+    font-size: 3vw;
+    font-family: "Bona Nova SC";
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+    text-decoration-thickness: 2px;
+}
+
+.newSundaySectionInfo p{
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.newSundaySectionImage{
+    width: 10vw;
+}
+
+.newSundaySectionImg{
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.newSundaySectionImg img{
+    border: solid 2px #1929C7;
+    padding: 1%;
+}
+
+.newSundaySectionButton{
+    width: 15vw;
+    height: 4vw;
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #1929C7;
+    border-radius: 5px;
+}
+
+.newSundaySectionButton:hover{
+    background-color: white;
+    border: 2px solid #1929C7;
+    color: black;
+}
+
+.newCardsSection{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.newCardsLeftMiddle{
+    background-image: url("../../assets/homePageAssets/thumbnail_IMG_1505.jpg");
+    background-position: center;
+    
+    height: 65vh;
+    width: 40vw;
+}
+
+.newCardsRightTop{
+    background-image: url("../../assets/homePageAssets/thumbnail_IMG_0121.jpg");
+    background-position: center;
+    height: 40vh;
+    width: 40vw;
+}
+
+.newCardsRightBottom{
+    background-image: url("../../assets/homePageAssets/thumbnail_IMG_6478.jpg");
+    background-position: center;
+    height: 40vh;
+    width: 40vw;
+}
+
 .infoSection{
     background-color:black;
     color: white;

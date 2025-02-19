@@ -1,6 +1,7 @@
 import './Home.css';
 
 import mainImage from '../../assets/homePageAssets/thumbnail_IMG_6616.jpg';
+import sundayImage from '../../assets/homePageAssets/thumbnail_IMG_6494.jpg';
 import churchImage from '../../assets/vitalityChurchImage.jpg';
 import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
 import cross from '../../assets/homePageAssets/cross.png';
@@ -60,6 +61,43 @@ export default function Home() {
             </div>
             <div className="newInfoSectionImg">
                 <img src={mainImage} alt="" />
+            </div>
+        </div>
+        <div className="newSundaySectionWrap">
+            <div className="newSundaySection">
+                <div className="newSundaySectionInfo">
+                    <h2>Sunday Service 10:00am</h2>
+                    <br />
+                    <p>Join us every Sunday at 10:00am for our worship service.
+                        Once everything gets started, worship! Remember you'll never 
+                        be singled out or called on during the service.  We will never 
+                        embarrass you. This is Jesus' Church, just make yourself at 
+                        home and learn from Him.
+                    </p>
+                    <br />
+                    <p>
+                        5783 Heisley Road, Mentor, OH 44060
+                    </p>
+                    <button className="newSundaySectionButton">Learn More</button>
+                </div>
+                <div className="newSundaySectionImg">
+                    <img src={sundayImage} alt="" />
+                </div>
+            </div>
+        </div>
+        <div className="newCardsSection">
+            <div className="newCardsLeft">
+                <div className="newCardsLeftMiddle">
+                    <h2>Youth</h2>
+                </div>
+            </div>
+            <div className="newCardsRight">
+                <div className="newCardsRightTop">
+                    <h2>Connect</h2>
+                </div>
+                <div className="newCardsRightBottom">
+                    <h2>Give</h2>
+                </div>
             </div>
         </div>
         <div className="infoSection">
