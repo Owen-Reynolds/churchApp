@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 import Header from './components/Header/Header.jsx';
+import Footer from './components/Header/Footer.jsx';
+
 
 import Home from './pages/Home/Home.jsx';
 import AboutUs from './pages/AboutUs/AboutUs.jsx';
@@ -28,6 +30,7 @@ function App() {
           <Route path='/Connect' element={<Connect />} />
           <Route path='/Give' element={<Give />} />
         </Routes>
+      <Footer/>
       </BrowserRouter>
     </>
   )
