@@ -5,6 +5,7 @@
     background-color: #e0dddd;
     position: relative;
     z-index: 1;
+    height: ;
 }
 
 .connectContent::before {
@@ -20,10 +21,6 @@
     background-size: cover;
     opacity: 0.2; /* Adjust opacity as needed */
     z-index: -1; /* Ensure the background image is behind the content */
-}
-
-.connectText{
-    
 }
 
 .connectTitle h1{

@@ -84,6 +84,7 @@ body{
     margin: auto;
     align-items: center;
     width: 90%;
+    height: 80vh;
 }
 
 .newInfoSectionInfo{
@@ -113,6 +114,7 @@ body{
 .newInfoSectionImg img{
     border: solid 2px #1929C7;
     padding: 1%;
+    width: 40vw;
 }
 
 .newInfoSectionButton{
@@ -144,6 +146,7 @@ body{
     align-items: center;
     width: 90%;
     color: white;
+    height: 80vh;
 }
 
 .newSundaySectionInfo{
@@ -178,6 +181,7 @@ body{
 .newSundaySectionImg img{
     border: solid 2px #1929C7;
     padding: 1%;
+    width: 40vw;
 }
 
 .newSundaySectionButton{
