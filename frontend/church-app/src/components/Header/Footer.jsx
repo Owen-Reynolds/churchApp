@@ -4,6 +4,9 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 
 import crossImage from '../../assets/homePageAssets/vitalitylogowhite.png';
+import fbLogo from '../../assets/facebooklogo.png';
+import ytLogo from '../../assets/ytlogo.png';
+import igLogo from '../../assets/instagramlogo.png';
 
 export default function Footer() {
     return (
@@ -11,13 +14,17 @@ export default function Footer() {
             <div className="footer-content">
                 <div className="left-box">
                    <h2>Contact Us</h2>
-                   <p>(440) 290-0233</p>
+                    <p>Phone: <a href="tel:440-286-1212">(440) 286-1212</a></p>
+                   <p></p>
                 </div>
                 <div className="footer-social">
                     <h2>Socials</h2>
                     <a href="https://www.facebook.com" target="" rel="">Facebook</a>
+                    
                     <a href="https://www.youtube.com" target="" rel="">YouTube</a>
+                    
                     <a href="https://www.instagram.com" target="" rel="">Instagram</a>
+                 
                 </div>
                 <div className="map-responsive">
                     <h2>Location</h2>

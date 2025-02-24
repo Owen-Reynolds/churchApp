@@ -23,6 +23,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+}
+.left-box a{
+    color: white;
+    text-decoration: none;
+}
+.footer-social img{
+    width: 2vw;
+    height: auto;
+   margin: .5vw;
 }
 .footer-social a{
     color: white;
