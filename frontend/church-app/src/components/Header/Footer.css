@@ -28,6 +28,7 @@
 .left-box a{
     color: white;
     text-decoration: none;
+    text-decoration: underline;
 }
 .footer-social img{
     width: 2vw;
@@ -57,6 +58,7 @@
     text-align: center;
     color: white;
     font-size: 1.2vw;
+    padding-left: 10vw;
 }
 .footer-bottom-designers{
     padding-top: .5%;
@@ -65,11 +67,28 @@
     font-size: 1.2vw;
     padding-right: 2%;
 }
+
+.footer-bottom-designers p{
+    padding-right: 2%;
+}
+
 .footer-bottom-img{
     padding-top: 1%;
     display: flex;
     width: 2.5vw;
     height: auto;
     padding-left:2%;
+}
 
+.footer-bottom-designers{
+    padding-right: 2%;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-bottom-designers img{
+    width: 2vw;
+    height: auto;
+   
 }
