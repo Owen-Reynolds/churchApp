@@ -207,28 +207,65 @@ body{
     width: 90%;
     margin: auto;
     align-items: center;
+    align-items: stretch;
 }
 
 .newCardsLeftMiddle{
-    background-image: url("../../assets/homePageAssets/thumbnail_IMG_1505.jpg");
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
+     url("../../assets/homePageAssets/Youth.jpg");
     background-position: center;
-    
-    height: 65vh;
+    flex: 1;
     width: 40vw;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5vw;
+    font-family: "Bona Nova SC";
+    background-size: cover;
+    ;
 }
 
 .newCardsRightTop{
-    background-image: url("../../assets/homePageAssets/thumbnail_IMG_0121.jpg");
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
+     url("../../assets/homePageAssets/connect.jpg");
     background-position: center;
-    height: 40vh;
     width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5vw;
+    font-family: "Bona Nova SC";
+    background-size: cover;
 }
 
 .newCardsRightBottom{
-    background-image: url("../../assets/homePageAssets/thumbnail_IMG_6478.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
+    url("../../assets/homePageAssets/Give.jpg");
     background-position: center;
-    height: 40vh;
     width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5vw;
+    font-family: "Bona Nova SC";
+    background-size: cover;
+    margin-top: 2%;
+}
+.newCardsSection{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.newCardsLeft{
+    padding-right: 1%;
+    padding-left: 5%;
+}
+.newCardsRight{
+    padding-right: 5%;
+    flex: 1;
 }
 
 .infoSection{

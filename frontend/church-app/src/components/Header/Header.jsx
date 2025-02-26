@@ -23,7 +23,7 @@ export default function Header() {
             <li><Link to='/AboutUs'>About Us</Link></li>
             <li><Link to='/SundayMornings'>Sunday Mornings</Link></li>
             <li><Link to='/Staff'>Staff</Link></li>
-            <li><Link to='/TrailLife'>Trail Life/AHG</Link></li>
+            <li><Link to='/Youth'>Youth</Link></li>
             <li><Link to='/Connect'>Connect</Link></li>
             <li><Link to='/Give'>Give</Link></li>
         </ul>

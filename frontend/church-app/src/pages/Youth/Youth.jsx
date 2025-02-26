@@ -1,7 +1,7 @@
-import './TrailLife.css';
-import fishImage from '../../assets/trailLifeAssets/fishingkid.jpeg';
-import girlFishImage from '../../assets/trailLifeAssets/Ahgwork.jpg'
-export default function TrailLife() {
+import './Youth.css';
+import fishImage from '../../assets/youthAssets/fishingkid.jpeg';
+import girlFishImage from '../../assets/youthAssets/Ahgwork.jpg'
+export default function Youth() {
     return(
 
     <>

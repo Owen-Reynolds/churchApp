@@ -11,6 +11,8 @@ import vitalityLogo from '../../assets/homePageAssets/vitalitylogowhite.png';
 import tL1 from '../../assets/homePageAssets/trailLife1.jpg';
 import churchImage2 from '../../assets/homePageAssets/outside2.jpg';
 import AHG from '../../assets/homePageAssets/AHG.jpg';
+import giveImg from '../../assets/homePageAssets/Give.jpg';
+import youthImg from '../../assets/homePageAssets/Youth.jpg';
 
 
 
