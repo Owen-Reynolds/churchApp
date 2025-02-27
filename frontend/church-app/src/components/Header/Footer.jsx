@@ -16,17 +16,16 @@ export default function Footer() {
                 <div className="left-box">
                    <h2>Contact Us</h2>
                     <p>Phone: <a href="tel:440-286-1212">(440) 286-1212</a></p>
-                   <p></p>
+                    <p>Email: <a href="/connect" className="footerButton">Email Us</a></p>
                 </div>
                 <div className="footer-social">
                     <h2>Socials</h2>
-                    <a href="https://www.facebook.com" target="" rel="">Facebook</a>
-                    
-                    <a href="https://www.youtube.com" target="" rel="">YouTube</a>
-                    
-                    <a href="https://www.instagram.com" target="" rel="">Instagram</a>
-                 
+                    <img src = {ytLogo} alt=""></img><a href="https://www.youtube.com/@vitalitychurch5132" target="" rel="">YouTube</a>
+                    <img src = {fbLogo} alt=""></img><a href="https://www.facebook.com/profile.php?id=61566505584528" target="" rel="">Facebook</a>
+                    <img src = {igLogo} alt=""></img><a href="https://www.instagram.com/vitality_church/" target="" rel="">Instagram</a>
+                
                 </div>
+
                 <div className="map-responsive">
                     <h2>Location</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.3178389291693!2d-81.30121112410387!3d41.71365987126017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831a5580607348d%3A0xbadb134bb5a527b3!2sLaMalfa%20Centre%20Hotel%20and%20Suites!5e0!3m2!1sen!2sus!4v1739983511197!5m2!1sen!2sus" 

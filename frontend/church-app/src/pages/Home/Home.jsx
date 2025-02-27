@@ -102,33 +102,6 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className="infoSection">
-            <motion.div 
-            initial={{ x: '-500px'}}
-            whileInView={{ x: 0}}
-            transition={{duration: 1.5}}
-            className="meetingTime">
-                <h3>Sunday Worhship</h3>
-                <h5>10:00 AM</h5>
-                <div className="meetingTime-quote">
-                    <h6>2 Corinthians 5:17</h6>
-                    <p>Therefore, if anyone is in Christ, the New creation has come:<br />The old has gone, the new is here!</p>
-                    <motion.button 
-                    whileHover={{scale: 1.1}}
-                    whileTap={{scale: 0.9}}
-                    transition={{duration: 1.5}}
-                    className="meetingTime-button">What to Expect?</motion.button>
-                </div>
-            </motion.div>
-            <motion.div 
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
-            transition={{duration: 1.5}}
-            className="meetingPlace">
-                <img src={churchImage2} alt="" />
-                <h5>5783 Heisley Road, Mentor, OH 44060</h5>  
-            </motion.div>
-        </div>
         <div className="sermonSection">
             <motion.div
             initial={{ x: '500px'}}
@@ -154,56 +127,6 @@ export default function Home() {
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
             gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </motion.div>
-        </div>
-        <div className="aboutSection">
-            <motion.h2
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
-            transition={{duration: 1.5}}
-            >About Vitality</motion.h2>
-            <motion.div className="aboutSection-info"
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
-            transition={{duration: 1.5}}>
-                <p>Vitality Church is a Bible teaching church. We are people coming together in community (church)
-                    to know and serve God. We are focused to care and to speak the Truth of God’s love as His love is 
-                    professed in John 3:16. That, God so loves you so deeply that He gave you Jesus Christ, not to condemn you but to 
-                    give you eternal life! Love God - Love People
-                </p>
-                <div className="imageHolder">
-                <img src={cross} alt="" />
-                <motion.button
-                    whileHover={{scale: 1.1}}
-                    whileTap={{scale: 0.9}}
-                    transition={{duration: 1.5}}>Learn More</motion.button>
-                <img src={cross} alt="" />
-            </div>
-            </motion.div>
-         </div>
-         
-        <div className="trailSection">
-            <div className="trailInfo">
-            <motion.div 
-            initial={{ x: '-500px'}}
-            whileInView={{ x: 0}}
-            transition={{duration: 1.5}}>
-            <h2>Trail Life</h2>
-            <p>Trail Life USA is a Christian Outdoor Adventure, Character, and Leadership Program for boys and young men. Operating from Troops that are chartered through churches in 48 states, the K-12 program centers on outdoor 
-                experiences that build a young man’s skills and allow him to grow on a personal level and as a role model and leader for his peers.  Living the Trail Life is a journey established on timeless values derived from the Bible.
-            </p>
-            <motion.button
-                    whileHover={{scale: 1.1}}
-                    whileTap={{scale: 0.9}}
-                    transition={{duration: 1.5}}>Learn More
-            </motion.button> 
-            </motion.div>
-            </div>
-            <motion.div 
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
-            transition={{duration: 1.5}}>
-            <img src={tL1} alt="" />
-             </motion.div>
         </div>
     </>
     );
