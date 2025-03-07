@@ -1,24 +1,28 @@
 
 .trailLifePage{
     height: 100%;
-    background-color: tan;
+    background-color: grey;
 
 }
 .trailLifeMainText{
     display: flex;
     justify-content: center;
     text-align: center;
-    color: green;
+    color: blue;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px white;
 }
 .trailLifeSubtext{
-    color: green;
-    <style="text-decoration: underline;">TdKern@vitalitychurch.org.</p>;
-
+    color: blue;
+    text-align: center;
     display: flex;
     justify-content: center;
     margin: auto;
     align-items: center;
+    width: 70%;
+    
 }
+
 .trailLifeContainer{
     color: black;
     display: flex;
@@ -34,7 +38,8 @@
 .infoContainer{
     display: flex;
     flex-direction: row;
-    color: green;
+    color: blue;
+    
 }
 .infoPara{
     display: flex;
@@ -59,14 +64,14 @@
     color: green;
 }
 
-.slider{
-    height: 250px;
-    margin: auto;
-    position: relative;
-    width: 90%;
-    display: grid;
-    place-items: center;
+..slider {
+    position: relative; 
+    width: 100%;
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+    z-index: 1000;
 }
+
 .slide-track{
     display: flex;
     width: calc(250px * 18);
@@ -90,7 +95,7 @@
     width: 250px;
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding-bottom: 200px;
     perspective: 100px;
 }
 
@@ -110,7 +115,7 @@ transform: rotateZ(20px);
     height: 100%;
     position:absolute;
     width: 15%;
-    z-index: 2;
+    z-index: 0;
 }
 
 .slider::before{
@@ -121,4 +126,36 @@ transform: rotateZ(20px);
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    
+}
+
+.buttons button{
+    padding: 10px 20px;
+    border:none;
+    cursor: pointer;
+    width: 50%;
+    height: 50%;
+}
+.Top-section{
+
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.logo{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.info{
+    color: blue;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    
 }

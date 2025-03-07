@@ -1,44 +1,169 @@
 import './TrailLife.css';
-import fishImage from '../../assets/trailLifeAssets/fishingkid.jpeg';
-import girlFishImage from '../../assets/trailLifeAssets/Ahgwork.jpg'
+import cc from '../../assets/trailLifeAssets/cc.jpeg';
+import image1 from '../../assets/trailLifeAssets/image1.jpeg';
+import image2 from '../../assets/trailLifeAssets/image2.jpeg';
+import image3 from '../../assets/trailLifeAssets/image3.jpeg';
+import image4 from '../../assets/trailLifeAssets/image4.jpeg';
+import image5 from '../../assets/trailLifeAssets/image5.jpeg';
+import image6 from '../../assets/trailLifeAssets/image6.jpeg';
+import image7 from '../../assets/trailLifeAssets/image7.jpeg';
+import image8 from '../../assets/trailLifeAssets/image8.jpeg';
+import image9 from '../../assets/trailLifeAssets/image9.jpeg';
+import image10 from '../../assets/trailLifeAssets/image10.jpeg';
+import image11 from '../../assets/trailLifeAssets/image11.jpeg';
+import image12 from '../../assets/trailLifeAssets/image12.jpeg';
+import image13 from '../../assets/trailLifeAssets/image13.jpeg';
+import image14 from '../../assets/trailLifeAssets/image14.jpeg';
+
+
 export default function TrailLife() {
     return(
 
     <>
 
 
-
 <body>
+
+
+    <section>
+        <div className='trailLifePage'>
+            <h1 className='trailLifeMainText'> Christian Cadets </h1>
+            <p className='trailLifeSubtext'>Therefore, if anyone is in Christ, the New Creation has come: <br /> With faith God, I pledge to uphold the values of honesty, integrity, compassion. I will strive to follow Christ's teachings, have a positive impact on my family, community, and nation, serve others selflessly, and lead by example in all that I do. Amen</p>
+                <div className='trailLifeContainer'>
+                    <h2> </h2>
+                  
+
+                    <section class="Top-section">
+                        <div class="info">Troop Advancement
+                            Christian Cadets are for both males and female youth. Christian Cadets are not identified with a
+                            particular church but are operated under the auspices and oversight of Vitality Church INC. There is an
+                            ecumenical leadership board for the overseeing and planning for Christian Cadets. This Board subject to
+                            the intervention and/or guidance to the Board of Vitality Church INC. The intention of Christian Cadets is
+                            to streamline and simplify the youth's growth and leadership development that is both enjoyable and
+                            effective. <br /> 
+
+                            <br />
+                            Objectives
+
+                            King: Knowing Jesus more intimately and following Him with endurance. <br />
+
+                            Bible: Memorizing Scripture <br />
+
+                            Pray: Becoming praying men and women <br />
+
+                            Faith: Learning to place Trust and Confidence in Jesus
+                            Community and Nation: Serving as Lights to the community, loving the USA and equipping future leaders. <br />
+                            
+                            Integrity: Learning that integrity is the essence of living out our Faith. <br />
+
+                            Humility: Not placing self over the cause. <br />
+
+                            Lead: Training youth to take a prominent role in Christian Leadership development that will impact the
+                            church and communities into the future. <br />
+
+                            Outdoors/Life Skills and learning: Advancement will be evaluated through the identification of ranks with
+                            achievement ranks (8 age-appropriate stars and age to advance leadership roles) <br />
+
+                            Shirts- Ranks will be placed on the Left sleeve and the American flag will be placed on the right sleeve. <br />
+
+                            Emblem will be over the left chest. <br />
+
+                            Hats- Ball caps emblem face, rank back. <br />
+                        </div>
+                        
+                        <div class="logo"><img src={cc} alt="" /></div>
+                        
+
+                    </section>
+
+                    <nav class="buttons">
+                        <button> Adult Volunteer Application for Chrsitan Cadets</button>
+                        <button>Christian Cadet Youth Application Form</button>
+                        <button> Christian Cadet Release of Liability Form</button>
+                    </nav>
+  
+                   
+                    
+                </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="slider">
         
             
              <div class="slide-track">
 
-                 {/* 1-9 Slides */}
+                 {/* 1-14 Slides */}
 
                 <div class="Slide">
-                    <img src={fishImage} alt="" />
+                    <img src={image1} alt="" />
                 </div>
 
                 <div class="Slide">
-                    <img src={girlFishImage} alt="" />
+                    <img src={image2} alt="" />
                 </div>
 
                 <div class="Slide">
-                    <img src={fishImage} alt="" />
+                    <img src={image3} alt="" />
                 </div>
 
                 <div class="Slide">
-                    <img src={girlFishImage} alt="" />
+                    <img src={image4} alt="" />
                 </div>
 
                  <div class="Slide">
-                    <img src={fishImage} alt="" />
+                    <img src={image5} alt="" />
                  </div>
             
                 <div class="Slide">
-                    <img src={girlFishImage} alt="" />
+                    <img src={image6} alt="" />
                 </div>
+
+                <div class="Slide">
+                    <img src={image7} alt="" />
+                </div>
+
+                <div class="Slide">
+                    <img src={image8} alt="" />
+                </div>
+
+                <div class="Slide">
+                    <img src={image9} alt="" />
+                </div>
+
+                <div class="Slide">
+                    <img src={image10} alt="" />
+                </div>
+
+                 <div class="Slide">
+                    <img src={image11} alt="" />
+                 </div>
+            
+                <div class="Slide">
+                    <img src={image12} alt="" />
+                </div>
+
+                <div class="Slide">
+                    <img src={image13} alt="" />
+                </div>
+
+                <div class="Slide">
+                    <img src={image14} alt="" />
+                </div>
+
+
+
             </div>
         
     </div>
@@ -48,30 +173,7 @@ export default function TrailLife() {
   
 
 
-    <section>
-        <div className='trailLifePage'>
-            <h1 className='trailLifeMainText'>Trail Life <br />& <br />AHG </h1>
-            <p className='trailLifeSubtext'>Therefore, if anyone is in Christ, the New Creation has come: <br /></p>
-                <div className='trailLifeContainer'>
-                    <h2> Trail Life USA</h2>
-                    <div className="infoContainer">
-                        <img src={fishImage} alt="" />
-                        <div classname="infoPara">
-                            <p>Is a Christian Outdoor Adventure, Character, and Leadership Program for boys and young men. Operating from Troops that are chartered through churches in 48 states, the K-12 program centers on outdoor experiences that build a young man’s skills and allow him to grow on a personal level and as a role model and leader for his peers.  Living the Trail Life is a journey established on timeless values derived from the Bible.</p>
-                            <p className= "infoSecPara"> The earth is the Lord's and all that is in it, the world, and those who live in it Psalm 24:1 </p>
-                        </div>
-                    </div>
-  
-                    <h2> American Heritage Girls</h2>
-                    <div  className='infoAhg'>
-                         <img src={girlFishImage}alt="" />
-                         <p > Building women of integrity through service to God, family, community and country,” American Heritage Girls is the premier national character development organization for young women that embraces Christian values and encourages family involvement.  All biological girls of any color, creed, race, national origin and socioeconomic status who agree to live according to the standards of the AHG Oath and the AHG Creed are invited to be members of American Heritage Girls. </p>
-
-                    </div>
-                    
-                </div>
-        </div>
-    </section>
+   
     </>
     )
 }
