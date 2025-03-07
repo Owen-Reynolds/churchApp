@@ -122,9 +122,9 @@ export default function TrailLife() {
                     <img src={image4} alt="" />
                 </div>
 
-                 <div class="Slide">
+                <div class="Slide">
                     <img src={image5} alt="" />
-                 </div>
+                </div>
             
                 <div class="Slide">
                     <img src={image6} alt="" />
@@ -146,10 +146,10 @@ export default function TrailLife() {
                     <img src={image10} alt="" />
                 </div>
 
-                 <div class="Slide">
+                <div class="Slide">
                     <img src={image11} alt="" />
-                 </div>
-            
+                </div>
+
                 <div class="Slide">
                     <img src={image12} alt="" />
                 </div>
