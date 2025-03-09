@@ -102,6 +102,31 @@ export default function Home() {
                 </div>
             </div>
         </div>
+        <div className="newSermonSection">
+            <div className="newSermonLeft">
+                <h2 className="newSermonLeftText">
+                    View Past Vitality Church <br /> Sermons on Youtube
+                </h2>
+                <div className="newSermonLeftImg">
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <div className="newSermonRight">
+                <div className="rightRow1">
+                    <VideoComponent link = "https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                    <VideoComponent link = "https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                </div>
+                <div className="rightRow2">
+                    <VideoComponent link = "https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                    <VideoComponent link = "https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                </div>
+                <div className="rightRow3">
+                    <VideoComponent link = "https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                    <VideoComponent link = "https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                </div>
+            </div>
+        </div>
         <div className="sermonSection">
             <motion.div
             initial={{ x: '500px'}}
@@ -130,4 +155,13 @@ export default function Home() {
         </div>
     </>
     );
+}
+
+function VideoComponent(props){
+    return(
+        <>
+        <iframe src={props.link} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </>
+    )
 }

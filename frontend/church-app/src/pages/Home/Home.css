@@ -296,6 +296,23 @@ body{
     flex: 1;
 }
 
+.newSermonSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newSermonLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newSermonLeftText{
+    font-size: 3vw;
+    font-family: "Bona Nova SC";
+}
+
 .sermonSection{
     background-color:#000000;
     display: flex;
