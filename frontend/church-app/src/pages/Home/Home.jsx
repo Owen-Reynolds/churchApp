@@ -70,14 +70,14 @@ export default function Home() {
                 <div className="newSundaySectionInfo">
                     <h2>Sunday Service 10:00am</h2>
                     <br />
-                    <p>Join us every Sunday at 10:00am for our worship service.
+                    <p className="newSundaySectionRegular">Join us every Sunday at 10:00am for our worship service.
                         Once everything gets started, worship! Remember you'll never 
                         be singled out or called on during the service.  We will never 
                         embarrass you. This is Jesus' Church, just make yourself at 
                         home and learn from Him.
                     </p>
                     <br />
-                    <p>
+                    <p className="newSundaySectionAddress">
                         5783 Heisley Road, Mentor, OH 44060
                     </p>
                     <button className="newSundaySectionButton">Learn More</button>

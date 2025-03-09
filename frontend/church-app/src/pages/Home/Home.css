@@ -84,7 +84,6 @@ body{
     margin: auto;
     align-items: center;
     width: 90%;
-    height: 80vh;
 }
 
 .newInfoSectionInfo{
@@ -92,7 +91,7 @@ body{
 }
 
 .newInfoSectionInfo h2{
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-family: "Bona Nova SC";
     margin: 0;
     text-decoration: underline;
@@ -126,6 +125,7 @@ body{
     cursor: pointer;
     border: 2px solid #1929C7;
     border-radius: 5px;
+    margin-top: 5%;
 }
 
 .newInfoSectionButton:hover{
@@ -146,7 +146,6 @@ body{
     align-items: center;
     width: 90%;
     color: white;
-    height: 80vh;
 }
 
 .newSundaySectionInfo{
@@ -155,7 +154,7 @@ body{
 }
 
 .newSundaySectionInfo h2{
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-family: "Bona Nova SC";
     margin: 0;
     text-decoration: underline;
@@ -163,10 +162,17 @@ body{
     text-decoration-thickness: 2px;
 }
 
-.newSundaySectionInfo p{
+.newSundaySectionAddress{
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+
+.newSundaySectionRegular{
     font-size: 1.5vw;
     margin: 0;
 }
+
 
 .newSundaySectionImage{
     width: 10vw;
@@ -193,6 +199,7 @@ body{
     cursor: pointer;
     border: 2px solid #1929C7;
     border-radius: 5px;
+    margin-top: 5%;
 }
 
 .newSundaySectionButton:hover{
