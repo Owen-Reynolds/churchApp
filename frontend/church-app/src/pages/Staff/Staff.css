@@ -88,10 +88,10 @@
 }
 .card img {
     width: 15vw;
-    height: 32vh;
+    height: 30vh;
     z-index: 2;
     position: relative;
-    border-radius: 5px;
+    border-radius: 8px;
     padding-top: 7%;
 }
 
