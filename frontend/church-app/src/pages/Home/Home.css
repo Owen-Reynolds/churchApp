@@ -229,7 +229,7 @@ body{
     font-size: 5vw;
     font-family: "Bona Nova SC";
     background-size: cover;
-    ;
+
 }
 
 .newCardsLeftMiddle:hover{
@@ -250,6 +250,7 @@ body{
     font-family: "Bona Nova SC";
     background-size: cover;
     flex: 1;
+    text-decoration: none;
 }
 
 .newCardsRightTop:hover{
@@ -271,6 +272,7 @@ body{
     background-size: cover;
     flex: 1;
     margin-top:2%;
+    text-decoration: none;
 }
 
 .newCardsRightBottom:hover{
@@ -288,12 +290,14 @@ body{
     padding-right: 1%;
     display: flex;
     flex: 1;
+    text-decoration: none;
 }
 
 .newCardsRight{
     display: flex;
     flex-direction: column;
     flex: 1;
+    
 }
 
 .newSermonSection{
