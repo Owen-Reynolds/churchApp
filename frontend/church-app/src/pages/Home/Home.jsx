@@ -49,16 +49,12 @@ export default function Home() {
                 <div className="newInfoSectionInfo">
                     <h2>Love God - Love People</h2>
                     <br />
-                    <p>Vitality Church is a Bible teaching church. We are people coming together in community (church)
-                        to know and serve God. We are focused to care and to speak the Truth of God’s love as His love is
-                        professed in John 3:16. That, God so loves you so deeply that He gave you Jesus Christ, not to condemn you but to
-                        give you eternal life!
-                    </p>
-                    <br />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error
-                        delectus nulla aperiam maxime ipsa, sunt possimus iste. Nihil voluptate
-                        reprehenderit laudantium quia deserunt, assumenda ipsum praesentium ut
-                        obcaecati repudiandae.
+                
+                    <p>Vitality Church is more than just a place of worship; it is a welcoming, vibrant community. Whether you are a 
+                        long-time believer or just beginning your spiritual journey, you will find a supportive and encouraging 
+                        environment at Vitality Church. The sermons delivered at Vitality Church are thought-provoking and relevant,
+                         addressing real-life issues and providing practical guidance for daily living. The pastors share biblical truths with clarity 
+                         and compassion. Each message is crafted to inspire and challenge you to grow in your faith and apply the teachings of the Bible in meaningful ways.
                     </p>
                     <button className="newInfoSectionButton">About Us</button>
                 </div>
