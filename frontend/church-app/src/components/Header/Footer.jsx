@@ -45,7 +45,8 @@ export default function Footer() {
                 </div>
                 <div className="footer-bottom-designers">
                 <p>Website by:</p>
-                <a href="https://www.linkedin.com/in/nolan-kern25/" target="_blank" rel="linkednInNolan">
+                
+               { /*<a href="https://www.linkedin.com/in/nolan-kern25/" target="_blank" rel="linkednInNolan">
                 <img src={liLogo} alt="Nolan" />
                 </a>
                 <a href="https://www.linkedin.com/in/owen-reynolds-b8870a293/" target="_blank" rel="linkednInOwen">
@@ -53,7 +54,7 @@ export default function Footer() {
                 </a>
                 <a href="https://www.linkedin.com/in/enoch-oye-110800338/" target="_blank" rel="linkednInEnoch">
                 <img src={liLogo} alt="Enoch" />
-                </a>
+                </a>*/}
                 </div>
             </div>
         </footer>
