@@ -17,6 +17,7 @@ header ul{
     display: flex;
     justify-content: center;
     gap: 6vw;
+    padding: 0;
 }
 
 header ul li {
@@ -54,7 +55,7 @@ header ul li a:hover::after{
 }
 
 .logoHeader{
-
+    margin-right: 5%;
 }
 
 .logoHeader img{

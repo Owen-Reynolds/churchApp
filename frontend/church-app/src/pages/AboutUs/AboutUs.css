@@ -39,6 +39,8 @@ video {
 .mainContent h1{
     font-size: 4vw;
     font-family:"Bona Nova SC";
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
 }
 .mainContent h2{
     font-size: 2.5vw;

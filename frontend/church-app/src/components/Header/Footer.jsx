@@ -15,14 +15,17 @@ export default function Footer() {
             <div className="footer-content">
                 <div className="left-box">
                    <h2>Contact Us</h2>
-                    <p>Phone: <a href="tel:440-286-1212">(440) 286-1212</a></p>
+                    <p>Phone: <a href="tel:440-286-1212">(440) 290-0233</a></p>
                     <p>Email: <a href="/connect" className="footerButton">Email Us</a></p>
                 </div>
                 <div className="footer-social">
                     <h2>Socials</h2>
-                    <img src = {ytLogo} alt=""></img><a href="https://www.youtube.com/@vitalitychurch5132" target="" rel="">YouTube</a>
-                    <img src = {fbLogo} alt=""></img><a href="https://www.facebook.com/profile.php?id=61566505584528" target="" rel="">Facebook</a>
-                    <img src = {igLogo} alt=""></img><a href="https://www.instagram.com/vitality_church/" target="" rel="">Instagram</a>
+                    <a href="https://www.youtube.com/@vitalitychurch5132" target="_blank" rel="youTube"><img src = {ytLogo} alt="youTube"/></a>
+                    <a href="https://www.youtube.com/@vitalitychurch5132" target="" rel="">YouTube</a>
+                    <a href="https://www.facebook.com/profile.php?id=61566505584528" target="_blank" rel="faceBook"><img src = {fbLogo} alt="faceBook"/></a>
+                    <a href="https://www.facebook.com/profile.php?id=61566505584528" target="" rel="">Facebook</a>
+                    <a href="https://www.instagram.com/vitality_church/" target="_blank" rel="instagram"><img src = {igLogo} alt="instagram"/></a>
+                    <a href="https://www.instagram.com/vitality_church/" target="" rel="">Instagram</a>
                 
                 </div>
 
@@ -42,7 +45,8 @@ export default function Footer() {
                 </div>
                 <div className="footer-bottom-designers">
                 <p>Website by:</p>
-                <a href="https://www.linkedin.com/in/nolan-kern25/" target="_blank" rel="linkednInNolan">
+                
+               { /*<a href="https://www.linkedin.com/in/nolan-kern25/" target="_blank" rel="linkednInNolan">
                 <img src={liLogo} alt="Nolan" />
                 </a>
                 <a href="https://www.linkedin.com/in/owen-reynolds-b8870a293/" target="_blank" rel="linkednInOwen">
@@ -50,7 +54,7 @@ export default function Footer() {
                 </a>
                 <a href="https://www.linkedin.com/in/enoch-oye-110800338/" target="_blank" rel="linkednInEnoch">
                 <img src={liLogo} alt="Enoch" />
-                </a>
+                </a>*/}
                 </div>
             </div>
         </footer>

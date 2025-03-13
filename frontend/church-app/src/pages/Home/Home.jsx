@@ -14,120 +14,125 @@ import AHG from '../../assets/homePageAssets/AHG.jpg';
 import giveImg from '../../assets/homePageAssets/Give.jpg';
 import youthImg from '../../assets/homePageAssets/Youth.jpg';
 
-
-
-import {motion} from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function Home() {
-    return(
-    <>
-    
-        <div className="mainSection">
-            <div className="slideshow"></div>
-            <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1}}
-            transition={{duration: 2}}
-            className="mainTitle">
-                <h1>Vitality<br />Church</h1>
-            </motion.div>
-            <div className="mainButton">
-                <a onClick="scrollMainButton()">
-                    <motion.button 
-                    initial={{y: '200px'}}
-                    animate={{y: 0}}
-                    transition={{duration: 1.5}}
-                    whileHover={{ scale: 1.1}}
-                    whileTap={{ scale: 0.9 }}
-                    className="mainButton-Button">New Here?
-                    </motion.button>
-                </a>
+    return (
+        <>
+            <div className="mainSection">
+                <div className="slideshow"></div>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 2 }}
+                    className="mainTitle"
+                >
+                    <h1>Vitality<br />Church</h1>
+                </motion.div>
+                <div className="mainButton">
+                    <a onClick="scrollMainButton()">
+                        <motion.button
+                            initial={{ y: '200px' }}
+                            animate={{ y: 0 }}
+                            transition={{ duration: 1.5 }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="mainButton-Button"
+                        >
+                            New Here?
+                        </motion.button>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div className="newInfoSection">
-            <div className="newInfoSectionInfo">
-                <h2>Love God - Love People</h2>
-                <br />
-                <p>Vitality Church is a Bible teaching church. We are people coming together in community (church)
-                    to know and serve God. We are focused to care and to speak the Truth of God’s love as His love is 
-                    professed in John 3:16. That, God so loves you so deeply that He gave you Jesus Christ, not to condemn you but to 
-                    give you eternal life!
-                </p>
-                <br />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error 
-                    delectus nulla aperiam maxime ipsa, sunt possimus iste. Nihil voluptate 
-                    reprehenderit laudantium quia deserunt, assumenda ipsum praesentium ut 
-                    obcaecati repudiandae.
-                </p>
-                <button className="newInfoSectionButton">About Us</button>
-            </div>
-            <div className="newInfoSectionImg">
-                <img src={mainImage} alt="" />
-            </div>
-        </div>
-        <div className="newSundaySectionWrap">
-            <div className="newSundaySection">
-                <div className="newSundaySectionInfo">
-                    <h2>Sunday Service 10:00am</h2>
+            <div className="newInfoSection">
+                <div className="newInfoSectionInfo">
+                    <h2>Love God - Love People</h2>
                     <br />
-                    <p>Join us every Sunday at 10:00am for our worship service.
-                        Once everything gets started, worship! Remember you'll never 
-                        be singled out or called on during the service.  We will never 
-                        embarrass you. This is Jesus' Church, just make yourself at 
-                        home and learn from Him.
+                
+                    <p>Vitality Church is more than just a place of worship; it is a welcoming, vibrant community. Whether you are a 
+                        long-time believer or just beginning your spiritual journey, you will find a supportive and encouraging 
+                        environment at Vitality Church. The sermons delivered at Vitality Church are thought-provoking and relevant,
+                         addressing real-life issues and providing practical guidance for daily living. The pastors share biblical truths with clarity 
+                         and compassion. Each message is crafted to inspire and challenge you to grow in your faith and apply the teachings of the Bible in meaningful ways.
                     </p>
-                    <br />
-                    <p>
-                        5783 Heisley Road, Mentor, OH 44060
-                    </p>
-                    <button className="newSundaySectionButton">Learn More</button>
+                    <button className="newInfoSectionButton">About Us</button>
                 </div>
-                <div className="newSundaySectionImg">
-                    <img src={sundayImage} alt="" />
+                <div className="newInfoSectionImg">
+                    <img src={mainImage} alt="" />
                 </div>
             </div>
-        </div>
-        <div className="newCardsSection">
-            <div className="newCardsLeft">
-                <div className="newCardsLeftMiddle">
-                    <h2>Youth</h2>
+            <div className="newSundaySectionWrap">
+                <div className="newSundaySection">
+                    <div className="newSundaySectionInfo">
+                        <h2>Sunday Service 10:00am</h2>
+                        <br />
+                        <p className="newSundaySectionRegular">Join us every Sunday at 10:00am for our worship service.
+                            Once everything gets started, worship! Remember you'll never
+                            be singled out or called on during the service. We will never
+                            embarrass you. This is Jesus' Church, just make yourself at
+                            home and learn from Him.
+                        </p>
+                        <br />
+                        <p className="newSundaySectionAddress">
+                            5783 Heisley Road, Mentor, OH 44060
+                        </p>
+                        <button className="newSundaySectionButton">Learn More</button>
+                    </div>
+                    <div className="newSundaySectionImg">
+                        <img src={sundayImage} alt="" />
+                    </div>
                 </div>
             </div>
-            <div className="newCardsRight">
-                <div className="newCardsRightTop">
-                    <h2>Connect</h2>
-                </div>
-                <div className="newCardsRightBottom">
-                    <h2>Give</h2>
+            <div className="newCardsSection">
+                <Link to="/youth" className="newCardsLeft">
+                    <div className="newCardsLeftMiddle">
+                        <h2>Youth</h2>
+                    </div>
+                </Link>
+                <div className="newCardsRight">
+                    <Link to="/connect" className="newCardsRightTop">
+                        <h2>Connect</h2>
+                    </Link>
+                    <Link to="/give" className="newCardsRightBottom">
+                        <h2>Give</h2>
+                    </Link>
                 </div>
             </div>
-        </div>
-        <div className="sermonSection">
-            <motion.div
-            initial={{ x: '500px'}}
-            whileInView={{ x: 0}}
-            transition={{duration: 1.5}}
-            className="sermon">
-            <h2>Sunday Sermons</h2>
-            <h3>Visit our YouTube channel to watch all of our sermons!</h3>
-            <motion.button 
-                    whileHover={{scale: 1.1}}
-                    whileTap={{scale: 0.9}}
-                    transition={{duration: 1.5}}
-                    className="sermonSection-button">Visit Site
-            </motion.button>
-            </motion.div>
-            <motion.div
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
-            transition={{duration: 1.5}}
-            className="sermonVideo">
-            <img src={YoutubeImage} alt="" />
-            <iframe src="https://www.youtube.com/embed/bYagof6_xOE?si=ISytgpvsEIAYOvTI" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </motion.div>
-        </div>
-    </>
+            <div className="newSermonSection">
+                <div className="newSermonLeft">
+                    <h2 className="newSermonLeftText">
+                        View Past Vitality Church <br /> Sermons on Youtube
+                    </h2>
+                    <div className="newSermonLeftImg">
+                        <img src="" alt="" />
+                        <img src="" alt="" />
+                    </div>
+                </div>
+                <div className="newSermonRight">
+                    <div className="rightRow1">
+                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                    </div>
+                    <div className="rightRow2">
+                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                    </div>
+                    <div className="rightRow3">
+                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                    </div>
+                </div>
+            </div>
+        </>
     );
+}
+
+function VideoComponent(props) {
+    return (
+        <>
+            <iframe src={props.link} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+        </>
+    )
 }

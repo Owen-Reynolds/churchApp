@@ -8,6 +8,8 @@ import timMcNamee from '../../assets/staffAssets/timMcNamee.jpg';
 import rondaKern from '../../assets/staffAssets/rondaKern.jpg';
 import scottMiller from '../../assets/staffAssets/scottMiller.jpg';
 import vitalityLogo from '../../assets/staffAssets/vitalitylogowhite.png';
+import cindyKeeney from '../../assets/staffAssets/cindyKeeney.jpg';
+import dustyKeeney from '../../assets/staffAssets/dustyKeeney.jpg';
 
 export default function AboutUs() {
     const [expandedCard, setExpandedCard] = useState(null);
@@ -29,7 +31,7 @@ export default function AboutUs() {
                         
                     />
                     <Card
-                        image={pastorDave}
+                        image={dustyKeeney}
                         title="Associate Pastor"
                         description="Dusty Keeney"
                         isExpanded={expandedCard === 2}
@@ -45,7 +47,7 @@ export default function AboutUs() {
                         
                     />
                     <Card
-                        image={dorothyHarvey}
+                        image={cindyKeeney}
                         title="Director of Missions"
                         description="Cindy Keeney"
                         isExpanded={expandedCard === 4}
