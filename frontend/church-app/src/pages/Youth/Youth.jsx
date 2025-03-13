@@ -1,29 +1,28 @@
-import './TrailLife.css';
-import cc from '../../assets/trailLifeAssets/cc.jpeg';
-import image1 from '../../assets/trailLifeAssets/image1.jpeg';
-import image2 from '../../assets/trailLifeAssets/image2.jpeg';
-import image3 from '../../assets/trailLifeAssets/image3.jpeg';
-import image4 from '../../assets/trailLifeAssets/image4.jpeg';
-import image5 from '../../assets/trailLifeAssets/image5.jpeg';
-import image6 from '../../assets/trailLifeAssets/image6.jpeg';
-import image7 from '../../assets/trailLifeAssets/image7.jpeg';
-import image8 from '../../assets/trailLifeAssets/image8.jpeg';
-import image9 from '../../assets/trailLifeAssets/image9.jpeg';
-import image10 from '../../assets/trailLifeAssets/image10.jpeg';
-import image11 from '../../assets/trailLifeAssets/image11.jpeg';
-import image12 from '../../assets/trailLifeAssets/image12.jpeg';
-import image13 from '../../assets/trailLifeAssets/image13.jpeg';
-import image14 from '../../assets/trailLifeAssets/image14.jpeg';
+import './Youth.css';
+import cc from '../../assets/youthAssets/ccadets.jpeg';
+import image1 from '../../assets/youthAssets/image1.jpeg';
+import image2 from '../../assets/youthAssets/image2.jpeg';
+import image3 from '../../assets/youthAssets/image3.jpeg';
+import image4 from '../../assets/youthAssets/image4.jpeg';
+import image5 from '../../assets/youthAssets/image5.jpeg';
+import image6 from '../../assets/youthAssets/image6.jpeg';
+import image7 from '../../assets/youthAssets/image7.jpeg';
+import image8 from '../../assets/youthAssets/image8.jpeg';
+import image9 from '../../assets/youthAssets/image9.jpeg';
+import image10 from '../../assets/youthAssets/image10.jpeg';
+import image11 from '../../assets/youthAssets/image11.jpeg';
+import image12 from '../../assets/youthAssets/image12.jpeg';
+import image13 from '../../assets/youthAssets/image13.jpeg';
+import image14 from '../../assets/youthAssets/image14.jpeg';
 
 
-export default function TrailLife() {
+export default function Youth() {
     return(
 
     <>
 
 
 <body>
-
 
     <section>
         <div className='trailLifePage'>
@@ -87,17 +86,6 @@ export default function TrailLife() {
                 </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="slider">
         

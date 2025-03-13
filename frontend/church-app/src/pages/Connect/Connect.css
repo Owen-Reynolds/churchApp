@@ -5,7 +5,7 @@
     background-color: #e0dddd;
     position: relative;
     z-index: 1;
-    height: ;
+    
 }
 
 .connectContent::before {
@@ -109,7 +109,7 @@ form label{
     font-size: .82vw;
 }
 
-button{
+.connectForm button{
     margin-top: 3%;
     background-color: #1929C7;
     color: white;
@@ -125,7 +125,7 @@ button{
     font-size: 1.5vw;
 }
 
-button:hover{
+.connectForm button:hover{
     background-color: white;
     color: #1929C7;
     border: solid 1px #1929C7;

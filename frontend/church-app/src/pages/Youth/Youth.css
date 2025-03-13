@@ -1,28 +1,23 @@
 
 .trailLifePage{
     height: 100%;
-    background-color: grey;
+    background-color: rgb(146, 139, 131);
 
 }
 .trailLifeMainText{
     display: flex;
     justify-content: center;
     text-align: center;
-    color: blue;
-    font-size: 50px;
-    text-shadow: 2px 2px 4px white;
+    color: rgb(10, 51, 198);
 }
 .trailLifeSubtext{
-    color: blue;
-    text-align: center;
+    color: rgb(37, 23, 193);
+
     display: flex;
     justify-content: center;
     margin: auto;
     align-items: center;
-    width: 70%;
-    
 }
-
 .trailLifeContainer{
     color: black;
     display: flex;
@@ -38,8 +33,7 @@
 .infoContainer{
     display: flex;
     flex-direction: row;
-    color: blue;
-    
+    color: green;
 }
 .infoPara{
     display: flex;
@@ -64,14 +58,14 @@
     color: green;
 }
 
-..slider {
-    position: relative; 
-    width: 100%;
-    margin-top: 50px; 
-    margin-bottom: 50px; 
-    z-index: 1000;
+.slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
 }
-
 .slide-track{
     display: flex;
     width: calc(250px * 18);
@@ -95,7 +89,7 @@
     width: 250px;
     display: flex;
     align-items: center;
-    padding-bottom: 200px;
+    padding: 15px;
     perspective: 100px;
 }
 
@@ -115,7 +109,7 @@ transform: rotateZ(20px);
     height: 100%;
     position:absolute;
     width: 15%;
-    z-index: 0;
+    z-index: 2;
 }
 
 .slider::before{
@@ -126,36 +120,4 @@ transform: rotateZ(20px);
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
-}
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
-    
-}
-
-.buttons button{
-    padding: 10px 20px;
-    border:none;
-    cursor: pointer;
-    width: 50%;
-    height: 50%;
-}
-.Top-section{
-
-    display: flex;
-    flex-direction: row-reverse;
-
-}
-
-.logo{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.info{
-    color: blue;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: bold;
-    
 }
