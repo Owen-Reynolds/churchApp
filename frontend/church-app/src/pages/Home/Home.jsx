@@ -22,6 +22,7 @@ export default function Home() {
         <>
             <div className="mainSection">
                 <div className="slideshow"></div>
+                
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -30,8 +31,10 @@ export default function Home() {
                 >
                     <h1>Vitality<br />Church</h1>
                 </motion.div>
+                
                 <div className="mainButton">
                     <a onClick="scrollMainButton()">
+                    <Link to="/connect">
                         <motion.button
                             initial={{ y: '200px' }}
                             animate={{ y: 0 }}
@@ -42,6 +45,7 @@ export default function Home() {
                         >
                             New Here?
                         </motion.button>
+                        </Link>
                     </a>
                 </div>
             </div>
@@ -56,7 +60,9 @@ export default function Home() {
                          addressing real-life issues and providing practical guidance for daily living. The pastors share biblical truths with clarity 
                          and compassion. Each message is crafted to inspire and challenge you to grow in your faith and apply the teachings of the Bible in meaningful ways.
                     </p>
+                    <Link to ="/AboutUs">
                     <button className="newInfoSectionButton">About Us</button>
+                    </Link>
                 </div>
                 <div className="newInfoSectionImg">
                     <img src={mainImage} alt="" />
@@ -77,7 +83,9 @@ export default function Home() {
                         <p className="newSundaySectionAddress">
                             5783 Heisley Road, Mentor, OH 44060
                         </p>
+                        <Link to ="/SundayMornings">
                         <button className="newSundaySectionButton">Learn More</button>
+                        </Link>
                     </div>
                     <div className="newSundaySectionImg">
                         <img src={sundayImage} alt="" />
