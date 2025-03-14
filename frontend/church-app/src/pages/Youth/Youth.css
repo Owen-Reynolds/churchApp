@@ -9,14 +9,17 @@
     justify-content: center;
     text-align: center;
     color: rgb(10, 51, 198);
+    font-size: 5vw;
+    text-shadow: white 5px 5px 5px;
 }
 .trailLifeSubtext{
     color: rgb(37, 23, 193);
-
-    display: flex;
+    display:flex ;
     justify-content: center;
     margin: auto;
-    align-items: center;
+    width: 50%;
+ text-align: center;
+ 
 }
 .trailLifeContainer{
     color: black;
@@ -29,7 +32,18 @@
   
     
 }
+.Top-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 
+}
+.info{
+    width: 70%;
+    font-size: 120%;
+    padding-left: 5%;
+    color: rgb(37, 23, 193);
+}
 .infoContainer{
     display: flex;
     flex-direction: row;
@@ -93,6 +107,7 @@
     perspective: 100px;
 }
 
+
 img{
     width: 100%;
     transition: transform 1%;
@@ -120,4 +135,19 @@ transform: rotateZ(20px);
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
+}
+.buttons{
+display: flex;
+flex-direction: row;
+
+}
+
+.buttons button {
+  
+    font-size: 30px; 
+    padding: 12px 24px; 
+    justify-content: center;
+    margin: 10%;
+    box-shadow: blue 10px 10px 10px;
+    
 }
