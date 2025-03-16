@@ -16,6 +16,7 @@ import image13 from '../../assets/youthAssets/image13.jpeg';
 import image14 from '../../assets/youthAssets/image14.jpeg';
 
 
+
 export default function Youth() {
     return(
 
@@ -80,8 +81,8 @@ export default function Youth() {
                         <button>Christian Cadet Youth Application Form</button>
                         <button> Christian Cadet Release of Liability Form</button>
                     </nav>
-  
-                   
+
+                    
                     
                 </div>
         </div>
@@ -112,10 +113,6 @@ export default function Youth() {
 
                 <div class="Slide">
                     <img src={image5} alt="" />
-                </div>
-            
-                <div class="Slide">
-                    <img src={image6} alt="" />
                 </div>
 
                 <div class="Slide">
