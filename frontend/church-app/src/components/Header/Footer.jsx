@@ -16,7 +16,20 @@ export default function Footer() {
                 <div className="left-box">
                    <h2>Contact Us</h2>
                     <p>Phone: <a href="tel:440-286-1212">(440) 290-0233</a></p>
-                    <p>Email: <a href="/connect" className="footerButton">Email Us</a></p>
+                    <p>Email: <Link to ="/Connect" className="footerButton">Email Us</Link></p>
+                    <h2>Menu</h2>
+                    <p><Link to="/AboutUs" className="footerButton">About Us</Link></p>
+                    <p><Link to="/SundayMornings" className="footerButton">Sunday Mornings</Link></p>
+                    <p><Link to="/Staff" className="footerButton">Staff</Link></p>
+                    <p><Link to="/Youth" className="footerButton">Youth</Link></p>
+                    <p><Link to="/Connect" className="footerButton">Connect</Link></p>
+                    <p><Link to="/Give" className="footerButton">Give</Link></p>
+
+
+
+
+
+
                 </div>
                 <div className="footer-social">
                     <h2>Socials</h2>
