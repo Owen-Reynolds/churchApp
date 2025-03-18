@@ -130,8 +130,10 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="missionsTrip">
-                
+            <div className="missionsTripContainer">
+                <div className="missionsTripContent">
+                    
+                </div>
             </div>
         </>
     );
