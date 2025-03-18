@@ -18,7 +18,7 @@ export default function AboutUs() {
         <>
             <div className="staffHeader">
                 <video className="heartvid" src={heartrate} autoPlay loop muted />
-                <h1>Meet the Team.</h1>
+                <h1>Meet the Team</h1>
             </div>
             <div className = "staffWave"></div>
             <div className="mainStaffContent">
@@ -54,13 +54,6 @@ export default function AboutUs() {
                         onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
                        
                     />
-                    <div className = "logoCard">
-                     <Card
-                        image={vitalityLogo}
-                        isExpanded={expandedCard === 4}
-                        onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
-                    />
-                    </div>
                     <Card
                         image={dorothyHarvey}
                         title="Office Administrator"
