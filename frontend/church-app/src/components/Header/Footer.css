@@ -45,7 +45,8 @@
         grid-template-columns: repeat(3, 1fr); 
         gap: 1rem; 
         text-align: center;
-        margin-bottom: 5%;     
+        margin-bottom: 5%;  
+           
 }
 .left-box .menu-grid p:hover {
     text-decoration: underline;
