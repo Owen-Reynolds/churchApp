@@ -18,149 +18,77 @@ import vitalogo from '../../assets/staffAssets/vitalitylogowhite.png';
 
 
 export default function Youth() {
-    return(
 
-    <>
+    const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14];
 
+    return (
+        <>
+            <section className="trailLifePage">
+                <h1 className="trailLifeMainText">Christian Cadets</h1>
 
-<body>
-
-    <section>
-        <div className='trailLifePage'>
-            <h1 className='trailLifeMainText'> Christian Cadets </h1>
-            <p className='trailLifeSubtext'>Therefore, if anyone is in Christ, the New Creation has come: <br /> With faith God, I pledge to uphold the values of honesty, integrity, compassion. I will strive to follow Christ's teachings, have a positive impact on my family, community, and nation, serve others selflessly, and lead by example in all that I do. Amen</p>
-                <div className='trailLifeContainer'>
-                    <h2> </h2>
-                  
-
-                    <section class="Top-section">
-                        <div class="info">Troop Advancement
-                            Christian Cadets are for both males and female youth. Christian Cadets are not identified with a
-                            particular church but are operated under the auspices and oversight of Vitality Church INC. There is an
-                            ecumenical leadership board for the overseeing and planning for Christian Cadets. This Board subject to
-                            the intervention and/or guidance to the Board of Vitality Church INC. The intention of Christian Cadets is
-                            to streamline and simplify the youth's growth and leadership development that is both enjoyable and
-                            effective. <br /> 
-
-                            <br />
-                            Objectives
-
-                            King: Knowing Jesus more intimately and following Him with endurance. <br />
-
-                            Bible: Memorizing Scripture <br />
-
-                            Pray: Becoming praying men and women <br />
-
-                            Faith: Learning to place Trust and Confidence in Jesus
-                            Community and Nation: Serving as Lights to the community, loving the USA and equipping future leaders. <br />
-                            
-                            Integrity: Learning that integrity is the essence of living out our Faith. <br />
-
-                            Humility: Not placing self over the cause. <br />
-
-                            Lead: Training youth to take a prominent role in Christian Leadership development that will impact the
-                            church and communities into the future. <br />
-
-                            Outdoors/Life Skills and learning: Advancement will be evaluated through the identification of ranks with
-                            achievement ranks (8 age-appropriate stars and age to advance leadership roles) <br />
-
-                            Shirts- Ranks will be placed on the Left sleeve and the American flag will be placed on the right sleeve. <br />
-
-                            Emblem will be over the left chest. <br />
-
-                            Hats- Ball caps emblem face, rank back. <br />
+                <div className="trailLifeContainer">
+                    <section className="Top-section">
+                        <div className="info">
+                            <p>
+                                Christian Cadets are for both males and female youth. Christian Cadets are not identified with a
+                                particular church but are operated under the auspices and oversight of Vitality Church INC. There is an
+                                ecumenical leadership board for the overseeing and planning for Christian Cadets. This Board is subject to
+                                the intervention and/or guidance of the Board of Vitality Church INC. The intention of Christian Cadets is
+                                to streamline and simplify the youth's growth and leadership development that is both enjoyable and
+                                effective.
+                            </p>
                         </div>
-                        
-                        <div class="logo"><img src={cc} alt="" /></div>
-                        
 
+                        <div className="logo">
+                            <img src={cc} alt="Christian Cadets Logo" />
+                        </div>
                     </section>
 
-                    <nav class="buttons">
-                        <button whileHover={{scale:1.1}} whileTap={{scale:0.9}}> Adult Volunteer Application for Chrsitan Cadets</button>
-                        <button>Christian Cadet Youth Application Form</button>
-                        <button> Christian Cadet Release of Liability Form</button>
-                    </nav>
-
-                    <div class="VitalityLogo">
-                        <img src={vitalogo} alt="" />
+                    <div className="Middle-section">
+                        <h2>Objectives</h2>
+                        <p><b>King:</b> Knowing Jesus more intimately and following Him with endurance.</p>
+                        <p><b>Bible:</b> Memorizing Scripture</p>
+                        <p><b>Pray:</b> Becoming praying men and women</p>
+                        <p><b>Faith:</b> Learning to place Trust and Confidence in Jesus</p>
+                        <p><b>Community and Nation:</b> Serving as Lights to the community, loving the USA, and equipping future leaders.</p>
+                        <p><b>Integrity:</b> Learning that integrity is the essence of living out our Faith.</p>
+                        <p><b>Humility:</b> Not placing self over the cause.</p>
+                        <p><b>Lead:</b> Training youth to take a prominent role in Christian Leadership development that will impact the
+                            church and communities into the future.</p>
+                        <p><b>Outdoors/Life Skills:</b> Advancement will be evaluated through the identification of ranks with
+                            achievement ranks (8 age-appropriate stars and age to advance leadership roles).</p>
+                        <p><b>Shirts:</b> Ranks will be placed on the Left sleeve and the American flag will be placed on the right sleeve.</p>
+                        <p><b>Emblem:</b> Will be over the left chest.</p>
+                        <p><b>Hats:</b> Ball caps emblem face, rank back.</p>
                     </div>
-                    
-                </div>
-        </div>
-    </section>
 
-    <div class="slider">
-        
-            
-             <div class="slide-track">
+                    <div className="Bottom-section">
+                        <nav className="Youth-buttons">
+                            <h2>Forms</h2>
+                            <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                                Adult Volunteer Application for Christian Cadets
+                            </button>
+                            <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                                Christian Cadet Youth Application Form
+                            </button>
+                            <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                                Christian Cadet Release of Liability Form
+                            </button>
+                        </nav>
+                    </div>
 
-                 {/* 1-14 Slides */}
-
-                <div class="Slide">
-                    <img src={image1} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image2} alt="" />
                 </div>
 
-                <div class="Slide">
-                    <img src={image3} alt="" />
+                <div className="slider">
+                    <div className="slide-track">
+                        {images.map((img, index) => (
+                            <div className="Slide" key={index}>
+                                <img src={img} alt={`Slide ${index + 1}`} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-
-                <div class="Slide">
-                    <img src={image4} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image5} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image7} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image8} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image9} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image10} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image11} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image12} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image13} alt="" />
-                </div>
-
-                <div class="Slide">
-                    <img src={image14} alt="" />
-                </div>
-
-
-
-            </div>
-        
-    </div>
-           
-    </body>
-
-  
-
-
-   
-    </>
+            </section>
+        </>
     )
 }

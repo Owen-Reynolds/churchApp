@@ -1,7 +1,7 @@
 
 .trailLifePage{
     height: 100%;
-    background-color: rgb(146, 139, 131);
+    background-color: white;
 
 }
 .trailLifeMainText{
@@ -11,16 +11,13 @@
     color: rgb(10, 51, 198);
     font-size: 5vw;
     text-shadow: white 5px 5px 5px;
+    margin: 0;
+    padding-top: 3%;
+    font-family: "Bona Nova SC";
 }
-.trailLifeSubtext{
-    color: rgb(37, 23, 193);
-    display:flex ;
-    justify-content: center;
-    margin: auto;
-    width: 50%;
- text-align: center;
+
  
-}
+
 .trailLifeContainer{
     color: black;
     display: flex;
@@ -36,6 +33,10 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    margin-top: 4%;
 
 }
 .info{
@@ -43,6 +44,34 @@
     font-size: 120%;
     padding-left: 5%;
     color: rgb(37, 23, 193);
+    margin: auto;
+}
+
+.info p{
+    font-size: 2.5vw;
+    margin: 0;
+}
+.Middle-section{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.Middle-section h2{
+
+    font-size: 5vw;
+    font-family: "Bona Nova Sc";
+    color: rgb(37, 23, 193);
+}
+.Bottom-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Bottom-section nav h2{
+font-size: 5vw;
+font-family: "Bona Nova Sc";
 }
 .infoContainer{
     display: flex;
@@ -140,21 +169,19 @@ transform: scale(1.05);
     top: 0;
     transform: rotateZ(180deg);
 }
-.buttons{
+.Youth-buttons{
 display: flex;
 flex-direction: row;
 
-    
 }
 
-.buttons button {
+
+.Youth-buttons button {
   
     font-size: 30px; 
-    padding: 12px 24px; 
     justify-content: center;
-    margin: 10%;
     box-shadow: blue 10px 10px 10px;
-
+    margin: 10%;
 }
 
 .start-bouncing{
