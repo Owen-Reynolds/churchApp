@@ -16,8 +16,6 @@ import image13 from '../../assets/youthAssets/image13.jpeg';
 import image14 from '../../assets/youthAssets/image14.jpeg';
 import vitalogo from '../../assets/staffAssets/vitalitylogowhite.png';
 
-import {Motion} from 'framer-motion'
-
 
 export default function Youth() {
     return(
@@ -79,7 +77,7 @@ export default function Youth() {
                     </section>
 
                     <nav class="buttons">
-                        <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}}> Adult Volunteer Application for Chrsitan Cadets</motion.button>
+                        <button whileHover={{scale:1.1}} whileTap={{scale:0.9}}> Adult Volunteer Application for Chrsitan Cadets</button>
                         <button>Christian Cadet Youth Application Form</button>
                         <button> Christian Cadet Release of Liability Form</button>
                     </nav>
