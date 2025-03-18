@@ -112,24 +112,27 @@ export default function Home() {
                     <h2 className="newSermonLeftText">
                         View Past Vitality Church <br /> Sermons on Youtube
                     </h2>
-                    <div className="newSermonLeftImg">
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                    </div>
                 </div>
                 <div className="newSermonRight">
-                    <div className="rightRow1">
-                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
-                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                    <div className="mainVideo">
+                        <VideoComponent className="mainSermonVideo" link="https://www.youtube.com/embed/Pe6i35pNnqo?si=rKeT5_yrPhBN7J3k" />    
+                    </div>   
+                    <div className="videoContainer">
+                        <div className="rightRow1">
+                            <VideoComponent className="sermonVideo" link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
+                        </div>
+                        <div className="rightRow2">
+                            <VideoComponent className="sermonVideo" link="https://www.youtube.com/embed/PA2aAwDO2Ds?si=JD3jsgpLWxgggp61" />
+                        </div>
+                        <div className="rightRow3">
+                            <VideoComponent className="sermonVideo" link="https://www.youtube.com/embed/2kOmhOcr64I?si=ZLpLnEZnd3blSD44" />
+                        </div>
                     </div>
-                    <div className="rightRow2">
-                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
-                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
-                    </div>
-                    <div className="rightRow3">
-                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
-                        <VideoComponent link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
-                    </div>
+                </div>
+            </div>
+            <div className="missionsTripContainer">
+                <div className="missionsTripContent">
+                    
                 </div>
             </div>
         </>
@@ -139,7 +142,7 @@ export default function Home() {
 function VideoComponent(props) {
     return (
         <>
-            <iframe src={props.link} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            <iframe className={props.className} src={props.link} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
                 gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </>
     )

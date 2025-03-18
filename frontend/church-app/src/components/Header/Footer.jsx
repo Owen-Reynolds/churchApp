@@ -14,19 +14,34 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-content">
                 <div className="left-box">
-                   <h2>Contact Us</h2>
-                    <p>Phone: <a href="tel:440-286-1212">(440) 290-0233</a></p>
-                    <p>Email: <a href="/connect" className="footerButton">Email Us</a></p>
+                    <h2>Menu</h2>
+                    <div className="menu-grid">
+                    <p><Link to="/AboutUs" className="footerButton">About Us</Link></p>
+                    <p><Link to="/SundayMornings" className="footerButton">Sunday Mornings</Link></p>
+                    <p><Link to="/Staff" className="footerButton">Staff</Link></p>
+                    <p><Link to="/Youth" className="footerButton">Youth</Link></p>
+                    <p><Link to="/Connect" className="footerButton">Connect</Link></p>
+                    <p><Link to="/Give" className="footerButton">Give</Link></p>
+                    </div>
+                    <h2>Contact Us</h2>
+                    <div className = "contact-grid">
+                    <p>Phone: <a href="tel:440-290-0233">(440) 290-0233</a></p>
+                    <p>Email: <Link to ="/Connect" className="footerButton">Email Us</Link></p>
+                    </div>
+
+
+
+
+
+
                 </div>
                 <div className="footer-social">
                     <h2>Socials</h2>
+                    <div className = "social-grid">
                     <a href="https://www.youtube.com/@vitalitychurch5132" target="_blank" rel="youTube"><img src = {ytLogo} alt="youTube"/></a>
-                    <a href="https://www.youtube.com/@vitalitychurch5132" target="" rel="">YouTube</a>
-                    <a href="https://www.facebook.com/profile.php?id=61566505584528" target="_blank" rel="faceBook"><img src = {fbLogo} alt="faceBook"/></a>
-                    <a href="https://www.facebook.com/profile.php?id=61566505584528" target="" rel="">Facebook</a>
                     <a href="https://www.instagram.com/vitality_church/" target="_blank" rel="instagram"><img src = {igLogo} alt="instagram"/></a>
-                    <a href="https://www.instagram.com/vitality_church/" target="" rel="">Instagram</a>
-                
+                    <a href="https://www.facebook.com/profile.php?id=61566505584528" target="_blank" rel="faceBook"><img src = {fbLogo} alt="faceBook"/></a>
+                    </div>
                 </div>
 
                 <div className="map-responsive">
