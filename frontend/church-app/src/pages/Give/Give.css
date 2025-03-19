@@ -1,27 +1,99 @@
-.main-content{
+.give-header{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    height: 30vw;
+    position: relative;
+    margin:0;
+    z-index: 1;
 }
-.give-container {
-    text-align: center;
-    margin-top: 5%;
-    height: 40vh;
+.give-header h1{
+    -webkit-text-stroke: 2px #1929C7; 
+    text-stroke: 3px #1929C7;
+    font-family:"Bona Nova SC";
+    color: rgb(255, 255, 255);
+    font-size: 8vw;
+    margin-bottom: 10%;
 }
 
 .donate-button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 30px;
     color: white;
-    background-color: #1929C7;
-    border: none;
+    background-color: #192ac700;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
+    position: absolute;
+    top: 70%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .065em;
+    -webkit-text-stroke: 1px #1929C7; 
+    text-stroke: 1px #1929C7;
 }
 
 .donate-button:hover {
     background-color: #0f1a8c;
+}
+
+.give-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    margin-top:5%;
+    margin-bottom: 5%;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .065em;
+
+}
+.give-container p{
+    font-size: 1.3vw;
+}
+
+
+.heartvidGive{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.give-container h1{
+    font-size: 3.5vw;
+    font-family: "Bona Nova SC";
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+    text-decoration-thickness: 2px;
+}
+
+.give-left-box{
+    text-align: center;
+    padding-left: 5%;
+    margin-right: 5%;
+    flex:1;
+}
+.give-right-box  p{
+    padding-bottom: 5%;
+}
+.give-left-box p{
+    padding-bottom: 5%;
+}
+.give-right-box{
+    text-align: center;
+    padding-right: 5%;
+    margin-left: 5%;
+    flex:1;
 }
