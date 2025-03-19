@@ -66,7 +66,6 @@ align-items: center;
 .Bottom-section{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
 }
 .Bottom-section nav h2{
@@ -171,17 +170,27 @@ transform: scale(1.05);
 }
 .Youth-buttons{
 display: flex;
-flex-direction: row;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
 }
+.Youth-buttons h2{
+    text-align: center;
+}
+.Button-Container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 
-
-.Youth-buttons button {
+.Youth-buttons button  {
   
     font-size: 30px; 
     justify-content: center;
     box-shadow: blue 10px 10px 10px;
     margin: 10%;
+    text-align: center;
 }
 
 .start-bouncing{
