@@ -63,15 +63,8 @@ align-items: center;
     font-family: "Bona Nova Sc";
     color: rgb(37, 23, 193);
 }
-.Bottom-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Bottom-section nav h2{
-font-size: 5vw;
-font-family: "Bona Nova Sc";
-}
+
+
 .infoContainer{
     display: flex;
     flex-direction: row;
@@ -209,3 +202,36 @@ align-items: center;
     animation: bounce 0.3s ease;
 }
 
+.buttonSection{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.buttonContainer h2{
+    text-align: center;
+    font-size: 5vw;
+    font-family: "Bona Nova Sc";
+}
+
+
+.newButtons{
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.newButtons button{
+    font-size: 30px; 
+    border: 2px solid blue;
+    text-align: center;
+    width: 30vw;
+}

@@ -62,25 +62,24 @@ export default function Youth() {
                         <p><b>Hats:</b> Ball caps emblem face, rank back.</p>
                     </div>
 
-                    <div className="Bottom-section">
-                        <nav className="Youth-buttons">
-                            <h2>Forms</h2>
-                    
-                           <div classname="Button-Container">
-                                <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                                        Adult Volunteer Application for Christian Cadets
-                                    </button>
-                                    <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                                        Christian Cadet Youth Application Form
-                                    </button>
-                                    <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                                        Christian Cadet Release of Liability Form
-                                    </button>
-                           </div>
-                        </nav>
-                    </div>
-
                 </div>
+
+                <section className="buttonSection">
+                    <div className="buttonContainer">
+                        <h2>Forms</h2>
+                        <div className="newButtons">
+                            <button>
+                                Adult Volunteer Application
+                            </button>
+                            <button>
+                                Youth Application Form
+                            </button>
+                            <button>
+                                Release of Liability Form
+                            </button>
+                        </div>
+                    </div>
+                </section>
 
                 <div className="slider">
                     <div className="slide-track">
