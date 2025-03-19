@@ -65,15 +65,18 @@ export default function Youth() {
                     <div className="Bottom-section">
                         <nav className="Youth-buttons">
                             <h2>Forms</h2>
-                            <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                                Adult Volunteer Application for Christian Cadets
-                            </button>
-                            <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                                Christian Cadet Youth Application Form
-                            </button>
-                            <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                                Christian Cadet Release of Liability Form
-                            </button>
+                    
+                           <div classname="Button-Container">
+                                <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                                        Adult Volunteer Application for Christian Cadets
+                                    </button>
+                                    <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                                        Christian Cadet Youth Application Form
+                                    </button>
+                                    <button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                                        Christian Cadet Release of Liability Form
+                                    </button>
+                           </div>
                         </nav>
                     </div>
 
