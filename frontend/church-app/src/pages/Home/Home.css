@@ -54,6 +54,8 @@ body{
     font-family:"Bona Nova SC";
     margin-top: 5%;
     line-height: 1;
+    -webkit-text-stroke: 2px #1929C7; 
+    text-stroke: 3px #1929C7;
 }
 
 .mainButton{
