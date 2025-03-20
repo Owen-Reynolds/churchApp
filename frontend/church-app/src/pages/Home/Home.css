@@ -86,12 +86,15 @@ body{
     display: flex;
     flex-direction: row;
     margin: auto;
+    justify-content: center;
     align-items: center;
     width: 90%;
 }
 
 .newInfoSectionInfo{
     width: 80%;
+    text-align: center; /* Ensure text is centered */
+    margin-bottom: 2%; 
 }
 
 .newInfoSectionInfo h2{
@@ -101,11 +104,13 @@ body{
     text-decoration: underline;
     text-decoration-color: #1929C7;
     text-decoration-thickness: 2px;
+    text-align: center;
 }
 
 .newInfoSectionInfo p{
     font-size: 1.5vw;
     margin: 0;
+    text-align: center;
 }
 
 .newInfoSectionImg{
@@ -131,6 +136,7 @@ body{
     border-radius: 5px;
     margin-top: 5%;
     font-family: "Bebas Neue", serif;
+   
 }
 
 .newInfoSectionButton:hover{
@@ -344,6 +350,8 @@ body{
     color: white;
     font-family: "Bona Nova SC";
     text-align: center;
+    -webkit-text-stroke: 1px #1929C7; 
+    text-stroke: 1px #1929C7;
 }
 
 .newSermonRight{
