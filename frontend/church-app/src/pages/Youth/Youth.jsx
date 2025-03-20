@@ -15,6 +15,10 @@ import image12 from '../../assets/youthAssets/image12.jpeg';
 import image13 from '../../assets/youthAssets/image13.jpeg';
 import image14 from '../../assets/youthAssets/image14.jpeg';
 import vitalogo from '../../assets/staffAssets/vitalitylogowhite.png';
+import youthAppForm from '../../assets/youthAssets/YouthAppForm.pdf';
+import releaseLiabilityForm from '../../assets/youthAssets/ReleaseLiabilityForm.pdf';
+import adultVolunteerApp from '../../assets/youthAssets/AdultVolunteerForm.pdf';
+import cc2 from '../../assets/youthAssets/ccadets2.png';
 
 
 export default function Youth() {
@@ -23,11 +27,11 @@ export default function Youth() {
 
     return (
         <>
-            <section className="trailLifePage">
+            <div className="trailLifePage">
                 <h1 className="trailLifeMainText">Christian Cadets</h1>
 
                 <div className="trailLifeContainer">
-                    <section className="Top-section">
+                    <div className="Top-section">
                         <div className="info">
                             <p>
                                 Christian Cadets are for both males and female youth. Christian Cadets are not identified with a
@@ -40,47 +44,30 @@ export default function Youth() {
                         </div>
 
                         <div className="logo">
-                            <img src={cc} alt="Christian Cadets Logo" />
+                            <img src={cc2} alt="Christian Cadets Logo" />
                         </div>
-                    </section>
-
-                    <div className="Middle-section">
-                        <h2>Objectives</h2>
-                        <p><b>King:</b> Knowing Jesus more intimately and following Him with endurance.</p>
-                        <p><b>Bible:</b> Memorizing Scripture</p>
-                        <p><b>Pray:</b> Becoming praying men and women</p>
-                        <p><b>Faith:</b> Learning to place Trust and Confidence in Jesus</p>
-                        <p><b>Community and Nation:</b> Serving as Lights to the community, loving the USA, and equipping future leaders.</p>
-                        <p><b>Integrity:</b> Learning that integrity is the essence of living out our Faith.</p>
-                        <p><b>Humility:</b> Not placing self over the cause.</p>
-                        <p><b>Lead:</b> Training youth to take a prominent role in Christian Leadership development that will impact the
-                            church and communities into the future.</p>
-                        <p><b>Outdoors/Life Skills:</b> Advancement will be evaluated through the identification of ranks with
-                            achievement ranks (8 age-appropriate stars and age to advance leadership roles).</p>
-                        <p><b>Shirts:</b> Ranks will be placed on the Left sleeve and the American flag will be placed on the right sleeve.</p>
-                        <p><b>Emblem:</b> Will be over the left chest.</p>
-                        <p><b>Hats:</b> Ball caps emblem face, rank back.</p>
                     </div>
 
                 </div>
-
-                <section className="buttonSection">
-                    <div className="buttonContainer">
-                        <h2>Forms</h2>
-                        <div className="newButtons">
-                            <button>
-                                Adult Volunteer Application
-                            </button>
-                            <button>
-                                Youth Application Form
-                            </button>
-                            <button>
-                                Release of Liability Form
-                            </button>
-                        </div>
-                    </div>
-                </section>
-
+    <div className="pdf-container">
+    <div className="pdfs">
+        <div className="pdf-item">
+            <h2>Youth Application Form</h2>
+            <iframe id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
+            <button className="newButtons">Download/Print</button>
+        </div>
+        <div className="pdf-item">
+            <h2>Release of Liability Form</h2>
+            <iframe id="myPDF" src={releaseLiabilityForm} frameBorder="0"></iframe>
+            <button  className="newButtons">Download/Print</button>
+        </div>
+        <div className="pdf-item">
+            <h2>Adult Volunteer Application</h2>
+            <iframe id="myPDF" src={adultVolunteerApp} frameBorder="0"></iframe>
+            <button className="newButtons">Download/Print</button>
+        </div>
+    </div>
+</div>
                 <div className="slider">
                     <div className="slide-track">
                         {images.map((img, index) => (
@@ -90,7 +77,7 @@ export default function Youth() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }

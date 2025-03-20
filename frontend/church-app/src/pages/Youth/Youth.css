@@ -82,15 +82,63 @@ align-items: center;
     display: flex;
     height: 30vw;
     width: 30vw;
-   
-
 }
-.infoAhg{
-    text-align: center;
+.pdf-container {
     display: flex;
-    flex-direction: row;
-    height: 30vw;
-    color: green;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 3rem; /* Add space between sections */
+}
+
+.pdf-container h2 {
+    margin-bottom: 1rem; /* Add space between the heading and the PDF */
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-family: "Bona Nova Sc";
+    padding-bottom: 5%;
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+}
+.pdfs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow PDFs to wrap if needed */
+    gap: 3rem; /* Add space between PDFs */
+    width: 100%;
+}
+
+.pdf-item {
+    display: flex;
+    flex-direction: column; /* Stack the h3 and iframe vertically */
+    align-items: center;
+    width: 30%; /* Adjust the width of each PDF item */
+    text-align: center;
+    
+}
+.pdf-container iframe {
+    width: 100%;
+    height: 30vh;
+    border: #1929C7 4px solid; /* Add border around each PDF item */
+  }
+  
+  @media (max-width: 768px) {
+    iframe {
+      height: 60vh;
+    }
+  }
+  .newButtons{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px; 
+    border: 2px solid blue;
+    text-align: center;
+    width: 10vw;
+    background-color: white;
+    font-family: "Bebas Neue", serif;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
 .slider{
@@ -198,40 +246,5 @@ align-items: center;
     70%  {transform: scale(1.05); }
     100%  {transform: scale(1); }
 }
-.bouncy-button:active{
-    animation: bounce 0.3s ease;
-}
-
-.buttonSection{
-    width: 100%;
-    margin-bottom: 10%;
-}
-
-.buttonContainer{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-}
-
-.buttonContainer h2{
-    text-align: center;
-    font-size: 5vw;
-    font-family: "Bona Nova Sc";
-}
 
 
-.newButtons{
-    display: flex;
-    justify-content: space-around;
-    gap: 5%;
-}
-
-.newButtons button{
-    font-size: 30px; 
-    border: 2px solid blue;
-    text-align: center;
-    width: 30vw;
-}
