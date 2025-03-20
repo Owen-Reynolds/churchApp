@@ -13,9 +13,19 @@ import churchImage2 from '../../assets/homePageAssets/outside2.jpg';
 import AHG from '../../assets/homePageAssets/AHG.jpg';
 import giveImg from '../../assets/homePageAssets/Give.jpg';
 import youthImg from '../../assets/homePageAssets/Youth.jpg';
+import sliderImage1 from '../../assets/homePageAssets/sliderImages/sliderImage1.jpg';
+import sliderImage2 from '../../assets/homePageAssets/sliderImages/sliderImage2.jpg';
+import sliderImage3 from '../../assets/homePageAssets/sliderImages/slideImage3.jpg';
+import sliderImage4 from '../../assets/homePageAssets/sliderImages/slideImage4.jpg';
+import sliderImage5 from '../../assets/homePageAssets/sliderImages/slideImage5.jpg';
+import sliderImage6 from '../../assets/homePageAssets/sliderImages/slideImage6.jpg';
+import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.jpg'
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
 
 export default function Home() {
     return (
@@ -132,7 +142,12 @@ export default function Home() {
             </div>
             <div className="missionsTripContainer">
                 <div className="missionsTripContent">
-                    
+                    <div className="missionsTripLeft">
+                        <MissionTripSlider />
+                    </div>
+                    <div className="missionsTripRight">
+                        <h2>Missions Trip <br /> 2025</h2>
+                    </div>
                 </div>
             </div>
         </>
@@ -146,4 +161,32 @@ function VideoComponent(props) {
                 gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </>
     )
+}
+
+function MissionTripSlider(props){
+
+    const images = [
+        sliderImage1, sliderImage2, sliderImage3, sliderImage4, sliderImage5, sliderImage6, sliderImage7
+    ];
+
+    const[index, setIndex] = useState(0);
+
+    const nextSlide = () => setIndex((prev) => (prev+1) % images.length);
+    const prevSlide = () => setIndex((prev) => (prev-1+images.length) % images.length);
+
+    return(
+        <>
+            <div className="tripSliderContainer">
+                <img key={index} src={images[index]} alt="" className="tripSliderImage" />
+                <button className="prevSlideButton" onClick={prevSlide}>
+                    <ChevronLeft size={20} />
+                </button>
+                <button className="nextSlideButton" onClick={nextSlide}>
+                    <ChevronRight size={20} />
+                </button>
+                
+            </div>
+        </>
+    );
+   
 }

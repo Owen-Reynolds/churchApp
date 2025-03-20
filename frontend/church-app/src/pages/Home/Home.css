@@ -390,5 +390,93 @@ body{
 .missionsTripContainer{
     width: 100%;
     height: 90vh;
-    background-color: white;
+
 }
+
+.missionsTripContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.missionsTripLeft{
+    display: flex;
+    width: 50%;
+}
+
+.tripSliderContainer {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust size as needed */
+    margin: 0 auto;
+}
+
+.tripSliderContainer img {
+    width: 40vw;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.prevSlideButton, 
+.nextSlideButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prevSlideButton:hover, 
+.nextSlideButton:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.prevSlideButton {
+    left: 10px;
+}
+
+.nextSlideButton {
+    right: 10px;
+}
+
+.missionsTripRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.missionsTripRight::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+    opacity: 0.3;
+    background-image: url('../../assets/homePageAssets/missionsTrip.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 2%;
+}
+
+.missionsTripRight h2{
+    font-size: 4vw;
+    color:black;
+    font-family: "Bona Nova SC";
+    text-align: center;
+}
+

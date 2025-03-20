@@ -58,17 +58,27 @@ export default function Youth() {
         <div className="pdf-item">
             <h2>Youth Application Form</h2>
             <iframe id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
-            <button className="newButtons">Download/Print</button>
+            
+             <a href={youthAppForm}download="Youth_Application_Form.pdf">
+                <button className="newButtons">Download/Print</button>
+             </a>
+
         </div>
+
         <div className="pdf-item">
             <h2>Release of Liability Form</h2>
             <iframe id="myPDF" src={releaseLiabilityForm} frameBorder="0"></iframe>
-            <button  className="newButtons">Download/Print</button>
+            <a href={releaseLiabilityForm}download="ReleaseLiabilityForm.pdf">
+                <button className="newButtons">Download/Print</button>
+             </a>
+
         </div>
         <div className="pdf-item">
             <h2>Adult Volunteer Application</h2>
             <iframe id="myPDF" src={adultVolunteerApp} frameBorder="0"></iframe>
-            <button className="newButtons">Download/Print</button>
+            <a href={adultVolunteerApp}download="AdultVolunteerForm.pdf">
+                <button className="newButtons">Download/Print</button>
+             </a>
         </div>
     </div>
 </div>
