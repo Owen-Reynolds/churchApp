@@ -1,12 +1,19 @@
 
-.trailLifePage{
+.youthPage{
     height: 100%;
     background-color: white;
 
 }
-.trailLifeMainText{
-    display: flex;
-    justify-content: center;
+.youthHeader{
+    background-image: url('../../assets/youthAssets/youthBanner4.jpg');
+    background-size: cover;
+    background-position: center;
+    height:40vh;
+    width:100%;
+}
+.youthMainText {
+    position: relative; 
+    z-index: 1; 
     text-align: center;
     color: rgb(10, 51, 198);
     font-size: 5vw;
@@ -16,15 +23,14 @@
     font-family: "Bona Nova SC";
 }
 
-.trailLifeContainer{
+.youthContainer{
     color: black;
     display: flex;
     flex-direction: column;
 
 }
-.trailLifeContainer h2{
+.youthContainer h2{
     display: flex;
-  
     
 }
 .Top-section{
@@ -37,7 +43,7 @@
     margin-top: 4%;
 
 }
-.info{
+.youthInfo{
     width: 70%;
     font-size: 120%;
     padding-left: 5%;
@@ -45,54 +51,21 @@
     margin: auto;
 }
 
-.info p{
+.youthInfo p{
     font-size: 2.5vw;
     margin: 0;
 }
-.Middle-section{
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-}
-.Middle-section h2{
-
-    font-size: 5vw;
-    font-family: "Bona Nova Sc";
-    color: rgb(37, 23, 193);
-}
-
-
-.infoContainer{
-    display: flex;
-    flex-direction: row;
-    color: green;
-}
-.infoPara{
-    display: flex;
- text-align: center;
-
-}
-.infoSecPara{
-    text-align: center;
-}
-.trailLifeContainer img{
-    display: flex;
-    height: 30vw;
-    width: 30vw;
-}
 .pdf-container {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
     align-items: center;
     width: 100%;
     margin: auto;
-    gap: 3rem; /* Add space between sections */
+    gap: 3rem;
 }
-
 .pdf-container h2 {
-    margin-bottom: 1rem; /* Add space between the heading and the PDF */
-    font-size: 1.5rem;
+    margin-bottom: 1rem; 
+    font-size: 1.5vw;
     color: rgb(0, 0, 0);
     font-family: "Bona Nova Sc";
     padding-bottom: 5%;
@@ -102,23 +75,24 @@ align-items: center;
 .pdfs {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow PDFs to wrap if needed */
-    gap: 3rem; /* Add space between PDFs */
+    flex-wrap: wrap; 
+    gap: 3rem;
     width: 100%;
 }
 
 .pdf-item {
     display: flex;
-    flex-direction: column; /* Stack the h3 and iframe vertically */
+    flex-direction: column;
     align-items: center;
-    width: 30%; /* Adjust the width of each PDF item */
+    width: 30%; 
     text-align: center;
+    padding-top: 5%;
     
 }
 .pdf-container iframe {
     width: 100%;
     height: 30vh;
-    border: #1929C7 4px solid; /* Add border around each PDF item */
+    border: #1929C7 4px solid; 
   }
   
   @media (max-width: 768px) {
@@ -135,27 +109,23 @@ align-items: center;
     width: 10vw;
     background-color: white;
     font-family: "Bebas Neue", serif;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-top: 15%;
+    margin-bottom: 30%;
+    cursor: pointer;
 }
 
-.slider{
-    height: 300px;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+.slider {
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    margin-top: 2%; 
+    
 }
+
 .slide-track{
     display: flex;
-    width: calc(250px * 18);
+    width: calc(15vw * 18);
     animation: scroll 40s linear infinite;
-}
-
-.slide-track:hover{
-    animation-play-state: paused;
 }
 
 @keyframes scroll{
@@ -168,14 +138,12 @@ align-items: center;
 }
 .slide{
     height: auto;
-    width: 250px;
+    width: 30%;
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: .3%;
 
 }
-
-
 .slide img{
     width: 100%;
     height: 100%;
@@ -186,54 +154,6 @@ align-items: center;
 
 .slide img:hover{
 transform: scale(1.05);
-}
-
-.slider::before,
-.slider::after {
-    background: linear-gradient(to right, rgba(255,255,255,0) 100%);
-    content: '';
-    height: 100%;
-    position:absolute;
-    width: 15%;
-    z-index: 2;
-}
-
-.slider::before{
-    left: 0;
-    top: 0;
-}
-.slider::after{
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-.Youth-buttons{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-}
-.Youth-buttons h2{
-    text-align: center;
-}
-.Button-Container{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.Youth-buttons button  {
-  
-    font-size: 30px; 
-    justify-content: center;
-    box-shadow: blue 10px 10px 10px;
-    margin: 10%;
-    text-align: center;
-}
-
-.start-bouncing{
-    animation: bounce 1s ease-in 1;
 }
 
 @keyframes bounce{

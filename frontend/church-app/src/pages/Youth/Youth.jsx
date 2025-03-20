@@ -20,6 +20,7 @@ import releaseLiabilityForm from '../../assets/youthAssets/ReleaseLiabilityForm.
 import adultVolunteerApp from '../../assets/youthAssets/AdultVolunteerForm.pdf';
 import cc2 from '../../assets/youthAssets/ccadets2.png';
 import fishingIMG from '../../assets/youthAssets/fishingIMG.jpg';
+import youthCrosses from '../../assets/youthAssets/youthCrosses.png';
 
 
 export default function Youth() {
@@ -28,70 +29,68 @@ export default function Youth() {
 
     return (
         <>
-        
-            
-        
-            <div className="trailLifePage">
-                
-            <h1 className="trailLifeMainText">Christian Cadets</h1>
-                <div className="trailLifeContainer">
-                    <div className="Top-section">
-                        <div className="info">
-                            <p>
-                                Christian Cadets are for both males and female youth. Christian Cadets are not identified with a
-                                particular church but are operated under the auspices and oversight of Vitality Church INC. There is an
-                                ecumenical leadership board for the overseeing and planning for Christian Cadets. This Board is subject to
-                                the intervention and/or guidance of the Board of Vitality Church INC. The intention of Christian Cadets is
-                                to streamline and simplify the youth's growth and leadership development that is both enjoyable and
-                                effective.
-                            </p>
-                        </div>
-
-                        <div className="logo">
-                            <img src={cc2} alt="Christian Cadets Logo" />
-                        </div>
-                    </div>
-
+        <div className="youthPage">
+            <div className="youthHeader">
+           
+                <h1 className="youthMainText">Christian Cadets</h1>
+               
+            </div>
+        </div>
+        <div className="youthContainer">
+            <div className="Top-section">
+                 <div className="youthInfo">
+                     <p>
+                    Christian Cadets are for both males and female youth. Christian Cadets are not identified with a
+                    particular church but are operated under the auspices and oversight of Vitality Church INC. There is an
+                    ecumenical leadership board for the overseeing and planning for Christian Cadets. This Board is subject to
+                    the intervention and/or guidance of the Board of Vitality Church INC. The intention of Christian Cadets is
+                    to streamline and simplify the youth's growth and leadership development that is both enjoyable and
+                    effective.
+                    </p>
                 </div>
+            <div className="logo">
+                <img src={cc2} alt="Christian Cadets Logo" />
+        </div>
+    </div>
+    <div className="slider">
+    <div className="slide-track">
+            {images.map((img, index) => (
+                <div className="slide" key={index}>
+                    <img src={img} alt={`Slide ${index + 1}`} />
+                </div>
+            ))}
+        </div>
+        </div>
     <div className="pdf-container">
     <div className="pdfs">
         <div className="pdf-item">
             <h2>Youth Application Form</h2>
             <iframe id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
-            
-             <a href={youthAppForm}download="Youth_Application_Form.pdf">
-                <button className="newButtons">Download/Print</button>
-             </a>
+            <a href={youthAppForm} target="_blank" rel="noopener noreferrer">
+                <button className="newButtons">Open</button>
+            </a>
 
         </div>
 
         <div className="pdf-item">
             <h2>Release of Liability Form</h2>
             <iframe id="myPDF" src={releaseLiabilityForm} frameBorder="0"></iframe>
-            <a href={releaseLiabilityForm}download="ReleaseLiabilityForm.pdf">
-                <button className="newButtons">Download/Print</button>
-             </a>
-
+            <a href={releaseLiabilityForm} target="_blank" rel="noopener noreferrer">
+                <button className="newButtons">Open</button>
+            </a>
         </div>
         <div className="pdf-item">
             <h2>Adult Volunteer Application</h2>
             <iframe id="myPDF" src={adultVolunteerApp} frameBorder="0"></iframe>
-            <a href={adultVolunteerApp}download="AdultVolunteerForm.pdf">
-                <button className="newButtons">Download/Print</button>
-             </a>
+            <a href={adultVolunteerApp} target="_blank" rel="noopener noreferrer">
+                <button className="newButtons">Open</button>
+            </a>
         </div>
     </div>
 </div>
-                <div className="slider">
-                    <div className="slide-track">
-                        {images.map((img, index) => (
-                            <div className="Slide" key={index}>
-                                <img src={img} alt={`Slide ${index + 1}`} />
-                            </div>
-                        ))}
-                    </div>
+                
                 </div>
-            </div>
+            
         </>
     )
 }
