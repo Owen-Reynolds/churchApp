@@ -19,6 +19,7 @@ import youthAppForm from '../../assets/youthAssets/YouthAppForm.pdf';
 import releaseLiabilityForm from '../../assets/youthAssets/ReleaseLiabilityForm.pdf';
 import adultVolunteerApp from '../../assets/youthAssets/AdultVolunteerForm.pdf';
 import cc2 from '../../assets/youthAssets/ccadets2.png';
+import fishingIMG from '../../assets/youthAssets/fishingIMG.jpg';
 
 
 export default function Youth() {
@@ -27,9 +28,12 @@ export default function Youth() {
 
     return (
         <>
+        
+            
+        
             <div className="trailLifePage">
-                <h1 className="trailLifeMainText">Christian Cadets</h1>
-
+                
+            <h1 className="trailLifeMainText">Christian Cadets</h1>
                 <div className="trailLifeContainer">
                     <div className="Top-section">
                         <div className="info">

@@ -29,7 +29,7 @@ export default function Home() {
                     transition={{ duration: 2 }}
                     className="mainTitle"
                 >
-                    <h1>Vitality<br />Church</h1>
+                    <h1>Vitality<br/>Church</h1>
                 </motion.div>
                 
                 <div className="mainButton">
