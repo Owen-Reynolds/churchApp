@@ -32,7 +32,7 @@ export default function Give() {
                     <p>Share information about our ministry with your friends, family, and social networks, helping us spread our message 
                         of faith, hope, and love.</p>
                     <h1>Volunteer</h1>
-                    <p>We would be truly grateful to have you offer your time, talents, and skills to support our programs, events, and ministries, helping us make a meaningful difference in the lives of those we serve..</p>
+                    <p>We would be truly grateful to have you offer your time, talents, and skills to support our programs, events, and ministries.</p>
                 </div>
             </div>
         
