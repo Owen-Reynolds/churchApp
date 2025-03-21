@@ -19,7 +19,7 @@ import releaseLiabilityForm from '../../assets/youthAssets/ReleaseLiabilityForm.
 import adultVolunteerApp from '../../assets/youthAssets/AdultVolunteerForm.pdf';
 import cc2 from '../../assets/youthAssets/ccadets2.png';
 import youthCrosses from '../../assets/youthAssets/youthCrosses.png';
-import ccHandBook from '../../assets/youthAssets/ccHandbook.pdf';
+import CCHandbook from '../../assets/youthAssets/CCHandbook.pdf';
 
 
 export default function Youth() {
@@ -51,7 +51,7 @@ export default function Youth() {
                      <p>
                      Show me your ways, Lord, teach me your paths. <br/>Psalm 25:4
                     </p>
-                    <iframe id="myPDF" src={ccHandBook} frameBorder="0"></iframe>
+                    <iframe id="myPDF" src={CCHandbook} frameBorder="0"></iframe>
                        
         </div>
     <div className="slider">
