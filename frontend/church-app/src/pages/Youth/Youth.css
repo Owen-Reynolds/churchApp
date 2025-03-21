@@ -67,13 +67,22 @@
     font-size: 2vw;
     color: rgb(37, 23, 193);
     font-family: "Bebas Neue", serif;
-    
+    padding-left: 15%;
+
 }
-.youthInfo2 iframe {
-    width: 40%;
-    height: 30vh;
+.youthHandBook{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    margin: auto;
+    margin-left:15% ;
+}
+.youthHandBook iframe {
+    width: 40vw;
+    height: 70vh;
     border: #1929C7 4px solid; 
-    margin-left: 10%;
   }
   
   @media (max-width: 768px) {
@@ -139,6 +148,13 @@
     margin-top: 15%;
     margin-bottom: 30%;
     cursor: pointer;
+}
+.newButtons:hover{
+    background-color: rgba(10, 51, 198, 0.833);
+    color: white;
+    transition: 0.3s;
+    text-decoration: underline;
+    text-decoration-color: white;
 }
 
 .slider {

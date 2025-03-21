@@ -44,14 +44,20 @@ export default function Youth() {
                     ecumenical leadership board for the overseeing and planning for Christian Cadets. This Board is subject to
                     the intervention and/or guidance of the Board of Vitality Church INC. The intention of Christian Cadets is
                     to streamline and simplify the youth's growth and leadership development that is both enjoyable and
-                    effective.
+                    effective.<br/>
+                    <b>View applications at the bottom of the page</b>
                     </p>     
                  </div>
                  <div className="youthInfo2">
                      <p>
                      Show me your ways, Lord, teach me your paths. <br/>Psalm 25:4
                     </p>
-                    <iframe id="myPDF" src={CCHandbook} frameBorder="0"></iframe>
+                    <div className="youthHandBook">
+                    <iframe id="myPDF" src={CCHandbook} ></iframe>
+                    <a href={CCHandbook} target="_blank" rel="noopener noreferrer">
+                <button className="newButtons">Open</button>
+            </a>
+            </div>
                        
         </div>
     <div className="slider">
