@@ -19,6 +19,7 @@ import releaseLiabilityForm from '../../assets/youthAssets/ReleaseLiabilityForm.
 import adultVolunteerApp from '../../assets/youthAssets/AdultVolunteerForm.pdf';
 import cc2 from '../../assets/youthAssets/ccadets2.png';
 import youthCrosses from '../../assets/youthAssets/youthCrosses.png';
+import ccHandBook from '../../assets/youthAssets/ccHandbook.pdf';
 
 
 export default function Youth() {
@@ -35,21 +36,24 @@ export default function Youth() {
             </div>
         </div>
         <div className="youthContainer">
-            <div className="Top-section">
                  <div className="youthInfo">
+                 <img src={cc2} alt="Christian Cadets Logo" />  
                      <p>
-                    Christian Cadets are for both males and female youth. Christian Cadets are not identified with a
+                    Christian Cadets are for both male and female youth. Christian Cadets are not identified with a
                     particular church but are operated under the auspices and oversight of Vitality Church INC. There is an
                     ecumenical leadership board for the overseeing and planning for Christian Cadets. This Board is subject to
                     the intervention and/or guidance of the Board of Vitality Church INC. The intention of Christian Cadets is
                     to streamline and simplify the youth's growth and leadership development that is both enjoyable and
                     effective.
+                    </p>     
+                 </div>
+                 <div className="youthInfo2">
+                     <p>
+                     Show me your ways, Lord, teach me your paths. <br/>Psalm 25:4
                     </p>
-                </div>
-            <div className="logo">
-                <img src={cc2} alt="Christian Cadets Logo" />
+                    <iframe id="myPDF" src={ccHandBook} frameBorder="0"></iframe>
+                       
         </div>
-    </div>
     <div className="slider">
     <div className="slide-track">
             {images.map((img, index) => (

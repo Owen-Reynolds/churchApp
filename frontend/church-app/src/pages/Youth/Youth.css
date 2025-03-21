@@ -10,51 +10,77 @@
     background-position: center;
     height:40vh;
     width:100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
 }
 .youthMainText {
     position: relative; 
     z-index: 1; 
     text-align: center;
     color: rgb(10, 51, 198);
-    font-size: 5vw;
-    text-shadow: white 5px 5px 5px;
+    font-size: 9vw;
     margin: 0;
-    padding-top: 3%;
     font-family: "Bona Nova SC";
-}
-
-.youthContainer{
-    color: black;
-    display: flex;
-    flex-direction: column;
+    -webkit-text-stroke: 2px #ffffff; 
+    text-stroke: 3px #ffffff;
 
 }
-.youthContainer h2{
+.youthInfo {
     display: flex;
-    
-}
-.Top-section{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
     width: 90%;
     margin: auto;
-    text-align: left;
-    margin-top: 4%;
-
+    gap: 2rem; 
 }
-.youthInfo{
-    width: 70%;
-    font-size: 120%;
-    padding-left: 5%;
-    color: rgb(37, 23, 193);
-    margin: auto;
+
+.youthInfo img {
+    width: 45vw; 
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .youthInfo p{
-    font-size: 2.5vw;
-    margin: 0;
+    text-align: center; 
+    font-size: 2vw;
+    color: rgb(37, 23, 193);
+    font-family: "Bebas Neue", serif;
+    line-height: 1.8; 
 }
+.youthInfo2{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    width: 90%;
+    margin: auto;
+    gap: 2rem; 
+}
+.youthInfo2 p{
+    text-align: center; 
+    font-size: 2vw;
+    color: rgb(37, 23, 193);
+    font-family: "Bebas Neue", serif;
+    
+}
+.youthInfo2 iframe {
+    width: 40%;
+    height: 30vh;
+    border: #1929C7 4px solid; 
+    margin-left: 10%;
+  }
+  
+  @media (max-width: 768px) {
+    iframe {
+      height: 60vh;
+    }
+  }
+
 .pdf-container {
     display: flex;
     flex-direction: column; 
