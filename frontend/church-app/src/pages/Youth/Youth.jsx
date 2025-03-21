@@ -1,5 +1,5 @@
 import './Youth.css';
-import cc from '../../assets/youthAssets/ccadets.jpeg';
+
 import image1 from '../../assets/youthAssets/image1.jpeg';
 import image2 from '../../assets/youthAssets/image2.jpeg';
 import image3 from '../../assets/youthAssets/image3.jpeg';
@@ -14,12 +14,10 @@ import image11 from '../../assets/youthAssets/image11.jpeg';
 import image12 from '../../assets/youthAssets/image12.jpeg';
 import image13 from '../../assets/youthAssets/image13.jpeg';
 import image14 from '../../assets/youthAssets/image14.jpeg';
-import vitalogo from '../../assets/staffAssets/vitalitylogowhite.png';
 import youthAppForm from '../../assets/youthAssets/YouthAppForm.pdf';
 import releaseLiabilityForm from '../../assets/youthAssets/ReleaseLiabilityForm.pdf';
 import adultVolunteerApp from '../../assets/youthAssets/AdultVolunteerForm.pdf';
 import cc2 from '../../assets/youthAssets/ccadets2.png';
-import fishingIMG from '../../assets/youthAssets/fishingIMG.jpg';
 import youthCrosses from '../../assets/youthAssets/youthCrosses.png';
 
 
