@@ -99,12 +99,6 @@ export default function SundayMornings() {
                     <h3>We are a Family</h3>
                     <img src={crossImage} alt="" />
                 </div>
-                <div className="familyMedia">
-                    <video width="320" height="540" autoPlay muted loop>
-                        <source  src={video} type="video/mp4"/>
-                        Your browser does not support the video.
-                    </video>
-                </div>
             </div>
         </>
     );
