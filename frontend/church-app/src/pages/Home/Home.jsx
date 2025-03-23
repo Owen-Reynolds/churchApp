@@ -2,17 +2,6 @@ import './Home.css';
 
 import mainImage from '../../assets/homePageAssets/thumbnail_IMG_6616.jpg';
 import sundayImage from '../../assets/homePageAssets/thumbnail_IMG_6494.jpg';
-import churchImage from '../../assets/vitalityChurchImage.jpg';
-import YoutubeImage from '../../assets/homePageAssets/YTlogo.png';
-import cross from '../../assets/homePageAssets/cross.png';
-import woods from '../../assets/homePageAssets/woods.jpg';
-import trailLife from '../../assets/homePageAssets/trailLife.png';
-import vitalityLogo from '../../assets/homePageAssets/vitalitylogowhite.png';
-import tL1 from '../../assets/homePageAssets/trailLife1.jpg';
-import churchImage2 from '../../assets/homePageAssets/outside2.jpg';
-import AHG from '../../assets/homePageAssets/AHG.jpg';
-import giveImg from '../../assets/homePageAssets/Give.jpg';
-import youthImg from '../../assets/homePageAssets/Youth.jpg';
 import sliderImage1 from '../../assets/homePageAssets/sliderImages/sliderImage1.jpg';
 import sliderImage2 from '../../assets/homePageAssets/sliderImages/sliderImage2.jpg';
 import sliderImage3 from '../../assets/homePageAssets/sliderImages/slideImage3.jpg';
@@ -23,8 +12,6 @@ import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.j
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 
 export default function Home() {
