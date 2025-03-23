@@ -150,6 +150,25 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div className="newMissionsTripContainer">
+                <div className="newMissionsTripContent">
+                    <div className="tripRow">
+                        <img className="tripImage" src={sliderImage1} alt="" />
+                        <img className="tripImage" src={sliderImage2} alt="" />
+                        <img className="tripImage" src={sliderImage3} alt="" />
+                    </div>
+                    <div className="tripRow">
+                        <img className="tripImage" src={sliderImage4} alt="" />
+                        <img className="tripImage" src={sliderImage5} alt="" />
+                        <img className="tripImage" src={sliderImage6} alt="" />
+                    </div>
+                    <div className="tripRow">
+                        <img className="tripImage" src={sliderImage7} alt="" />
+                        <img className="tripImage" src={sliderImage1} alt="" />
+                        <img className="tripImage" src={sliderImage2} alt="" />
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
