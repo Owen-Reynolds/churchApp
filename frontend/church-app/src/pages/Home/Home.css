@@ -388,62 +388,36 @@ body{
 }
 
 .missionsTripContainer{
-    width: 100%;
-    height: 90vh;
-
-}
-
-.missionsTripContent{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 90vh;
 }
 
 .missionsTripLeft{
-    display: flex;
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
-.tripSliderContainer {
-    position: relative;
-    width: 100%;
-    max-width: 600px; /* Adjust size as needed */
-    margin: 0 auto;
+.tripRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.tripSliderContainer img {
-    width: 40vw;
-    height: 80vh;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.tripImage{
+    width: 20%;
+    height: auto;
+    margin: 1%;
+    transition: transform 0.3s ease-in-out;
 }
 
-.prevSlideButton, 
-.nextSlideButton {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.prevSlideButton:hover, 
-.nextSlideButton:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.prevSlideButton {
-    left: 10px;
-}
-
-.nextSlideButton {
-    right: 10px;
+.tripImage:hover{
+    transform: scale(2.5);
 }
 
 .missionsTripRight{
@@ -482,29 +456,5 @@ body{
 
 .newMissionsTripContainer{
     width: 100%;
-}
-
-.newMissionsTripContent{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.tripRow{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
-    width: 100%;
-}
-
-.tripImage{
-    width: 10%;
-    height: auto;
-    margin: 1%;
-    transition: transform 0.3s ease-in-out;
 }
 
