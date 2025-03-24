@@ -1,5 +1,5 @@
 import './Youth.css';
-
+import { useState } from "react";
 import image1 from '../../assets/youthAssets/image1.jpeg';
 import image2 from '../../assets/youthAssets/image2.jpeg';
 import image3 from '../../assets/youthAssets/image3.jpeg';
@@ -14,6 +14,17 @@ import image11 from '../../assets/youthAssets/image11.jpeg';
 import image12 from '../../assets/youthAssets/image12.jpeg';
 import image13 from '../../assets/youthAssets/image13.jpeg';
 import image14 from '../../assets/youthAssets/image14.jpeg';
+import Image15 from '../../assets/youthAssets/Image15.jpg';
+import Image16 from '../../assets/youthAssets/Image16.jpg';
+import Image17 from '../../assets/youthAssets/Image17.jpg';
+import Image18 from '../../assets/youthAssets/Image18.jpg';
+import Image19 from '../../assets/youthAssets/Image19.jpg';
+import Image20 from '../../assets/youthAssets/Image20.jpg';
+import Image21 from '../../assets/youthAssets/Image21.jpg';
+import Image22 from '../../assets/youthAssets/Image22.jpg';
+import Image23 from '../../assets/youthAssets/Image23.jpg';
+import Image24 from '../../assets/youthAssets/Image24.jpg';
+import Image25 from '../../assets/youthAssets/Image25.jpg';
 import youthAppForm from '../../assets/youthAssets/YouthAppForm.pdf';
 import releaseLiabilityForm from '../../assets/youthAssets/ReleaseLiabilityForm.pdf';
 import adultVolunteerApp from '../../assets/youthAssets/AdultVolunteerForm.pdf';
@@ -24,8 +35,27 @@ import CCHandbook from '../../assets/youthAssets/CCHandbook.pdf';
 
 export default function Youth() {
 
-    const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14];
+    const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12,
+         image13, image14, Image15, Image16, Image17, Image18, Image19, Image20, Image21, Image22, Image23, Image24, Image25];
 
+    const [formData, setFormData] = useState({
+        guardianName: "",
+        phoneNumber: "",
+        email: "",
+        childName: "",
+        childAge: "",
+        otherInfo: "",
+      });
+    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Form Data Submitted:", formData);
+      };
     return (
         <>
         <div className="youthPage">
@@ -36,29 +66,85 @@ export default function Youth() {
             </div>
         </div>
         <div className="youthContainer">
-                 <div className="youthInfo">
-                 <img src={cc2} alt="Christian Cadets Logo" />  
-                     <p>
-                    Christian Cadets are for both male and female youth. Christian Cadets are not identified with a
-                    particular church but are operated under the auspices and oversight of Vitality Church INC. There is an
-                    ecumenical leadership board for the overseeing and planning for Christian Cadets. This Board is subject to
-                    the intervention and/or guidance of the Board of Vitality Church INC. The intention of Christian Cadets is
-                    to streamline and simplify the youth's growth and leadership development that is both enjoyable and
-                    effective.<br/>
-                    <b>View applications at the bottom of the page</b>
-                    </p>     
-                 </div>
+        <div className="youthInfo">
+    <img src={cc2} alt="Christian Cadets Logo" />
+    <div className="youthText">
+        <h1>Christian Cadet Pledge</h1>
+        <p>
+            With faith in God, I pledge to uphold the values of honesty, integrity, and compassion. I will strive to follow Christ’s teachings, have a positive impact on my family, community, and nation, serve others selflessly, and lead by example in all that I do. Amen.
+        </p>
+        <h2>View applications at the bottom of the page</h2>
+    </div>
+</div>
+                 
                  <div className="youthInfo2">
-                     <p>
-                     Show me your ways, Lord, teach me your paths. <br/>Psalm 25:4
-                    </p>
-                    <div className="youthHandBook">
+                 <div className="youthHandBook">
+                        <h1>Cadet Handbook</h1>
                     <iframe id="myPDF" src={CCHandbook} ></iframe>
                     <a href={CCHandbook} target="_blank" rel="noopener noreferrer">
                 <button className="newButtons">Open</button>
             </a>
             </div>
-                       
+            <div className="card">
+      <div className="card-content">
+        <h2>Sign Up</h2>
+        <form onSubmit={handleSubmit} className="form">
+          <input
+            type="text"
+            name="guardianName"
+            placeholder="Guardian Name"
+            value={formData.guardianName}
+            onChange={handleChange}
+            required
+            className="input"
+          />
+          <input
+            type="tel"
+            name="phoneNumber"
+            placeholder="Phone Number"
+            value={formData.phoneNumber}
+            onChange={handleChange}
+            required
+            className="input"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="input"
+          />
+          <input
+            type="text"
+            name="childName"
+            placeholder="Child Name"
+            value={formData.childName}
+            onChange={handleChange}
+            required
+            className="input"
+          />
+          <input
+            type="number"
+            name="childAge"
+            placeholder="Child Age"
+            value={formData.childAge}
+            onChange={handleChange}
+            required
+            className="input"
+          />
+          <textarea
+            name="otherInfo"
+            placeholder="Other Information"
+            value={formData.otherInfo}
+            onChange={handleChange}
+            className="textarea"
+          />
+        </form>
+        <button type="submit" className="button">Submit</button>
+      </div>
+    </div>       
         </div>
     <div className="slider">
     <div className="slide-track">
