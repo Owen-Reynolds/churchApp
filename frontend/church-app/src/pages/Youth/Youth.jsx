@@ -58,95 +58,22 @@ export default function Youth() {
       };
     return (
         <>
-        <div className="youthPage">
-            <div className="youthHeader">
-           
-                <h1 className="youthMainText">Christian Cadets</h1>
-               
-            </div>
-        </div>
-        <div className="youthContainer">
-        <div className="youthInfo">
-    <img src={cc2} alt="Christian Cadets Logo" />
-    <div className="youthText">
-        <h1>Christian Cadet Pledge</h1>
-        <p>
-            With faith in God, I pledge to uphold the values of honesty, integrity, and compassion. I will strive to follow Christ’s teachings, have a positive impact on my family, community, and nation, serve others selflessly, and lead by example in all that I do. Amen.
-        </p>
-        <h2>View applications at the bottom of the page</h2>
+       <div className="youthPage">
+    <div className="youthHeader">
+        <h1 className="youthMainText">Christian Cadets</h1>
     </div>
-</div>
-                 
-                 <div className="youthInfo2">
-                 <div className="youthHandBook">
-                        <h1>Cadet Handbook</h1>
-                    <iframe id="myPDF" src={CCHandbook} ></iframe>
-                    <a href={CCHandbook} target="_blank" rel="noopener noreferrer">
-                <button className="newButtons">Open</button>
-            </a>
+    <div className="youthContainer">
+        <div className="youthInfo">
+            <img src={cc2} alt="Christian Cadets Logo" />
+            <div className="youthText">
+                <h1>Christian Cadet Pledge</h1>
+                <p>
+                    With faith in God, I pledge to uphold the values of honesty, integrity, and compassion. I will strive to follow Christ’s teachings, have a positive impact on my family, community, and nation, serve others selflessly, and lead by example in all that I do. Amen.
+                </p>
+                <h2>View applications at the bottom of the page</h2>
             </div>
-            <div className="card">
-      <div className="card-content">
-        <h2>Sign Up</h2>
-        <form onSubmit={handleSubmit} className="form">
-          <input
-            type="text"
-            name="guardianName"
-            placeholder="Guardian Name"
-            value={formData.guardianName}
-            onChange={handleChange}
-            required
-            className="input"
-          />
-          <input
-            type="tel"
-            name="phoneNumber"
-            placeholder="Phone Number"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            required
-            className="input"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            className="input"
-          />
-          <input
-            type="text"
-            name="childName"
-            placeholder="Child Name"
-            value={formData.childName}
-            onChange={handleChange}
-            required
-            className="input"
-          />
-          <input
-            type="number"
-            name="childAge"
-            placeholder="Child Age"
-            value={formData.childAge}
-            onChange={handleChange}
-            required
-            className="input"
-          />
-          <textarea
-            name="otherInfo"
-            placeholder="Other Information"
-            value={formData.otherInfo}
-            onChange={handleChange}
-            className="textarea"
-          />
-        </form>
-        <button type="submit" className="button">Submit</button>
-      </div>
-    </div>       
         </div>
-    <div className="slider">
+        <div className="slider">
     <div className="slide-track">
             {images.map((img, index) => (
                 <div className="slide" key={index}>
@@ -155,35 +82,104 @@ export default function Youth() {
             ))}
         </div>
         </div>
-    <div className="pdf-container">
-    <div className="pdfs">
-        <div className="pdf-item">
-            <h2>Youth Application Form</h2>
-            <iframe id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
-            <a href={youthAppForm} target="_blank" rel="noopener noreferrer">
-                <button className="newButtons">Open</button>
-            </a>
-
+        <div className="youthContent">
+            <div className="youthHandBook">
+                <h1>Cadet Handbook</h1>
+                <iframe id="myPDF" src={CCHandbook}></iframe>
+                <a href={CCHandbook} target="_blank" rel="noopener noreferrer">
+                    <button className="newButtons">Open</button>
+                </a>
+            </div>
+            <div className="youthCard">
+                <div className="card-content">
+                    <h2>Sign Up</h2>
+                    <form onSubmit={handleSubmit} className="form">
+                        <input
+                            type="text"
+                            name="guardianName"
+                            placeholder="Guardian Name"
+                            value={formData.guardianName}
+                            onChange={handleChange}
+                            required
+                            className="input"
+                        />
+                        <input
+                            type="tel"
+                            name="phoneNumber"
+                            placeholder="Phone Number"
+                            value={formData.phoneNumber}
+                            onChange={handleChange}
+                            required
+                            className="input"
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                            className="input"
+                        />
+                        <input
+                            type="text"
+                            name="childName"
+                            placeholder="Child Name"
+                            value={formData.childName}
+                            onChange={handleChange}
+                            required
+                            className="input"
+                        />
+                        <input
+                            type="number"
+                            name="childAge"
+                            placeholder="Child Age"
+                            value={formData.childAge}
+                            onChange={handleChange}
+                            required
+                            className="input"
+                        />
+                        <textarea
+                            name="otherInfo"
+                            placeholder="Other Information"
+                            value={formData.otherInfo}
+                            onChange={handleChange}
+                            className="textarea"
+                        />
+                        <button type="submit" className="newButtons">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <div className="pdf-item">
-            <h2>Release of Liability Form</h2>
-            <iframe id="myPDF" src={releaseLiabilityForm} frameBorder="0"></iframe>
-            <a href={releaseLiabilityForm} target="_blank" rel="noopener noreferrer">
-                <button className="newButtons">Open</button>
-            </a>
-        </div>
-        <div className="pdf-item">
-            <h2>Adult Volunteer Application</h2>
-            <iframe id="myPDF" src={adultVolunteerApp} frameBorder="0"></iframe>
-            <a href={adultVolunteerApp} target="_blank" rel="noopener noreferrer">
-                <button className="newButtons">Open</button>
-            </a>
+        <div className="pdf-container">
+            <div className="pdfs">
+                <div className="pdf-item">
+                    <h2>Youth Application Form</h2>
+                    <iframe id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
+                    <a href={youthAppForm} target="_blank" rel="noopener noreferrer">
+                        <button className="newButtons">Open</button>
+                    </a>
+                </div>
+
+                <div className="pdf-item">
+                    <h2>Release of Liability Form</h2>
+                    <iframe id="myPDF" src={releaseLiabilityForm} frameBorder="0"></iframe>
+                    <a href={releaseLiabilityForm} target="_blank" rel="noopener noreferrer">
+                        <button className="newButtons">Open</button>
+                    </a>
+                </div>
+                <div className="pdf-item">
+                    <h2>Adult Volunteer Application</h2>
+                    <iframe id="myPDF" src={adultVolunteerApp} frameBorder="0"></iframe>
+                    <a href={adultVolunteerApp} target="_blank" rel="noopener noreferrer">
+                        <button className="newButtons">Open</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-                
-                </div>
             
         </>
     )

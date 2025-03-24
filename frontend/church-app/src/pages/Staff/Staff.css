@@ -45,7 +45,7 @@
     line-height: 2em;
     z-index: 2;
 }
-.cards{
+.staffCards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
