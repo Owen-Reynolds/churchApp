@@ -58,9 +58,7 @@
 .give-container p{
     font-size: 1.3vw;
 }
-
-
-.heartvidGive{
+.vidGive{
     width: 100%;
     height: 100%;
     object-fit: cover;
