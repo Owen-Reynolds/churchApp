@@ -1,4 +1,5 @@
 import './Home.css';
+import './HomeMobile.css';
 
 import mainImage from '../../assets/homePageAssets/thumbnail_IMG_6616.jpg';
 import sundayImage from '../../assets/homePageAssets/thumbnail_IMG_6494.jpg';

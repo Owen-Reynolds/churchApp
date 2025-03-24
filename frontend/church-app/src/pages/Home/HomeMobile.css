@@ -1,0 +1,177 @@
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .mainTitle h1{
+        font-size: 20vw;
+        color: white;
+        margin: 0;
+        font-family:"Bona Nova SC";
+        margin-top: 5%;
+        line-height: 1;
+        -webkit-text-stroke: 1px #1929C7; 
+        text-stroke: 2px #1929C7;
+    }
+
+    .newInfoSection{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .newInfoSectionInfo{
+        width: 100%;
+        text-align: center; /* Ensure text is centered */
+        margin-bottom: 2%; 
+        margin-top: 2%;
+    }
+    
+    .newInfoSectionInfo h2{
+        font-size: 7vw;
+        font-family: "Bona Nova SC";
+        margin: 0;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+        text-decoration-thickness: 2px;
+        text-align: center;
+    }
+
+    .newInfoSectionInfo p{
+        font-size: 3vw;
+        margin: 0;
+        text-align: center;
+    }
+
+    .newInfoSectionImg{
+        margin: 0;
+    }
+    
+    .newInfoSectionImg img{
+        border: solid 2px #1929C7;
+        padding: 1%;
+        width: 80vw;
+    }
+
+    .newInfoSectionButton{
+        width: 30vw;
+        height: 8vw;
+        font-size: 4vw;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        border: 2px solid #1929C7;
+        border-radius: 5px;
+        margin-top: 5%;
+        font-family: "Bebas Neue", serif;
+       
+    }
+
+    .newSundaySection{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        width: 90%;
+        color: white;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    .newSundaySectionInfo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .newSundaySectionInfo h2{
+        font-size: 7vw;
+        font-family: "Bona Nova SC";
+        margin: 0;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+        text-decoration-thickness: 2px;
+    }
+    
+    .newSundaySectionAddress{
+        font-size: 3vw;
+        margin: 0;
+    }
+    
+    .newSundaySectionRegular{
+        font-size: 3vw;
+        margin: 0;
+    }
+    
+    .newSundaySectionImg{
+        margin: 0;
+    }
+    
+    .newSundaySectionImg img{
+        border: solid 2px #1929C7;
+        padding: 1%;
+        width: 80vw;
+    }
+    
+    .newSundaySectionButton{
+        width: 30vw;
+        height: 8vw;
+        font-size: 4vw;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border: 2px solid #1929C7;
+        border-radius: 5px;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        font-family: "Bebas Neue", serif;
+    }
+    
+    .newSermonSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        width: 100%;
+    }
+
+    .newSermonLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .newSermonLeftText{
+        font-size: 7vw;
+        color: white;
+        font-family: "Bona Nova SC";
+        text-align: center;
+        -webkit-text-stroke: 1px #1929C7; 
+        text-stroke: 1px #1929C7;
+    }
+
+    .newSermonRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mainVideo{
+        width: 80%;
+        height: 30%;
+    }
+    
+    
+    
+    
+}

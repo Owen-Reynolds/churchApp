@@ -134,3 +134,9 @@
     height: 1.5vw;
     cursor: pointer;
 }
+
+.footerLocationHeading{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
