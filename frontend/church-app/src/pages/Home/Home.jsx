@@ -130,21 +130,7 @@ export default function Home() {
             </div>
             <div className="missionsTripContainer">
                     <div className="missionsTripLeft">
-                        <div className="tripRow">
-                            <img className="tripImage" src={sliderImage1} alt="" />
-                            <img className="tripImage" src={sliderImage2} alt="" />
-                            <img className="tripImage" src={sliderImage3} alt="" />
-                        </div>
-                        <div className="tripRow">
-                            <img className="tripImage" src={sliderImage4} alt="" />
-                            <img className="tripImage" src={sliderImage5} alt="" />
-                            <img className="tripImage" src={sliderImage6} alt="" />
-                        </div>
-                        <div className="tripRow">
-                            <img className="tripImage" src={sliderImage7} alt="" />
-                            <img className="tripImage" src={sliderImage1} alt="" />
-                            <img className="tripImage" src={sliderImage2} alt="" />
-                        </div>
+                        
                     </div>
                     <div className="missionsTripRight">
                         <h2>Missions Trip <br /> 2025</h2>
@@ -162,3 +148,28 @@ function VideoComponent(props) {
         </>
     )
 }
+
+
+function imageSlider(props){
+    images = [sliderImage1, sliderImage2, sliderImage3, sliderImage4, sliderImage5, sliderImage6, sliderImage7];
+
+    currentSlide = 0;
+
+    nextSlide = () => {
+        if(currentSlide <= images.length()){
+            currentSlide ++;
+        } else {
+            currentSlide == 0;
+        }
+    }   
+
+    prevSlide = () =>{
+        if(currentSlide != 0){
+            currentSlide --;
+        } else {
+            currentSlide = 9;
+        }
+    }
+
+}
+

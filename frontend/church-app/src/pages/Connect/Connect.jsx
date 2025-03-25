@@ -7,39 +7,6 @@ import logo from '../../assets/vitalitylogoblue.png';
 
 
 export default function Connect() {
-    const [firstname, setFirstName] = useState("");
-    const [lastname, setLastName] = useState("");
-    const [email, setEmail] = useState(""); 
-    const [textarea, setTextArea] = useState("");
-    const [checkBox, setCheckBox] = useState(false);
-    const [message, setMessage] = useState("");
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (!firstname || !lastname || !email) {
-            setMessage("Missing fields are required");
-            return;
-        } 
-
-        try {
-            const response = await axios.post("http://localhost:3000/submit", {
-                firstName: firstname,
-                lastName: lastname,
-                email: email,
-                textarea: textarea,
-                checkBox: checkBox
-            });
-            setFirstName("");
-            setLastName("");
-            setEmail("");
-            setTextArea("");
-            setCheckBox(false);
-            setMessage("Data submitted successfully");
-        } catch (error) {
-            setMessage("Error submitting data");
-        }
-    };
-
     return (
         <>
             <div className="connectContent">
@@ -55,59 +22,10 @@ export default function Connect() {
                     </div>
                 </div>
                 <div className="connectForm">
-                    <form onSubmit={handleSubmit}>
-                        <label htmlFor="firstname">Name</label>
-                        <div className="nameBox">
-                            <input
-                                type="text"
-                                id="firstname"
-                                placeholder="First Name"
-                                value={firstname}
-                                onChange={(e) => setFirstName(e.target.value)}
-                            />
-                            <input
-                                type="text"
-                                id="lastname"
-                                placeholder="Last Name"
-                                value={lastname}
-                                onChange={(e) => setLastName(e.target.value)}
-                            />
-                        </div>
-                        <label htmlFor="email">Email</label>
-                        <div className="emailBox">
-                            <input
-                                type="email"
-                                placeholder="example@email.com"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
-                        </div>
-                        <label htmlFor="textarea">Message</label>
-                        <div className="messageBox">
-                            <textarea
-                                id="textarea"
-                                value={textarea}
-                                onChange={(e) => setTextArea(e.target.value)}
-                            ></textarea>
-                        </div>
-                        <div className="checkBox">
-                            <input type="checkbox" 
-                            id="checkBox" 
-                            checked={checkBox} 
-                            onChange={(e) => setCheckBox(e.target.checked)}/>
-                            <label htmlFor="">I would like to enroll in the Vitality Church Email List.</label>
-                        </div>
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            type="submit"
-                        >
-                            Send
-                        </motion.button>
-                    </form>
-                    {message && <p>{message}</p>}
+                    <iframe width="400" height="300" src="https://opturl.com/i/nwyxe04V?hide_title=0" frameborder="0"></iframe>
                 </div>
             </div>
         </>
+
     );
 }
