@@ -1,12 +1,17 @@
 import "./aboutus.css"
-import waterfall from '../../assets/waterfall.mp4';
+import waterfall from '../../assets/aboutAssets/waterfall.mp4';
+import headerVid from '../../assets/aboutAssets/headerVid.mp4';
 
 export default function AboutUs() {
     return(
     <>
+    <div className="aboutHeader">
+    <h1>About Vitality</h1>
+        <video className="aboutHeaderVid" src={headerVid} autoPlay loop muted />
+        </div>
     <div className="parentContainer">
-     <div className = 'main'>
-            <video src ={waterfall} autoPlay loop muted/>
+            <video src ={headerVid} autoPlay loop muted/>
+            <div className = "main">
     <div className="mainContent">
         <h1>✞ Mission Statement ✞</h1>
         <h2>Love God/Love People</h2>

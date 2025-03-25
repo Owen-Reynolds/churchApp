@@ -35,6 +35,10 @@
     text-align: center;
     display: grid;
 }
+.mailAddress{
+    text-align: center;
+    color: white;
+}
 .contact-grid a{
     text-decoration: underline;
     color: white;
@@ -66,7 +70,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   gap: 5vh;
+   gap: 4vh;
 }
 .footer-social img{
     width: 3vw;
@@ -76,7 +80,6 @@
     color: white;
     text-decoration: none;
 }
-
 
 .footer-bottom{
     width: 100%;
@@ -136,7 +139,7 @@
 }
 
 .footerLocationHeading{
-    padding: 0;
+    padding-bottom: 5%;
     margin: 0;
     width: 100%;
 }

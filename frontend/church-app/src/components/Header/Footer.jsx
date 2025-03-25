@@ -28,12 +28,10 @@ export default function Footer() {
                     <p>Phone: <a href="tel:440-290-0233">(440) 290-0233</a></p>
                     <p>Email: <Link to ="/Connect" className="footerButton">Email Us</Link></p>
                     </div>
-
-
-
-
-
-
+                    <div className="mailAddress">
+                    <p>P.O. Box 73 Mentor, Ohio 44061</p>
+                    </div>
+                    
                 </div>
                 <div className="footer-social">
                     <h2>Socials</h2>

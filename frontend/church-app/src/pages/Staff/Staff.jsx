@@ -22,7 +22,7 @@ export default function AboutUs() {
             </div>
             <div className = "staffWave"></div>
             <div className="mainStaffContent">
-                <div className="cards">
+                <div className="staffCards">
                     <Card
                         image={pastorDave}
                         title="Pastor"
