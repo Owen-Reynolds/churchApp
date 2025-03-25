@@ -7,10 +7,10 @@ export default function AboutUs() {
     <>
     <div className="aboutHeader">
     <h1>About Vitality</h1>
-        <video className="aboutHeaderVid" src={headerVid} autoPlay loop muted />
+        <video className="aboutHeaderVid" src={waterfall} autoPlay loop muted />
         </div>
     <div className="parentContainer">
-            <video src ={headerVid} autoPlay loop muted/>
+           
             <div className = "main">
     <div className="mainContent">
         <h1>✞ Mission Statement ✞</h1>

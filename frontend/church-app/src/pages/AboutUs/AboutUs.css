@@ -4,13 +4,16 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40vh; /* Header height */
+    height: 40vh; 
     position: relative;
     margin: 0;
     z-index: 1;
     font-family: "Bona Nova SC";
     color: white;
-    font-size: 4vw;
+    font-size: 5vw;
+    -webkit-text-stroke: 3px #000000; 
+    text-stroke: 3px #000000;
+
 }
 
 .aboutHeaderVid {
@@ -24,8 +27,7 @@
 }
 
 .parentContainer {
-    height: calc(100vh - 40vh); /* Remaining height after the header */
-    overflow-y: auto; /* Enable scrolling for the main content */
+    height: auto; /* Remaining height after the header */
     position: relative;
 }
 
@@ -55,9 +57,8 @@ video {
     margin: auto;
     align-items: center;
     width: 60%;
-    min-height: 100%; /* Ensure it spans the full height of the parent container */
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden;
+    min-height: auto; /* Ensure it spans the full height of the parent container */
+    overflow:hidden; /* Enable vertical scrolling */
     z-index: 1;
     padding: 2rem;
     box-sizing: border-box;
