@@ -4,13 +4,16 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40vh; /* Header height */
+    height: 40vh; 
     position: relative;
     margin: 0;
     z-index: 1;
     font-family: "Bona Nova SC";
     color: white;
-    font-size: 4vw;
+    font-size: 5vw;
+    -webkit-text-stroke: 3px #000000; 
+    text-stroke: 3px #000000;
+
 }
 
 .aboutHeaderVid {
@@ -18,65 +21,44 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
 }
 
 .parentContainer {
-    height: calc(100vh - 40vh); /* Remaining height after the header */
-    overflow-y: auto; /* Enable scrolling for the main content */
+    height: auto; 
     position: relative;
 }
 
 .main {
     width: 100%;
     height: 100%;
-    position: relative;
     z-index: -1;
 }
 
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.mainContent {
+.main {
     background-color: white;
-    opacity: 0.9;
     position: relative;
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: center;
-    width: 60%;
-    min-height: 100%; /* Ensure it spans the full height of the parent container */
-    overflow-y: auto; /* Enable vertical scrolling */
-    overflow-x: hidden;
-    z-index: 1;
-    padding: 2rem;
-    box-sizing: border-box;
-    border-style: ridge;
+    text-align: center;
+   
 }
 
-.mainContent p {
+.main p {
     text-align: center;
     font-size: 1.75vw;
 }
 
-.mainContent h1 {
+.main h1 {
     font-size: 4vw;
     font-family: "Bona Nova SC";
     text-decoration: underline;
     text-decoration-color: #1929C7;
 }
 
-.mainContent h2 {
+.main h2 {
     font-size: 2.5vw;
     color: #1929c7;
     font-family: "Bebas Neue", serif;

@@ -38,24 +38,6 @@ export default function Youth() {
     const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12,
          image13, image14, Image15, Image16, Image17, Image18, Image19, Image20, Image21, Image22, Image23, Image24, Image25];
 
-    const [formData, setFormData] = useState({
-        guardianName: "",
-        phoneNumber: "",
-        email: "",
-        childName: "",
-        childAge: "",
-        otherInfo: "",
-      });
-    
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prev) => ({ ...prev, [name]: value }));
-      };
-    
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form Data Submitted:", formData);
-      };
     return (
         <>
        <div className="youthPage">
@@ -85,70 +67,13 @@ export default function Youth() {
         <div className="youthContent">
             <div className="youthHandBook">
                 <h1>Cadet Handbook</h1>
-                <iframe id="myPDF" src={CCHandbook}></iframe>
+                <iframe className="youthForm" id="myPDF" src={CCHandbook}></iframe>
                 <a href={CCHandbook} target="_blank" rel="noopener noreferrer">
                     <button className="newButtons">Open</button>
                 </a>
             </div>
             <div className="youthCard">
-                <div className="card-content">
-                    <h2>Sign Up</h2>
-                    <form onSubmit={handleSubmit} className="form">
-                        <input
-                            type="text"
-                            name="guardianName"
-                            placeholder="Guardian Name"
-                            value={formData.guardianName}
-                            onChange={handleChange}
-                            required
-                            className="input"
-                        />
-                        <input
-                            type="tel"
-                            name="phoneNumber"
-                            placeholder="Phone Number"
-                            value={formData.phoneNumber}
-                            onChange={handleChange}
-                            required
-                            className="input"
-                        />
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                            className="input"
-                        />
-                        <input
-                            type="text"
-                            name="childName"
-                            placeholder="Child Name"
-                            value={formData.childName}
-                            onChange={handleChange}
-                            required
-                            className="input"
-                        />
-                        <input
-                            type="number"
-                            name="childAge"
-                            placeholder="Child Age"
-                            value={formData.childAge}
-                            onChange={handleChange}
-                            required
-                            className="input"
-                        />
-                        <textarea
-                            name="otherInfo"
-                            placeholder="Other Information"
-                            value={formData.otherInfo}
-                            onChange={handleChange}
-                            className="textarea"
-                        />
-                        <button type="submit" className="newButtons">Submit</button>
-                    </form>
-                </div>
+            <iframe className="youthForm" src="https://opturl.com/i/oZLb0Xwq?hide_title=0" frameborder="0"></iframe>
             </div>
         </div>
 
