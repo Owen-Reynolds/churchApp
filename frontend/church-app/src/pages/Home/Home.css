@@ -387,32 +387,60 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: 90vh;
 }
 
 .missionsTripLeft{
     width: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
-.tripRow{
+.sliderContainer{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-.tripImage{
-    width: 20%;
+    position: relative;
     height: auto;
-    margin: 1%;
-    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+.prevButton, .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
-.tripImage:hover{
-    transform: scale(2);
+.prevButton {
+    left: 40px;
+}
+
+.nextButton {
+    right: 40px;
+}
+
+.prevButton:hover, .nextButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sliderContainer img{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .missionsTripRight{
@@ -420,7 +448,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
     height: 100%;
     text-align: center;
     position: relative;
@@ -452,4 +480,3 @@ body{
 .newMissionsTripContainer{
     width: 100%;
 }
-

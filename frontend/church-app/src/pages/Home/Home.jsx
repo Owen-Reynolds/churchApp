@@ -13,6 +13,7 @@ import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.j
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 
 export default function Home() {
@@ -130,7 +131,7 @@ export default function Home() {
             </div>
             <div className="missionsTripContainer">
                     <div className="missionsTripLeft">
-                        
+                        <ImageSlider />
                     </div>
                     <div className="missionsTripRight">
                         <h2>Missions Trip <br /> 2025</h2>
@@ -150,26 +151,36 @@ function VideoComponent(props) {
 }
 
 
-function imageSlider(props){
-    images = [sliderImage1, sliderImage2, sliderImage3, sliderImage4, sliderImage5, sliderImage6, sliderImage7];
+function ImageSlider(){
+    const images = [sliderImage1, sliderImage2, sliderImage3, sliderImage4, sliderImage5, sliderImage6, sliderImage7];
 
-    currentSlide = 0;
+    const [currentSlide, setCurrentSlide] = useState(0);
 
-    nextSlide = () => {
-        if(currentSlide <= images.length()){
-            currentSlide ++;
-        } else {
-            currentSlide == 0;
-        }
+    const nextSlide = () => {
+        setCurrentSlide(prev => (prev < images.length-1 ? prev + 1 : 0));
     }   
 
-    prevSlide = () =>{
-        if(currentSlide != 0){
-            currentSlide --;
-        } else {
-            currentSlide = 9;
-        }
+    const prevSlide = () =>{
+        setCurrentSlide(prev => (prev > 0 ? prev - 1 : images.length - 1));
     }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 3000); 
+
+        return () => clearInterval(interval);
+    }, [currentSlide]); 
+
+    return(
+        <>
+        <div className="sliderContainer">
+            <span className="prevButton" onClick={prevSlide}>&#10094;</span>
+            <img src={images[currentSlide]} alt="" />
+            <span className="nextButton" onClick={nextSlide}>&#10095;</span>
+        </div>
+        </>
+    );
 
 }
 
