@@ -15,7 +15,6 @@
     text-stroke: 3px #000000;
 
 }
-
 .aboutHeaderVid {
     width: 100%;
     height: 100%;
@@ -23,42 +22,135 @@
     position: absolute;
     z-index: -1;
 }
-
-.parentContainer {
-    height: auto; 
-    position: relative;
+.missionStatement {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding-top: 5%; 
+    padding-right: 5%;
 }
-
-.main {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.main {
-    background-color: white;
-    position: relative;
+.missionLeft {
     display: flex;
+    justify-content: center; 
+    align-items: center; 
     flex-direction: column;
-    margin: auto;
+    margin-left:5%;
+}
+.missionRight {
     align-items: center;
-    text-align: center;
-   
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left:5%;
+}
+.missionStatement img {
+    width: 40vw; 
+    height: 50vh;
+    border-radius: 8px;
+}
+.missionStatement h1 {
+    font-size: 5vw;
+    font-family: "Bona Nova SC";
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+    margin-bottom: 1rem;
 }
 
-.main p {
+.missionStatement h2 {
+    font-size: 5vw;
+    font-family: "Bebas Neue", serif;
+    color: #ffffff;
+    letter-spacing: 0.07em;
+    -webkit-text-stroke: 1px #000000; 
+    text-stroke: 1px #000000;
+}
+.ourMission {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+}
+.ourMissionTop img {
+    width: 30vw; 
+    height: 40vw; 
+    border-radius: 8px; 
+}
+.ourMissionLeft {
+    text-align: center; 
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    margin-left:5%;
+    margin-right:5%;
+}
+.ourMissionRight {
+    text-align: center; 
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    margin-left:5%;
+    margin-right:5%;
+}
+.ourStroy{
+
+}
+.statementOfFaith{
+
+}
+
+.ourStory p {
     text-align: center;
     font-size: 1.75vw;
 }
 
-.main h1 {
+.ourStory h1 {
     font-size: 4vw;
     font-family: "Bona Nova SC";
     text-decoration: underline;
     text-decoration-color: #1929C7;
 }
 
-.main h2 {
+.ourStory h2 {
+    font-size: 2.5vw;
+    color: #1929c7;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: 0.07em;
+}
+.statementOfFaith p {
+    text-align: center;
+    font-size: 1.75vw;
+}
+
+.statementOfFaith h1 {
+    font-size: 4vw;
+    font-family: "Bona Nova SC";
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+}
+
+.statementOfFaith h2 {
+    font-size: 2.5vw;
+    color: #1929c7;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: 0.07em;
+}
+.ourMission p {
+    text-align: center;
+    font-size: 1.75vw;
+}
+
+.ourMission h1 {
+    font-size: 4vw;
+    font-family: "Bona Nova SC";
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+}
+
+.ourMission h2 {
     font-size: 2.5vw;
     color: #1929c7;
     font-family: "Bebas Neue", serif;
