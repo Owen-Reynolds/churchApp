@@ -43,14 +43,20 @@ export default function AboutUs() {
                 </div>
             </div>
             <div className="ourStory">
-                <h1>Our Story</h1>
-                <p>Not all of us have grown up with a true understanding of God. At a certain point in our lives, questions about God start to surface. Each day, the question about God gets louder within us, 
-                and we want to discover the truth about why we are here. It is this truth that will set us free (John 8:32).<br></br><br></br>
-                Vitality Church is a community of people coming together to know and serve God. We are dedicated to sharing the vital
-                truth of God's love, as it is expressed in John 3:16. God loves you so deeply that He gave you Jesus Christ, not to condemn you, but to give you eternal life!<br></br><br></br>
-                Vitality Church is a place for people to come together to serve a real God. It is a community of repentant believers 
-                where you can gather and be given the space to grow into a greater purpose through the fundamental commands of Jesus to Love God and Love People.<br></br><br></br>
-                Vitality Church is a journey to find answers to the questions you have. If you are ready to answer that still, small voice within you, Jesus has provided a way through Vitality Church. We hope to see you soon!</p>
+                <div className="ourStoryLeft">
+                    <p>Not all of us have grown up with a true understanding of God. At a certain point in our lives, questions about God start to surface. Each day, the question about God gets louder within us, 
+                    and we want to discover the truth about why we are here. It is this truth that will set us free (John 8:32).<br></br><br></br>
+                    Vitality Church is a community of people coming together to know and serve God. We are dedicated to sharing the vital
+                    truth of God's love, as it is expressed in John 3:16. God loves you so deeply that He gave you Jesus Christ, not to condemn you, but to give you eternal life!<br></br><br></br>
+                    Vitality Church is a place for people to come together to serve a real God. It is a community of repentant believers 
+                    where you can gather and be given the space to grow into a greater purpose through the fundamental commands of Jesus to Love God and Love People.
+                    </p>
+                </div>
+                <div className="ourStoryRight">
+                    <h1>Our Story</h1>
+                    <img className="outdoor" src={outdoor} alt="outdoor" />
+                    <p>Vitality Church is a journey to find answers to the questions you have. If you are ready to answer that still, small voice within you, Jesus has provided a way through Vitality Church. We hope to see you soon!</p>
+                </div>
             </div>
             <div className="statementOfFaith">
                 <h1>Statement of Faith</h1>

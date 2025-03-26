@@ -74,9 +74,9 @@
     align-items: center; 
     width: 100%;
 }
-.ourMissionTop img {
-    width: 30vw; 
-    height: 40vw; 
+.ourMissionLeft img {
+    width: 40vw; 
+    height: 20vw; 
     border-radius: 8px; 
 }
 .ourMissionLeft {
@@ -95,8 +95,32 @@
     margin-left:5%;
     margin-right:5%;
 }
-.ourStroy{
-
+.ourStory{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+}
+.ourStoryLeft{
+    text-align: center; 
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    margin-left:5%;
+    margin-right:5%;
+}
+.ourStoryRight{
+    text-align: center; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-right:5%; 
+}
+.ourStory img{
+    width: 40vw; 
+    height: 20vw; 
+    border-radius: 8px; 
 }
 .statementOfFaith{
 
