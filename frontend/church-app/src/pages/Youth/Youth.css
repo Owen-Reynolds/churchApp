@@ -24,11 +24,10 @@
     font-family: "Bona Nova SC";
     -webkit-text-stroke: 2px #ffffff; 
     text-stroke: 3px #ffffff;
-
 }
 .youthCard img{
-    width: 40vw;
-    height: 48vh;
+    width: 35vw;
+    height: 50vh;
     border-radius: 8%;
     align-items: center;
 }
@@ -99,9 +98,8 @@
     justify-content: center; 
     align-items: center;
     padding-top: 5%;
-  }
-  
 
+  }
   .card-content h2 {
     margin-bottom: 1rem; 
     font-size: 2.5vw;
@@ -116,12 +114,12 @@
   .youthContent {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 90%;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
     margin: auto;
-    gap: 2rem;
 }
+
 .youthContent h1{
     font-size: 2.5vw;
     color: rgb(0, 0, 0);
@@ -169,20 +167,21 @@
     font-family: "Bebas Neue", serif;
 
 }
-.youthHandBook{
+.youthHandBook, .youthCard{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center; 
     align-items: center; 
-    width: 100%;
+    width: 45%; 
+    max-width: 45%; 
     margin: auto;
+    
 }
 .youthHandBook iframe {
-    width: 40vw;
+    width: 100%;
     height: 80vh;
     border: #1929C7 4px solid; 
   }
-  
   @media (max-width: 81.2vh) {
     iframe {
       height: 60vh;
