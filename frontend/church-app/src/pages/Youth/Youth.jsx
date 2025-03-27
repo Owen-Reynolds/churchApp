@@ -81,9 +81,10 @@ export default function Youth() {
             <div className="pdfs">
                 <div className="pdf-item">
                     <h2>Youth Application Form</h2>
-                    <iframe id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
+                    <iframe width="500" height="500" id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
                     <a href={youthAppForm} target="_blank" rel="noopener noreferrer">
                         <button className="newButtons">Open</button>
+                
                     </a>
                 </div>
 
@@ -105,7 +106,7 @@ export default function Youth() {
         </div>
     </div>
 </div>
-            
+           
         </>
     )
 }
