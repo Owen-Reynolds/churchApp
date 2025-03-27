@@ -115,16 +115,16 @@
 
 .cardSection{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #1929C7;
-    
+    gap: 3%;
 }
 
 .sundayCard{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20vw;
+    width: 25vw;
     border: solid 1px black;
     border-radius: 5px;
     cursor: pointer;
@@ -139,8 +139,8 @@
 }
 
 .sundayCard img{
-    width: 20vw;
-    height: 30vh;
+    width: 25vw;
+    height: 35vh;
 }
 
 .sundayCard h2{

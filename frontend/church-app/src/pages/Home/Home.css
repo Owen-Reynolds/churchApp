@@ -408,6 +408,7 @@ body{
     height: auto;
     width: 100%;
 }
+
 .prevButton, .nextButton {
     position: absolute;
     top: 50%;
