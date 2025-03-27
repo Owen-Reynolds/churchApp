@@ -26,6 +26,12 @@
     text-stroke: 3px #ffffff;
 
 }
+.youthCard img{
+    width: 40vw;
+    height: 48vh;
+    border-radius: 8%;
+    align-items: center;
+}
 .youthInfo {
     display: flex;
     flex-direction: row; 
@@ -173,7 +179,7 @@
 }
 .youthHandBook iframe {
     width: 40vw;
-    height: 70vh;
+    height: 80vh;
     border: #1929C7 4px solid; 
   }
   
@@ -207,7 +213,11 @@
     gap: 3rem;
     width: 100%;
 }
-
+.iframe{
+    display: flex;
+    height: 40vh;
+    width: 20vh;
+}
 .pdf-item {
     display: flex;
     flex-direction: column;

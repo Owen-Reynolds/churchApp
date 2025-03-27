@@ -137,6 +137,7 @@
         align-items: center;
         background-color: black;
         width: 100%;
+        height: 65vh;
     }
 
     .newSermonLeft{
@@ -158,7 +159,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 90%;
+        height: 80%;
         background-image: url('../../assets/homePageAssets/youtube.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -210,6 +211,57 @@
     .sermonVideo{
         width: 100%;
         
+    }
+    
+    .missionsTripContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+        height: 60vh;
+    }
+
+    .missionsTripRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        position: relative;
+    }
+
+    .missionsTripRight::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0; 
+        opacity: 0.3;
+        background-image: url('../../assets/homePageAssets/missionsTrip.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .missionsTripRight h2{
+        font-size: 6vw;
+        color:black;
+        font-family: "Bona Nova SC";
+        text-align: center;
+    }   
+
+    .missionsTripLeft{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     
     
