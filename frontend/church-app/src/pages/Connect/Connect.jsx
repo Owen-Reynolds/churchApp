@@ -1,4 +1,6 @@
 import './Connect.css';
+import './MobileConnect.css';
+
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import axios from 'axios';

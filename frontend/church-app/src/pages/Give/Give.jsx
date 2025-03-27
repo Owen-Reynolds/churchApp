@@ -1,4 +1,6 @@
 import './give.css';
+import './MobileGive.css';
+
 import outdoorService from '../../assets/giveAssets/outdoorService.jpg';
 import crossVid from '../../assets/giveAssets/crossVideo.mp4';
 import crossVid2 from '../../assets/giveAssets/crossVideo2.mp4';

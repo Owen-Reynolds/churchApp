@@ -1,4 +1,5 @@
 import './SundayMornings.css';
+import './MobileSundayMornings.css';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 

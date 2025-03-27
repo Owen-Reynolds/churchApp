@@ -1,4 +1,6 @@
-import "./aboutus.css"
+import "./AboutUs.css"
+import "./MobileAboutUs.css"
+
 import waterfall from '../../assets/aboutAssets/waterfall.mp4';
 import headerVid from '../../assets/aboutAssets/headerVid.mp4';
 import outdoor from '../../assets/aboutAssets/aboutOutdoor.jpg';

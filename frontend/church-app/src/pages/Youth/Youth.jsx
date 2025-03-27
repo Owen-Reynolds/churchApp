@@ -1,4 +1,5 @@
 import './Youth.css';
+import './MobileYouth.css';
 import { useState } from "react";
 import image1 from '../../assets/youthAssets/image1.jpeg';
 import image2 from '../../assets/youthAssets/image2.jpeg';
