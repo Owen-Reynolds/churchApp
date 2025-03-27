@@ -27,7 +27,7 @@
     justify-content: space-between; 
     align-items: center; 
     width: 100%; 
-    
+    padding-top: 5%;
 }
 .missionLeft {
     display: flex;
@@ -44,9 +44,10 @@
     margin-right: 5%;
     margin-left:5%;
 }
+
 .missionRight img {
     width: 40vw; 
-    height: 20vh;
+    height: 70vh;
     border-radius: 8px;
 }
 .missionStatement h1 {
@@ -75,7 +76,7 @@
 }
 .ourMissionLeft img {
     width: 40vw; 
-    height: 20vw; 
+    height: 35vw; 
     border-radius: 8px; 
 }
 .ourMissionLeft {
@@ -100,6 +101,7 @@
     justify-content: space-between; 
     align-items: center; 
     width: 100%;
+    padding-bottom: 5%;
 }
 .ourStoryLeft{
     text-align: center; 
@@ -118,7 +120,7 @@
 }
 .ourStory img{
     width: 40vw; 
-    height: 20vw; 
+    height: 35vw; 
     margin-top: 5%;
     border-radius: 8px; 
 }
@@ -136,6 +138,7 @@
     justify-content: space-between; 
     align-items: center; 
     width: 100%;
+    padding-bottom: 5%;
 }
 .statementOfFaithContainer img{
     width: 40vw; 
@@ -178,7 +181,7 @@
 }
 .statementOfFaith p {
     text-align: center;
-    font-size: 1.75vw;
+    font-size: 1.3vw;
 }
 
 .statementOfFaith h1 {
@@ -190,7 +193,7 @@
 }
 
 .statementOfFaith h2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: #1929c7;
     font-family: "Bebas Neue", serif;
     letter-spacing: 0.07em;
