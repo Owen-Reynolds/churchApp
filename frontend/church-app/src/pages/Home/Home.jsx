@@ -13,6 +13,7 @@ import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.j
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 
 export default function Home() {
@@ -130,21 +131,7 @@ export default function Home() {
             </div>
             <div className="missionsTripContainer">
                     <div className="missionsTripLeft">
-                        <div className="tripRow">
-                            <img className="tripImage" src={sliderImage1} alt="" />
-                            <img className="tripImage" src={sliderImage2} alt="" />
-                            <img className="tripImage" src={sliderImage3} alt="" />
-                        </div>
-                        <div className="tripRow">
-                            <img className="tripImage" src={sliderImage4} alt="" />
-                            <img className="tripImage" src={sliderImage5} alt="" />
-                            <img className="tripImage" src={sliderImage6} alt="" />
-                        </div>
-                        <div className="tripRow">
-                            <img className="tripImage" src={sliderImage7} alt="" />
-                            <img className="tripImage" src={sliderImage1} alt="" />
-                            <img className="tripImage" src={sliderImage2} alt="" />
-                        </div>
+                        <ImageSlider />
                     </div>
                     <div className="missionsTripRight">
                         <h2>Missions Trip <br /> 2025</h2>
@@ -162,3 +149,38 @@ function VideoComponent(props) {
         </>
     )
 }
+
+
+function ImageSlider(){
+    const images = [sliderImage1, sliderImage2, sliderImage3, sliderImage4, sliderImage5, sliderImage6, sliderImage7];
+
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const nextSlide = () => {
+        setCurrentSlide(prev => (prev < images.length-1 ? prev + 1 : 0));
+    }   
+
+    const prevSlide = () =>{
+        setCurrentSlide(prev => (prev > 0 ? prev - 1 : images.length - 1));
+    }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextSlide();
+        }, 3000); 
+
+        return () => clearInterval(interval);
+    }, [currentSlide]); 
+
+    return(
+        <>
+        <div className="sliderContainer">
+            <span className="prevButton" onClick={prevSlide}>&#10094;</span>
+            <img src={images[currentSlide]} alt="" />
+            <span className="nextButton" onClick={nextSlide}>&#10095;</span>
+        </div>
+        </>
+    );
+
+}
+

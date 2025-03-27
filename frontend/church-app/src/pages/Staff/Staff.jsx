@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Staff.css';
+import './MobileStaff.css';
 import heartrate from '../../assets/staffAssets/heartRateVid.mp4';
 import pastorDave from '../../assets/staffAssets/pastorDave.jpg';
 import bobAnderson from '../../assets/staffAssets/bobAnderson.jpg';
