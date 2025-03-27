@@ -3,6 +3,7 @@ import './MobileSundayMornings.css';
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
+import topVideo from '../../assets/sundayMorningAssets/topVideo.mp4';
 import crossImage from '../../assets/vitalitylogoblue.png';
 import biblepicture from '../../assets/sundayMorningAssets/biblepicture.jpg';
 import learnPhoto from '../../assets/sundayMorningAssets/learnPhoto.jpg';
@@ -15,6 +16,7 @@ export default function SundayMornings() {
     return (
         <>
             <div className="titleSection">
+                <video className="topVideo" src={topVideo} autoPlay loop muted />
                 <h1>
                     <div>Sunday Service</div>
                 </h1>
