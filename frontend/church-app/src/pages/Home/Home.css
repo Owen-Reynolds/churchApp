@@ -61,7 +61,6 @@ body{
 .mainButton{
     margin-top: 1%;
     margin-bottom: 5%;
-    
 }
 
 .mainButton-Button{
@@ -93,7 +92,7 @@ body{
 
 .newInfoSectionInfo{
     width: 80%;
-    text-align: center; /* Ensure text is centered */
+    text-align: center; 
     margin-bottom: 2%; 
 }
 
@@ -109,6 +108,7 @@ body{
 
 .newInfoSectionInfo p{
     font-size: 1.5vw;
+    font-family: "Lora";
     margin: 0;
     text-align: center;
 }
@@ -171,6 +171,10 @@ body{
     text-decoration: underline;
     text-decoration-color: #1929C7;
     text-decoration-thickness: 2px;
+}
+
+.newSundaySectionInfo p{
+    font-family: "Lora";
 }
 
 .newSundaySectionAddress{
@@ -455,27 +459,25 @@ body{
     position: relative;
 }
 
-.missionsTripRight::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0; 
-    opacity: 0.3;
-    background-image: url('../../assets/homePageAssets/missionsTrip.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 2%;
-}
-
 .missionsTripRight h2{
     font-size: 4vw;
     color:black;
     font-family: "Bona Nova SC";
     text-align: center;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+    text-decoration-thickness: 2px;
+}
+
+.missionsTripRight p{
+    font-size: 1.5vw;
+    font-family: "Lora";
+}
+
+.missionsTripRight img{
+    width: 25vw;
+    
 }
 
 .newMissionsTripContainer{
