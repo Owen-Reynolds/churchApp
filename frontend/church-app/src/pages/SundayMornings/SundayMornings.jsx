@@ -8,8 +8,7 @@ import biblepicture from '../../assets/sundayMorningAssets/biblepicture.jpg';
 import learnPhoto from '../../assets/sundayMorningAssets/learnPhoto.jpg';
 import coffeePhoto from '../../assets/sundayMorningAssets/coffeePhoto.jpg';
 import clockPhoto from '../../assets/sundayMorningAssets/clockPhoto.jpg';
-import video from '../../assets/vitalityChurchVideo.mp4';
-
+import timePhoto from '../../assets/sundayMorningAssets/timePhoto.jpeg';
 export default function SundayMornings() {
     const [expandedCard, setExpandedCard] = useState(null);
 
@@ -23,14 +22,15 @@ export default function SundayMornings() {
             <div className="timeSection">
                 <div className="timeContent">
                     <div className="timeLeft">
-                        <h2>Join Us Every Sunday at 10:00AM</h2>
-                        <p>Something here about how the typical sermon is. Something here about how the typical sermon is.
-                        Something here about how the typical sermon is. Something here about how the typical sermon is.
+                        <h2>Sundays at 10:00am</h2>
+                        <p>
+                            During your Sunday visit, expect a warm family atmosphere where you're more than just a number. Our youth learn alongside their parents and can enjoy uplifting music and teaching from the same sermon passages. Individuals and families will leave feeling invigorated and refreshed in the Lord Jesus.
                         </p>
-                        <h3>5783 Heisley Road, Mentor, OH 44060</h3>
+                        <p>Learn More</p>
+                        <i className="arrow"></i>
                     </div>
                     <div className="timeRight">
-                        <img src="" alt="" />
+                        <img src={timePhoto} alt="" />
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ export default function SundayMornings() {
                 <Card
                     image={clockPhoto}
                     title="How Long Is Service?"
-                    description="During your Sunday visit, expect a warm family atmosphere where you're more than just a number. Our youth learn alongside their parents and can enjoy uplifting music and teaching from the same sermon passages. Individuals and families will leave feeling invigorated and refreshed in the Lord Jesus."
+                    description="GIVE INFO ON LENGTH OF SERVICE OR CHANGE CARD ***********************************"
                     isExpanded={expandedCard === 3}
                     onClick={() => setExpandedCard(prev => (prev === 3 ? null : 3))}
                 />

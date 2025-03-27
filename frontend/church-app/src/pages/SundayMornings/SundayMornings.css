@@ -18,16 +18,53 @@
     padding-top: 5%;
 }
 
-.titleSection p {
-    margin-top: 2%;
+.timeSection{
+    width: 100%;
+    background-color: #001122;
 }
 
-.downArrow{
+.timeContent{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: auto;
+    gap: 5%;
+    padding-bottom: 5%;
+}
+
+.timeLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.timeLeft h2{
+    font-family: "Bona Nova SC", sans-serif;
+    font-size: 4.5vw;
+    margin: 0;
+}
+
+.timeLeft p{
+    font-size: 2vw;
+}
+
+.arrow{
     border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+.timeRight img{
+    width: 40vw;
+    border: 2px solid white;
+    padding: 1%;
 }
 
 .welcomeContent{
@@ -84,6 +121,7 @@
     background-color: white;
     height: 100%;
     margin-bottom: 5%;
+    text-align: center;
 }
 
 .sundayCard img{
