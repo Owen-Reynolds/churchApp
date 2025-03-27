@@ -207,7 +207,11 @@
     gap: 3rem;
     width: 100%;
 }
-
+.iframe{
+    display: flex;
+    height: 40vh;
+    width: 20vh;
+}
 .pdf-item {
     display: flex;
     flex-direction: column;
