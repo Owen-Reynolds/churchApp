@@ -18,10 +18,21 @@ export default function SundayMornings() {
             <div className="titleSection">
                 <h1>
                     <div>Sunday Service</div>
-                    <div>10:00am</div>
                 </h1>
-                <p>Learn more below</p>
-                <i className="downArrow"></i>
+            </div>
+            <div className="timeSection">
+                <div className="timeContent">
+                    <div className="timeLeft">
+                        <h2>Join Us Every Sunday at 10:00AM</h2>
+                        <p>Something here about how the typical sermon is. Something here about how the typical sermon is.
+                        Something here about how the typical sermon is. Something here about how the typical sermon is.
+                        </p>
+                        <h3>5783 Heisley Road, Mentor, OH 44060</h3>
+                    </div>
+                    <div className="timeRight">
+                        <img src="" alt="" />
+                    </div>
+                </div>
             </div>
             <div className="welcomeSection">
                 <div className="welcomeContent">
@@ -68,28 +79,28 @@ export default function SundayMornings() {
                 <Card
                     image={biblepicture}
                     title="Should I Bring A Bible?"
-                    description="Bring your Bible and if you don't have one let us know and we will provide one for you to keep. Don't worry, scriptures will be displayed on the screen but our goal is to have everyone in the Bible following along.  Please, don't feel inadequate if you don't know your way through Bible yet, truth is no one has! Everyone is learning!"
+                    description="Having your Bible in hand allows you to follow along, making the experience more personal and immersive. If you don’t have a Bible of your own, don’t worry at all! We have one available for you, ensuring that everyone can partake in the enriching journey of faith together."
                     isExpanded={expandedCard === 1}
                     onClick={() => setExpandedCard(prev => (prev === 1 ? null : 1))}
                 />
                 <Card
                     image={learnPhoto}
                     title="What Will Be Taught?"
-                    description="Together we will guide each other through God's life changing truths. Remember, our messages are Biblical.  Each week we take what the Bible says and learn how to apply it to our real life issues and questions and purpose.  God's Word grows us and feeds our souls, God gives you something through His Word on Sunday that you can start applying on Sunday."
+                    description="Jesus declares that He is the Way, the Truth, and the Life (John 14:6). You will gain knowledge about God, find answers to your questions, and be motivated to live a fulfilling life in Christ Jesus."
                     isExpanded={expandedCard === 2}
                     onClick={() => setExpandedCard(prev => (prev === 2 ? null : 2))}
                 />
                 <Card
                     image={clockPhoto}
                     title="How Long Is Service?"
-                    description="We meet every Sunday at 10:00 AM.  We are located at 1000 N. 16th St. in Grand Junction, CO.  We would love to have you join us!"
+                    description="During your Sunday visit, expect a warm family atmosphere where you're more than just a number. Our youth learn alongside their parents and can enjoy uplifting music and teaching from the same sermon passages. Individuals and families will leave feeling invigorated and refreshed in the Lord Jesus."
                     isExpanded={expandedCard === 3}
                     onClick={() => setExpandedCard(prev => (prev === 3 ? null : 3))}
                 />
                 <Card
                     image={coffeePhoto}
                     title="After Service?"
-                    description="We provide great coffee and refreshments after each service in our fellowship hall for your enjoyment and relationship building we value our children and they have fun during this time just being kids. This a huge part of who we are as a church, and we would be blessed to connect join in the joy."
+                    description="At the conclusion of worship, we gather in community to enjoy a light Sunday morning meal, and continuation of community. This time of community is a great time to connect and engage with each other and meet new people. Be sure to visit our welcome table to get more information."
                     isExpanded={expandedCard === 4}
                     onClick={() => setExpandedCard(prev => (prev === 4 ? null : 4))}
                 />
