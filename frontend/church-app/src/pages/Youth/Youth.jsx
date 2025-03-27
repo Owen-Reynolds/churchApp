@@ -32,6 +32,7 @@ import adultVolunteerApp from '../../assets/youthAssets/AdultVolunteerForm.pdf';
 import cc2 from '../../assets/youthAssets/ccadets2.png';
 import youthCrosses from '../../assets/youthAssets/youthCrosses.png';
 import CCHandbook from '../../assets/youthAssets/CCHandbook.pdf';
+import fishKids from   '../../assets/youthAssets/fishingKids.jpeg';
 
 
 export default function Youth() {
@@ -74,7 +75,8 @@ export default function Youth() {
                 </a>
             </div>
             <div className="youthCard">
-            <iframe className="youthForm" src="https://opturl.com/i/oZLb0Xwq?hide_title=0" frameborder="0"></iframe>
+            <iframe width="600" height="280" src="https://opturl.com/i/oZLb0Xwq?hide_title=0" frameborder="0"></iframe>
+            <img src={fishKids} alt="fishingKids" />
             </div>
         </div>
 
@@ -82,7 +84,7 @@ export default function Youth() {
             <div className="pdfs">
                 <div className="pdf-item">
                     <h2>Youth Application Form</h2>
-                    <iframe width="500" height="500" id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
+                    <iframe id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
                     <a href={youthAppForm} target="_blank" rel="noopener noreferrer">
                         <button className="newButtons">Open</button>
                 
