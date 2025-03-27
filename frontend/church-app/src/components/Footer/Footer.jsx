@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import './MobileFooter.css';
 
 import { Link } from 'react-router-dom';
 

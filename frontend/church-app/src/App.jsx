@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 import Header from './components/Header/Header.jsx';
-import Footer from './components/Header/Footer.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx';
 
 
