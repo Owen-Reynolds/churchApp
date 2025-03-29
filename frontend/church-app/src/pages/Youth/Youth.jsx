@@ -3,13 +3,14 @@ import './Youth.css';
 import './MobileYouth.css';
 import main1 from '../../assets/youthAssets/youthMinistry1.jpg';
 import main2 from '../../assets/youthAssets/youthMinistry2.jpg';
+import yHeader from '../../assets/youthAssets/HeaderVid.mp4';
 
 export default function Youth() {
 
     return (
         <>
         <div className = "yHeader">
-        <video className="vidGive" src={main1} autoPlay loop muted />
+        <video className="vidGive" src={yHeader} autoPlay loop muted />
         <h1>Youth Ministry</h1>
         </div>
         <div className = "yMain">
