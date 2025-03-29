@@ -93,13 +93,6 @@ export default function SundayMornings() {
                     onClick={() => setExpandedCard(prev => (prev === 2 ? null : 2))}
                 />
                 <Card
-                    image={clockPhoto}
-                    title="How Long Is Service?"
-                    description="GIVE INFO ON LENGTH OF SERVICE OR CHANGE CARD ***********************************"
-                    isExpanded={expandedCard === 3}
-                    onClick={() => setExpandedCard(prev => (prev === 3 ? null : 3))}
-                />
-                <Card
                     image={coffeePhoto}
                     title="After Service?"
                     description="At the conclusion of worship, we gather in community to enjoy a light Sunday morning meal, and continuation of community. This time of community is a great time to connect and engage with each other and meet new people. Be sure to visit our welcome table to get more information."

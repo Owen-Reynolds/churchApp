@@ -10,6 +10,7 @@ import sliderImage4 from '../../assets/homePageAssets/sliderImages/slideImage4.j
 import sliderImage5 from '../../assets/homePageAssets/sliderImages/slideImage5.jpg';
 import sliderImage6 from '../../assets/homePageAssets/sliderImages/slideImage6.jpg';
 import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.jpg'
+import hFlag from '../../assets/homePageAssets/hFlag.jpg';
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -50,9 +51,8 @@ export default function Home() {
             </div>
             <div className="newInfoSection">
                 <div className="newInfoSectionInfo">
-                    <h2>Love God - Love People</h2>
+                    <motion.h2>Love God - Love People</motion.h2>
                     <br />
-                
                     <p>Vitality Church is more than just a place of worship; it is a welcoming, vibrant community. Whether you are a 
                         long-time believer or just beginning your spiritual journey, you will find a supportive and encouraging 
                         environment at Vitality Church. The sermons delivered at Vitality Church are thought-provoking and relevant,
@@ -134,7 +134,15 @@ export default function Home() {
                         <ImageSlider />
                     </div>
                     <div className="missionsTripRight">
-                        <h2>Missions Trip <br /> 2025</h2>
+                        <h2>Missions Trip 2025</h2>
+                        <p>A group of believers from Ohio have been ministering in Siguatepeque, Honduras, for over 30 years. 
+                            Their ministry has two primary components: men working with a local team to pour concrete floors, 
+                            and women conducting Vacation Bible School for children and moms. The purpose of their mission is 
+                            to demonstrate the love of Christ and soften hearts for the Gospel message. Each visit culminates 
+                            in a presentation of the Gospel, as the team's goal is to spread Jesus' message and show love through 
+                            their actions.
+                        </p>
+                        <img src={hFlag} alt="" />
                     </div>
             </div>
         </>

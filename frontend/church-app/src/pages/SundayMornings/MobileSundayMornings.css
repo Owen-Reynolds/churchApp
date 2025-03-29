@@ -1,3 +1,132 @@
 @media screen and (max-width: 768px) {
+    .titleSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #001122;
+        color: white;
+        font-family: "Bona Nova SC", sans-serif;
+        padding-bottom: 5%;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .titleSection h1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        letter-spacing: 2px;
+        font-size: 10vw;
+        margin: 0;
+        padding-top: 5%;
+        -webkit-text-stroke: 1px #000000; 
+    }
+
+    .timeContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        gap: 5%;
+        padding-bottom: 5%;
+    }
+
+    .timeLeft h2{
+        font-family: "Bona Nova SC", sans-serif;
+        font-size: 8vw;
+        margin: 0;
+    }
+
+    .timeLeft p{
+        font-size: 4vw;
+    }
+    
+    .arrow{
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+
+    .timeRight{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+
+    .timeRight img{
+        width: 100%;
+        border: 2px solid white;
+        padding: 1%;
+    }
+
+    .welcomeContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../../assets/sundayMorningAssets/stacked-peaks-haikei.svg");
+        padding-bottom: 8%;
+        padding-top: 1%;
+        height: 100%;
+    }
+
+    .welcomeContent h2{
+        font-family: "Bona Nova SC", sans-serif;
+        font-size: 5vw;
+        margin: 0;
+        color: white;
+    }
+
+    .welcomeWords{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1%;
+        color: white;
+    }
+
+    .cardSection{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #1929C7;
+        gap: 10%;
+        padding-top: 5%;
+    }
+
+    .sundayCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        border: solid 1px black;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px grey, /* Horizontal and vertical offset, blur radius, and color */
+                    0 6px 20px grey; /* Additional shadow for a more pronounced effect */
+        transition: all 0.3s ease;
+        background-color: white;
+        height: 80%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .sundayCard img{
+        width: 90%;
+        height: auto;
+    }
+    
+    
+    
     
 }

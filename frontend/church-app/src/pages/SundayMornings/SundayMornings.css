@@ -9,6 +9,7 @@
     position: relative;
     z-index: 1;
     width: 100%;
+    height: 40vh;
 }
 
 .topVideo{
@@ -29,6 +30,7 @@
     font-size: 10vw;
     margin: 0;
     padding-top: 5%;
+    -webkit-text-stroke: 3px #000000; 
 }
 
 .timeSection{
@@ -91,10 +93,6 @@
     height: 100%;
 }
 
-.welcomeSection img{
-    width: 5vw;
-}
-
 .welcomeContent h2{
     font-family: "Bona Nova SC", sans-serif;
     font-size: 5vw;
@@ -115,16 +113,16 @@
 
 .cardSection{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #1929C7;
-    
+    gap: 3%;
 }
 
 .sundayCard{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20vw;
+    width: 25vw;
     border: solid 1px black;
     border-radius: 5px;
     cursor: pointer;
@@ -139,8 +137,8 @@
 }
 
 .sundayCard img{
-    width: 20vw;
-    height: 30vh;
+    width: 25vw;
+    height: 35vh;
 }
 
 .sundayCard h2{
