@@ -30,6 +30,7 @@
     font-size: 10vw;
     margin: 0;
     padding-top: 5%;
+    -webkit-text-stroke: 3px #000000; 
 }
 
 .timeSection{
@@ -90,10 +91,6 @@
     padding-bottom: 8%;
     padding-top: 1%;
     height: 100%;
-}
-
-.welcomeSection img{
-    width: 5vw;
 }
 
 .welcomeContent h2{
