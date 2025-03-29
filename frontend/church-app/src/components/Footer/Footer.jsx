@@ -17,17 +17,19 @@ export default function Footer() {
                 <div className="left-box">
                     <h2>Menu</h2>
                     <div className="menu-grid">
+                    <p><Link to="/" className="footerButton">Home</Link></p>
                     <p><Link to="/AboutUs" className="footerButton">About Us</Link></p>
                     <p><Link to="/SundayMornings" className="footerButton">Sunday Mornings</Link></p>
                     <p><Link to="/Staff" className="footerButton">Staff</Link></p>
                     <p><Link to="/Youth" className="footerButton">Youth</Link></p>
+                    <p><Link to="ChristianCadets" className="footerButton">Christian Cadets</Link></p>
                     <p><Link to="/Connect" className="footerButton">Connect</Link></p>
                     <p><Link to="/Give" className="footerButton">Give</Link></p>
                     </div>
                     <h2>Contact Us</h2>
                     <div className = "contact-grid">
                     <p>Phone: <a href="tel:440-290-0233">(440) 290-0233</a></p>
-                    <p>Email: <Link to ="/Connect" className="footerButton">Email Us</Link></p>
+                    <p>Email: <a href ="email:office@vitalitychurch.org">office@vitalitychurch.org</a></p>
                     </div>
                     <div className="mailAddress">
                     <p>P.O. Box 73 Mentor, Ohio 44061</p>

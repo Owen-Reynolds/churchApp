@@ -2,7 +2,7 @@ import "./WebDesigners.css"
 import "./MobileWebDesigners.css"
 
 
-export default function AboutUs() {
+export default function WebDesigners() {
 
     return(
         <>
