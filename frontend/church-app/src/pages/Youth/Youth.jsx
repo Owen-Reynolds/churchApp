@@ -2,14 +2,12 @@ import React from 'react';
 import './Youth.css';
 import './MobileYouth.css';
 
-
-
 export default function Youth() {
 
     return (
         <>
-
         <div className = "yMain">
+            <h1>Youth Ministry</h1>
             <div className = "yMainLeft">
                 <p>Vitality Church Youth Ministry is an exciting and vital part of the church community, dedicated to nurturing the spiritual growth and engagement of young individuals. It offers a vibrant space where youth can 
                     explore their faith, build a strong moral foundation, and actively participate in church life. </p>

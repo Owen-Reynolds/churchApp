@@ -2,7 +2,6 @@ import "./AboutUs.css"
 import "./MobileAboutUs.css"
 
 import waterfall from '../../assets/aboutAssets/waterfall.mp4';
-import headerVid from '../../assets/aboutAssets/headerVid.mp4';
 import outdoor from '../../assets/aboutAssets/aboutOutdoor.jpg';
 import water from '../../assets/aboutAssets/waterImg.jpg';
 import group from '../../assets/aboutAssets/groupImg.jpg';
