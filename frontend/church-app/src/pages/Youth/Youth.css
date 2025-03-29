@@ -1,308 +1,52 @@
-.youthPage{
-    height: 100%;
-    background-color: white;
-
-}
-.youthHeader{
-    background-image: url('../../assets/youthAssets/youthBanner4.jpg');
-    background-size: cover;
-    background-position: center;
-    height:50vh;
-    width:100%;
-    display: flex; 
+.yHeader{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 100%;
+    height: 24vw;
+    position: relative;
+    margin:0;
+    z-index: 1;
 }
-.youthMainText {
-    position: relative; 
-    z-index: 1; 
+.yHeader h1{
+    -webkit-text-stroke: 2px #1929C7; 
+    text-stroke: 3px #1929C7;
+    font-family:"Bona Nova SC";
+    color: rgb(255, 255, 255);
+    font-size: 10vw;
+    margin-bottom: 10%;
     text-align: center;
-    color: rgb(10, 51, 198);
-    font-size: 9vw;
-    margin: 0;
-    font-family: "Bona Nova SC";
-    -webkit-text-stroke: 2px #ffffff; 
-    text-stroke: 3px #ffffff;
 }
-.youthCard img{
-    width: 35vw;
-    height: 50vh;
-    border-radius: 8%;
-    align-items: center;
-}
-.youthInfo {
-    display: flex;
+.yMain {
+    display: flex; 
     flex-direction: row; 
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: auto;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 0 5%; 
+    height: auto; 
 }
-
-.youthInfo img {
-    width: 40vw;
+.yMain img{
+    width: 35vw;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 8%;
+    border: solid 2px blue;
+    padding: 1%;
+    margin-bottom:5%;
+    margin-top: 5%;
 }
-
-.youthText {
+.yMainLeft, .yMainRight {
     display: flex;
     flex-direction: column; 
     justify-content: center;
-}
-
-.youthText h1 {
-    font-size: 2.5vw;
-    color: rgb(0, 0, 0);
-    font-family: "Bona Nova SC";
-    text-decoration: underline;
-    text-decoration-color: #1929C7;
-    text-align: center;
-}
-
-.youthText p {
-    font-size: 1.5vw;
-    color: rgb(0, 0, 0);
-    font-family: "Bebas Neue", serif;
-    text-align: center;
-    line-height: 1.8;
-}
-
-.youthText h2 {
-    font-size: 2vw;
-    color: rgb(0, 0, 0);
-    font-family: "Bona Nova SC";
-    text-decoration: underline;
-    text-decoration-color: #1929C7;
-    text-align: center;
-}
-
-.youthInfo p{
-    text-align: center; 
-    font-size: 2vw;
-    color: rgb(0, 0, 0);
-    font-family: "Bebas Neue", serif;
-}
-.youthCard {
-    margin:0 auto;
-    width: fit-content;
-    border-radius: 12px;
-    margin-right: 15%;
-    margin-left: 5%;
-    border-color: #1929C7;
-    width: 100%; 
-    max-width: 45%; 
-    justify-content: center; 
-    align-items: center;
-    padding-top: 5%;
-
-  }
-  .card-content h2 {
-    margin-bottom: 1rem; 
-    font-size: 2.5vw;
-    color: rgb(0, 0, 0);
-    font-family: "Bona Nova Sc";
-    padding-bottom: 5%;
-    text-decoration: underline;
-    text-decoration-color: #1929C7;
-    text-align: center;
-  }
-  
-  .youthContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%;
-    margin: auto;
-}
-
-.youthContent h1{
-    font-size: 2.5vw;
-    color: rgb(0, 0, 0);
-    font-family: "Bona Nova SC";
-    text-decoration: underline;
-    text-decoration-color: #1929C7;
-    text-align: center;
-}
-.youthInfo2{
-    display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
-    width: 100%;
-    margin: auto;
-    padding-bottom: 5%;
-    margin-left: 5%;
-}
-.youthInfo2 h1{
-    margin-bottom: 1rem; 
-    font-size: 2.5vw;
-    color: rgb(0, 0, 0);
-    font-family: "Bona Nova Sc";
-    padding-bottom: 5%;
-    text-decoration: underline;
-    text-decoration-color: #1929C7;
-}
-.youthInfo2 button{
-    display: flex;
-    justify-content: space-around;
-    font-size: 35px; 
-    border: 2px solid blue;
-    text-align: center;
-    width: 10vw;
-    background-color: white;
-    font-family: "Bebas Neue", serif;
-    margin-top: 15%;
-    margin-bottom: 30%;
-    cursor: pointer;
-}
-.youthInfo2 p{
-    text-align: center; 
-    font-size: 2vw;
-    color: rgb(37, 23, 193);
-    font-family: "Bebas Neue", serif;
-
-}
-.youthHandBook, .youthCard{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
     align-items: center; 
     width: 45%; 
-    max-width: 45%; 
-    margin: auto;
-    
-}
-.youthHandBook iframe {
-    width: 100%;
-    height: 80vh;
-    border: #1929C7 4px solid; 
-  }
-  @media (max-width: 81.2vh) {
-    iframe {
-      height: 60vh;
-    }
-  }
-
-.pdf-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    gap: 3rem;
-}
-.pdf-container h2 {
-    margin-bottom: 1rem; 
-    font-size: 1.5vw;
-    color: rgb(0, 0, 0);
-    font-family: "Bona Nova Sc";
-    padding-bottom: 5%;
-    text-decoration: underline;
-    text-decoration-color: #1929C7;
-}
-.pdfs {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 3rem;
-    width: 100%;
-}
-.iframe{
-    display: flex;
-    height: 40vh;
-    width: 20vh;
-}
-.pdf-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%; 
-    text-align: center;
-    padding-top: 5%;
-    
-}
-.pdf-container iframe {
-    width: 100%;
-    height: 30vh;
-    border: #1929C7 4px solid; 
-  }
-  
-  @media (max-width: 768px) {
-    iframe {
-      height: 60vh;
-    }
-  }
-  .newButtons{
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px; 
-    border: 2px solid blue;
-    text-align: center;
-    width: 10vw;
-    background-color: white;
-    font-family: "Bebas Neue", serif;
-    margin-top: 15%;
-    margin-bottom: 30%;
-    cursor: pointer;
-    text-decoration: underline;
-    text-decoration-color: black;
-    border-radius: 6px;
-}
-.newButtons:hover{
-    background-color: rgba(10, 51, 198, 0.833);
-    color: white;
-    transition: 0.3s;
-    text-decoration: underline;
-    text-decoration-color: white;
+    text-align: center; 
 }
 
-.slider {
-    width: 100%; 
-    height: auto; 
-    overflow: hidden; 
-    margin-top: 2%;
-    margin-bottom: 2%; 
-    
+.yMain p{
+    font-size: 2vw;
+    margin-bottom:5%;
+    margin-top: 5%;
+    line-height: 3rem;
 }
-
-.slide-track{
-    display: flex;
-    width: calc(25vw * 22);
-    animation: scroll 80s linear infinite;
-}
-
-@keyframes scroll{
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-25vw *18));
-    }
-}
-.slide{
-    height: 35vh;
-    width: 30vw;
-    display: flex;
-    align-items: center;
-    padding: .3%;
-
-}
-.slide img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3 ease;
-}
-
-.slide img:hover{
-transform: scale(1.15);
-}
-
-
-
