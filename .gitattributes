@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+HeaderVid.mp4 filter=lfs diff=lfs merge=lfs -text
+frontend/church-app/src/assets/youthAssets/HeaderVid.mp4 filter=lfs diff=lfs merge=lfs -text
