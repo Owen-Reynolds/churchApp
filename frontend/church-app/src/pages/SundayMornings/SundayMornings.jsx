@@ -10,6 +10,10 @@ import learnPhoto from '../../assets/sundayMorningAssets/learnPhoto.jpg';
 import coffeePhoto from '../../assets/sundayMorningAssets/coffeePhoto.jpg';
 import clockPhoto from '../../assets/sundayMorningAssets/clockPhoto.jpg';
 import timePhoto from '../../assets/sundayMorningAssets/timePhoto.jpeg';
+import bible1 from '../../assets/sundayMorningAssets/bible1.jpg';
+import bible2 from '../../assets/sundayMorningAssets/bible2.jpg';
+import teaching from '../../assets/sundayMorningAssets/teaching.jpg';
+import coffee1 from '../../assets/sundayMorningAssets/coffee1.jpg';
 export default function SundayMornings() {
     const [expandedCard, setExpandedCard] = useState(null);
 
@@ -79,21 +83,21 @@ export default function SundayMornings() {
             </div>
             <div className="cardSection">
                 <Card
-                    image={biblepicture}
+                    image={bible1}
                     title="Should I Bring A Bible?"
                     description="Having your Bible in hand allows you to follow along, making the experience more personal and immersive. If you don’t have a Bible of your own, don’t worry at all! We have one available for you, ensuring that everyone can partake in the enriching journey of faith together."
                     isExpanded={expandedCard === 1}
                     onClick={() => setExpandedCard(prev => (prev === 1 ? null : 1))}
                 />
                 <Card
-                    image={learnPhoto}
+                    image={teaching}
                     title="What Will Be Taught?"
                     description="Jesus declares that He is the Way, the Truth, and the Life (John 14:6). You will gain knowledge about God, find answers to your questions, and be motivated to live a fulfilling life in Christ Jesus."
                     isExpanded={expandedCard === 2}
                     onClick={() => setExpandedCard(prev => (prev === 2 ? null : 2))}
                 />
                 <Card
-                    image={coffeePhoto}
+                    image={coffee1}
                     title="After Service?"
                     description="At the conclusion of worship, we gather in community to enjoy a light Sunday morning meal, and continuation of community. This time of community is a great time to connect and engage with each other and meet new people. Be sure to visit our welcome table to get more information."
                     isExpanded={expandedCard === 4}

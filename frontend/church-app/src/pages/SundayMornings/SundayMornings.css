@@ -127,18 +127,19 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 1%;
-    box-shadow: 0 4px 8px grey, /* Horizontal and vertical offset, blur radius, and color */
-                0 6px 20px grey; /* Additional shadow for a more pronounced effect */
+    border: 2px solid rgb(0, 0, 0);
     transition: all 0.3s ease;
     background-color: white;
     height: 100%;
     margin-bottom: 5%;
+    margin-top:5%;
     text-align: center;
 }
 
 .sundayCard img{
-    width: 25vw;
-    height: 35vh;
+    width: 21vw;
+    height: 38vh;
+    border: 2px solid black;
 }
 
 .sundayCard h2{

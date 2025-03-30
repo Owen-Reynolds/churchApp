@@ -25,6 +25,15 @@
     align-items: center; 
     margin: 0 5%; 
     height: auto; 
+    margin-bottom: 2%;
+}
+.yMain h1{
+    font-family: "Bona Nova SC", sans-serif;
+    color: black;
+    font-size: 3vw;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: blue;
 }
 .yMain img{
     width: 35vw;

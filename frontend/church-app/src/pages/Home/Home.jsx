@@ -11,6 +11,7 @@ import sliderImage5 from '../../assets/homePageAssets/sliderImages/slideImage5.j
 import sliderImage6 from '../../assets/homePageAssets/sliderImages/slideImage6.jpg';
 import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.jpg'
 import hFlag from '../../assets/homePageAssets/hFlag.jpg';
+import sundayService from '../../assets/homePageAssets/sundayService.jpg';
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -87,7 +88,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <div className="newSundaySectionImg">
-                        <img src={sundayImage} alt="" />
+                        <img src={sundayService} alt="" />
                     </div>
                 </div>
             </div>
