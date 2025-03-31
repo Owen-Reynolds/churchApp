@@ -1,0 +1,77 @@
+.designerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 24vw; 
+    position: relative; 
+    margin: 0;
+    z-index: 1;
+    overflow: hidden; 
+}
+
+.vidWebDevs {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: -1; 
+}
+
+.designerHeader h1 {
+    position: relative;
+    z-index: 2; 
+    -webkit-text-stroke: 2px #1929C7;
+    text-stroke: 3px #1929C7;
+    font-family: "Bona Nova SC";
+    color: rgb(255, 255, 255); 
+    font-size: 8vw;
+    margin: 0;
+    text-align: center;
+}
+.webMain{
+    background-color:black;
+}
+.webContainer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    gap: 10rem;
+
+}
+.webContainer h2{
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .065em;
+    text-align: center;
+    color:white;
+}
+.webContainer img{
+    width: 20vw;
+    height: auto;
+    padding: 4px;
+    border-radius: 7px;
+    border: 2px solid #ffffff;
+}
+.webContainer div {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+.liLogo{
+    margin-top: 1rem;
+}
+.liLogo img{
+    width:5vw;
+    height: auto;
+    text-decoration: none;
+    border: none;
+}

@@ -8,7 +8,7 @@ import crossImage from '../../assets/homePageAssets/vitalitylogowhite.png';
 import fbLogo from '../../assets/footerAssets/facebookLogo.png';
 import ytLogo from '../../assets/footerAssets/ytLogo.png';
 import igLogo from '../../assets/footerAssets/instagramLogo.png';
-import liLogo from '../../assets/footerAssets/linkedin.png';
+
 
 export default function Footer() {
     return (
@@ -65,15 +65,7 @@ export default function Footer() {
                         </Link>
                 {/*<p>Website by:</p>*/}
                 
-               {/*<a href="https://www.linkedin.com/in/nolan-kern25/" target="_blank" rel="linkednInNolan">
-                <img src={liLogo} alt="Nolan" />
-                </a>
-                <a href="https://www.linkedin.com/in/owen-reynolds-b8870a293/" target="_blank" rel="linkednInOwen">
-                <img src={liLogo} alt="Owen" />
-                </a>
-                <a href="https://www.linkedin.com/in/enoch-oye-110800338/" target="_blank" rel="linkednInEnoch">
-                <img src={liLogo} alt="Enoch" />
-                </a>*/}
+               
                 </div>
             </div>
         </footer>
