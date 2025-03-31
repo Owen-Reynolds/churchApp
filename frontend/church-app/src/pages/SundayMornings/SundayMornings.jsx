@@ -14,6 +14,7 @@ import bible1 from '../../assets/sundayMorningAssets/bible1.jpg';
 import bible2 from '../../assets/sundayMorningAssets/bible2.jpg';
 import teaching from '../../assets/sundayMorningAssets/teaching.jpg';
 import coffee1 from '../../assets/sundayMorningAssets/coffee1.jpg';
+import davePreaching from '../../assets/sundayMorningAssets/pastorDavePreaching.jpg';
 export default function SundayMornings() {
     const [expandedCard, setExpandedCard] = useState(null);
 
@@ -90,7 +91,7 @@ export default function SundayMornings() {
                     onClick={() => setExpandedCard(prev => (prev === 1 ? null : 1))}
                 />
                 <Card
-                    image={teaching}
+                    image={davePreaching}
                     title="What Will Be Taught?"
                     description="Jesus declares that He is the Way, the Truth, and the Life (John 14:6). You will gain knowledge about God, find answers to your questions, and be motivated to live a fulfilling life in Christ Jesus."
                     isExpanded={expandedCard === 2}
