@@ -1,3 +1,89 @@
 @media screen and (max-width: 768px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+        margin: 0 auto;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 100;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .065em;
+    }
     
+    .mobileOverlay{
+        height: 60%;
+        width: 0;
+        position: fixed;
+        z-index: 101;
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition:width 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobileOverlay ul{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6vw;
+        padding: 0;
+    }
+
+    .mobileOverlay ul li {
+        list-style-type: none;
+    }
+    
+    .mobileOverlay ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 5vw;
+        position: relative;
+    }
+
+    .closeBtn{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 3rem;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+    .closeBtn:hover {
+        color: #FFD700;
+    }
+
+    .openButtonHeader span {
+        font-size: 5vw;
+        cursor: pointer;
+        color: #333;
+        transition: color 0.3s;
+    }
+
+    .openButtonHeader span:hover {
+        color: #000;
+    }
+
+    .logoHeader a{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logoHeader img{
+        width: 12vw;
+        height: auto;
+    }
 }

@@ -1,3 +1,5 @@
+@media screen and (min-width: 769px){
+
 header{
     display: flex;
     align-items: center;
@@ -23,7 +25,6 @@ header ul{
 header ul li {
     list-style-type: none;
 }
-
 
 header ul li a{
     text-decoration: none;
@@ -61,4 +62,6 @@ header ul li a:hover::after{
 .logoHeader img{
     width: 6vw;
     height: auto;
+}
+
 }
