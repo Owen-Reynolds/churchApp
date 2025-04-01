@@ -3,7 +3,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 85%;
+        width: 100%;
         margin: 0 auto;
         position: sticky;
         top: 0;
@@ -66,6 +66,10 @@
         color: #FFD700;
     }
 
+    .openButtonHeader{
+        margin-right:5% ;
+    }
+
     .openButtonHeader span {
         font-size: 5vw;
         cursor: pointer;
@@ -75,6 +79,10 @@
 
     .openButtonHeader span:hover {
         color: #000;
+    }
+
+    .logoHeader{
+        margin-left: 5%;
     }
 
     .logoHeader a{
