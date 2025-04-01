@@ -26,8 +26,8 @@ export default function Header() {
             <span onClick={() => setNavOpen(true)}>Open</span>
         </div>
         <div className="mobileOverlay" style={{width: navOpen ? "100%" : "0%"}}>
-            <a href="#" className="closeBtn" onClick={() => setNavOpen(false)}>&times;</a>
             <ul>
+                <li><Link className="closeBtn" onClick={() => setNavOpen(false)}>&times;</Link></li>
                 <li><Link to='/AboutUs' onClick={() => setNavOpen(false)}>About Us</Link></li>
                 <li><Link to='/SundayMornings' onClick={() => setNavOpen(false)}>Sunday Mornings</Link></li>
                 <li><Link to='/Staff' onClick={() => setNavOpen(false)}>Staff</Link></li>
@@ -37,7 +37,7 @@ export default function Header() {
                 <li><Link to='/Give' onClick={() => setNavOpen(false)}>Give</Link></li>
             </ul>
         </div>
-        <ul>
+        <ul className="webOverlay">
                 <li><Link to='/AboutUs' onClick={() => setNavOpen(false)}>About Us</Link></li>
                 <li><Link to='/SundayMornings' onClick={() => setNavOpen(false)}>Sunday Mornings</Link></li>
                 <li><Link to='/Staff' onClick={() => setNavOpen(false)}>Staff</Link></li>
@@ -45,7 +45,7 @@ export default function Header() {
                 <li><Link to='/ChristianCadets' onClick={() => setNavOpen(false)}>Christian Cadets</Link></li>
                 <li><Link to='/Connect' onClick={() => setNavOpen(false)}>Connect</Link></li>
                 <li><Link to='/Give' onClick={() => setNavOpen(false)}>Give</Link></li>
-            </ul>
+        </ul>
     </header>
     </>
     );
