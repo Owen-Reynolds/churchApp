@@ -1,0 +1,65 @@
+@media screen and (max-width: 768px) {
+    .designerHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        height: 48vw; 
+        position: relative; 
+        margin: 0;
+        z-index: 1;
+        overflow: hidden; 
+    }
+
+    .designerHeader h1 {
+        position: relative;
+        z-index: 2; 
+        -webkit-text-stroke: 2px #1929C7;
+        text-stroke: 3px #1929C7;
+        font-family: "Bona Nova SC";
+        color: rgb(255, 255, 255); 
+        font-size: 16vw;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .webContainer{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        gap: 0;
+    }
+    .webContainer h2{
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .065em;
+        text-align: center;
+        color:white;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+        margin: 0;
+        font-size: 10vw;
+    }
+
+    .webContainer img{
+        width: 60vw;
+        height: auto;
+        padding: 4px;
+        border-radius: 7px;
+        border: 2px solid #ffffff;
+    }
+
+    .liLogo{
+        margin: 0;
+    }
+
+    .liLogo img{
+        width:20vw;
+        height: auto;
+        text-decoration: none;
+        border: none;
+    }
+}
