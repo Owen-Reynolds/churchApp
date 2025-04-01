@@ -1,0 +1,65 @@
+@media screen and (max-width: 768px) {
+    .yHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vw;
+        position: relative;
+        margin:0;
+        z-index: 1;
+    }
+    .yHeader h1{
+        -webkit-text-stroke: 2px #1929C7; 
+        text-stroke: 3px #1929C7;
+        font-family:"Bona Nova SC";
+        color: rgb(255, 255, 255);
+        font-size: 13vw;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    .yMain {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        margin: 0 5%; 
+        height: auto; 
+        margin-bottom: 2%;
+    }
+    .yMain h1{
+        font-family: "Bona Nova SC", sans-serif;
+        color: black;
+        font-size: 5vw;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: blue;
+    }
+    .yMain img{
+        width: 45vw;
+        height: auto;
+        border-radius: 8%;
+        border: solid 2px blue;
+        padding: 1%;
+        margin-bottom:5%;
+        margin-top: 5%;
+    }
+    .yMainLeft, .yMainRight {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        width: 45%; 
+        text-align: center; 
+    }
+    .yMainLeft p{
+        padding-bottom: 15%;
+    }
+    .yMain p{
+        font-size: 3vw;
+        margin-bottom:5%;
+        margin-top: 5%;
+       
+    }
+}
