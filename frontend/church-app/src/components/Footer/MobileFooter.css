@@ -4,10 +4,15 @@
         color: white;
         text-align: center;
         padding: 2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
     }
     .map-responsive iframe{
         margin-bottom: 5%;
-        width:30vw;
+        width:80vw;
         height: 40vh;
     }
     .footer-content {
@@ -88,18 +93,21 @@
     
     .footer-bottom{
         width: 100%;
-       
+       height: 50vh;
        display: flex;
        justify-content: space-between;
+       align-items: flex-start;
        margin-top:3%;
+       padding-top: 3%;
        border-top: 1px solid white;
+    
        
     }
     .footer-bottom-text{
         padding-top: .5%;
         text-align: center;
         color: white;
-        font-size: 1.2vw;
+        font-size: 3vw;
         padding-left: 10vw;
     }
     .footer-bottom-designers{
@@ -110,14 +118,10 @@
         padding-right: 2%;
     }
     
-    .footer-bottom-designers p{
-        padding-right: 2%;
-    }
-    
     .footer-bottom img{
         margin-top: 2%;
         display: flex;
-        width: 4vw;
+        width: 10vw;
         height: auto;
         padding-left:2%;
     }
@@ -126,6 +130,7 @@
         padding-right: 2%;
         display: flex;
         align-items: center;
+        justify-content: flex-start;
     
     }
     
@@ -152,10 +157,10 @@
         background-color: #ffffff;
         border-radius: 5px;
         color: #1929c7;
-        width: 10vw;
-        height: 2vw;
+        width: 20vw;
+        height: 7vw;
         cursor: pointer;
         font-family: "Bebas Neue", serif;
-        font-size: 1.2vw;
+        font-size: 3vw;
     }
     }
