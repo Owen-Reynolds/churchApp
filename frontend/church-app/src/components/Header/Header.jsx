@@ -23,7 +23,7 @@ export default function Header() {
             </Link>
         </div>
         <div className="openButtonHeader">
-            <span onClick={() => setNavOpen(true)}>Open</span>
+            <i onClick={() => setNavOpen(true)} class="fa-solid fa-bars"></i>
         </div>
         <div className="mobileOverlay" style={{width: navOpen ? "100%" : "0%"}}>
             <ul>
