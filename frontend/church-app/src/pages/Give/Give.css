@@ -20,8 +20,9 @@
 
 .donate-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 30px;
+    width: 12vw;
+    height: 8vh;
+    font-size: 3vw;
     color: white;
     background-color: #192ac700;
     border: 2px solid #ffffff;

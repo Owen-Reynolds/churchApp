@@ -1,3 +1,228 @@
 @media screen and (max-width: 768px) {
+    .aboutHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vh; 
+        position: relative;
+        margin: 0;
+        z-index: 1;
+        font-family: "Bona Nova SC";
+        color: white;
+        font-size: 5vw;
+        -webkit-text-stroke: 1px #000000; 
+        text-stroke: 1px #000000;
+    }
+    .aboutHeaderVid {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+    }
+    .missionStatement {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%; 
+        padding-top: 5%;
+    }
+    .missionLeft {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column;
+        margin-left:5%;
+    }
+    .missionRight {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 5%;
+        margin-left:5%;
+    }
     
+    .missionRight img {
+        width: 40vw; 
+        height: 35vw;
+        border-radius: 8px;
+        border: solid 2px blue;
+        padding: 1%;
+    }
+    .missionStatement h1 {
+        font-size: 6vw;
+        font-family: "Bona Nova SC";
+        color: #000000;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+        margin-bottom: 1rem;
+    }
+    
+    .missionStatement h2 {
+        font-size: 7vw;
+        font-family: "Bebas Neue", serif;
+        color: #ffffff;
+        letter-spacing: 0.07em;
+        -webkit-text-stroke: 1px #000000; 
+        text-stroke: 1px #000000;
+    }
+    .ourMission {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%;
+    }
+    .ourMissionLeft img {
+        width: 40vw; 
+        height: 35vw; 
+        border-radius: 8px;
+        border: solid 2px blue;
+        padding: 1%; 
+    }
+    .ourMissionLeft {
+        text-align: center; 
+        align-items: center;
+        display: flex;
+        flex-direction: column; 
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .ourMissionRight {
+        text-align: center; 
+        align-items: center;
+        display: flex;
+        flex-direction: column; 
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .ourStory{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .ourStoryLeft{
+        text-align: center; 
+        align-items: center;
+        display: flex;
+        flex-direction: column; 
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .ourStoryRight{
+        text-align: center; 
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-right:5%; 
+    }
+    .ourStory img{
+        width: 40vw; 
+        height: 35vw; 
+        margin-top: 5%;
+        border-radius: 8px; 
+        border: solid 2px blue;
+        padding: 1%;
+    }
+    .statementOfFaithHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5%; 
+    }
+    .statementOfFaithContainer {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center; 
+        width: 100%;
+        padding-bottom: 5%;
+    }
+    .statementOfFaithContainer img{
+        width: 40vw; 
+        height: 20vw; 
+        border-radius: 8px; 
+        border: solid 2px blue;
+        padding: 1%;
+    }
+    .statementOfFaithLeft {
+        text-align: center; 
+        align-items: center;
+        display: flex;
+        flex-direction: column; 
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .statementOfFaithRight {
+        text-align: center; 
+        align-items: center;
+        display: flex;
+        flex-direction: column; 
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .ourStory p {
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    .ourStory h1 {
+        font-size: 6vw;
+        font-family: "Bona Nova SC";
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+    }
+    
+    .ourStory h2 {
+        font-size: 3vw;
+        color: #1929c7;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: 0.07em;
+    }
+    .statementOfFaith p {
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    .statementOfFaith h1 {
+        font-size: 6vw;
+        font-family: "Bona Nova SC";
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+        text-align: center;
+    }
+    
+    .statementOfFaith h2 {
+        font-size: 3vw;
+        color: #1929c7;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: 0.07em;
+    }
+    .ourMission p {
+        text-align: center;
+        font-size: 2vw;
+    }
+    
+    .ourMission h1 {
+        font-size: 6vw;
+        font-family: "Bona Nova SC";
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+    }
+    
+    .ourMission h2 {
+        font-size: 3vw;
+        color: #1929c7;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: 0.07em;
+    }
 }

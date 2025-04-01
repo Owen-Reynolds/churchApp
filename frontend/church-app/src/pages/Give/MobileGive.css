@@ -1,3 +1,100 @@
 @media screen and (max-width: 768px) {
+    .give-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vw;
+        position: relative;
+        margin-top:5%;
+        z-index: 0;
+    }
+    .give-header h1{
+        -webkit-text-stroke: 1px #1929C7; 
+        text-stroke: 2px #1929C7;
+        font-family:"Bona Nova SC";
+        color: rgb(255, 255, 255);
+        font-size: 8vw;
+        margin-bottom: 10%;
+    }
     
+    .donate-button {
+    display: inline-block;
+    width: 15vw;
+    height: 5vh;
+    font-size: 4vw;
+    color: white;
+    background-color: #192ac700;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 70%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .065em;
+    -webkit-text-stroke: 1px #1929C7; 
+    text-stroke: 1px #1929C7;
+    }
+    
+    .donate-button:hover {
+        background-color: #0f1a8c;
+    }
+    
+    .give-container {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+        width: 100%;
+        margin-top:5%;
+        margin-bottom: 5%;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .065em;
+    
+    }
+    .give-container p{
+        font-size: 4vw;
+    }
+    .vidGive{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+    }
+    
+    .give-container h1{
+        font-size: 5vw;
+        font-family: "Bona Nova SC";
+        margin: 0;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+        text-decoration-thickness: 2px;
+    }
+    
+    .give-left-box{
+        text-align: center;
+        padding-left: 5%;
+        margin-right: 5%;
+        flex:1;
+    }
+    .give-right-box  p{
+        padding-bottom: 5%;
+    }
+    .give-left-box p{
+        padding-bottom: 5%;
+    }
+    .give-right-box{
+        text-align: center;
+        padding-right: 5%;
+        margin-left: 5%;
+        flex:1;
+    }
 }
