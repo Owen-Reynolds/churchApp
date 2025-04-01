@@ -6,6 +6,7 @@
     position: relative;
     z-index: 1;
     height: 80vh;
+    text-align: center;
 }
 
 .connectContent::before {
@@ -50,5 +51,5 @@
     flex-direction:column;
     padding: 3%;
     width: 30%;
-
+    
 }

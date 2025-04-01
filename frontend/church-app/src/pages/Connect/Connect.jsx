@@ -24,7 +24,7 @@ export default function Connect() {
                     </div>
                 </div>
                 <div className="connectForm">
-                    <iframe width="400" height="300" src="https://opturl.com/i/nwyxe04V?hide_title=0" frameborder="0"></iframe>
+                    <iframe width="400" height="315" src="https://opturl.com/i/nwyxe04V?hide_title=0" frameborder="0"></iframe>
                 </div>
             </div>
         </>
