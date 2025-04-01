@@ -67,8 +67,8 @@
         margin-right:5% ;
     }
 
-    .openButtonHeader span {
-        font-size: 5vw;
+    .openButtonHeader i{
+        font-size: 7vw;
         cursor: pointer;
         color: #333;
         transition: color 0.3s;
@@ -80,6 +80,7 @@
 
     .logoHeader{
         margin-left: 5%;
+        margin-bottom: 1%;
     }
 
     .logoHeader a{
