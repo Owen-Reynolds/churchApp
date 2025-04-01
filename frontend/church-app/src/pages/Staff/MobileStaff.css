@@ -68,7 +68,7 @@
     }
     .card img {
         width: 40vw;
-        height: 30vh;
+        height: auto;
         z-index: 2;
         position: relative;
         padding-top: 7%;

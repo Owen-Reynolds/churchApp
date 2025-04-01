@@ -30,6 +30,8 @@
     height: 50vh;
     border-radius: 8%;
     align-items: center;
+    border: #1929C7 solid 2px;
+    padding: 2px;
 }
 .youthInfo {
     display: flex;

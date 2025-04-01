@@ -48,7 +48,7 @@ export default function Footer() {
                 <div className="map-responsive">
                     <h2 className="footerLocationHeading">Location</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.3178389291693!2d-81.30121112410387!3d41.71365987126017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8831a5580607348d%3A0xbadb134bb5a527b3!2sLaMalfa%20Centre%20Hotel%20and%20Suites!5e0!3m2!1sen!2sus!4v1739983511197!5m2!1sen!2sus" 
-                width="400" height="250" allowfullscreen="" 
+                 allowfullscreen="" 
                 loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Responsive Google Map"></iframe>
                 </div>
             </div>
