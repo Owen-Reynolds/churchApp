@@ -27,10 +27,10 @@ body{
         url('../../assets/homePageAssets/SancImage1.jpeg'); 
     }
     33% { background-image: 
-        url('../../assets/homePageAssets/SancImage2.jpeg'); 
+        url('../../assets/homePageAssets/SancImage2.JPEG'); 
     }
     66% { background-image: 
-        url('../../assets/homePageAssets/SancImage3.jpeg'); 
+        url('../../assets/homePageAssets/SancImage3.JPEG'); 
     }
     100% { background-image: 
         url('../../assets/homePageAssets/SancImage1.jpeg'); 
@@ -272,7 +272,7 @@ body{
 
 .newCardsRightBottom{
     background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
-     url("../../assets/homePageAssets/give.jpg");
+     url("../../assets/homePageAssets/Give.jpg");
     background-position: center;
     display: flex;
     justify-content: center;
@@ -288,7 +288,7 @@ body{
 
 .newCardsRightBottom:hover{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
-    url("../../assets/homePageAssets/give.jpg");
+    url("../../assets/homePageAssets/Give.jpg");
     cursor: pointer;
 }
 

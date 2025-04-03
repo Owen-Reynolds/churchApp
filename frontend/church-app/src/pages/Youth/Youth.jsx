@@ -3,7 +3,7 @@ import './Youth.css';
 import './MobileYouth.css';
 import main1 from '../../assets/youthAssets/youthMinistry1.jpg';
 import main2 from '../../assets/youthAssets/youthMinistry2.jpg';
-import yHeader from '../../assets/youthAssets/HeaderVid.mp4';
+import yHeader from '../../assets/youthAssets/yHeaderVid.mp4';
 import main3 from '../../assets/youthAssets/youthMinistry3.jpg';
 
 export default function Youth() {
