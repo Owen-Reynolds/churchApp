@@ -5,7 +5,7 @@ import './MobileFooter.css';
 import { Link } from 'react-router-dom';
 
 import crossImage from '../../assets/homePageAssets/vitalitylogowhite.png';
-import fbLogo from '../../assets/footerAssets/facebookLogo.png';
+import fbLogo from '../../assets/footerAssets/facebooklogo.png';
 import ytLogo from '../../assets/footerAssets/ytLogo.png';
 import igLogo from '../../assets/footerAssets/instagramLogo.png';
 
