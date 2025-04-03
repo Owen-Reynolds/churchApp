@@ -1,4 +1,4 @@
-import './give.css';
+import './Give.css';
 import './MobileGive.css';
 
 import outdoorService from '../../assets/giveAssets/outdoorService.jpg';
