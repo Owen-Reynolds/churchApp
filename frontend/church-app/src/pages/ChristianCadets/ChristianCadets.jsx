@@ -32,7 +32,7 @@ import adultVolunteerApp from '../../assets/cadetAssets/AdultVolunteerForm.pdf';
 import cc2 from '../../assets/cadetAssets/ccadets2.png';
 import youthCrosses from '../../assets/cadetAssets/youthCrosses.png';
 import CCHandbook from '../../assets/cadetAssets/CCHandbook.pdf';
-import fishKids from   '../../assets/cadetAssets/fishingKids.jpeg';
+import fishKids from   '../../assets/cadetAssets/fishingkids.jpeg';
 import banner from '../../assets/cadetAssets/youthBanner4.jpg';
 
 
