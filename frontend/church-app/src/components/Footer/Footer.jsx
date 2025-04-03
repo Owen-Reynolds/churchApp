@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 import crossImage from '../../assets/homePageAssets/vitalitylogowhite.png';
 import fbLogo from '../../assets/footerAssets/facebooklogo.png';
-import ytLogo from '../../assets/footerAssets/ytLogo.png';
-import igLogo from '../../assets/footerAssets/instagramLogo.png';
+import ytLogo from '../../assets/footerAssets/ytlogo.png';
+import igLogo from '../../assets/footerAssets/instagramlogo.png';
 
 
 export default function Footer() {
