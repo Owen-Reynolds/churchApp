@@ -35,7 +35,7 @@ export default function Home() {
                 
                 <div className="mainButton">
                     <a onClick="scrollMainButton()">
-                    <Link to="/connect">
+                    <Link to="/Connect">
                         <motion.button
                             initial={{ y: '200px' }}
                             animate={{ y: 0 }}
