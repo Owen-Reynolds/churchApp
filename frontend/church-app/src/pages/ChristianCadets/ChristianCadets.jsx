@@ -1,6 +1,7 @@
 import './ChristianCadets.css';
 import './MobileChristianCadets.css';
 import { useState } from "react";
+import { useEffect } from 'react';
 import image1 from '../../assets/cadetAssets/image1.jpeg';
 import image2 from '../../assets/cadetAssets/image2.jpeg';
 import image3 from '../../assets/cadetAssets/image3.jpeg';
@@ -41,6 +42,16 @@ export default function ChristianCadets() {
     const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12,
          image13, image14, Image15, Image16, Image17, Image18, Image19, Image20, Image21, Image22, Image23, Image24, Image25];
 
+         useEffect(() => {
+            const interval = setInterval(() => {
+              window.scrollTo(0, 0);
+            }, 200);
+          
+            setTimeout(() => clearInterval(interval), 2000); // stop after 2s
+          
+            return () => clearInterval(interval);
+          }, []);
+
     return (
         <>
        <div className="youthPage">
@@ -70,13 +81,14 @@ export default function ChristianCadets() {
         <div className="youthContent">
             <div className="youthHandBook">
                 <h1>Cadet Handbook</h1>
-                <iframe className="youthForm" id="myPDF" src={CCHandbook}></iframe>
+                <iframe className="youthForm" id="myPDF1" src={CCHandbook}></iframe>
                 <a href={CCHandbook} target="_blank" rel="noopener noreferrer">
                     <button className="newButtons">Open</button>
                 </a>
             </div>
             <div className="youthCard">
             <iframe width="400" height="400" src="https://opturl.com/i/oZLb0Xwq?hide_title=0" frameborder="0"></iframe>
+
             <img src={fishKids} alt="fishingKids" />
             </div>
         </div>
@@ -85,7 +97,7 @@ export default function ChristianCadets() {
             <div className="pdfs">
                 <div className="pdf-item">
                     <h2>Youth Application Form</h2>
-                    <iframe id="myPDF" src={youthAppForm} frameBorder="0"></iframe>
+                    <iframe id="myPDF2" src={youthAppForm} frameBorder="0"></iframe>
                     <a href={youthAppForm} target="_blank" rel="noopener noreferrer">
                         <button className="newButtons">Open</button>
                 
@@ -94,14 +106,14 @@ export default function ChristianCadets() {
 
                 <div className="pdf-item">
                     <h2>Release of Liability Form</h2>
-                    <iframe id="myPDF" src={releaseLiabilityForm} frameBorder="0"></iframe>
+                    <iframe id="myPDF3" src={releaseLiabilityForm} frameBorder="0"></iframe>
                     <a href={releaseLiabilityForm} target="_blank" rel="noopener noreferrer">
                         <button className="newButtons">Open</button>
                     </a>
                 </div>
                 <div className="pdf-item">
                     <h2>Adult Volunteer Application</h2>
-                    <iframe id="myPDF" src={adultVolunteerApp} frameBorder="0"></iframe>
+                    <iframe id="myPDF4" src={adultVolunteerApp} frameBorder="0"></iframe>
                     <a href={adultVolunteerApp} target="_blank" rel="noopener noreferrer">
                         <button className="newButtons">Open</button>
                     </a>
