@@ -18,7 +18,16 @@ export default function AboutUs() {
     return (
         <>
             <div className="staffHeader">
-                <video className="heartvid" src={heartrate} autoPlay loop muted />
+                <video 
+                            className="vidGive" 
+                            src={heartrate} 
+                            autoPlay 
+                            loop 
+                            muted 
+                            playsInline 
+                            disablePictureInPicture 
+                            controlsList="nodownload nofullscreen noplaybackrate"
+                        ></video>
                 <h1>Meet the Team</h1>
             </div>
             <div className = "staffWave"></div>
