@@ -19,18 +19,18 @@
 }
 
 .donate-button{
-    background-color: white;
-    color: #1929C7;
+    background-color: #192ac700;
+    color: white;
     font-size: 3vw;
+    border: 2px solid white;
     border-radius: 5px;
-    border: none;
     cursor: pointer;
     font-family: "Bebas Neue", serif;
     letter-spacing: .065em;
 }
 
 .donate-button:hover{
-    background-color: #1929C7;
+    background-color: #192ac7b2;
     color: white;
 }
 
