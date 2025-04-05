@@ -22,14 +22,16 @@ export default function WebDesigners() {
     return(
         <>
         <div className="designerHeader">
-        <video
-                    className="vidWebDevs"
-                    src={blueVid}
-                    autoPlay
-                    loop
-                    muted
-                    ref={videoRef} 
-                />
+        <video 
+    className="vidWebDevs" 
+    src={blueVid} 
+    autoPlay 
+    loop 
+    muted 
+    playsInline 
+    disablePictureInPicture 
+    controlsList="nodownload nofullscreen noplaybackrate"
+></video>
             <h1>Web Designers</h1>
         </div>
         <div className="webMain">
