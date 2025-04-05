@@ -16,33 +16,22 @@
         font-family:"Bona Nova SC";
         color: rgb(255, 255, 255);
         font-size: 8vw;
-        margin-bottom: 10%;
     }
     
-    .donate-button {
-    display: inline-block;
-    width: 15vw;
-    height: 3vh;
-    font-size: 4vw;
-    color: white;
-    background-color: #192ac700;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
-    top: 70%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    z-index: 1;
-    font-family: "Bebas Neue", serif;
-    letter-spacing: .065em;
-    -webkit-text-stroke: 1px #1929C7; 
-    text-stroke: 1px #1929C7;
+    .donate-button{
+        background-color: white;
+        color: #1929C7;
+        font-size: 4vw;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .065em;
     }
     
-    .donate-button:hover {
-        background-color: #0f1a8c;
+    .donate-button:hover{
+        background-color: #1929C7;
+        color: white;
     }
     
     .give-container {
