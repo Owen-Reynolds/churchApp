@@ -13,7 +13,16 @@ export default function Give() {
     <>
         
             <div className="give-header">
-                <video className="vidGive" src={crossVid5} autoPlay loop muted />
+                <video 
+                            className="vidGive" 
+                            src={crossVid5} 
+                            autoPlay 
+                            loop 
+                            muted 
+                            playsInline 
+                            disablePictureInPicture 
+                            controlsList="nodownload nofullscreen noplaybackrate"
+                        ></video>
                 <h1>Support Our Mission</h1>
                 <a href="https://www.paypal.com/donate/?hosted_button_id=Q4SNR47UHK2DE" target="_blank" rel="noopener noreferrer">
                     <button className="donate-button">Donate</button>

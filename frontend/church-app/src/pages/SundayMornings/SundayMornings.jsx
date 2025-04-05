@@ -21,7 +21,16 @@ export default function SundayMornings() {
     return (
         <>
             <div className="titleSection">
-                <video className="topVideo" src={topVideo} autoPlay loop muted />
+                <video 
+                            className="vidGive" 
+                            src={topVideo} 
+                            autoPlay 
+                            loop 
+                            muted 
+                            playsInline 
+                            disablePictureInPicture 
+                            controlsList="nodownload nofullscreen noplaybackrate"
+                        ></video>
                 <h1>
                     <div>Sunday Service</div>
                 </h1>

@@ -16,7 +16,16 @@ export default function AboutUs() {
     <>
     <div className="aboutHeader">
         <h1>About Vitality</h1>
-        <video className="aboutHeaderVid" src={waterfall} autoPlay loop muted />
+        <video 
+                className="vidGive" 
+                src={waterfall} 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                disablePictureInPicture 
+                controlsList="nodownload nofullscreen noplaybackrate"
+                ></video>
     </div>
             <div className="missionStatement">
                 <div className="missionLeft">

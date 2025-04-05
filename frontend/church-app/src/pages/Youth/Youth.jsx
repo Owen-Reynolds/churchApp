@@ -11,7 +11,16 @@ export default function Youth() {
     return (
         <>
         <div className = "yHeader">
-        <video className="vidGive" src={yHeader} autoPlay loop muted />
+        <video 
+            className="vidGive" 
+            src={yHeader} 
+            autoPlay 
+            loop 
+            muted 
+            playsInline 
+            disablePictureInPicture 
+            controlsList="nodownload nofullscreen noplaybackrate"
+        ></video>
         <h1>Youth Ministry</h1>
         </div>
         <div className = "yMain">
