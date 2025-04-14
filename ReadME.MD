@@ -1,4 +1,4 @@
-#Vitality Church Website
+# Vitality Church Website
 
 vitalitychurch.org
 
