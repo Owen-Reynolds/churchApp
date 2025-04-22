@@ -37,6 +37,7 @@ function App() {
         </Routes>
       <Footer/>
       </BrowserRouter>
+      <Analytics />
     </>
   )
 }
