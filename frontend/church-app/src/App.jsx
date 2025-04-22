@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Analytics } from "@vercel/analytics/react"
 
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
