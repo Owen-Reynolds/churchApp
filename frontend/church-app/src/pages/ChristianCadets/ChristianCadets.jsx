@@ -42,8 +42,7 @@ export default function ChristianCadets() {
     const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12,
          image13, image14, Image15, Image16, Image17, Image18, Image19, Image20, Image21, Image22, Image23, Image24, Image25];
 
-         
-
+        
     return (
         <>
        <div className="youthPage">
