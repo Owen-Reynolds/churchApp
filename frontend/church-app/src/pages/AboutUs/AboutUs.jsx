@@ -5,6 +5,7 @@ import waterfall from '../../assets/aboutAssets/waterfall.mp4';
 import outdoor from '../../assets/aboutAssets/aboutOutdoor.jpg';
 import water from '../../assets/aboutAssets/waterImg.jpg';
 import group from '../../assets/aboutAssets/groupImg.jpg';
+import group2 from '../../assets/aboutAssets/groupImg2.jpg';
 import baptism from '../../assets/aboutAssets/baptism.jpg';
 import cross from '../../assets/aboutAssets/crossAbouUs.jpg';
 import bible from '../../assets/aboutAssets/bibleImg.jpg';
@@ -73,7 +74,7 @@ export default function AboutUs() {
                 </div>
                 <div className="ourStoryRight">
                     <p>Vitality Church is a journey to find answers to the questions you have. If you are ready to answer that still, small voice within you, Jesus has provided a way through Vitality Church. We hope to see you soon!</p>
-                    <img className="aboutoutdoor" src={group} alt="outdoor" />
+                    <img className="aboutoutdoor" src={group2} alt="outdoor" />
                 </div>
             </div>
             <div className="statementOfFaith">
