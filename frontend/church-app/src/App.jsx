@@ -21,6 +21,7 @@ import Give from './pages/Give/Give.jsx';
 function App() {
   return (
     <>
+    <Analytics />
     <BrowserRouter>
     <ScrollToTop />
       <Header />
@@ -37,6 +38,7 @@ function App() {
         </Routes>
       <Footer/>
       </BrowserRouter>
+      
     </>
   )
 }
