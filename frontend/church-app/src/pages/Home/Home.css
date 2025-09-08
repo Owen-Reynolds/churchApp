@@ -24,16 +24,16 @@ body{
 
 @keyframes slideshow {
     0% { background-image: 
-        url('../../assets/homePageAssets/SancImage1.jpeg'); 
+        url('../../assets/homePageAssets/SancImage8.jpeg'); 
     }
     33% { background-image: 
-        url('../../assets/homePageAssets/SancImage2.JPEG'); 
+        url('../../assets/homePageAssets/SancImage3.JPEG'); 
     }
     66% { background-image: 
         url('../../assets/homePageAssets/SancImage3.JPEG'); 
     }
     100% { background-image: 
-        url('../../assets/homePageAssets/SancImage1.jpeg'); 
+        url('../../assets/homePageAssets/SancImage8.jpeg'); 
     }
 }
 
