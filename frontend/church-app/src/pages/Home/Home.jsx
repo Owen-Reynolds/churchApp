@@ -19,6 +19,19 @@ import { useState, useEffect } from 'react';
 
 
 export default function Home() {
+    useEffect(() => {
+    // Load the gtag.js script
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-17675757170";
+    document.head.appendChild(script);
+
+    // Initialize Google Tag
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17675757170');
+  }, []);
     return (
         <>
             <div className="mainSection">
