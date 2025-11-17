@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import './Staff.css';
 import './MobileStaff.css';
 import heartrate from '../../assets/staffAssets/heartRateVid.mp4';
-import pastorDave from '../../assets/staffAssets/davidKern.jpg';
-import bobAnderson from '../../assets/staffAssets/bobAnderson.jpg';
-import dorothyHarvey from '../../assets/staffAssets/dorothyHarvey.jpg';
-import timMcNamee from '../../assets/staffAssets/timMcNamee.jpg';
-import rondaKern from '../../assets/staffAssets/rondaKern.jpg';
-import scottMiller from '../../assets/staffAssets/scottMiller.jpg';
-import vitalityLogo from '../../assets/staffAssets/vitalitylogowhite.png';
-import cindyKeeney from '../../assets/staffAssets/cindyKeeney.jpg';
-import dustyKeeney from '../../assets/staffAssets/dustyKeeney.jpg';
+import pastorDave from '../../assets/staffAssets/davidKern.webp';
+import bobAnderson from '../../assets/staffAssets/bobAnderson.webp';
+import dorothyHarvey from '../../assets/staffAssets/dorothyHarvey.webp';
+import timMcNamee from '../../assets/staffAssets/timMcNamee.webp';
+import rondaKern from '../../assets/staffAssets/rondaKern.webp';
+import scottMiller from '../../assets/staffAssets/scottMiller.webp';
+import cindyKeeney from '../../assets/staffAssets/cindyKeeney.webp';
+import dustyKeeney from '../../assets/staffAssets/dustyKeeney.webp';
 
 export default function AboutUs() {
     const [expandedCard, setExpandedCard] = useState(null);

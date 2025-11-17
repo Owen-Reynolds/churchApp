@@ -2,15 +2,13 @@ import "./AboutUs.css"
 import "./MobileAboutUs.css"
 
 import waterfall from '../../assets/aboutAssets/waterfall.mp4';
-import outdoor from '../../assets/aboutAssets/aboutOutdoor.jpg';
-import water from '../../assets/aboutAssets/waterImg.jpg';
-import group from '../../assets/aboutAssets/groupImg.jpg';
-import group2 from '../../assets/aboutAssets/groupImg2.jpg';
-import baptism from '../../assets/aboutAssets/baptism.jpg';
-import cross from '../../assets/aboutAssets/crossAbouUs.jpg';
-import bible from '../../assets/aboutAssets/bibleImg.jpg';
-import lastSupper from '../../assets/aboutAssets/lastsupper.jpg';
-import jesus from '../../assets/aboutAssets/jesus.jpg';
+import water from '../../assets/aboutAssets/waterImg.webp';
+import group2 from '../../assets/aboutAssets/groupImg2.webp';
+import baptism from '../../assets/aboutAssets/baptism.webp';
+import cross from '../../assets/aboutAssets/crossAbouUs.webp';
+import bible from '../../assets/aboutAssets/bibleImg.webp';
+import lastSupper from '../../assets/aboutAssets/lastsupper.webp';
+import jesus from '../../assets/aboutAssets/jesus.webp';
 
 export default function AboutUs() {
     return(

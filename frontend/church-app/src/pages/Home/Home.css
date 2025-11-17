@@ -24,16 +24,16 @@ body{
 
 @keyframes slideshow {
     0% { background-image: 
-        url('../../assets/homePageAssets/SancImage8.jpeg'); 
+        url('../../assets/homePageAssets/SancImage8.webp'); 
     }
     33% { background-image: 
-        url('../../assets/homePageAssets/SancImage3.JPEG'); 
+        url('../../assets/homePageAssets/SancImage3.webp'); 
     }
     66% { background-image: 
-        url('../../assets/homePageAssets/SancImage3.JPEG'); 
+        url('../../assets/homePageAssets/SancImage3.webp'); 
     }
     100% { background-image: 
-        url('../../assets/homePageAssets/SancImage8.jpeg'); 
+        url('../../assets/homePageAssets/SancImage8.webp'); 
     }
 }
 
@@ -229,7 +229,7 @@ body{
 
 .newCardsLeftMiddle{
     background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
-     url("../../assets/homePageAssets/Youth.jpg");
+     url("../../assets/homePageAssets/Youth.webp");
     background-position: center;
     flex: 1;
     width: 40vw;
@@ -245,13 +245,13 @@ body{
 
 .newCardsLeftMiddle:hover{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
-    url("../../assets/homePageAssets/Youth.jpg");
+    url("../../assets/homePageAssets/Youth.webp");
     cursor: pointer;
 }
 
 .newCardsRightTop{
     background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
-     url("../../assets/homePageAssets/connect.jpg");
+     url("../../assets/homePageAssets/connect.webp");
     background-position: center;
     display: flex;
     justify-content: center;
@@ -266,13 +266,13 @@ body{
 
 .newCardsRightTop:hover{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
-    url("../../assets/homePageAssets/connect.jpg");
+    url("../../assets/homePageAssets/connect.webp");
     cursor: pointer;
 }
 
 .newCardsRightBottom{
     background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
-     url("../../assets/homePageAssets/Give.jpg");
+     url("../../assets/homePageAssets/Give.webp");
     background-position: center;
     display: flex;
     justify-content: center;
@@ -288,7 +288,7 @@ body{
 
 .newCardsRightBottom:hover{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
-    url("../../assets/homePageAssets/Give.jpg");
+    url("../../assets/homePageAssets/Give.webp");
     cursor: pointer;
 }
 

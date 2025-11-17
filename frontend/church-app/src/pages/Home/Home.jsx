@@ -1,8 +1,8 @@
 import './Home.css';
 import './HomeMobile.css';
 
-import mainImage from '../../assets/homePageAssets/thumbnail_IMG_6616.jpg';
-import sundayImage from '../../assets/homePageAssets/thumbnail_IMG_6494.jpg';
+import mainImage from '../../assets/homePageAssets/thumbnail_IMG_6616.webp';
+
 import sliderImage1 from '../../assets/homePageAssets/sliderImages/sliderImage1.jpg';
 import sliderImage2 from '../../assets/homePageAssets/sliderImages/sliderImage2.jpg';
 import sliderImage3 from '../../assets/homePageAssets/sliderImages/slideImage3.jpg';
@@ -10,8 +10,8 @@ import sliderImage4 from '../../assets/homePageAssets/sliderImages/slideImage4.j
 import sliderImage5 from '../../assets/homePageAssets/sliderImages/slideImage5.jpg';
 import sliderImage6 from '../../assets/homePageAssets/sliderImages/slideImage6.jpg';
 import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.jpg'
-import hFlag from '../../assets/homePageAssets/hFlag.jpg';
-import sundayService from '../../assets/homePageAssets/sundayService.jpg';
+import hFlag from '../../assets/homePageAssets/hFlag.webp';
+import sundayService from '../../assets/homePageAssets/sundayService.webp';
 
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';

@@ -1,10 +1,9 @@
 import React from 'react';
 import './Youth.css';
 import './MobileYouth.css';
-import main1 from '../../assets/youthAssets/youthMinistry1.jpg';
-import main2 from '../../assets/youthAssets/youthMinistry2.jpg';
+import main1 from '../../assets/youthAssets/youthMinistry1.webp';
 import yHeader from '../../assets/youthAssets/yHeaderVid.mp4';
-import main3 from '../../assets/youthAssets/youthMinistry3.jpg';
+import main3 from '../../assets/youthAssets/youthMinistry2.webp';
 
 export default function Youth() {
 

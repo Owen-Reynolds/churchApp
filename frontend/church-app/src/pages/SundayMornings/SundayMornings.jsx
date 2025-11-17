@@ -5,16 +5,10 @@ import { motion } from 'framer-motion';
 
 import topVideo from '../../assets/sundayMorningAssets/topVideo.mp4';
 import crossImage from '../../assets/vitalitylogoblue.png';
-import biblepicture from '../../assets/sundayMorningAssets/biblepicture.jpg';
-import learnPhoto from '../../assets/sundayMorningAssets/learnPhoto.jpg';
-import coffeePhoto from '../../assets/sundayMorningAssets/coffeePhoto.jpg';
-import clockPhoto from '../../assets/sundayMorningAssets/clockPhoto.jpg';
-import timePhoto from '../../assets/sundayMorningAssets/timePhoto.jpeg';
-import bible1 from '../../assets/sundayMorningAssets/bible1.jpg';
-import bible2 from '../../assets/sundayMorningAssets/bible2.jpg';
-import teaching from '../../assets/sundayMorningAssets/teaching.jpg';
-import coffee1 from '../../assets/sundayMorningAssets/coffee1.jpg';
-import davePreaching from '../../assets/sundayMorningAssets/pastorDavePreaching.jpg';
+import timePhoto from '../../assets/sundayMorningAssets/timePhoto.webp';
+import bible1 from '../../assets/sundayMorningAssets/bible1.webp';
+import coffee1 from '../../assets/sundayMorningAssets/coffee1.webp';
+import davePreaching from '../../assets/sundayMorningAssets/pastorDavePreaching.webp';
 export default function SundayMornings() {
     const [expandedCard, setExpandedCard] = useState(null);
 
