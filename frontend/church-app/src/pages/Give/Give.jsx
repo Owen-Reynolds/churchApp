@@ -24,9 +24,17 @@ export default function Give() {
                             controlsList="nodownload nofullscreen noplaybackrate"
                         ></video>
                 <h1>Support Our Mission</h1>
-                <a href="https://vitality-church.churchhalo.app" target="_blank" rel="noopener noreferrer">
-                    <button className="donate-button">Donate</button>
-                </a>
+                <button
+                    className="donate-button"
+                    onClick={() => {
+                        if (window.gtag) {
+                            window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                        }
+                        window.open('https://vitality-church.churchhalo.app', '_blank', 'noopener');
+                    }}
+                >
+                    Donate
+                </button>
             </div>
 
             <div className="give-container">
