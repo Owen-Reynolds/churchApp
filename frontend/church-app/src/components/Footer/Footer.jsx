@@ -61,9 +61,17 @@ export default function Footer() {
                     <p> Vitality Church | Est. 2014</p>
                 </div>
                 <div className="footer-bottom-designers">
-                    <Link to ="/WebDesigners">
-                        <button className="designersButton">Web Designers</button>
-                    </Link>
+                    <button 
+                        className="designersButton"
+                        onClick={() => {
+                            if (window.gtag) {
+                                window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                            }
+                            window.open('https://neowebco.com', '_blank', 'noopener');
+                        }}
+                    >
+                        Neo Web Co.
+                    </button>
                 </div>
             </div>
         </footer>
