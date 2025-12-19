@@ -72,9 +72,17 @@ export default function ChristianCadets() {
             <div className="youthHandBook">
                 <h1>Cadet Handbook</h1>
                 <iframe className="youthForm" id="myPDF1" src={CCHandbook}></iframe>
-                <a href={CCHandbook} target="_blank" rel="noopener noreferrer">
-                    <button className="newButtons">Open</button>
-                </a>
+                <button 
+                    className="newButtons"
+                    onClick={() => {
+                        if (window.gtag) {
+                            window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                        }
+                        window.open(CCHandbook, '_blank', 'noopener');
+                    }}
+                >
+                    Open
+                </button>
             </div>
             <div className="youthCard">
             <iframe width="400" height="400" src="https://opturl.com/i/oZLb0Xwq?hide_title=0" frameborder="0"></iframe>
@@ -88,25 +96,48 @@ export default function ChristianCadets() {
                 <div className="pdf-item">
                     <h2>Youth Application Form</h2>
                     <iframe id="myPDF2" src={youthAppForm} frameBorder="0"></iframe>
-                    <a href={youthAppForm} target="_blank" rel="noopener noreferrer">
-                        <button className="newButtons">Open</button>
-                
-                    </a>
+                    <button 
+                        className="newButtons"
+                        onClick={() => {
+                            if (window.gtag) {
+                                window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                            }
+                            window.open(youthAppForm, '_blank', 'noopener');
+                        }}
+                    >
+                        Open
+                    </button>
                 </div>
 
                 <div className="pdf-item">
                     <h2>Release of Liability Form</h2>
                     <iframe id="myPDF3" src={releaseLiabilityForm} frameBorder="0"></iframe>
-                    <a href={releaseLiabilityForm} target="_blank" rel="noopener noreferrer">
-                        <button className="newButtons">Open</button>
-                    </a>
+                    <button 
+                        className="newButtons"
+                        onClick={() => {
+                            if (window.gtag) {
+                                window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                            }
+                            window.open(releaseLiabilityForm, '_blank', 'noopener');
+                        }}
+                    >
+                        Open
+                    </button>
                 </div>
                 <div className="pdf-item">
                     <h2>Adult Volunteer Application</h2>
                     <iframe id="myPDF4" src={adultVolunteerApp} frameBorder="0"></iframe>
-                    <a href={adultVolunteerApp} target="_blank" rel="noopener noreferrer">
-                        <button className="newButtons">Open</button>
-                    </a>
+                    <button 
+                        className="newButtons"
+                        onClick={() => {
+                            if (window.gtag) {
+                                window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                            }
+                            window.open(adultVolunteerApp, '_blank', 'noopener');
+                        }}
+                    >
+                        Open
+                    </button>
                 </div>
             </div>
         </div>

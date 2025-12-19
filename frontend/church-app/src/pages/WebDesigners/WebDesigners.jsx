@@ -39,23 +39,50 @@ export default function WebDesigners() {
                 <div className="web1">
                 <img src={nolan2} alt="Nolan Kern" className="webImage"/>
                 <h2>Nolan Kern</h2>
-                <a className="liLogo" href="https://www.linkedin.com/in/nolan-kern25/" target="_blank" rel="linkednInNolan">
+                <span 
+                    className="liLogo"
+                    onClick={() => {
+                        if (window.gtag) {
+                            window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                        }
+                        window.open('https://www.linkedin.com/in/nolan-kern25/', '_blank', 'noopener');
+                    }}
+                    style={{ cursor: 'pointer' }}
+                >
                 <img src={liLogo} alt="Nolan" />
-                </a>
+                </span>
                 </div>
                 <div className="web2">
                 <img src={enoch} alt="Enoch Oye" className="webImage"/>
                 <h2>Enoch Oye</h2>
-                <a className="liLogo" href="https://www.linkedin.com/in/enoch-oye-110800338/" target="_blank" rel="linkednInEnoch">
+                <span 
+                    className="liLogo"
+                    onClick={() => {
+                        if (window.gtag) {
+                            window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                        }
+                        window.open('https://www.linkedin.com/in/enoch-oye-110800338/', '_blank', 'noopener');
+                    }}
+                    style={{ cursor: 'pointer' }}
+                >
                 <img src={liLogo} alt="Enoch" />
-                </a>
+                </span>
                 </div>
                 <div className="web3">
                 <img src={owen} alt="Owen Reynolds" className="webImage"/>
                 <h2>Owen Reynolds</h2>
-                <a className="liLogo" href="https://www.linkedin.com/in/owen-reynolds-b8870a293/" target="_blank" rel="linkednInOwen">
+                <span 
+                    className="liLogo"
+                    onClick={() => {
+                        if (window.gtag) {
+                            window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                        }
+                        window.open('https://www.linkedin.com/in/owen-reynolds-b8870a293/', '_blank', 'noopener');
+                    }}
+                    style={{ cursor: 'pointer' }}
+                >
                 <img src={liLogo} alt="Owen" />
-                </a>
+                </span>
                 </div>
             </div>
         </div>
