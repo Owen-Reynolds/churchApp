@@ -7,6 +7,16 @@ import logo from '../../assets/vitalitylogoblue.png';
 
 export default function Connect() {
 
+    const trackConnectConversion = () => {
+        if (window.gtag) {
+            window.gtag('event', 'conversion', {
+                send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB',
+                event_category: 'connect',
+                event_label: 'connect_form',
+            });
+        }
+    };
+
     useEffect(() => {
         const script = document.createElement('script');
         script.src = 'https://app.clearstream.io/js/external/form.html.js';
@@ -47,6 +57,7 @@ export default function Connect() {
                         method="post"
                         id="cs_html_form_nwyxe04V"
                         target="_blank"
+                        onSubmit={trackConnectConversion}
                     >
                         <div className="cs_html_form_result"></div>
                         <div className="cs_html_form_error"></div>

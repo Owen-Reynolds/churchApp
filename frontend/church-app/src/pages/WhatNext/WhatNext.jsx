@@ -8,6 +8,16 @@ import baptismImage from '../../assets/homePageAssets/thumbnail_IMG_6616.webp';
 export default function NextSteps() {
     const { section } = useParams();
 
+    const trackNextStepsConversion = (formName) => {
+        if (window.gtag) {
+            window.gtag('event', 'conversion', {
+                send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB',
+                event_category: 'next_steps',
+                event_label: formName,
+            });
+        }
+    };
+
     useEffect(() => {
         if (!section) {
             return;
@@ -67,6 +77,7 @@ export default function NextSteps() {
                             method="post"
                             target="_blank"
                             rel="noreferrer"
+                            onSubmit={() => trackNextStepsConversion('red_book')}
                         >
                             <div className="discipleshipFormRow">
                                 <input type="text" name="mobile_number" placeholder="Mobile Number *" />
@@ -101,6 +112,7 @@ export default function NextSteps() {
                             method="post"
                             target="_blank"
                             rel="noreferrer"
+                            onSubmit={() => trackNextStepsConversion('green_book')}
                         >
                             <div className="discipleshipFormRow">
                                 <input type="text" name="mobile_number" placeholder="Mobile Number *" />
@@ -137,6 +149,7 @@ export default function NextSteps() {
                             method="post"
                             target="_blank"
                             rel="noreferrer"
+                            onSubmit={() => trackNextStepsConversion('white_book')}
                         >
                             <div className="discipleshipFormRow">
                                 <input type="text" name="mobile_number" placeholder="Mobile Number *" />
@@ -178,6 +191,7 @@ export default function NextSteps() {
                             method="post"
                             target="_blank"
                             rel="noreferrer"
+                            onSubmit={() => trackNextStepsConversion('baptism')}
                         >
                             <div className="baptismFormRow">
                                 <input type="text" name="mobile_number" placeholder="Mobile Number *" />
@@ -238,6 +252,7 @@ export default function NextSteps() {
                             method="post"
                             target="_blank"
                             rel="noreferrer"
+                            onSubmit={() => trackNextStepsConversion('serve_team')}
                         >
                             <div className="serveTeamFormRow">
                                 <input type="text" name="mobile_number" placeholder="Mobile Number *" />
