@@ -32,7 +32,7 @@ export default function Header() {
                 <li><Link to='/SundayMornings' onClick={() => setNavOpen(false)}>Sunday Mornings</Link></li>
                 <li><Link to='/Staff' onClick={() => setNavOpen(false)}>Staff</Link></li>
                 <li><Link to='/Youth' onClick={() => setNavOpen(false)}>Youth</Link></li>
-                <li><Link to='/ChristianCadets' onClick={() => setNavOpen(false)}>Christian Cadets</Link></li>
+                <li><Link to='/nextsteps' onClick={() => setNavOpen(false)}>Next Steps</Link></li>
                 <li><Link to='/Connect' onClick={() => setNavOpen(false)}>Connect</Link></li>
                 <li><Link to='/Give' onClick={() => setNavOpen(false)}>Give</Link></li>
             </ul>
@@ -42,7 +42,7 @@ export default function Header() {
                 <li><Link to='/SundayMornings' onClick={() => setNavOpen(false)}>Sunday Mornings</Link></li>
                 <li><Link to='/Staff' onClick={() => setNavOpen(false)}>Staff</Link></li>
                 <li><Link to='/Youth' onClick={() => setNavOpen(false)}>Youth</Link></li>
-                <li><Link to='/ChristianCadets' onClick={() => setNavOpen(false)}>Christian Cadets</Link></li>
+                <li><Link to='/nextsteps' onClick={() => setNavOpen(false)}>Next Steps</Link></li>
                 <li><Link to='/Connect' onClick={() => setNavOpen(false)}>Connect</Link></li>
                 <li><Link to='/Give' onClick={() => setNavOpen(false)}>Give</Link></li>
         </ul>

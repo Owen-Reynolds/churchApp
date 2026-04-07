@@ -14,7 +14,7 @@ import AboutUs from './pages/AboutUs/AboutUs.jsx';
 import SundayMornings from './pages/SundayMornings/SundayMornings.jsx';
 import Staff from './pages/Staff/Staff.jsx';
 import Youth from './pages/Youth/Youth.jsx';
-import ChristianCadets from './pages/ChristianCadets/ChristianCadets.jsx';
+import NextSteps from './pages/WhatNext/WhatNext.jsx';
 import Connect from './pages/Connect/Connect.jsx';
 import Give from './pages/Give/Give.jsx';
 
@@ -31,7 +31,10 @@ function App() {
           <Route path='/SundayMornings' element={<SundayMornings />} />
           <Route path='/Staff' element={<Staff />} />
           <Route path='/Youth' element={<Youth />} />
-          <Route path='/ChristianCadets' element={<ChristianCadets />} />
+          <Route path='/nextsteps' element={<NextSteps />} />
+          <Route path='/nextsteps/:section' element={<NextSteps />} />
+          <Route path='/NextSteps' element={<NextSteps />} />
+          <Route path='/NextSteps/:section' element={<NextSteps />} />
           <Route path='/Connect' element={<Connect />} />
           <Route path='/Give' element={<Give />} />
           <Route path='/WebDesigners' element={<WebDesigners />} />

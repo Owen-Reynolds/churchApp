@@ -22,7 +22,7 @@ export default function Footer() {
                     <p><Link to="/SundayMornings" className="footerButton">Sunday Mornings</Link></p>
                     <p><Link to="/Staff" className="footerButton">Staff</Link></p>
                     <p><Link to="/Youth" className="footerButton">Youth</Link></p>
-                    <p><Link to="ChristianCadets" className="footerButton">Christian Cadets</Link></p>
+                    <p><Link to="/nextsteps" className="footerButton">Next Steps</Link></p>
                     <p><Link to="/Connect" className="footerButton">Connect</Link></p>
                     <p><Link to="/Give" className="footerButton">Give</Link></p>
                     </div>

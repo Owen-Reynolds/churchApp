@@ -1,0 +1,358 @@
+@media screen and (max-width: 768px) {
+    .nextStepsContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e0dddd;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .nextStepsContent::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../assets/connectAssets/image2vector.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
+    .nextStepsTitle h1 {
+        font-family: "Bona Nova SC";
+        font-size: 10vw;
+        margin: 0;
+    }
+
+    .nextStepsText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nextStepsTitle h1 b {
+        color: #1929C7;
+    }
+
+    .nextStepsSubtitle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nextStepsSubtitle ul {
+        width: fit-content;
+        max-width: 92vw;
+        margin: 1.25rem 0;
+        padding-left: 1rem;
+        list-style: disc;
+        list-style-position: inside;
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: center;
+        gap: 0.65rem 0.9rem;
+    }
+
+    .nextStepsSubtitle li {
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .065em;
+        font-size: 4.3vw;
+        text-align: left;
+    }
+
+    .nextStepsLogo img {
+        width: 20vw;
+    }
+
+    .nextStepsContent {
+        position: relative;
+        text-align: center;
+    }
+
+    .discipleshipPathSection {
+        width: 100%;
+        padding: 10% 6% 12% 6%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .discipleshipPathSection h2 {
+        margin: 0 0 1.25rem 0;
+        font-family: "Bona Nova SC";
+        font-size: 9vw;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+    }
+
+    .discipleshipFormsGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+        width: 100%;
+    }
+
+    .discipleshipFormCard {
+        border: 2px solid #1929C7;
+        border-radius: 10px;
+        padding: 1rem;
+        background-color: #f7f7f7;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .discipleshipFormCard h3 {
+        margin: 0 0 0.45rem 0;
+        font-family: "Bona Nova SC";
+        font-size: 5.6vw;
+    }
+
+    .discipleshipFormSubtitle {
+        margin: 0 0 0.8rem 0;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: 4.2vw;
+    }
+
+    .discipleshipForm {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+        width: 100%;
+    }
+
+    .discipleshipFormRow input {
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #b8b8b8;
+        border-radius: 6px;
+        padding: 0.5rem 0.65rem;
+        font-size: 0.95rem;
+    }
+
+    .discipleshipFormRow button {
+        width: 100%;
+        background-color: #1929C7;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 0.55rem 0.65rem;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: 1rem;
+    }
+
+    .discipleshipFormTerms {
+        margin: 0.2rem 0 0 0;
+        font-size: 0.78rem;
+        line-height: 1.35;
+    }
+
+    .discipleshipFormCardPlaceholder p {
+        margin: 0;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: 4.4vw;
+    }
+
+    .baptismSection {
+        width: 100%;
+        padding: 4% 6% 14% 6%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .baptismSection h2 {
+        margin: 0 0 1.25rem 0;
+        font-family: "Bona Nova SC";
+        font-size: 9vw;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+    }
+
+    .baptismContent {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+        width: 100%;
+    }
+
+    .baptismFormCard {
+        border: 2px solid #1929C7;
+        border-radius: 10px;
+        padding: 1rem;
+        background-color: #f7f7f7;
+        box-sizing: border-box;
+    }
+
+    .baptismFormCard h3 {
+        margin: 0 0 0.45rem 0;
+        font-family: "Bona Nova SC";
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .baptismFormSubtitle {
+        margin: 0 0 0.8rem 0;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: 4.2vw;
+        text-align: center;
+    }
+
+    .baptismForm {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+        width: 100%;
+    }
+
+    .baptismFormRow input {
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #b8b8b8;
+        border-radius: 6px;
+        padding: 0.5rem 0.65rem;
+        font-size: 0.95rem;
+    }
+
+    .baptismFormRow button {
+        width: 100%;
+        background-color: #1929C7;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 0.55rem 0.65rem;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: 1rem;
+    }
+
+    .baptismFormTerms {
+        margin: 0.2rem 0 0 0;
+        font-size: 0.78rem;
+        line-height: 1.35;
+    }
+
+    .baptismFormTerms a {
+        color: #1929C7;
+    }
+
+    .baptismImageWrap {
+        border: 2px solid #1929C7;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #f7f7f7;
+    }
+
+    .baptismImageWrap img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    .serveTeamSection {
+        width: 100%;
+        padding: 4% 6% 14% 6%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .serveTeamSection h2 {
+        margin: 0 0 1.25rem 0;
+        font-family: "Bona Nova SC";
+        font-size: 9vw;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+    }
+
+    .serveTeamContent {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+        width: 100%;
+    }
+
+    .serveTeamInfoCard,
+    .serveTeamFormCard {
+        border: 2px solid #1929C7;
+        border-radius: 10px;
+        padding: 1rem;
+        background-color: #f7f7f7;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .serveTeamInfoCard h3,
+    .serveTeamFormCard h3 {
+        margin: 0 0 0.45rem 0;
+        font-family: "Bona Nova SC";
+        font-size: 6vw;
+    }
+
+    .serveTeamInfoCard p,
+    .serveTeamFormSubtitle {
+        margin: 0 0 0.8rem 0;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: 4.2vw;
+    }
+
+    .serveTeamInfoCard ul {
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    .serveTeamInfoCard li {
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: 4.3vw;
+        margin-bottom: 0.35rem;
+    }
+
+    .serveTeamForm {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+        width: 100%;
+    }
+
+    .serveTeamFormRow input {
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #b8b8b8;
+        border-radius: 6px;
+        padding: 0.5rem 0.65rem;
+        font-size: 0.95rem;
+    }
+
+    .serveTeamFormRow button {
+        width: 100%;
+        background-color: #1929C7;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 0.55rem 0.65rem;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: 1rem;
+    }
+
+    .serveTeamFormTerms {
+        margin: 0.2rem 0 0 0;
+        font-size: 0.78rem;
+        line-height: 1.35;
+    }
+
+    .serveTeamFormTerms a {
+        color: #1929C7;
+    }
+}
