@@ -151,6 +151,8 @@
         height: auto;
         padding: 40px 6%;
         gap: 28px;
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .newSermonLeft{
@@ -163,23 +165,14 @@
         position: relative;
         height: auto;
         width: 100%;
+        max-width: 100%;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 
     .newSermonLeft::before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 80%;
-            background-image: url('../../assets/homePageAssets/sermonYoutube.webp');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        opacity: 0.3; 
-        z-index: 0; 
+        display: none;
     }
 
     .newSermonLeftText{
@@ -212,18 +205,22 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .sermonYoutubeImgWrap{
-        width: 90%;
+        width: 100%;
         max-width: 400px;
         padding: 8px;
         border-radius: 0;
+        box-sizing: border-box;
     }
 
     .sermonYoutubeImg{
         width: 100%;
         border-radius: 0;
+        display: block;
     }
 
     .mainVideo{
