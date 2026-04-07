@@ -63,7 +63,6 @@ export default function Connect() {
                             <input type="text" name="email" placeholder="Email Address *" />
                         </div>
                         <div className="cs_html_form_row connectFormRow">
-                            <p>Choose which list(s) to subscribe to:</p>
                             <ul className="cs_html_form_lists">
                                 <li>Loading...</li>
                             </ul>
