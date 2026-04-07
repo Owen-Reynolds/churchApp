@@ -81,7 +81,7 @@ export default function NextSteps() {
                                 <input type="text" name="email" placeholder="Email Address" />
                             </div>
                             <div className="discipleshipFormRow">
-                                <button type="submit">Subscribe</button>
+                                <button type="submit">Complete</button>
                             </div>
                             <p className="discipleshipFormTerms">
                                 Message &amp; data rates may apply. Message frequency varies.{' '}
@@ -115,7 +115,7 @@ export default function NextSteps() {
                                 <input type="text" name="email" placeholder="Email Address" />
                             </div>
                             <div className="discipleshipFormRow">
-                                <button type="submit">Subscribe</button>
+                                <button type="submit">Complete</button>
                             </div>
                             <p className="discipleshipFormTerms">
                                 Message &amp; data rates may apply. Message frequency varies.{' '}
@@ -151,7 +151,7 @@ export default function NextSteps() {
                                 <input type="text" name="email" placeholder="Email Address" />
                             </div>
                             <div className="discipleshipFormRow">
-                                <button type="submit">Subscribe</button>
+                                <button type="submit">Complete</button>
                             </div>
                             <p className="discipleshipFormTerms">
                                 Message &amp; data rates may apply. Message frequency varies.{' '}
@@ -192,7 +192,7 @@ export default function NextSteps() {
                                 <input type="text" name="email" placeholder="Email Address" />
                             </div>
                             <div className="baptismFormRow">
-                                <button type="submit">Subscribe</button>
+                                <button type="submit">Complete</button>
                             </div>
                             <p className="baptismFormTerms">
                                 Message &amp; data rates may apply. Message frequency varies.{' '}
@@ -252,7 +252,7 @@ export default function NextSteps() {
                                 <input type="text" name="email" placeholder="Email Address" />
                             </div>
                             <div className="serveTeamFormRow">
-                                <button type="submit">Subscribe</button>
+                                <button type="submit">Complete</button>
                             </div>
                             <p className="serveTeamFormTerms">
                                 Message &amp; data rates may apply. Message frequency varies.{' '}

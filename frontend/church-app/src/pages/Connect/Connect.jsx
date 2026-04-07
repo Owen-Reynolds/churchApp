@@ -68,7 +68,7 @@ export default function Connect() {
                             </ul>
                         </div>
                         <div className="cs_html_form_row connectFormRow">
-                            <button type="submit">Subscribe</button>
+                            <button type="submit">Complete</button>
                         </div>
                         <p className="cs_html_form_terms connectFormTerms">
                             Message &amp; data rates may apply. Message frequency varies.{' '}
