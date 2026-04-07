@@ -112,3 +112,37 @@
 .connectFormTerms a {
     color: #1929C7;
 }
+
+/* Clearstream dynamic checkbox list overrides */
+.connectCsForm .cs_html_form_lists {
+    list-style: none;
+    padding: 0;
+    margin: 0.3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.connectCsForm .cs_html_form_lists li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    font-family: "Lora", serif;
+    color: #222;
+}
+
+.connectCsForm .cs_html_form_lists li input[type="checkbox"] {
+    accent-color: #1929C7;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.connectCsForm .cs_html_form_row > p {
+    margin: 0 0 0.3rem 0;
+    font-size: 0.9rem;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .06em;
+    color: #333;
+}
