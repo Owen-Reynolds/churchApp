@@ -20,6 +20,7 @@ export default function Give() {
                             loop 
                             muted 
                             playsInline 
+                            preload="auto"
                             disablePictureInPicture 
                             controlsList="nodownload nofullscreen noplaybackrate"
                         ></video>

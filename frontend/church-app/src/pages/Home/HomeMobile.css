@@ -144,11 +144,13 @@
     .newSermonSection{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         background-color: black;
         width: 100%;
-        height: 65vh;
+        height: auto;
+        padding: 40px 6%;
+        gap: 28px;
     }
 
     .newSermonLeft{
@@ -156,9 +158,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 20px;
         z-index: 1;
         position: relative;
-        height: 100%;
+        height: auto;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -184,15 +187,43 @@
         color: white;
         font-family: "Bona Nova SC";
         text-align: center;
-        -webkit-text-stroke: 1px #1929C7; 
-        text-stroke: 1px #1929C7;
+        -webkit-text-stroke: unset;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+        text-underline-offset: 6px;
+        text-decoration-thickness: 2px;
+        z-index: 1;
+    }
+
+    .newSermonSubtext{
+        font-size: 3.5vw;
+        max-width: 90%;
+        z-index: 1;
+    }
+
+    .sermonSubscribeBtn{
+        font-size: 4.5vw;
+        padding: 10px 28px;
     }
 
     .newSermonRight{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
+    }
+
+    .sermonYoutubeImgWrap{
+        width: 90%;
+        max-width: 400px;
+        padding: 8px;
+        border-radius: 0;
+    }
+
+    .sermonYoutubeImg{
+        width: 100%;
+        border-radius: 0;
     }
 
     .mainVideo{

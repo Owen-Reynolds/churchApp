@@ -317,6 +317,8 @@ body{
     align-items: center;
     background-color: black;
     height: 90vh;
+    padding: 0 5%;
+    gap: 4%;
 }
 
 .newSermonLeft{
@@ -324,9 +326,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 18px;
     z-index: 1;
     position: relative;
     height: 100%;
+    flex: 1;
 }
 
 .newSermonLeft::before{
@@ -349,15 +353,67 @@ body{
     color: white;
     font-family: "Bona Nova SC";
     text-align: center;
-    -webkit-text-stroke: 1px #1929C7; 
-    text-stroke: 1px #1929C7;
+    line-height: 1.5;
+    z-index: 1;
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 3px;
+}
+
+.newSermonSubtext{
+    color: #cccccc;
+    font-family: "Lora", serif;
+    font-size: 1.2vw;
+    text-align: center;
+    line-height: 1.7;
+    z-index: 1;
+    max-width: 420px;
+    margin-top: -10px;
+}
+
+.sermonSubscribeBtn{
+    display: inline-block;
+    background-color: #1929C7;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 2px;
+    padding: 12px 36px;
+    border-radius: 0;
+    text-decoration: none;
+    z-index: 1;
+    transition: background-color 0.25s, transform 0.2s;
+}
+
+.sermonSubscribeBtn:hover{
+    background-color: #0f1e9e;
+    transform: scale(1.06);
 }
 
 .newSermonRight{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    justify-content: center;
+    flex: 1;
+}
+
+.sermonYoutubeImgWrap{
+    border-radius: 0;
+    border: 3px solid #1929C7;
+    box-shadow: 0 0 32px rgba(25, 41, 199, 0.55);
+    padding: 12px;
+    background-color: #0a0a0a;
+    display: inline-block;
+    max-width: 680px;
+    width: 100%;
+}
+
+.sermonYoutubeImg{
+    width: 100%;
+    border-radius: 0;
+    display: block;
 }
 
 .mainVideo{

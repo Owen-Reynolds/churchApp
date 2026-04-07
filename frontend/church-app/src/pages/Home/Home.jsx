@@ -2,6 +2,7 @@ import './Home.css';
 import './HomeMobile.css';
 
 import mainImage from '../../assets/homePageAssets/thumbnail_IMG_6616.webp';
+import sermonYoutube from '../../assets/homePageAssets/sermonYoutube.webp';
 
 import sliderImage1 from '../../assets/homePageAssets/sliderImages/sliderImage1.jpg';
 import sliderImage2 from '../../assets/homePageAssets/sliderImages/sliderImage2.jpg';
@@ -66,7 +67,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className="newInfoSectionImg">
-                    <img src={mainImage} alt="" />
+                    <img src={mainImage} alt="" loading="lazy" decoding="async" />
                 </div>
             </div>
             <div className="newSundaySectionWrap">
@@ -89,7 +90,7 @@ export default function Home() {
                         </Link>
                     </div>
                     <div className="newSundaySectionImg">
-                        <img src={sundayService} alt="" />
+                        <img src={sundayService} alt="" loading="lazy" decoding="async" />
                     </div>
                 </div>
             </div>
@@ -111,23 +112,29 @@ export default function Home() {
             <div className="newSermonSection">
                 <div className="newSermonLeft">
                     <h2 className="newSermonLeftText">
-                        View Past Vitality Church <br /> Sermons on Youtube
+                        Vitality Church <br /> Sermons on YouTube
                     </h2>
+                    <p className="newSermonSubtext">
+                        Every Sunday morning our services go <strong>live on YouTube</strong>. Whether you missed a week, want to revisit a message, or are just starting your journey, every sermon will always be available to watch whenever needed.
+                    </p>
+                    <a
+                        href="https://www.youtube.com/@vitalitychurch5132"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="sermonSubscribeBtn"
+                    >
+                        Subscribe
+                    </a>
                 </div>
                 <div className="newSermonRight">
-                    <div className="mainVideo">
-                        <VideoComponent className="mainSermonVideo" link="https://www.youtube.com/embed/Pe6i35pNnqo?si=rKeT5_yrPhBN7J3k" />    
-                    </div>   
-                    <div className="videoContainer">
-                        <div className="rightRow1">
-                            <VideoComponent className="sermonVideo" link="https://www.youtube.com/embed/HMhlr_Jq4fY?si=cY-lSMk04KsRaDSx" />
-                        </div>
-                        <div className="rightRow2">
-                            <VideoComponent className="sermonVideo" link="https://www.youtube.com/embed/PA2aAwDO2Ds?si=JD3jsgpLWxgggp61" />
-                        </div>
-                        <div className="rightRow3">
-                            <VideoComponent className="sermonVideo" link="https://www.youtube.com/embed/2kOmhOcr64I?si=ZLpLnEZnd3blSD44" />
-                        </div>
+                    <div className="sermonYoutubeImgWrap">
+                        <img
+                            src={sermonYoutube}
+                            alt="Vitality Church Sermons on YouTube"
+                            className="sermonYoutubeImg"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                 </div>
             </div>
@@ -144,7 +151,7 @@ export default function Home() {
                             in a presentation of the Gospel, as the team's goal is to spread Jesus' message and show love through 
                             their actions.
                         </p>
-                        <img src={hFlag} alt="" />
+                        <img src={hFlag} alt="" loading="lazy" decoding="async" />
                     </div>
             </div>
         </>
@@ -155,7 +162,7 @@ function VideoComponent(props) {
     return (
         <>
             <iframe className={props.className} src={props.link} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy"></iframe>
         </>
     )
 }
@@ -186,7 +193,7 @@ function ImageSlider(){
         <>
         <div className="sliderContainer">
             <span className="prevButton" onClick={prevSlide}>&#10094;</span>
-            <img src={images[currentSlide]} alt="" />
+            <img src={images[currentSlide]} alt="" decoding="async" />
             <span className="nextButton" onClick={nextSlide}>&#10095;</span>
         </div>
         </>

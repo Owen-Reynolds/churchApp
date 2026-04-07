@@ -39,9 +39,9 @@ export default function Footer() {
                 <div className="footer-social">
                     <h2>Socials</h2>
                     <div className = "social-grid">
-                        <a href="https://www.youtube.com/@vitalitychurch5132" target="_blank" rel="youTube"><img src = {ytLogo} alt="youTube"/></a>
-                        <a href="https://www.instagram.com/vitality_church/" target="_blank" rel="instagram"><img src = {igLogo} alt="instagram"/></a>
-                        <a href="https://www.facebook.com/profile.php?id=61566505584528" target="_blank" rel="faceBook"><img src = {fbLogo} alt="faceBook"/></a>
+                        <a href="https://www.youtube.com/@vitalitychurch5132" target="_blank" rel="youTube"><img src = {ytLogo} alt="youTube" loading="lazy" decoding="async"/></a>
+                        <a href="https://www.instagram.com/vitality_church/" target="_blank" rel="instagram"><img src = {igLogo} alt="instagram" loading="lazy" decoding="async"/></a>
+                        <a href="https://www.facebook.com/profile.php?id=61566505584528" target="_blank" rel="faceBook"><img src = {fbLogo} alt="faceBook" loading="lazy" decoding="async"/></a>
                     </div>
                 </div>
 
@@ -55,7 +55,7 @@ export default function Footer() {
             </div>
             <div className="footer-bottom">
                 <div className="footer-bottom-img">
-                    <img src = {crossImage} alt=""></img>
+                    <img src = {crossImage} alt="" loading="lazy" decoding="async"></img>
                 </div>
                 <div className="footer-bottom-text">
                     <p> Vitality Church | Est. 2014</p>

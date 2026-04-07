@@ -17,6 +17,7 @@ export default function Youth() {
             loop 
             muted 
             playsInline 
+            preload="auto"
             disablePictureInPicture 
             controlsList="nodownload nofullscreen noplaybackrate"
         ></video>
@@ -27,10 +28,10 @@ export default function Youth() {
                 <h1>What We Teach</h1>
                 <p>Vitality Church Youth Ministry is an exciting and vital part of the church community, dedicated to nurturing the spiritual growth and engagement of young individuals. It offers a vibrant space where youth can 
                     explore their faith, build a strong moral foundation, and actively participate in church life. </p>
-                <img src={main3}></img>
+                <img src={main3} loading="lazy" decoding="async"></img>
             </div>
             <div className = "yMainRight">
-                <img src = {main1}></img>
+                <img src = {main1} loading="lazy" decoding="async"></img>
                 <h1>Mission Statement</h1>
                 <p> By involving youth in activities such as worship, service projects, and leadership roles, Youth Ministry ensures the continuity of faith and community while empowering the next generation to become leaders and stewards of the faith. It's all about creating a sense of belonging and identity 
                     among our youth connecting them with their relationship with Jesus, and encouraging a lifelong commitment to the church.</p>

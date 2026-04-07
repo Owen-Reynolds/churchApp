@@ -107,7 +107,7 @@ function Card({ image, title, description, isExpanded, onClick,}) {
         <>
         
         <div className="card" onClick={onClick}>
-            <img src={image} alt={title} />
+            <img src={image} alt={title} loading="lazy" decoding="async" />
             <h2>{title}</h2>
             <p>{description}</p>
             <div className={`cardContent ${isExpanded ? 'show' : ''}`}>

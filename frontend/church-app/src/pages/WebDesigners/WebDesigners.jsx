@@ -29,6 +29,7 @@ export default function WebDesigners() {
     loop 
     muted 
     playsInline 
+    preload="auto"
     disablePictureInPicture 
     controlsList="nodownload nofullscreen noplaybackrate"
 ></video>
@@ -37,7 +38,7 @@ export default function WebDesigners() {
         <div className="webMain">
             <div className="webContainer">
                 <div className="web1">
-                <img src={nolan2} alt="Nolan Kern" className="webImage"/>
+                <img src={nolan2} alt="Nolan Kern" className="webImage" loading="lazy" decoding="async"/>
                 <h2>Nolan Kern</h2>
                 <span 
                     className="liLogo"
@@ -49,11 +50,11 @@ export default function WebDesigners() {
                     }}
                     style={{ cursor: 'pointer' }}
                 >
-                <img src={liLogo} alt="Nolan" />
+                <img src={liLogo} alt="Nolan" loading="lazy" decoding="async" />
                 </span>
                 </div>
                 <div className="web2">
-                <img src={enoch} alt="Enoch Oye" className="webImage"/>
+                <img src={enoch} alt="Enoch Oye" className="webImage" loading="lazy" decoding="async"/>
                 <h2>Enoch Oye</h2>
                 <span 
                     className="liLogo"
@@ -65,11 +66,11 @@ export default function WebDesigners() {
                     }}
                     style={{ cursor: 'pointer' }}
                 >
-                <img src={liLogo} alt="Enoch" />
+                <img src={liLogo} alt="Enoch" loading="lazy" decoding="async" />
                 </span>
                 </div>
                 <div className="web3">
-                <img src={owen} alt="Owen Reynolds" className="webImage"/>
+                <img src={owen} alt="Owen Reynolds" className="webImage" loading="lazy" decoding="async"/>
                 <h2>Owen Reynolds</h2>
                 <span 
                     className="liLogo"
@@ -81,7 +82,7 @@ export default function WebDesigners() {
                     }}
                     style={{ cursor: 'pointer' }}
                 >
-                <img src={liLogo} alt="Owen" />
+                <img src={liLogo} alt="Owen" loading="lazy" decoding="async" />
                 </span>
                 </div>
             </div>

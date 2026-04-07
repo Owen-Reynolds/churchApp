@@ -50,7 +50,7 @@ export default function NextSteps() {
                         </ul>
                     </div>
                     <div className="nextStepsLogo">
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="" decoding="async" />
                     </div>
                 </div>
             </div>
@@ -206,7 +206,7 @@ export default function NextSteps() {
                     </div>
 
                     <div className="baptismImageWrap">
-                        <img src={baptismImage} alt="Baptism" />
+                        <img src={baptismImage} alt="Baptism" loading="lazy" decoding="async" />
                     </div>
                 </div>
             </section>

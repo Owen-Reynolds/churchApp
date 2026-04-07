@@ -45,10 +45,70 @@
     width: 10vw;
 }
 
-.connectForm{
+.connectForm {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     padding: 3%;
-    width: 30%;
-    
+    width: 35%;
+    box-sizing: border-box;
+}
+
+.connectForm *,
+.connectForm *::before,
+.connectForm *::after {
+    box-sizing: border-box;
+}
+
+.connectForm h3 {
+    margin: 0 0 0.45rem 0;
+    font-family: "Bona Nova SC";
+    font-size: 1.9vw;
+    text-align: center;
+}
+
+.connectFormSubtitle {
+    margin: 0 0 0.75rem 0;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .06em;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.connectCsForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+}
+
+.connectFormRow input {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #b8b8b8;
+    border-radius: 6px;
+    padding: 0.55rem 0.7rem;
+    font-size: 0.95rem;
+}
+
+.connectFormRow button {
+    width: 100%;
+    background-color: #1929C7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 0.7rem;
+    cursor: pointer;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .06em;
+    font-size: 1.05rem;
+}
+
+.connectFormTerms {
+    margin: 0.2rem 0 0 0;
+    font-size: 0.78rem;
+    line-height: 1.35;
+}
+
+.connectFormTerms a {
+    color: #1929C7;
 }

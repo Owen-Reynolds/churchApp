@@ -22,6 +22,7 @@ export default function SundayMornings() {
                             loop 
                             muted 
                             playsInline 
+                            preload="auto"
                             disablePictureInPicture 
                             controlsList="nodownload nofullscreen noplaybackrate"
                         ></video>
@@ -40,7 +41,7 @@ export default function SundayMornings() {
                         <i className="arrow"></i>
                     </div>
                     <div className="timeRight">
-                        <img src={timePhoto} alt="" />
+                        <img src={timePhoto} alt="" loading="lazy" decoding="async" />
                     </div>
                 </div>
             </div>
@@ -112,7 +113,7 @@ export default function SundayMornings() {
                 <div className="familyContent">
                     <h2>We Are More Then Just A Church...</h2>
                     <h3>We are a Family</h3>
-                    <img src={crossImage} alt="" />
+                    <img src={crossImage} alt="" loading="lazy" decoding="async" />
                 </div>
             </div>
         </>
@@ -126,7 +127,7 @@ function Card({ image, title, description, isExpanded, onClick }) {
             className="sundayCard"
             onClick={onClick}
             >
-            <img src={image} alt="Bible Photo" />
+            <img src={image} alt="Bible Photo" loading="lazy" decoding="async" />
             <h2>{title}</h2>
             <div className="toggleBox">
                 <p>{isExpanded ? "-" : "+"}</p>
