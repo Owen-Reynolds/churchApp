@@ -176,6 +176,43 @@ export default function NextSteps() {
                             </p>
                         </form>
                     </div>
+
+                    <div className="discipleshipFormCard">
+                        <h3>The Way (Share your faith and confidence)</h3>
+                        <p className="discipleshipFormSubtitle">Fill out the form to let Vitality know your interested</p>
+                        <form
+                            className="discipleshipForm"
+                            action="https://opturl.com/h/GdanW1Z0"
+                            method="post"
+                            target="_blank"
+                            rel="noreferrer"
+                            onSubmit={() => trackNextStepsConversion('the_way')}
+                        >
+                            <div className="discipleshipFormRow">
+                                <input type="text" name="mobile_number" placeholder="Mobile Number *" />
+                            </div>
+                            <div className="discipleshipFormRow">
+                                <input type="text" name="first" placeholder="First Name" />
+                            </div>
+                            <div className="discipleshipFormRow">
+                                <input type="text" name="last" placeholder="Last Name" />
+                            </div>
+                            <div className="discipleshipFormRow">
+                                <input type="text" name="email" placeholder="Email Address" />
+                            </div>
+                            <div className="discipleshipFormRow">
+                                <button type="submit">Complete</button>
+                            </div>
+                            <p className="discipleshipFormTerms">
+                                Message &amp; data rates may apply. Message frequency varies.{' '}
+                                <a href="https://clst.io/terms" target="_blank" rel="noreferrer">Terms of Service</a>{' '}
+                                and{' '}
+                                <a href="https://clst.io/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>. To opt-out,
+                                text STOP at any time.{' '}
+                                <a href="https://clearstream.io" target="_blank" rel="noreferrer">Church software by Clearstream.</a>
+                            </p>
+                        </form>
+                    </div>
                 </div>
             </section>
 
