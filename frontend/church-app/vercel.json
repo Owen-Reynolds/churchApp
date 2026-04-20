@@ -1,8 +1,15 @@
 {
-    "rewrites": [
+    "routes": [
         {
-            "source": "/((?!.*\\..*).*)",
-            "destination": "/index.html"
+            "handle": "filesystem"
+        },
+        {
+            "src": "/.*\\..*",
+            "status": 404
+        },
+        {
+            "src": "/.*",
+            "dest": "/index.html"
         }
     ],
     "headers": [
