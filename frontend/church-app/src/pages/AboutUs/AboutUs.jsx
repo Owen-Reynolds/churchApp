@@ -22,7 +22,7 @@ export default function AboutUs() {
                 loop 
                 muted 
                 playsInline 
-                preload="auto"
+                preload="none"
                 disablePictureInPicture 
                 controlsList="nodownload nofullscreen noplaybackrate"
                 ></video>

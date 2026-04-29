@@ -2,10 +2,6 @@ import './Give.css';
 import './MobileGive.css';
 
 import outdoorService from '../../assets/giveAssets/outdoorService.jpg';
-import crossVid from '../../assets/giveAssets/crossVideo.mp4';
-import crossVid2 from '../../assets/giveAssets/crossVideo2.mp4';
-import crossVid3 from '../../assets/giveAssets/crossVideo3.mp4';
-import crossVid4 from '../../assets/giveAssets/crossVideo4.mp4';
 import crossVid5 from '../../assets/giveAssets/crossVideo5.mp4';
 
 export default function Give() {
@@ -20,7 +16,7 @@ export default function Give() {
                             loop 
                             muted 
                             playsInline 
-                            preload="auto"
+                            preload="none"
                             disablePictureInPicture 
                             controlsList="nodownload nofullscreen noplaybackrate"
                         ></video>

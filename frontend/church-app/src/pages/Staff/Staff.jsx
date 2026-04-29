@@ -17,19 +17,20 @@ export default function AboutUs() {
     return (
         <>
             <div className="staffHeader">
-                <video 
-                            className="vidGive" 
-                            src={heartrate} 
-                            autoPlay 
-                            loop 
-                            muted 
-                            playsInline 
-                            disablePictureInPicture 
-                            controlsList="nodownload nofullscreen noplaybackrate"
-                        ></video>
+                <video
+                    className="vidGive"
+                    src={heartrate}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="none"
+                    disablePictureInPicture
+                    controlsList="nodownload nofullscreen noplaybackrate"
+                ></video>
                 <h1>Meet the Team</h1>
             </div>
-            <div className = "staffWave"></div>
+            <div className="staffWave"></div>
             <div className="mainStaffContent">
                 <div className="staffCards">
                     <Card
@@ -37,7 +38,7 @@ export default function AboutUs() {
                         title="Pastor"
                         description="David Kern"
                         isExpanded={expandedCard === 1}
-                        
+
                     />
                     <Card
                         image={dustyKeeney}
@@ -45,7 +46,7 @@ export default function AboutUs() {
                         description="Dusty Keeney"
                         isExpanded={expandedCard === 2}
                         onClick={() => setExpandedCard(expandedCard === 2 ? null : 2)}
-                        
+
                     />
                     <Card
                         image={bobAnderson}
@@ -53,7 +54,7 @@ export default function AboutUs() {
                         description="Bob Anderson"
                         isExpanded={expandedCard === 3}
                         onClick={() => setExpandedCard(expandedCard === 3 ? null : 3)}
-                        
+
                     />
                     <Card
                         image={cindyKeeney}
@@ -61,7 +62,7 @@ export default function AboutUs() {
                         description="Cindy Keeney"
                         isExpanded={expandedCard === 4}
                         onClick={() => setExpandedCard(expandedCard === 4 ? null : 4)}
-                       
+
                     />
                     <Card
                         image={dorothyHarvey}
@@ -69,7 +70,7 @@ export default function AboutUs() {
                         description="Dorothy Harvey"
                         isExpanded={expandedCard === 5}
                         onClick={() => setExpandedCard(expandedCard === 5 ? null : 5)}
-                       
+
                     />
                     <Card
                         image={rondaKern}
@@ -77,7 +78,7 @@ export default function AboutUs() {
                         description="Ronda Kern"
                         isExpanded={expandedCard === 6}
                         onClick={() => setExpandedCard(expandedCard === 6 ? null : 6)}
-                       
+
                     />
                     <Card
                         image={timMcNamee}
@@ -85,7 +86,7 @@ export default function AboutUs() {
                         description="Tim McNamee"
                         isExpanded={expandedCard === 7}
                         onClick={() => setExpandedCard(expandedCard === 7 ? null : 7)}
-                       
+
                     />
                     <Card
                         image={scottMiller}
@@ -93,26 +94,26 @@ export default function AboutUs() {
                         description="Scott Miller"
                         isExpanded={expandedCard === 8}
                         onClick={() => setExpandedCard(expandedCard === 8 ? null : 8)}
-                       
+
                     />
-                     
+
                 </div>
             </div>
         </>
     );
 }
 
-function Card({ image, title, description, isExpanded, onClick,}) {
+function Card({ image, title, description, isExpanded, onClick, }) {
     return (
         <>
-        
-        <div className="card" onClick={onClick}>
-            <img src={image} alt={title} loading="lazy" decoding="async" />
-            <h2>{title}</h2>
-            <p>{description}</p>
-            <div className={`cardContent ${isExpanded ? 'show' : ''}`}>
+
+            <div className="card" onClick={onClick}>
+                <img src={image} alt={title} loading="lazy" decoding="async" />
+                <h2>{title}</h2>
+                <p>{description}</p>
+                <div className={`cardContent ${isExpanded ? 'show' : ''}`}>
+                </div>
             </div>
-        </div>
         </>
     );
 }
