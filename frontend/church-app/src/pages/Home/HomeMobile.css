@@ -325,5 +325,75 @@
     .prevButton:hover, .nextButton:hover {
         background-color: rgba(0, 0, 0, 0.8);
     }
+
+    /* Mobile Events Section */
+    .newSectionAfterMissionTrips {
+        grid-template-columns: 1fr;
+        padding: 5% 0;
+        padding-right: 0;
+    }
+
+    .newSectionAfterMissionTripsContent {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+    }
+
+    .newSectionAfterMissionTripsContent h2 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .newSectionSubtext {
+        font-size: 3.5vw !important;
+        text-align: center;
+    }
+
+    .newSectionSubtext p,
+    .newSectionSubtext li {
+        font-size: 3.5vw !important;
+    }
+
+    .eventsForm {
+        padding: 0 5%;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .eventsForm .cs_html_form_container {
+        max-width: 100%;
+    }
+
+    .eventsForm .cs_html_form_container h3 {
+        font-size: 5vw;
+    }
+
+    .eventsForm .cs_html_form_subtitle {
+        font-size: 2.5vw;
+    }
+
+    .eventsForm .cs_html_form_row input {
+        font-size: 2.5vw;
+        padding: 0.75rem 0.7rem;
+    }
+
+    .eventsForm .cs_html_form_row button {
+        font-size: 3vw;
+        padding: 0.8rem 0.7rem;
+    }
+
+    .eventsForm .cs_html_form_terms {
+        font-size: 2vw;
+    }
+
+    .eventsLogos {
+        gap: 1.5rem;
+        margin-top: 2rem;
+        padding: 0 5%;
+    }
+
+    .eventsLogos img {
+        height: 120px;
+    }
     
 }

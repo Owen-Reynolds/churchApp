@@ -13,13 +13,27 @@ import sliderImage6 from '../../assets/homePageAssets/sliderImages/slideImage6.j
 import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.jpg'
 import hFlag from '../../assets/homePageAssets/hFlag.webp';
 import sundayService from '../../assets/homePageAssets/sundayService.webp';
+import vitalityLogoWhite from '../../assets/homePageAssets/vitalitylogowhite.png';
+import captainsLogo from '../../assets/homePageAssets/captainslogo.png';
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 
 export default function Home() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname === '/events') {
+            setTimeout(() => {
+                const eventsSection = document.getElementById('events');
+                if (eventsSection) {
+                    eventsSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    }, [location.pathname]);
     
     return (
         <>
@@ -153,6 +167,55 @@ export default function Home() {
                         </p>
                         <img src={hFlag} alt="" loading="lazy" decoding="async" />
                     </div>
+            </div>
+            <div className="newSectionAfterMissionTrips" id="events">
+                <div className="newSectionAfterMissionTripsContent">
+                    <h2>Events With Vitality</h2>
+                    <div className="newSectionSubtext">
+                        <p>Join Vitality Church for Faith Night with the Lake County Captains on Faith Friday, July 17th!</p>
+                        <p><span className="blueUnderline">Arrival Time:</span> 6:30 PM</p>
+                        <p><span className="blueUnderline">Food will be available:</span> 6:30 PM – 8:00 PM</p>
+                        <p><span className="blueUnderline">Tickets:</span></p>
+                        <ul>
+                            <li>$15.00 for Vitality Church members</li>
+                            <li>$25.00 for non-members</li>
+                        </ul>
+
+                        <p>Includes game ticket and meal. Please make payments payable to Vitality Church with "Faith Night" in the memo line. Dottie will collect payment.</p>
+
+                        <p>Please respond by <span className="blueUnderline">June 28th</span>. If cost is an issue, please don't let that hold you back — your cost will be covered. We would love for everyone to join us!</p>
+
+                        <p>For more information, please see <span className="blueUnderline">David Poole</span>.</p>
+                            </div>
+                </div>
+
+                <div className="eventsForm">
+                    {/* BEGIN CLEARSTREAM FORM */}
+                    <link media="all" type="text/css" rel="stylesheet" href="https://app.clearstream.io/css/external/form.html.css" />
+                    <div className="cs_html_form_container">
+                        <h3>Lake County Captains Game</h3>
+                        <p className="cs_html_form_subtitle">Fill out the form to sign up for this event!</p>
+                        <form className="cs_html_form" action="https://opturl.com/h/qwKj2P40" method="post" id="cs_html_form_qwKj2P40" target="_blank">
+                            <div className="cs_html_form_result"></div>
+                            <div className="cs_html_form_error"></div>
+                            <div className="cs_html_form_row"><input type="text" name="mobile_number" placeholder="Mobile Number *" data-country="US"/></div>
+                            <div className="cs_html_form_row"><input type="text" name="first" placeholder="First Name"/></div>
+                            <div className="cs_html_form_row"><input type="text" name="last" placeholder="Last Name"/></div>
+                            <div className="cs_html_form_row"><input type="text" name="email" placeholder="Email Address *"/></div>
+                            <div className="cs_html_form_row">
+                                <button type="submit">Subscribe</button>
+                            </div>
+                            <p className="cs_html_form_terms">Message &amp; data rates may apply. Message frequency varies. <a href="https://clst.io/terms" target="_blank" rel="noreferrer">Terms of Service</a> and <a href="https://clst.io/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>. To opt-out, text STOP at any time. <a href="https://clearstream.io" target="_blank" rel="noreferrer">Software by Clearstream.</a></p>
+                        </form>
+                            </div>
+                    <script src="https://app.clearstream.io/js/external/form.html.js"></script>
+                    <script type="text/javascript">var $csj = jQuery.noConflict(true);</script>
+                    <div className="eventsLogos">
+                        <img src={vitalityLogoWhite} alt="Vitality Church Logo" />
+                        <img src={captainsLogo} alt="Lake County Captains Logo" />
+                    </div>
+                    {/* END CLEARSTREAM FORM */}
+                </div>
             </div>
         </>
     );

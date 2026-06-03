@@ -29,6 +29,7 @@ function App() {
         <Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', fontSize: '1.5rem', fontFamily: 'Lora' }}>Loading...</div>}>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/events' element={<Home />} />
             <Route path='/AboutUs' element={<AboutUs />} />
             <Route path='/SundayMornings' element={<SundayMornings />} />
             <Route path='/Staff' element={<Staff />} />

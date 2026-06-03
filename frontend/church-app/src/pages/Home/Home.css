@@ -524,6 +524,169 @@ body{
     
 }
 
+.newSectionAfterMissionTrips{
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    padding: 5% 0;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: start;
+    padding-right: 7.25%;
+}
+
+.newSectionAfterMissionTripsContent{
+    text-align: left;
+    width: 100%;
+    padding-left: 7.25%;
+    box-sizing: border-box;
+}
+
+.newSectionAfterMissionTripsContent h2{
+    font-size: 3.5vw;
+    font-family: "Bona Nova SC";
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+    color: white;
+}
+
+/* Events two-column layout */
+.eventsContainer{
+    display: none;
+}
+
+.eventsDetails{
+    display: none;
+}
+
+.eventsForm{
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventsForm .cs_html_form_container{
+    border: 2px solid #1929C7;
+    border-radius: 10px;
+    padding: 1.25rem;
+    background-color: #f7f7f7;
+    max-width: 450px;
+}
+
+.eventsForm .cs_html_form_container h3{
+    margin: 0 0 0.5rem 0;
+    font-family: "Bona Nova SC";
+    font-size: 1.6vw;
+    color: #222;
+}
+
+.eventsForm .cs_html_form_subtitle{
+    margin: 0 0 1rem 0;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .06em;
+    font-size: 1vw;
+    color: #333;
+}
+
+.eventsForm .cs_html_form_row input{
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #b8b8b8;
+    border-radius: 6px;
+    padding: 0.55rem 0.7rem;
+    font-size: 0.95rem;
+}
+
+.eventsForm .cs_html_form_row button{
+    width: 100%;
+    background-color: #1929C7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 0.7rem;
+    cursor: pointer;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: .06em;
+    font-size: 1.05rem;
+}
+
+.eventsForm .cs_html_form_terms{
+    margin: 0.5rem 0 0 0;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: #555;
+}
+
+.eventsLogos{
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+    width: 100%;
+}
+
+.eventsLogos img{
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+}
+
+.blueUnderline{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #1929C7;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+/* Ensure all text inside the Events section is white for contrast */
+.newSectionSubtext,
+.newSectionSubtext p,
+.newSectionSubtext ul,
+.newSectionSubtext li,
+.newSectionSubtext strong {
+    color: white;
+    font-size: 1.5vw;
+    font-family: "Lora";
+    line-height: 1.8;
+}
+
+.newSectionSubtext ul {
+    margin: 0.5rem 0 1rem 1.25rem;
+}
+
+.newSectionAfterMissionTripsContent p{
+    /* keep headings larger; body text handled by .newSectionSubtext */
+    margin: 0.5rem 0;
+}
+
+.newSectionButton{
+    width: 16vw;
+    min-width: 160px;
+    height: 4vw;
+    min-height: 48px;
+    font-size: 1.8vw;
+    background-color: #1929C7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Bebas Neue", serif;
+    transition: background-color 0.25s, transform 0.2s;
+}
+
+.newSectionButton:hover{
+    background-color: #0f1e9e;
+    transform: scale(1.03);
+}
+
 .newMissionsTripContainer{
     width: 100%;
 }
