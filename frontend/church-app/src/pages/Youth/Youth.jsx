@@ -11,7 +11,7 @@ export default function Youth() {
         <>
         <div className = "yHeader">
         <video 
-            className="vidGive" 
+            className="yHeaderVid" 
             src={yHeader} 
             autoPlay 
             loop 

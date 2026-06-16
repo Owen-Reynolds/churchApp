@@ -18,7 +18,7 @@ export default function AboutUs() {
         <>
             <div className="staffHeader">
                 <video
-                    className="vidGive"
+                    className="heartvid"
                     src={heartrate}
                     autoPlay
                     loop

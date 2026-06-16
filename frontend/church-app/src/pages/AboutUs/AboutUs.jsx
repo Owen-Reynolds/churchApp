@@ -16,7 +16,7 @@ export default function AboutUs() {
     <div className="aboutHeader">
         <h1>About Vitality</h1>
         <video 
-                className="vidGive" 
+                className="aboutHeaderVid" 
                 src={waterfall} 
                 autoPlay 
                 loop 

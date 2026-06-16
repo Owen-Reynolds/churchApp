@@ -16,7 +16,7 @@ export default function SundayMornings() {
         <>
             <div className="titleSection">
                 <video 
-                            className="vidGive" 
+                            className="topVideo" 
                             src={topVideo} 
                             autoPlay 
                             loop 
