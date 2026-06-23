@@ -24,16 +24,16 @@ import { useState, useEffect } from 'react';
 export default function Home() {
     const location = useLocation();
 
-    useEffect(() => {
-        if (location.pathname === '/events') {
-            setTimeout(() => {
-                const eventsSection = document.getElementById('events');
-                if (eventsSection) {
-                    eventsSection.scrollIntoView({ behavior: 'smooth' });
-                }
-            }, 100);
-        }
-    }, [location.pathname]);
+    // useEffect(() => {
+    //     if (location.pathname === '/events') {
+    //         setTimeout(() => {
+    //             const eventsSection = document.getElementById('events');
+    //             if (eventsSection) {
+    //                 eventsSection.scrollIntoView({ behavior: 'smooth' });
+    //             }
+    //         }, 100);
+    //     }
+    // }, [location.pathname]);
     
     return (
         <>
@@ -168,6 +168,7 @@ export default function Home() {
                         <img src={hFlag} alt="" loading="lazy" decoding="async" />
                     </div>
             </div>
+            {/* EVENTS SECTION — commented out
             <div className="newSectionAfterMissionTrips" id="events">
                 <div className="newSectionAfterMissionTripsContent">
                     <h2>Events With Vitality</h2>
@@ -190,7 +191,7 @@ export default function Home() {
                 </div>
 
                 <div className="eventsForm">
-                    {/* BEGIN CLEARSTREAM FORM */}
+                    BEGIN CLEARSTREAM FORM
                     <link media="all" type="text/css" rel="stylesheet" href="https://app.clearstream.io/css/external/form.html.css" />
                     <div className="cs_html_form_container">
                         <h3>Lake County Captains Game</h3>
@@ -205,7 +206,7 @@ export default function Home() {
                             <div className="cs_html_form_row">
                                 <button type="submit">Subscribe</button>
                             </div>
-                            <p className="cs_html_form_terms">Message &amp; data rates may apply. Message frequency varies. <a href="https://clst.io/terms" target="_blank" rel="noreferrer">Terms of Service</a> and <a href="https://clst.io/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>. To opt-out, text STOP at any time. <a href="https://clearstream.io" target="_blank" rel="noreferrer">Software by Clearstream.</a></p>
+                            <p className="cs_html_form_terms">Message & data rates may apply. Message frequency varies. Terms of Service and Privacy Policy. To opt-out, text STOP at any time. Software by Clearstream.</p>
                         </form>
                             </div>
                     <script src="https://app.clearstream.io/js/external/form.html.js"></script>
@@ -214,9 +215,10 @@ export default function Home() {
                         <img src={vitalityLogoWhite} alt="Vitality Church Logo" />
                         <img src={captainsLogo} alt="Lake County Captains Logo" />
                     </div>
-                    {/* END CLEARSTREAM FORM */}
+                    END CLEARSTREAM FORM
                 </div>
             </div>
+            */}
         </>
     );
 }
