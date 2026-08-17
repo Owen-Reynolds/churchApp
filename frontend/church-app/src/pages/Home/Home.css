@@ -1,8 +1,8 @@
-body{
+body {
     overflow-x: hidden;
 }
 
-.mainSection{
+.mainSection {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,58 +12,48 @@ body{
 }
 
 /*Slideshow*/
-.slideshow{
+.slideshow {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    animation: slideshow 15s infinite;
 }
 
-@keyframes slideshow {
-    0% { background-image: 
-        url('../../assets/homePageAssets/SancImage8.webp'); 
-    }
-    33% { background-image: 
-        url('../../assets/homePageAssets/SancImage3.webp'); 
-    }
-    66% { background-image: 
-        url('../../assets/homePageAssets/SancImage3.webp'); 
-    }
-    100% { background-image: 
-        url('../../assets/homePageAssets/SancImage8.webp'); 
-    }
-}
-
-.slideshow{
+.slideshowSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
+    transition: opacity 1.5s ease-in-out;
 }
 
-.mainTitle{
+.mainTitle {
     display: flex;
     align-items: center;
 }
 
-.mainTitle h1{
+.mainTitle h1 {
     font-size: 12vw;
     color: white;
     margin: 0;
-    font-family:"Bona Nova SC";
+    font-family: "Bona Nova SC";
     margin-top: 5%;
     line-height: 1;
-    -webkit-text-stroke: 2px #1929C7; 
+    -webkit-text-stroke: 2px #1929C7;
     text-stroke: 3px #1929C7;
 }
 
-.mainButton{
+.mainButton {
     margin-top: 1%;
     margin-bottom: 5%;
 }
 
-.mainButton-Button{
+.mainButton-Button {
     width: 15vw;
     height: 4vw;
     font-size: 2vw;
@@ -75,13 +65,13 @@ body{
     font-family: "Bebas Neue", serif;
 }
 
-.mainButton-Button:hover{
+.mainButton-Button:hover {
     background-color: #1929C7;
     border: 2px solid white;
     color: white;
 }
 
-.newInfoSection{
+.newInfoSection {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -90,13 +80,13 @@ body{
     width: 90%;
 }
 
-.newInfoSectionInfo{
+.newInfoSectionInfo {
     width: 80%;
-    text-align: center; 
-    margin-bottom: 2%; 
+    text-align: center;
+    margin-bottom: 2%;
 }
 
-.newInfoSectionInfo h2{
+.newInfoSectionInfo h2 {
     font-size: 3.5vw;
     font-family: "Bona Nova SC";
     margin: 0;
@@ -106,26 +96,26 @@ body{
     text-align: center;
 }
 
-.newInfoSectionInfo p{
+.newInfoSectionInfo p {
     font-size: 1.5vw;
     font-family: "Lora";
     margin: 0;
     text-align: center;
 }
 
-.newInfoSectionImg{
+.newInfoSectionImg {
     margin-top: 5%;
     margin-left: 5%;
     margin-bottom: 5%;
 }
 
-.newInfoSectionImg img{
+.newInfoSectionImg img {
     border: solid 2px #1929C7;
     padding: 1%;
     width: 40vw;
 }
 
-.newInfoSectionButton{
+.newInfoSectionButton {
     width: 15vw;
     height: 4vw;
     font-size: 2vw;
@@ -136,21 +126,21 @@ body{
     border-radius: 5px;
     margin-top: 5%;
     font-family: "Bebas Neue", serif;
-   
+
 }
 
-.newInfoSectionButton:hover{
+.newInfoSectionButton:hover {
     background-color: #1929C7;
     border: 2px solid white;
     color: white;
 }
 
-.newSundaySectionWrap{
+.newSundaySectionWrap {
     width: 100%;
     background-color: black;
 }
 
-.newSundaySection{
+.newSundaySection {
     display: flex;
     flex-direction: row-reverse;
     margin: auto;
@@ -159,12 +149,12 @@ body{
     color: white;
 }
 
-.newSundaySectionInfo{
+.newSundaySectionInfo {
     width: 80%;
     text-align: center;
 }
 
-.newSundaySectionInfo h2{
+.newSundaySectionInfo h2 {
     font-size: 3.5vw;
     font-family: "Bona Nova SC";
     margin: 0;
@@ -173,34 +163,34 @@ body{
     text-decoration-thickness: 2px;
 }
 
-.newSundaySectionInfo p{
+.newSundaySectionInfo p {
     font-family: "Lora";
 }
 
-.newSundaySectionAddress{
+.newSundaySectionAddress {
     font-size: 2.5vw;
     margin: 0;
 }
 
 
-.newSundaySectionRegular{
+.newSundaySectionRegular {
     font-size: 1.5vw;
     margin: 0;
 }
 
-.newSundaySectionImg{
+.newSundaySectionImg {
     margin-top: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
 }
 
-.newSundaySectionImg img{
+.newSundaySectionImg img {
     border: solid 2px #1929C7;
     padding: 1%;
     width: 40vw;
 }
 
-.newSundaySectionButton{
+.newSundaySectionButton {
     width: 15vw;
     height: 4vw;
     font-size: 2vw;
@@ -213,13 +203,13 @@ body{
     font-family: "Bebas Neue", serif;
 }
 
-.newSundaySectionButton:hover{
+.newSundaySectionButton:hover {
     background-color: white;
     border: 2px solid #1929C7;
     color: black;
 }
 
-.newCardsSection{
+.newCardsSection {
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -227,9 +217,9 @@ body{
     align-items: stretch;
 }
 
-.newCardsLeftMiddle{
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
-     url("../../assets/homePageAssets/Youth.webp");
+.newCardsLeftMiddle {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.395), rgba(0, 0, 255, 0.378)),
+        url("../../assets/homePageAssets/Youth.webp");
     background-position: center;
     flex: 1;
     width: 40vw;
@@ -243,15 +233,15 @@ body{
 
 }
 
-.newCardsLeftMiddle:hover{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
-    url("../../assets/homePageAssets/Youth.webp");
+.newCardsLeftMiddle:hover {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+        url("../../assets/homePageAssets/Youth.webp");
     cursor: pointer;
 }
 
-.newCardsRightTop{
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
-     url("../../assets/homePageAssets/connect.webp");
+.newCardsRightTop {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.395), rgba(0, 0, 255, 0.378)),
+        url("../../assets/homePageAssets/connect.webp");
     background-position: center;
     display: flex;
     justify-content: center;
@@ -264,15 +254,15 @@ body{
     text-decoration: none;
 }
 
-.newCardsRightTop:hover{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
-    url("../../assets/homePageAssets/connect.webp");
+.newCardsRightTop:hover {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+        url("../../assets/homePageAssets/connect.webp");
     cursor: pointer;
 }
 
-.newCardsRightBottom{
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.395),rgba(0, 0, 255, 0.378)),
-     url("../../assets/homePageAssets/Give.webp");
+.newCardsRightBottom {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.395), rgba(0, 0, 255, 0.378)),
+        url("../../assets/homePageAssets/Give.webp");
     background-position: center;
     display: flex;
     justify-content: center;
@@ -282,36 +272,36 @@ body{
     font-family: "Bona Nova SC";
     background-size: cover;
     flex: 1;
-    margin-top:2%;
+    margin-top: 2%;
     text-decoration: none;
 }
 
-.newCardsRightBottom:hover{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), 
-    url("../../assets/homePageAssets/Give.webp");
+.newCardsRightBottom:hover {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+        url("../../assets/homePageAssets/Give.webp");
     cursor: pointer;
 }
 
-.newCardsSection{
+.newCardsSection {
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-.newCardsLeft{
+.newCardsLeft {
     padding-right: 1%;
     display: flex;
     flex: 1;
     text-decoration: none;
 }
 
-.newCardsRight{
+.newCardsRight {
     display: flex;
     flex-direction: column;
     flex: 1;
-    
+
 }
 
-.newSermonSection{
+.newSermonSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -321,7 +311,7 @@ body{
     gap: 4%;
 }
 
-.newSermonLeft{
+.newSermonLeft {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,11 +323,11 @@ body{
     flex: 1;
 }
 
-.newSermonLeft::before{
+.newSermonLeft::before {
     display: none;
 }
 
-.newSermonLeftText{
+.newSermonLeftText {
     font-size: 3vw;
     color: white;
     font-family: "Bona Nova SC";
@@ -350,7 +340,7 @@ body{
     text-decoration-thickness: 3px;
 }
 
-.newSermonSubtext{
+.newSermonSubtext {
     color: #cccccc;
     font-family: "Lora", serif;
     font-size: 1.2vw;
@@ -361,7 +351,7 @@ body{
     margin-top: -10px;
 }
 
-.sermonSubscribeBtn{
+.sermonSubscribeBtn {
     display: inline-block;
     background-color: #1929C7;
     color: white;
@@ -375,12 +365,12 @@ body{
     transition: background-color 0.25s, transform 0.2s;
 }
 
-.sermonSubscribeBtn:hover{
+.sermonSubscribeBtn:hover {
     background-color: #0f1e9e;
     transform: scale(1.06);
 }
 
-.newSermonRight{
+.newSermonRight {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,7 +378,7 @@ body{
     flex: 1;
 }
 
-.sermonYoutubeImgWrap{
+.sermonYoutubeImgWrap {
     border-radius: 0;
     border: 3px solid #1929C7;
     padding: 12px;
@@ -398,22 +388,22 @@ body{
     width: 100%;
 }
 
-.sermonYoutubeImg{
+.sermonYoutubeImg {
     width: 100%;
     border-radius: 0;
     display: block;
 }
 
-.mainVideo{
+.mainVideo {
     width: 100%;
 }
 
-.mainSermonVideo{
+.mainSermonVideo {
     width: 100%;
     height: 50vh;
 }
 
-.videoContainer{
+.videoContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -421,16 +411,16 @@ body{
     gap: 1%;
 }
 
-.videoContainer div{
+.videoContainer div {
     width: 33%;
 }
 
-.sermonVideo{
+.sermonVideo {
     width: 100%;
     height: 20vh;
 }
 
-.missionsTripContainer{
+.missionsTripContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -440,7 +430,7 @@ body{
     height: 90vh;
 }
 
-.missionsTripLeft{
+.missionsTripLeft {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -448,7 +438,7 @@ body{
     flex-direction: column;
 }
 
-.sliderContainer{
+.sliderContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -457,7 +447,8 @@ body{
     width: 100%;
 }
 
-.prevButton, .nextButton {
+.prevButton,
+.nextButton {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -482,17 +473,18 @@ body{
     right: 40px;
 }
 
-.prevButton:hover, .nextButton:hover {
+.prevButton:hover,
+.nextButton:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.sliderContainer img{
+.sliderContainer img {
     width: 90%;
     height: auto;
     border-radius: 10px;
 }
 
-.missionsTripRight{
+.missionsTripRight {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -503,9 +495,9 @@ body{
     position: relative;
 }
 
-.missionsTripRight h2{
+.missionsTripRight h2 {
     font-size: 4vw;
-    color:black;
+    color: black;
     font-family: "Bona Nova SC";
     text-align: center;
     margin: 0;
@@ -514,17 +506,17 @@ body{
     text-decoration-thickness: 2px;
 }
 
-.missionsTripRight p{
+.missionsTripRight p {
     font-size: 1.5vw;
     font-family: "Lora";
 }
 
-.missionsTripRight img{
+.missionsTripRight img {
     width: 25vw;
-    
+
 }
 
-.newSectionAfterMissionTrips{
+.newSectionAfterMissionTrips {
     width: 100vw;
     margin: 0 calc(50% - 50vw);
     padding: 5% 0;
@@ -536,14 +528,14 @@ body{
     padding-right: 7.25%;
 }
 
-.newSectionAfterMissionTripsContent{
+.newSectionAfterMissionTripsContent {
     text-align: left;
     width: 100%;
     padding-left: 7.25%;
     box-sizing: border-box;
 }
 
-.newSectionAfterMissionTripsContent h2{
+.newSectionAfterMissionTripsContent h2 {
     font-size: 3.5vw;
     font-family: "Bona Nova SC";
     margin: 0;
@@ -555,15 +547,15 @@ body{
 }
 
 /* Events two-column layout */
-.eventsContainer{
+.eventsContainer {
     display: none;
 }
 
-.eventsDetails{
+.eventsDetails {
     display: none;
 }
 
-.eventsForm{
+.eventsForm {
     box-sizing: border-box;
     text-align: center;
     display: flex;
@@ -571,7 +563,7 @@ body{
     align-items: center;
 }
 
-.eventsForm .cs_html_form_container{
+.eventsForm .cs_html_form_container {
     border: 2px solid #1929C7;
     border-radius: 10px;
     padding: 1.25rem;
@@ -579,14 +571,14 @@ body{
     max-width: 450px;
 }
 
-.eventsForm .cs_html_form_container h3{
+.eventsForm .cs_html_form_container h3 {
     margin: 0 0 0.5rem 0;
     font-family: "Bona Nova SC";
     font-size: 1.6vw;
     color: #222;
 }
 
-.eventsForm .cs_html_form_subtitle{
+.eventsForm .cs_html_form_subtitle {
     margin: 0 0 1rem 0;
     font-family: "Bebas Neue", serif;
     letter-spacing: .06em;
@@ -594,7 +586,7 @@ body{
     color: #333;
 }
 
-.eventsForm .cs_html_form_row input{
+.eventsForm .cs_html_form_row input {
     width: 100%;
     max-width: 100%;
     border: 1px solid #b8b8b8;
@@ -603,7 +595,7 @@ body{
     font-size: 0.95rem;
 }
 
-.eventsForm .cs_html_form_row button{
+.eventsForm .cs_html_form_row button {
     width: 100%;
     background-color: #1929C7;
     color: white;
@@ -616,14 +608,14 @@ body{
     font-size: 1.05rem;
 }
 
-.eventsForm .cs_html_form_terms{
+.eventsForm .cs_html_form_terms {
     margin: 0.5rem 0 0 0;
     font-size: 0.78rem;
     line-height: 1.35;
     color: #555;
 }
 
-.eventsLogos{
+.eventsLogos {
     display: flex;
     gap: 8rem;
     justify-content: center;
@@ -632,13 +624,13 @@ body{
     width: 100%;
 }
 
-.eventsLogos img{
+.eventsLogos img {
     height: 300px;
     width: auto;
     object-fit: contain;
 }
 
-.blueUnderline{
+.blueUnderline {
     color: white;
     text-decoration: underline;
     text-decoration-color: #1929C7;
@@ -662,12 +654,12 @@ body{
     margin: 0.5rem 0 1rem 1.25rem;
 }
 
-.newSectionAfterMissionTripsContent p{
+.newSectionAfterMissionTripsContent p {
     /* keep headings larger; body text handled by .newSectionSubtext */
     margin: 0.5rem 0;
 }
 
-.newSectionButton{
+.newSectionButton {
     width: 16vw;
     min-width: 160px;
     height: 4vw;
@@ -682,11 +674,11 @@ body{
     transition: background-color 0.25s, transform 0.2s;
 }
 
-.newSectionButton:hover{
+.newSectionButton:hover {
     background-color: #0f1e9e;
     transform: scale(1.03);
 }
 
-.newMissionsTripContainer{
+.newMissionsTripContainer {
     width: 100%;
 }

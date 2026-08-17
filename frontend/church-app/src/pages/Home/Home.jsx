@@ -10,11 +10,15 @@ import sliderImage3 from '../../assets/homePageAssets/sliderImages/slideImage3.j
 import sliderImage4 from '../../assets/homePageAssets/sliderImages/slideImage4.jpg';
 import sliderImage5 from '../../assets/homePageAssets/sliderImages/slideImage5.jpg';
 import sliderImage6 from '../../assets/homePageAssets/sliderImages/slideImage6.jpg';
-import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.jpg'
+import sliderImage7 from '../../assets/homePageAssets/sliderImages/slideImage7.jpg';
+import sliderImage8 from '../../assets/homePageAssets/sliderImages/sliderImage8.jpg';
+
+import sancImage8 from '../../assets/homePageAssets/SancImage8.webp';
+import sancImage3 from '../../assets/homePageAssets/SancImage3.webp';
+
 import hFlag from '../../assets/homePageAssets/hFlag.webp';
 import sundayService from '../../assets/homePageAssets/sundayService.webp';
 import vitalityLogoWhite from '../../assets/homePageAssets/vitalitylogowhite.png';
-import captainsLogo from '../../assets/homePageAssets/captainslogo.png';
 
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -34,34 +38,34 @@ export default function Home() {
     //         }, 100);
     //     }
     // }, [location.pathname]);
-    
+
     return (
         <>
             <div className="mainSection">
-                <div className="slideshow"></div>
-                
+                <TopSlideshow />
+
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2 }}
                     className="mainTitle"
                 >
-                    <h1>Vitality<br/>Church</h1>
+                    <h1>Vitality<br />Church</h1>
                 </motion.div>
-                
+
                 <div className="mainButton">
                     <a onClick="scrollMainButton()">
-                    <Link to="/Connect">
-                        <motion.button
-                            initial={{ y: '200px' }}
-                            animate={{ y: 0 }}
-                            transition={{ duration: 1.5 }}
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="mainButton-Button"
-                        >
-                            New Here?
-                        </motion.button>
+                        <Link to="/Connect">
+                            <motion.button
+                                initial={{ y: '200px' }}
+                                animate={{ y: 0 }}
+                                transition={{ duration: 1.5 }}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                                className="mainButton-Button"
+                            >
+                                New Here?
+                            </motion.button>
                         </Link>
                     </a>
                 </div>
@@ -70,14 +74,14 @@ export default function Home() {
                 <div className="newInfoSectionInfo">
                     <motion.h2>Love God - Love People</motion.h2>
                     <br />
-                    <p>Vitality Church is more than just a place of worship; it is a welcoming, vibrant community. Whether you are a 
-                        long-time believer or just beginning your spiritual journey, you will find a supportive and encouraging 
+                    <p>Vitality Church is more than just a place of worship; it is a welcoming, vibrant community. Whether you are a
+                        long-time believer or just beginning your spiritual journey, you will find a supportive and encouraging
                         environment at Vitality Church. The sermons delivered at Vitality Church are thought-provoking and relevant,
-                         addressing real-life issues and providing practical guidance for daily living. The pastors share biblical truths with clarity 
-                         and compassion. Each message is crafted to inspire and challenge you to grow in your faith and apply the teachings of the Bible in meaningful ways.
+                        addressing real-life issues and providing practical guidance for daily living. The pastors share biblical truths with clarity
+                        and compassion. Each message is crafted to inspire and challenge you to grow in your faith and apply the teachings of the Bible in meaningful ways.
                     </p>
-                    <Link to ="/AboutUs">
-                    <button className="newInfoSectionButton">About Us</button>
+                    <Link to="/AboutUs">
+                        <button className="newInfoSectionButton">About Us</button>
                     </Link>
                 </div>
                 <div className="newInfoSectionImg">
@@ -99,8 +103,8 @@ export default function Home() {
                         <p className="newSundaySectionAddress">
                             5783 Heisley Road, Mentor, OH 44060
                         </p>
-                        <Link to ="/SundayMornings">
-                        <button className="newSundaySectionButton">Learn More</button>
+                        <Link to="/SundayMornings">
+                            <button className="newSundaySectionButton">Learn More</button>
                         </Link>
                     </div>
                     <div className="newSundaySectionImg">
@@ -153,20 +157,20 @@ export default function Home() {
                 </div>
             </div>
             <div className="missionsTripContainer">
-                    <div className="missionsTripLeft">
-                        <ImageSlider />
-                    </div>
-                    <div className="missionsTripRight">
-                        <h2>Missions Trip 2025</h2>
-                        <p>A group of believers from Ohio have been ministering in Siguatepeque, Honduras, for over 30 years. 
-                            Their ministry has two primary components: men working with a local team to pour concrete floors, 
-                            and women conducting Vacation Bible School for children and moms. The purpose of their mission is 
-                            to demonstrate the love of Christ and soften hearts for the Gospel message. Each visit culminates 
-                            in a presentation of the Gospel, as the team's goal is to spread Jesus' message and show love through 
-                            their actions.
-                        </p>
-                        <img src={hFlag} alt="" loading="lazy" decoding="async" />
-                    </div>
+                <div className="missionsTripLeft">
+                    <ImageSlider />
+                </div>
+                <div className="missionsTripRight">
+                    <h2>Missions Trip 2025</h2>
+                    <p>A group of believers from Ohio have been ministering in Siguatepeque, Honduras, for over 30 years.
+                        Their ministry has two primary components: men working with a local team to pour concrete floors,
+                        and women conducting Vacation Bible School for children and moms. The purpose of their mission is
+                        to demonstrate the love of Christ and soften hearts for the Gospel message. Each visit culminates
+                        in a presentation of the Gospel, as the team's goal is to spread Jesus' message and show love through
+                        their actions.
+                    </p>
+                    <img src={hFlag} alt="" loading="lazy" decoding="async" />
+                </div>
             </div>
             {/* EVENTS SECTION — commented out
             <div className="newSectionAfterMissionTrips" id="events">
@@ -233,34 +237,62 @@ function VideoComponent(props) {
 }
 
 
-function ImageSlider(){
+function TopSlideshow() {
+    const slides = [sancImage8, sliderImage8];
+    const [current, setCurrent] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrent(prev => (prev + 1) % slides.length);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, []);
+
+    return (
+        <div className="slideshow">
+            {slides.map((img, i) => (
+                <div
+                    key={i}
+                    className="slideshowSlide"
+                    style={{
+                        backgroundImage: `url(${img})`,
+                        opacity: i === current ? 1 : 0,
+                    }}
+                />
+            ))}
+        </div>
+    );
+}
+
+
+function ImageSlider() {
     const images = [sliderImage1, sliderImage2, sliderImage3, sliderImage4, sliderImage5, sliderImage6, sliderImage7];
 
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () => {
-        setCurrentSlide(prev => (prev < images.length-1 ? prev + 1 : 0));
-    }   
+        setCurrentSlide(prev => (prev < images.length - 1 ? prev + 1 : 0));
+    }
 
-    const prevSlide = () =>{
+    const prevSlide = () => {
         setCurrentSlide(prev => (prev > 0 ? prev - 1 : images.length - 1));
     }
 
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 3000); 
+        }, 3000);
 
         return () => clearInterval(interval);
-    }, [currentSlide]); 
+    }, [currentSlide]);
 
-    return(
+    return (
         <>
-        <div className="sliderContainer">
-            <span className="prevButton" onClick={prevSlide}>&#10094;</span>
-            <img src={images[currentSlide]} alt="" decoding="async" />
-            <span className="nextButton" onClick={nextSlide}>&#10095;</span>
-        </div>
+            <div className="sliderContainer">
+                <span className="prevButton" onClick={prevSlide}>&#10094;</span>
+                <img src={images[currentSlide]} alt="" decoding="async" />
+                <span className="nextButton" onClick={nextSlide}>&#10095;</span>
+            </div>
         </>
     );
 
