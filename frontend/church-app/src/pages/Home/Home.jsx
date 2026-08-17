@@ -238,7 +238,7 @@ function VideoComponent(props) {
 
 
 function TopSlideshow() {
-    const slides = [sancImage8, sliderImage8];
+    const slides = [sliderImage8, sancImage8];
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
@@ -266,7 +266,7 @@ function TopSlideshow() {
 
 
 function ImageSlider() {
-    const images = [sliderImage1, sliderImage2, sliderImage3, sliderImage4, sliderImage5, sliderImage6, sliderImage7];
+    const images = [sliderImage1, sliderImage3, sliderImage4, sliderImage5, sliderImage6, sliderImage7];
 
 
     const [currentSlide, setCurrentSlide] = useState(0);
