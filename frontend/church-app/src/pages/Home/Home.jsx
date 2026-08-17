@@ -268,6 +268,7 @@ function TopSlideshow() {
 function ImageSlider() {
     const images = [sliderImage1, sliderImage2, sliderImage3, sliderImage4, sliderImage5, sliderImage6, sliderImage7];
 
+
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const nextSlide = () => {
