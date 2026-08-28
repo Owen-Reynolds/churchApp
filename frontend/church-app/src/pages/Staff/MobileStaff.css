@@ -67,14 +67,16 @@
             
     }
     .card img {
-        width: 40vw;
-        height: auto;
+        width: 38vw;
+        height: 50vw;
+        object-fit: cover;
+        object-position: center 35%;
         z-index: 2;
         position: relative;
-        padding-top: 7%;
         border-radius: 4px;
         border: solid 2px rgb(255, 255, 255);
         padding: 2%;
+        box-sizing: border-box;
     }
     
     .card h2{

@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "dev": "npm --prefix frontend/church-app run dev",
+    "build": "npm --prefix frontend/church-app run build",
+    "backend": "node backend/server.js"
+  },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
     "axios": "^1.7.9",

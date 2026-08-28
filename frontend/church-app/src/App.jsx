@@ -14,6 +14,7 @@ const AboutUs = lazy(() => import('./pages/AboutUs/AboutUs.jsx'));
 const SundayMornings = lazy(() => import('./pages/SundayMornings/SundayMornings.jsx'));
 const Staff = lazy(() => import('./pages/Staff/Staff.jsx'));
 const Youth = lazy(() => import('./pages/Youth/Youth.jsx'));
+const KingdomAbilities = lazy(() => import('./pages/KingdomAbilities/KingdomAbilities.jsx'));
 const NextSteps = lazy(() => import('./pages/WhatNext/WhatNext.jsx'));
 const Connect = lazy(() => import('./pages/Connect/Connect.jsx'));
 const Give = lazy(() => import('./pages/Give/Give.jsx'));
@@ -34,6 +35,9 @@ function App() {
             <Route path='/SundayMornings' element={<SundayMornings />} />
             <Route path='/Staff' element={<Staff />} />
             <Route path='/Youth' element={<Youth />} />
+            <Route path='/KingdomAbilities' element={<KingdomAbilities />} />
+            <Route path='/kingdomabilities' element={<KingdomAbilities />} />
+            <Route path='/kingdom-abilities' element={<KingdomAbilities />} />
             <Route path='/nextsteps' element={<NextSteps />} />
             <Route path='/nextsteps/:section' element={<NextSteps />} />
             <Route path='/NextSteps' element={<NextSteps />} />

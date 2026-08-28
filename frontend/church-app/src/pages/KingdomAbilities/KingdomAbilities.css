@@ -1,0 +1,489 @@
+@media screen and (min-width: 769px) {
+    .kaPage {
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #ffffff;
+        color: #1a1a1a;
+        font-family: 'Lora', Georgia, serif;
+    }
+
+    /* Section 1: Hero Header (Title Only) */
+    .kaHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 28vw;
+        min-height: 280px;
+        position: relative;
+        margin: 0;
+        background: linear-gradient(135deg, #091458 0%, #1929c7 55%, #2a4bd6 100%);
+        box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        padding: 0 4vw;
+        box-sizing: border-box;
+    }
+
+    .kaHeaderOverlay {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+        pointer-events: none;
+    }
+
+    .kaHeaderContent {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .kaHeader h1 {
+        font-family: "Bona Nova SC", serif;
+        color: #ffffff;
+        font-size: 6.5vw;
+        margin: 0;
+        line-height: 1.05;
+        text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.02em;
+    }
+
+    /* Section 2: Intro Subtext & Core Belief */
+    .kaIntroSection {
+        width: 100%;
+        padding: 5vw 5% 4vw 5%;
+        box-sizing: border-box;
+        background-color: #ffffff;
+    }
+
+    .kaIntroContainer {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .kaIntroCard {
+        background: #f8fafc;
+        border-radius: 20px;
+        border: 2px solid #e2e8f0;
+        padding: 3.5vw 4vw;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(25, 41, 199, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    .kaIntroLead {
+        font-family: 'Lora', Georgia, serif;
+        color: #1e293b;
+        font-size: 1.6vw;
+        line-height: 1.75;
+        margin: 0;
+        max-width: 860px;
+    }
+
+    .kaTaglineCard {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        color: #0b186b;
+        font-family: "Bona Nova SC", serif;
+        font-size: 1.35vw;
+        font-weight: 700;
+        padding: 1vw 2.6vw;
+        border-radius: 999px;
+        border: 2px solid #1929C7;
+        box-shadow: 0 6px 20px rgba(25, 41, 199, 0.12);
+    }
+
+    /* Section 3: Hands-On Service Abilities (Title Spanning Top) */
+    .kaServiceSection {
+        width: 100%;
+        background-color: #f8fafc;
+        padding: 5vw 5% 6vw 5%;
+        box-sizing: border-box;
+        border-top: 1px solid #e2e8f0;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .kaServiceHeader {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto 3.5vw auto;
+        text-align: center;
+    }
+
+    .kaServiceHeader h2 {
+        font-family: "Bona Nova SC", serif;
+        font-size: 3.5vw;
+        color: #0b186b;
+        margin: 0 0 0.5vw 0;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+    }
+
+    .kaServiceHeader h3 {
+        font-family: "Bebas Neue", serif;
+        font-size: 2vw;
+        color: #1929c7;
+        letter-spacing: 0.06em;
+        margin: 0;
+    }
+
+    .kaServiceContainer {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4.5vw;
+    }
+
+    .kaServiceTextWrap {
+        width: 50%;
+        text-align: left;
+    }
+
+    .kaServiceIntro {
+        font-size: 1.3vw;
+        line-height: 1.7;
+        color: #334155;
+        margin: 0 0 1.4vw 0;
+    }
+
+    .kaServiceSubIntro {
+        font-family: "Bona Nova SC", serif;
+        font-size: 1.4vw;
+        font-weight: 700;
+        color: #0b186b;
+        margin: 0 0 1.2vw 0;
+    }
+
+    .kaServiceBulletList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.4vw;
+    }
+
+    .kaServiceBulletList li {
+        display: flex;
+        align-items: flex-start;
+        gap: 1vw;
+        font-size: 1.25vw;
+        line-height: 1.65;
+        color: #1e293b;
+    }
+
+    .kaServiceBulletList li i {
+        color: #1929C7;
+        font-size: 1.4vw;
+        margin-top: 0.2vw;
+        flex-shrink: 0;
+    }
+
+    .kaServiceBulletList li span {
+        flex: 1;
+    }
+
+    .kaServiceBulletList li strong {
+        color: #0b186b;
+    }
+
+    .kaServiceImageWrap {
+        width: 44%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kaLogoImg {
+        width: 100%;
+        max-width: 440px;
+        height: auto;
+        border-radius: 18px;
+        border: 3px solid #1929C7;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+        object-fit: contain;
+        background: #000000;
+    }
+
+    /* Section 4: Activities Section */
+    .kaActivitiesSection {
+        width: 90%;
+        max-width: 1200px;
+        margin: 6vw auto;
+    }
+
+    .kaActivitiesHeader {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 3.5vw auto;
+    }
+
+    .kaActivitiesHeader h2 {
+        font-family: "Bona Nova SC", serif;
+        font-size: 3.2vw;
+        color: #0b186b;
+        margin: 0 0 0.5vw 0;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+    }
+
+    .kaActivitiesHeader p {
+        font-size: 1.25vw;
+        color: #64748b;
+        margin: 0;
+    }
+
+    .kaActivitiesGrid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.8vw;
+    }
+
+    .kaActivityCard {
+        background: #ffffff;
+        border-radius: 14px;
+        padding: 2vw 1.5vw;
+        border: 2px solid #e2e8f0;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .kaActivityCard:hover {
+        border-color: #1929C7;
+        box-shadow: 0 12px 28px rgba(25, 41, 199, 0.14);
+    }
+
+    .kaActivityIcon {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 50%;
+        background: #eef2ff;
+        color: #1929C7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8vw;
+        margin-bottom: 1.2vw;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .kaActivityCard:hover .kaActivityIcon {
+        background: #1929C7;
+        color: #ffffff;
+        transform: scale(1.1);
+    }
+
+    .kaActivityCard h3 {
+        font-family: "Bona Nova SC", serif;
+        font-size: 1.35vw;
+        color: #0f172a;
+        margin: 0 0 0.8vw 0;
+        min-height: 2.8vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .kaActivityCard p {
+        font-size: 1.05vw;
+        line-height: 1.6;
+        color: #475569;
+        margin: 0;
+    }
+
+    /* Section 5: Purpose & Belonging Banner */
+    .kaPurposeBanner {
+        width: 100%;
+        background: linear-gradient(135deg, #091458 0%, #1929c7 100%);
+        padding: 6vw 8%;
+        box-sizing: border-box;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .kaPurposeContent {
+        max-width: 920px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5vw;
+    }
+
+    .kaCrossLogo {
+        width: 4.5vw;
+        height: auto;
+        filter: brightness(0) invert(1);
+    }
+
+    .kaPurposeContent h2 {
+        font-family: "Bona Nova SC", serif;
+        font-size: 3.5vw;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    .kaPurposeMain {
+        font-size: 1.5vw;
+        line-height: 1.7;
+        color: #e2e8f0;
+        margin: 0;
+    }
+
+    .kaThreePillarsRow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5vw;
+        margin: 1vw 0;
+    }
+
+    .kaPillarItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5vw;
+    }
+
+    .kaPillarItem i {
+        font-size: 2.2vw;
+        color: #93c5fd;
+    }
+
+    .kaPillarItem span {
+        font-family: "Bebas Neue", serif;
+        font-size: 2vw;
+        letter-spacing: 0.08em;
+        color: #ffffff;
+    }
+
+    .kaPillarDivider {
+        width: 2px;
+        height: 3vw;
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    .kaPurposeClosing {
+        font-size: 1.35vw;
+        line-height: 1.65;
+        color: #cbd5e1;
+        margin: 0;
+    }
+
+    /* Section 6: Program Information Section */
+    .kaInfoSection {
+        width: 90%;
+        max-width: 1200px;
+        margin: 6vw auto;
+    }
+
+    .kaInfoHeader {
+        text-align: center;
+        margin-bottom: 3.5vw;
+    }
+
+    .kaInfoHeader h2 {
+        font-family: "Bona Nova SC", serif;
+        font-size: 3.2vw;
+        color: #0b186b;
+        margin: 0;
+        text-decoration: underline;
+        text-decoration-color: #1929C7;
+    }
+
+    .kaInfoGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.2vw;
+    }
+
+    .kaInfoCard {
+        background: #f8fafc;
+        border-radius: 16px;
+        border: 2px solid #e2e8f0;
+        padding: 2.5vw 2vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+    }
+
+    .kaInfoCardIcon {
+        width: 4.5vw;
+        height: 4.5vw;
+        border-radius: 50%;
+        background: #eef2ff;
+        color: #1929C7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+        margin-bottom: 1.2vw;
+    }
+
+    .kaInfoCard h3 {
+        font-family: "Bona Nova SC", serif;
+        font-size: 1.6vw;
+        color: #0f172a;
+        margin: 0 0 1vw 0;
+    }
+
+    .kaInfoCard p {
+        font-size: 1.15vw;
+        line-height: 1.6;
+        color: #475569;
+        margin: 0;
+    }
+
+    .kaInfoCardPhotoIcon {
+        padding: 0;
+        overflow: hidden;
+        border: 2px solid #1929C7;
+    }
+
+    .kaInfoCardPhotoIcon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 42%;
+    }
+
+    .kaContactCardText {
+        font-size: 1.15vw;
+        line-height: 1.7;
+        color: #475569;
+        margin: 0;
+    }
+
+    .kaContactTextLink {
+        color: #1929C7;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+    }
+
+    .kaContactTextLink:hover {
+        text-decoration: underline;
+        color: #0b186b;
+    }
+}

@@ -18,7 +18,8 @@ header{
 header ul{
     display: flex;
     justify-content: center;
-    gap: 6vw;
+    align-items: center;
+    gap: 3vw;
     padding: 0;
 }
 
@@ -29,8 +30,9 @@ header ul li {
 header ul li a{
     text-decoration: none;
     color: #333;
-    font-size: 2vw;
+    font-size: 1.6vw;
     position: relative;
+    white-space: nowrap;
 }
 
 header ul li a:hover{
