@@ -111,7 +111,7 @@ export default function KingdomAbilities() {
                             As the program gets underway, participants will have opportunities to take part in hands-on service projects that bless others both locally and beyond our community.
                         </p>
                         <p className="kaServiceSubIntro">
-                            Our projects will include:
+                            Some projects will include:
                         </p>
                         <ul className="kaServiceBulletList">
                             <li>
