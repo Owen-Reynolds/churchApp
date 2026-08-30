@@ -7,12 +7,38 @@ import crossImage from '../../assets/vitalitylogoblue.png';
 import kaLogo from '../../assets/kingdomAssets/kalogo.jpg';
 import rondaKern from '../../assets/staffAssets/rondaKern.webp';
 
+// Badge Icon Component for Special Responders
+function BadgeIcon() {
+    return (
+        <svg 
+            viewBox="0 0 24 24" 
+            width="1.15em" 
+            height="1.15em" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="1.8" 
+            strokeLinecap="round" 
+            strokeLinejoin="round"
+            style={{ display: 'inline-block', verticalAlign: '-0.125em' }}
+        >
+            {/* Outer Badge Shield */}
+            <path d="M12 2L4 5V11C4 16.5 7.5 21.2 12 22C16.5 21.2 20 16.5 20 11V5L12 2Z" />
+            {/* Inner Star Symbol */}
+            <polygon 
+                points="12,7 13.5,10.2 17,10.5 14.3,12.8 15.1,16.2 12,14.4 8.9,16.2 9.7,12.8 7,10.5 10.5,10.2" 
+                fill="currentColor"
+                stroke="none"
+            />
+        </svg>
+    );
+}
+
 export default function KingdomAbilities() {
     const futureActivities = [
         {
-            icon: 'fa-heart-pulse',
-            title: 'Lifesaving Skills',
-            desc: 'Learning lifesaving skills through Lifeline Nursing.'
+            icon: 'badge',
+            title: 'Special Responders',
+            desc: 'Be connected through a four-week Police and Fire program building confidence, relationships, and trust.'
         },
         {
             icon: 'fa-kit-medical',
@@ -168,7 +194,11 @@ export default function KingdomAbilities() {
                             transition={{ duration: 0.4, delay: index * 0.08 }}
                         >
                             <div className="kaActivityIcon">
-                                <i className={`fa-solid ${act.icon}`}></i>
+                                {act.icon === 'badge' ? (
+                                    <BadgeIcon />
+                                ) : (
+                                    <i className={`fa-solid ${act.icon}`}></i>
+                                )}
                             </div>
                             <h3>{act.title}</h3>
                             <p>{act.desc}</p>
