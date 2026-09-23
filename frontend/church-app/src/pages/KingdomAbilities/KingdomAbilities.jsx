@@ -89,6 +89,18 @@ export default function KingdomAbilities() {
                     transition={{ duration: 0.8 }}
                 >
                     <h1>Kingdom Abilities</h1>
+                    <button
+                        className="kaDonateButton"
+                        aria-label="Donate"
+                        onClick={() => {
+                            if (window.gtag) {
+                                window.gtag('event', 'conversion', { send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB' });
+                            }
+                            window.open('https://vitality-church.churchhalo.app', '_blank', 'noopener');
+                        }}
+                    >
+                        Donate
+                    </button>
                 </motion.div>
             </div>
 
