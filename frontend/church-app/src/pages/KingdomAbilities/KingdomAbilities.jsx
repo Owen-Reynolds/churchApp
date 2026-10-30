@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './KingdomAbilities.css';
 import './MobileKingdomAbilities.css';
@@ -34,6 +34,35 @@ function BadgeIcon() {
 }
 
 export default function KingdomAbilities() {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://app.clearstream.io/js/external/form.html.js';
+        script.async = true;
+        document.body.appendChild(script);
+
+        script.onload = () => {
+            const jqScript = document.createElement('script');
+            jqScript.textContent = 'var $csj = jQuery.noConflict(true);';
+            document.body.appendChild(jqScript);
+        };
+
+        return () => {
+            if (document.body.contains(script)) {
+                document.body.removeChild(script);
+            }
+        };
+    }, []);
+
+    const trackKingdomAbilitiesConversion = () => {
+        if (window.gtag) {
+            window.gtag('event', 'conversion', {
+                send_to: 'AW-17675757170/9DzTCJGZ0dMbEPLMuuxB',
+                event_category: 'kingdom_abilities',
+                event_label: 'kingdom_abilities_signup',
+            });
+        }
+    };
+
     const futureActivities = [
         {
             icon: 'badge',
@@ -104,7 +133,7 @@ export default function KingdomAbilities() {
                 </motion.div>
             </div>
 
-            {/* Section 2: Subtext & Core Belief */}
+            {/* Section 2: Subtext, Core Belief & Sign-Up Form */}
             <section className="kaIntroSection">
                 <div className="kaIntroContainer">
                     <motion.div 
@@ -120,6 +149,51 @@ export default function KingdomAbilities() {
                         <div className="kaTaglineCard">
                             <span>We believe that small acts of kindness can make a big difference.</span>
                         </div>
+                    </motion.div>
+
+                    <motion.div 
+                        className="kaIntroCard kaFormCard cs_html_form_container"
+                        initial={{ opacity: 0, y: 25 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7, delay: 0.15 }}
+                    >
+                        <h3>Kingdom Abilities Sign Up Form</h3>
+                        <p className="kaFormSubtitle cs_html_form_subtitle">Fill out the form to get connected with Kingdom Abilities</p>
+                        <form 
+                            className="kaForm cs_html_form" 
+                            action="https://opturl.com/h/0dN1Jywo" 
+                            method="post" 
+                            id="cs_html_form_0dN1Jywo" 
+                            target="_blank"
+                            rel="noreferrer"
+                            onSubmit={trackKingdomAbilitiesConversion}
+                        >
+                            <div className="cs_html_form_result"></div>
+                            <div className="cs_html_form_error"></div>
+                            <div className="kaFormRow cs_html_form_row">
+                                <input type="text" name="mobile_number" placeholder="Mobile Number *" data-country="US" />
+                            </div>
+                            <div className="kaFormRow cs_html_form_row">
+                                <input type="text" name="first" placeholder="First Name" />
+                            </div>
+                            <div className="kaFormRow cs_html_form_row">
+                                <input type="text" name="last" placeholder="Last Name" />
+                            </div>
+                            <div className="kaFormRow cs_html_form_row">
+                                <input type="text" name="email" placeholder="Email Address" />
+                            </div>
+                            <div className="kaFormRow cs_html_form_row">
+                                <button type="submit">Subscribe</button>
+                            </div>
+                            <p className="kaFormTerms cs_html_form_terms">
+                                Message &amp; data rates may apply. Message frequency varies.{' '}
+                                <a href="https://clst.io/terms" target="_blank" rel="noreferrer">Terms of Service</a>{' '}
+                                and{' '}
+                                <a href="https://clst.io/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>. To opt-out, text STOP at any time.{' '}
+                                <a href="https://clearstream.io" target="_blank" rel="noreferrer">Software by Clearstream.</a>
+                            </p>
+                        </form>
                     </motion.div>
                 </div>
             </section>

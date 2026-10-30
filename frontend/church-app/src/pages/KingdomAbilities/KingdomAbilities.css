@@ -79,40 +79,48 @@
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
     }
 
-    /* Section 2: Intro Subtext & Core Belief */
+    /* Section 2: Intro Subtext & Core Belief & Form */
     .kaIntroSection {
         width: 100%;
-        padding: 5vw 5% 4vw 5%;
+        padding: 4.5vw 5% 4vw 5%;
         box-sizing: border-box;
         background-color: #ffffff;
     }
 
     .kaIntroContainer {
-        width: 90%;
-        max-width: 1000px;
+        width: 92%;
+        max-width: 1200px;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.2rem;
+        align-items: stretch;
+        justify-content: center;
     }
 
     .kaIntroCard {
         background: #f8fafc;
-        border-radius: 20px;
-        border: 2px solid #e2e8f0;
-        padding: 3.5vw 4vw;
+        border-radius: 12px;
+        border: 2px solid #1929C7;
+        padding: 2.5rem 2.2rem;
         text-align: center;
-        box-shadow: 0 10px 30px rgba(25, 41, 199, 0.05);
+        box-shadow: 0 8px 24px rgba(25, 41, 199, 0.07);
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 2vw;
+        gap: 2rem;
+        box-sizing: border-box;
+        height: 100%;
     }
 
     .kaIntroLead {
         font-family: 'Lora', Georgia, serif;
         color: #1e293b;
-        font-size: 1.6vw;
+        font-size: clamp(1.05rem, 1.25vw, 1.25rem);
         line-height: 1.75;
         margin: 0;
-        max-width: 860px;
+        text-align: center;
     }
 
     .kaTaglineCard {
@@ -122,12 +130,126 @@
         background: #ffffff;
         color: #0b186b;
         font-family: "Bona Nova SC", serif;
-        font-size: 1.35vw;
+        font-size: clamp(0.95rem, 1.1vw, 1.15rem);
         font-weight: 700;
-        padding: 1vw 2.6vw;
+        padding: 0.85rem 1.8rem;
         border-radius: 999px;
         border: 2px solid #1929C7;
         box-shadow: 0 6px 20px rgba(25, 41, 199, 0.12);
+        text-align: center;
+    }
+
+    /* Form Card Styled Like Next Steps */
+    .kaFormCard {
+        background: #f7f7f7;
+        border-radius: 12px;
+        border: 2px solid #1929C7;
+        padding: 2.2rem 2.2rem;
+        box-shadow: 0 8px 24px rgba(25, 41, 199, 0.07);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: left;
+        height: 100%;
+    }
+
+    .kaFormCard.cs_html_form_container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .kaFormCard h3 {
+        margin: 0 0 0.45rem 0;
+        font-family: "Bona Nova SC", serif;
+        font-size: clamp(1.4rem, 1.8vw, 1.85rem);
+        color: #0b186b;
+        text-align: center;
+    }
+
+    .kaFormSubtitle {
+        margin: 0 0 1.1rem 0;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: clamp(1rem, 1.1vw, 1.15rem);
+        color: #4b5563;
+        text-align: center;
+    }
+
+    .kaForm {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .kaFormRow {
+        width: 100%;
+    }
+
+    .kaFormRow input,
+    .kaFormCard .cs_html_form_row input {
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #b8b8b8;
+        border-radius: 6px;
+        padding: 0.6rem 0.8rem;
+        font-size: 0.95rem;
+        font-family: inherit;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        color: #1e293b;
+        transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .kaFormRow input:focus,
+    .kaFormCard .cs_html_form_row input:focus {
+        outline: none;
+        border-color: #1929C7;
+        box-shadow: 0 0 0 3px rgba(25, 41, 199, 0.15);
+    }
+
+    .kaFormRow button,
+    .kaFormCard .cs_html_form_row button {
+        width: 100%;
+        background-color: #1929C7;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 0.65rem 0.8rem;
+        cursor: pointer;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: .06em;
+        font-size: 1.15rem;
+        box-sizing: border-box;
+        transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+
+    .kaFormRow button:hover,
+    .kaFormCard .cs_html_form_row button:hover {
+        background-color: #0b186b;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(25, 41, 199, 0.25);
+    }
+
+    .kaFormTerms,
+    .kaFormCard .cs_html_form_terms {
+        margin: 0.25rem 0 0 0;
+        font-size: 0.78rem;
+        line-height: 1.35;
+        color: #64748b;
+        text-align: center;
+    }
+
+    .kaFormTerms a,
+    .kaFormCard .cs_html_form_terms a {
+        color: #1929C7;
+        text-decoration: underline;
+    }
+
+    .kaFormTerms a:hover,
+    .kaFormCard .cs_html_form_terms a:hover {
+        color: #0b186b;
     }
 
     /* Section 3: Hands-On Service Abilities (Title Spanning Top) */
