@@ -158,13 +158,13 @@ export default function KingdomAbilities() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.7, delay: 0.15 }}
                     >
-                        <h3>Kingdom Abilities Sign Up Form</h3>
-                        <p className="kaFormSubtitle cs_html_form_subtitle">Fill out the form to get connected with Kingdom Abilities</p>
+                        <h2>Kingdom Abilities Sign Up Form</h2>
+                        <p className="kaFormSubtitle cs_html_form_subtitle">Fill out the form to receive our text alerts.</p>
                         <form 
                             className="kaForm cs_html_form" 
-                            action="https://opturl.com/h/0dN1Jywo" 
+                            action="https://opturl.com/h/JdMX03wQ" 
                             method="post" 
-                            id="cs_html_form_0dN1Jywo" 
+                            id="cs_html_form_JdMX03wQ" 
                             target="_blank"
                             rel="noreferrer"
                             onSubmit={trackKingdomAbilitiesConversion}
@@ -191,7 +191,7 @@ export default function KingdomAbilities() {
                                 <a href="https://clst.io/terms" target="_blank" rel="noreferrer">Terms of Service</a>{' '}
                                 and{' '}
                                 <a href="https://clst.io/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>. To opt-out, text STOP at any time.{' '}
-                                <a href="https://clearstream.io" target="_blank" rel="noreferrer">Software by Clearstream.</a>
+                                <a href="https://clearstream.io" target="_blank" rel="noreferrer">Provided by Clearstream.</a>
                             </p>
                         </form>
                     </motion.div>

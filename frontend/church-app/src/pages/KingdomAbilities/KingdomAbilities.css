@@ -159,21 +159,54 @@
         margin: 0;
     }
 
+    .kaFormCard h2,
     .kaFormCard h3 {
         margin: 0 0 0.45rem 0;
         font-family: "Bona Nova SC", serif;
         font-size: clamp(1.4rem, 1.8vw, 1.85rem);
         color: #0b186b;
         text-align: center;
+        font-weight: 700;
     }
 
-    .kaFormSubtitle {
+    .kaFormSubtitle,
+    .kaFormCard .cs_html_form_subtitle {
         margin: 0 0 1.1rem 0;
         font-family: "Bebas Neue", serif;
         letter-spacing: .06em;
         font-size: clamp(1rem, 1.1vw, 1.15rem);
         color: #4b5563;
         text-align: center;
+    }
+
+    .kaFormCard .cs_html_form_result {
+        background-color: #16a34a;
+        color: #ffffff;
+        padding: 0.6rem 0.8rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 0.6rem;
+        display: none;
+    }
+
+    .kaFormCard .cs_html_form_error {
+        background-color: #dc2626;
+        color: #ffffff;
+        padding: 0.6rem 0.8rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-bottom: 0.6rem;
+        display: none;
+    }
+
+    .kaFormCard div.cs_html_form_input_error {
+        color: #dc2626;
+        font-size: 0.8rem;
+        margin-top: 0.25rem;
+        font-weight: 600;
+        display: block;
     }
 
     .kaForm {
